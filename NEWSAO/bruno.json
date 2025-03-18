@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "NEWSAO",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
