@@ -1,0 +1,21 @@
+meta {
+  name: create bank
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/bank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : 1,
+    "name" : "BANK BCA",
+    "coa_id" : 3,
+    "currency_id" : "1",
+    "note" : ""
+  }
+}

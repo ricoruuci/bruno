@@ -1,0 +1,21 @@
+meta {
+  name: update bank
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/bank/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "BCA",
+    "name" : "BANK BCA",
+    "coa_id" : 3,
+    "currency_id" : 1,
+    "note" : ""
+  }
+}
