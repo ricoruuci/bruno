@@ -1,0 +1,15 @@
+meta {
+  name: Laporan Assets Kreditor
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/assets/report/kreditor
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

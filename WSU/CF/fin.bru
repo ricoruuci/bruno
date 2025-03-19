@@ -1,0 +1,27 @@
+meta {
+  name: fin
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/fin
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"voucherid" : "ARB/01/2022/0001",
+      "oto" : 1,
+      "keyword" : "2202",
+      "bankkeyword" : "",
+      "actorkeyword" : "",
+      "notekeyword" : "",
+      "sortby" : "dateold"
+  }
+}

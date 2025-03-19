@@ -1,0 +1,34 @@
+meta {
+  name: Sales_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "salesid" : "S007",
+     "salesname" : "salesnamea",
+     "address" : "address",
+     "telp" : "telp",
+     "hp" : "hp",
+     "email" : "email",
+     "note" : "note",
+     "ktp" : "note",
+     "npwp" : "note",
+     "jabatan" : "jabatan",
+     "fgactive" : 1,
+     "tglgabung" : "20240610",
+     "tgllahir" : "20000610",
+     "ttdsales" : ""
+  }
+}

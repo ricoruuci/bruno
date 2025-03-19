@@ -1,0 +1,21 @@
+meta {
+  name: transferitem_3
+  type: http
+  seq: 27
+}
+
+delete {
+  url: {{API_URL}}/transferitem
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "00021/ITN/HO/01/23/R"
+  }
+}

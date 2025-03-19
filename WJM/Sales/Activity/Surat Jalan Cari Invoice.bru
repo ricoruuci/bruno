@@ -1,0 +1,26 @@
+meta {
+  name: Surat Jalan Cari Invoice
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/suratjalan/cari-invoice
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+  
+     // "saleidkeyword" : "",
+      //"custidkeyword" : "",
+     // "custnamekeyword" : "",
+     "fginv" : "P"
+      
+  }
+}

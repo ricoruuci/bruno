@@ -1,0 +1,22 @@
+meta {
+  name: Piutang Invoice
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{API_URL}}/piutang/invoice
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "piutangid" : "1Tech.21.03.0012",
+      "custid" : "CNP118"
+  }
+}

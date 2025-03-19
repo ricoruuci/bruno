@@ -1,0 +1,26 @@
+meta {
+  name: Otorisasi Sales Order
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{API_URL}}/sales/otorisasiso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"soid" : "SO-SPK/2407/0002",
+      "soidkeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : ""
+  }
+}

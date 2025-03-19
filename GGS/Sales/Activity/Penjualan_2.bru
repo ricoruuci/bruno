@@ -1,0 +1,52 @@
+meta {
+  name: Penjualan_2
+  type: http
+  seq: 15
+}
+
+patch {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid" : "1Tech.24.10.0001",
+      "soid" : "SO/202301/0018",
+      "transdate" : "20241010",
+      "custid" : "UP334",
+      "salesid" : "R003",
+      "term" : 30,
+      "discamount" : 0,
+      "dp" : 0,
+      "jenisid" : "P",
+      "nama" : "ilham",
+      "fgtax" : "T",
+      "fgtrans" : "I",
+      "nilaitax" : 11,
+      "alamat" : "JAKARTA",
+      "detail" : [
+          {
+              "itemid" : "99.999.023",
+              "price" : 150000,
+              "qty" : 1,
+              "bagasi" : 1500,
+              "note" : "SSSSSSSSSSSSSSS",
+              "detailsn" : [
+                  {
+                      "snid" : "sn001",
+                      "price" : 150000,
+                      "purchaseid" : "1Tech/GR/2101/0059",
+                      "modal" : 10000,
+                      "fgsn" : "T"
+                  }
+              ]
+          }
+      ]    
+  }
+}

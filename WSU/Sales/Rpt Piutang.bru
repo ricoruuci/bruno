@@ -1,0 +1,21 @@
+meta {
+  name: Rpt Piutang
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{API_URL}}/rptpiutang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20230112"
+  }
+}

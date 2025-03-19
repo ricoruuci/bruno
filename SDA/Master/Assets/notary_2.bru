@@ -1,0 +1,22 @@
+meta {
+  name: notary_2
+  type: http
+  seq: 18
+}
+
+patch {
+  url: {{API_URL}}/notary
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "notaryid" : "NTR003",
+      "notaryname" : "B"
+  }
+}

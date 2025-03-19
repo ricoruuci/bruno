@@ -1,0 +1,24 @@
+meta {
+  name: Artikel_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/artikel
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+   "judul" : "DATA MINING 2" ,
+   "note" : "",
+   "note1" : "",
+   "foto" : ""
+  }
+}

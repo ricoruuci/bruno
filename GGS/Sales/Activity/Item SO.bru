@@ -1,0 +1,21 @@
+meta {
+  name: Item SO
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/salesorder/item
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-GGS/2110/0002"
+  }
+}

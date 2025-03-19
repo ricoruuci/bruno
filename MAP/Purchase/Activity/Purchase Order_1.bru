@@ -1,0 +1,57 @@
+meta {
+  name: Purchase Order_1
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+  
+      "transdate": "2024-01-03 00:00:00.000",
+      "currid": "IDR",
+      "suppid": "SP141",
+      "suppname": "PT ANEKA BERKAH SEJAHTERA",
+      "up": "Bpk Rudi",
+      "telp": "877-8827-0055",
+      "fax": "",
+      "email": "",
+      "note": "",
+      "purchasingid": "H003",
+      "purchasingname": "Hanny",
+      "upddate": "2024-01-03 10:40:39.000",
+      "upduser": "hanny",
+      "soid": "SO-MAP/2401/0001",
+      "custid": "DP207",
+      "custname": "PT. PERTAMINA HULU ENERGI OFFSHORE NORTH WEST JAVA",
+      "subtotal": "7009009.009009009009009009",
+      "ppnamount": "770990.990991",
+      "fgtax": "Y",
+      "nilaitax": "11.0000",
+      "discamount": ".0000",
+      "total": "7780000.0000",
+          "detail": [
+          {
+              "urut": "1",
+              "itemid": "104.209.010",
+              "itemname": "SEAGATE HARDDISK INTERNAL SKYHAWK AI 3,5INCH 16TB",
+              "note": "PN : ST16000VE002",
+              "qty": "1",
+              "price": "7009009.0090",
+              "upddate": "2024-01-03 10:42:17.000",
+              "upduser": "hanny",
+              "partno": null,
+              "total": "7009009.0090"
+          }
+      ]
+      }
+}

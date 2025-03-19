@@ -1,0 +1,21 @@
+meta {
+  name: bank_3
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{API_URL}}/bank
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "bankid" : "BNM"
+  }
+}

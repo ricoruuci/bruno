@@ -1,0 +1,22 @@
+meta {
+  name: Penjualan Cetakan
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{API_URL}}/penjualan/format
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid": "MAP-AR/2411/00002"
+  
+  }
+}

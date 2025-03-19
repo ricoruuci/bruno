@@ -1,0 +1,21 @@
+meta {
+  name: Program Studi_3
+  type: http
+  seq: 21
+}
+
+delete {
+  url: {{API_URL}}/progstudi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "psid" : "SS"
+  }
+}

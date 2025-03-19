@@ -1,0 +1,24 @@
+meta {
+  name: Sales_1
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "salesname" : "tes ilham",
+     "address" : "address",
+     "hp" : "018152121",
+     "jabatan" : "jabatan"
+  }
+}

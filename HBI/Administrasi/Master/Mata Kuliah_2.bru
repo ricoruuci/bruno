@@ -1,0 +1,24 @@
+meta {
+  name: Mata Kuliah_2
+  type: http
+  seq: 24
+}
+
+patch {
+  url: {{API_URL}}/matkul
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+   "mkid" : "IT1",
+   "mkname" : "DATA MINING" ,
+   "note" : "",
+   "bobot" : 2
+  }
+}

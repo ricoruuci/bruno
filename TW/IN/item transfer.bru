@@ -1,0 +1,32 @@
+meta {
+  name: item transfer
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/itemtransfer
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~fgform: P
+  ~tanggal: 20231011
+  ~gudang: 100C
+  ~prid: PR/100/2301-0002
+  ~alldata: 1
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+       "fgform" : "R",
+       "tanggal" : "20231002",
+       "gudang" : "101F",
+       "prid" : "REQ/0017/HO/09/23"
+  }
+}

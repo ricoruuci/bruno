@@ -1,0 +1,15 @@
+meta {
+  name: Dashboard Total PO
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{API_URL}}/dashboard/totalpo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

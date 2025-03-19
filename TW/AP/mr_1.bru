@@ -1,0 +1,44 @@
+meta {
+  name: mr_1
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{API_URL}}/mr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+      {
+          "transdate": "20230818",
+          "eta": "20230818",
+          "lokasi": "106",
+          "kdcab": "106",
+          "note": "CV PSJ pengiriman tanggal 17 januari 2023",
+          "note2": "Frsh Fruit & Vegetable",
+          "fgjenis": "MR",
+          "pob": "1.0000",
+          "hari": "1.0000",
+          "fgsubmit": "Y",
+          "detail": [
+              {
+                  "itemid": "41060254",
+                  "jumlah": "25.0000",
+                  "uomid": "KG",
+                  "price": "12500.0000"
+              },
+              {
+                  "itemid": "41060246",
+                  "jumlah": "20.0000",
+                  "uomid": "KG",
+                  "price": "17000.0000"
+              }
+          ]
+      }
+}

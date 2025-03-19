@@ -1,0 +1,24 @@
+meta {
+  name: Cari Nota
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/txnkkbb/carinota
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : 20241212,
+      //"actor" : "UP001",
+      "fgtrans" : "KK",
+      "notakeyword" : ""
+  }
+}

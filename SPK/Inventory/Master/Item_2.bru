@@ -1,0 +1,23 @@
+meta {
+  name: Item_2
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/item
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemid" : "101.003",
+      "itemname" : "Testing Ilham2",
+      "userprice" : "500000000"
+  }
+}

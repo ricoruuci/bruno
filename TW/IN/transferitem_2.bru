@@ -1,0 +1,36 @@
+meta {
+  name: transferitem_2
+  type: http
+  seq: 26
+}
+
+patch {
+  url: {{API_URL}}/transferitem
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "00021/ITN/HO/01/23/R",
+      "transdate" : "20230906",
+      "lokasi" : "101",
+      "warehousesrc" : "101F",
+      "warehousedest" : "102F",
+      "prid" : "REQ/0017/HO/09/23",
+      "note" : "",
+      "detail" : [
+          {
+              "itemid": "41020007",
+              "qty": "49.5400",
+              "uomid": "KG",
+              "price": "109000.0000",
+              "jumlah": "1.0000"
+          }
+      ]
+  }
+}

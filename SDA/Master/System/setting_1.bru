@@ -1,0 +1,28 @@
+meta {
+  name: setting_1
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/setting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "drpiutangpinjaman": "1.001.001",
+      "drfeenotaris": "1.001.001",
+      "drfeemediator": "1.001.001",
+      "drkomisikreditor": "1.001.001",
+      "drdepositkreditor": "1.001.001",
+      "drfeeprovisi": "1.001.001",
+      "drfeeinterest": "1.001.001",
+      "drtotalpinjaman": "1.001.001"
+  }
+}

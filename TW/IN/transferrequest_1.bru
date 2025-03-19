@@ -1,0 +1,35 @@
+meta {
+  name: transferrequest_1
+  type: http
+  seq: 21
+}
+
+post {
+  url: {{API_URL}}/transferrequest
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"requestid" : "REQ/0016/HO/01/23",
+      "transdate" : "20230906",
+      "lokasi" : "101",
+      "warehouseid" : "101F",
+      "lokasi2" : "100",
+      "note" : "",
+      "detail" : [
+          {
+              "itemid": "41020007",
+              "qty": "49.5400",
+              "uomid": "KG",
+              "price": "109000.0000",
+              "jumlah": "1.0000"
+          }
+      ]
+  }
+}

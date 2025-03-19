@@ -1,0 +1,22 @@
+meta {
+  name: Oto Receive_1
+  type: http
+  seq: 8
+}
+
+patch {
+  url: {{API_URL}}/otoreceive
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "requestid": "FPB/IN/23/06/0190",
+      "fgoto": "X"
+  }
+}

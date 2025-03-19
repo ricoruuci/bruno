@@ -1,0 +1,24 @@
+meta {
+  name: Surat Jalan Cari Detail Barang
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/suratjalan/cari-detail
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid" : "WM/PN/17352",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : ""
+      
+  }
+}

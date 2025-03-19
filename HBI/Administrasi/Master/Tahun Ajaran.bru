@@ -1,0 +1,24 @@
+meta {
+  name: Tahun Ajaran
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{API_URL}}/tahunajaran
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"tahunid" : "KM022",
+     "tahunidkeyword" : "",
+     "tahunnamekeyword" : ""
+  
+  }
+}

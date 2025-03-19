@@ -1,0 +1,32 @@
+meta {
+  name: Customer_2
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/customer
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "custid": "CNS023",
+          "custname": "SATU TECH",
+          "alamat": "palm mansion",
+          "kota": "jakarta",
+          "telp": "021 55667788",
+          "fax": "021 55990011",
+          "email": "kemana@aja.co.id",
+          "salesid": "R003",
+          "limitpiutang": "500000000",
+          "termin": "30",
+          "note": "",
+          "noteint": "ppp"
+  }
+}

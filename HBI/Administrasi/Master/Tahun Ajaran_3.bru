@@ -1,0 +1,21 @@
+meta {
+  name: Tahun Ajaran_3
+  type: http
+  seq: 17
+}
+
+delete {
+  url: {{API_URL}}/tahunajaran
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "tahunid" : "D00123"
+  }
+}

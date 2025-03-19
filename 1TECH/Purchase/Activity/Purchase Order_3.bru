@@ -1,0 +1,21 @@
+meta {
+  name: Purchase Order_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid": "SAS-PO/2023-010030"
+  }
+}

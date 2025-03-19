@@ -1,0 +1,36 @@
+meta {
+  name: Performa Invoice_1
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{API_URL}}/proforma
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "custid": "DD001",
+      "transdate": "20241021",
+      "poid" : "tesPOCust",
+      "soid" : "SO-SPK/2304/0003",
+      "term" : "30",
+      "dp" : "50",
+      "fgpayment" : "C",
+      "detail": [
+          {
+              "itemid": "107.116.003",
+              "itemname": "testing",
+              "qty": 1,
+              "price": 500000000,
+              "note" : "tesnote"
+          }
+      ]
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Penjualan Cek Bayar
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/penjualan/cekbayar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid": "1Tech.24.09.0065"
+  
+  }
+}

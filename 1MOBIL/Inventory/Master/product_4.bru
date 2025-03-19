@@ -1,0 +1,21 @@
+meta {
+  name: product_4
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{API_URL}}/product
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "productid" : "P001"
+  }
+}

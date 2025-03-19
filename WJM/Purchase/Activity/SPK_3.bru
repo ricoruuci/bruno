@@ -1,0 +1,21 @@
+meta {
+  name: SPK_3
+  type: http
+  seq: 25
+}
+
+delete {
+  url: {{API_URL}}/spk
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "spkid": "SPK/2401/0004"
+  }
+}

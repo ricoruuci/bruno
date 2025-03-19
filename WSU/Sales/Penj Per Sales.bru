@@ -1,0 +1,23 @@
+meta {
+  name: Penj Per Sales
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{API_URL}}/rptpenjpersales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20230112",
+      "sampai" : "20240101",
+      "saleskeyword" : "Iwan"
+  }
+}

@@ -1,0 +1,29 @@
+meta {
+  name: Txn
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"voucherid" : "APB/23/04-0003",
+      "dari" : 20250227,
+      "sampai" : 20250227,
+      "fgtrans" : "BK"
+      //"keyword" : "",
+      //"actorkeyword" : "",
+     // "bankkeyword" : "",
+     // "notekeyword" : "",
+     // "sortby" : "id"
+  }
+}

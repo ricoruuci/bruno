@@ -1,0 +1,31 @@
+meta {
+  name: Rekap SO
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rekapso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     // "soid": "SO-GGS/202311/0006",
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20241121",
+      "custidkeyword": "",
+      "custnamekeyword": "",
+      "salesidkeyword": "",
+      "salesnamekeyword": "",
+      "sortby": "old",
+      "soidkeyword": "0080"
+      
+  }
+}

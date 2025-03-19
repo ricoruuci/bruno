@@ -1,0 +1,23 @@
+meta {
+  name: notary
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{API_URL}}/notary
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"notaryid" : "NTR001",
+      "keyword" : "",
+      "sortby" : "id"
+  }
+}

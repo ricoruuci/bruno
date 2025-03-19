@@ -1,0 +1,29 @@
+meta {
+  name: Request Order
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/requestorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "roid": "RO/00001",
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20240919",
+      "custidkeyword": "",
+      "custnamekeyword": "",
+      "saleidkeyword": "",
+      "sortby": "old"
+      
+  }
+}

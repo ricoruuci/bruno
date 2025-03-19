@@ -1,0 +1,37 @@
+meta {
+  name: grn_1
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{API_URL}}/grn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "doid" : "suratjalan3",
+      "transdate" : "20230831",
+      "suppid" : "T004",
+      "lokasi" : "209",
+      "note" : "Router Orbit Star 2 untuk Lokasi KBK ",
+      "warehouseid" : "209D",
+      "poid" : "PO/209/2302-0003",
+      "detail" : [
+          {
+              "itemid" : "61060011",
+              "jumlah" : 1,
+              "uomid" : "EA",
+              "fgnum" : 23421,
+              "price" : 799000.0000,
+              "note" : ""
+          }
+      ]
+  }
+}

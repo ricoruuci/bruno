@@ -1,0 +1,21 @@
+meta {
+  name: pembelian_2
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "purchaseid" : "AP-SM/2503/0001"
+  }
+}

@@ -1,0 +1,29 @@
+meta {
+  name: Purchase Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid": "PO/10721",
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20240919",
+      "suppidkeyword": "",
+      "suppnamekeyword": "",
+      "roidkeyword": "",
+      "sortby": "old"
+      
+  }
+}

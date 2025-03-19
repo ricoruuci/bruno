@@ -1,0 +1,21 @@
+meta {
+  name: submit mr
+  type: http
+  seq: 9
+}
+
+patch {
+  url: {{API_URL}}/submitmr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+      {
+          "mrid" : "MR/106/2308-0565"
+      }
+}

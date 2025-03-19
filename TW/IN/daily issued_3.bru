@@ -1,0 +1,21 @@
+meta {
+  name: daily issued_3
+  type: http
+  seq: 14
+}
+
+delete {
+  url: {{API_URL}}/daily
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "prid" : "DII-101/TW/2308/0004"
+  }
+}

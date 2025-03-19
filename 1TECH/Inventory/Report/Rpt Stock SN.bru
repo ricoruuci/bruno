@@ -1,0 +1,21 @@
+meta {
+  name: Rpt Stock SN
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rptstocksn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemid" : "10.129.169"
+  }
+}

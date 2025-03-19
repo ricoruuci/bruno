@@ -1,0 +1,21 @@
+meta {
+  name: Group Customer_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/groupcust
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "groupid": "G001"
+  }
+}

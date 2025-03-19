@@ -1,0 +1,23 @@
+meta {
+  name: Performa Invoice
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{API_URL}}/proforma
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "performaid" : "PI-SPK/24/01/001",
+      "dari" : "20220101",
+      "sampai" : "20241021"
+  }
+}

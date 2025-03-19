@@ -1,0 +1,22 @@
+meta {
+  name: Penj Bulanan
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{API_URL}}/rptpenjbulanan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "tahun" : "2027",
+      "bulan" : "06"
+  }
+}

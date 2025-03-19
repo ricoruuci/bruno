@@ -1,0 +1,26 @@
+meta {
+  name: bank
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/bank
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~fgactive: 'T'
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "bankidkeyword" : "",
+      "banknamekeyword" : ""
+  }
+}

@@ -1,0 +1,52 @@
+meta {
+  name: Assets_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/assets
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "assetsname" : "RUMAH",
+      "debitor" : "DBT002",
+      "mediator" : "MDT001",
+      "notary" : "NTR003",
+      "interest" : 5,
+      "term" : 3,
+      "duedate" : "20240814",
+      "amount" : 600000000,
+      "note" : "keterangan",
+      "transdate" : "20240814",
+      "biaya" : "30000000",
+      "provisi" : 5,
+      "medifee" : 5,
+      "ttlpinjam" : 300000000,
+      "detail" : [
+          {
+              "kreditor" : "CRD002",
+              "amount" : 150000000,
+              "note" : "cash",
+              "interest" : 1,
+              "intamount" :  11250000, 
+              "netamount" : 161250000
+          },
+          {
+              "kreditor" : "CRD003",
+              "amount" : 150000000,
+              "note" : "transfer",
+              "interest" : 1,
+              "intamount" :  11250000, 
+              "netamount" : 161250000
+          }
+      ]
+  }
+}

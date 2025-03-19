@@ -1,0 +1,24 @@
+meta {
+  name: Program Studi
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{API_URL}}/progstudi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+  //    "psid" : "MTh",
+     "psidkeyword" : "",
+     "psnamekeyword" : ""
+  
+  }
+}

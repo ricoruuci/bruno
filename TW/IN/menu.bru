@@ -1,0 +1,22 @@
+meta {
+  name: menu
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/menu
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "custid" : "A002",
+      "jenis" : "Food"
+  }
+}

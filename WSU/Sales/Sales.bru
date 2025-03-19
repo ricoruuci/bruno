@@ -1,0 +1,22 @@
+meta {
+  name: Sales
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "salesidkeyword" : "EXT1",
+      "salesnamekeyword" : "A"
+  }
+}

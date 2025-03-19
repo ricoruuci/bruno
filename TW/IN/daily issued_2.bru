@@ -1,0 +1,39 @@
+meta {
+  name: daily issued_2
+  type: http
+  seq: 13
+}
+
+patch {
+  url: {{API_URL}}/daily
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "prid" : "DII-101/TW/2308/0001",
+      "transdate" : "20230821",
+      "custid" : "A004",
+      "lokasi" : "101",
+      "kdcab" : "100",
+      "note" : "aaaaaaa",
+      "warehouseid" : "101",
+      "rekpsd" : "11070000",
+      "rekhpp" : "50000000",
+      "fgjenis" : "Daily Issuet",
+      "detail" : [
+          {
+              "itemid" : "41010026",
+              "jumlah" : 1,
+              "uomid" : "PKT",
+              "price" : 10000,
+              "note" : "tes"
+          }
+      ]
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Sales Order (Oto)
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/salesorder/otorisasi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SO-GGS/2412/0027",
+      "jenis": "Y"
+  }
+}

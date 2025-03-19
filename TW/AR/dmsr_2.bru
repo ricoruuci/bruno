@@ -1,0 +1,48 @@
+meta {
+  name: dmsr_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/dmsr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dmsrid" : "TW/XII/0226/23",
+      "transdate" : "20230831",
+      "custid" : "M002",
+      "note" : "Sales tgl.02 January",
+      "lokasi" : "103",
+      "jenis" : "Food",
+      "nilaitax" : 11,
+      "flagtax" : "PPN",
+      "fgjenis" : "R",
+      "chargeid" : null,
+      "rekpenjualan": "42010000",
+      "rekpiutang": "11040200",
+      "detail" : [
+          {
+              "itemid" : "100.001",
+              "itemname" : "mandays",
+              "uomid" : "PACK",
+              "jumlah" : 10,
+              "price" : 1000
+          },
+          {
+              "itemid" : "100.003",
+              "itemname" : "mandays",
+              "uomid" : "PACK",
+              "jumlah" : 10,
+              "price" : 1000
+          }
+      ]
+  }
+}

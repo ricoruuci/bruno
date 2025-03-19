@@ -1,0 +1,59 @@
+meta {
+  name: Penjualan_1
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "soid" : "SO-SPK/2409/0001",
+      "piid" : "",
+      "poid" : "",
+      "custid": "DB001",
+      "transdate": "20241220",
+      "tgldo" : "20241220",
+      "salesid": "A003",
+      "dp" : 0,
+      "note" : "tes note",
+      "pekerjaan" : "tes pekerjaan",
+      "term" : 0,
+      "nama" : "tes nama",
+      "taxid" : "tes taxid",
+      "nilaitax" : 11,
+      "rekpiutang" : "",
+      "rekppn" : "",
+      "rekpenjualan" : "",
+      "rekhpp" : "",
+      "rekpersediaan" : "",
+      "detail": [
+          {
+              "itemid": "107.116.002",
+              "itemname": "MICROSOFT WINDOWS SERVER STANDARD 2022 6 CORE",
+              "qty": 1,
+              "price": 500000000,
+              "modal": 500000000,
+              "titipan": 500000000,
+              "uomid" : "PCS",
+              "note" : "note",
+              "detailsn" : [
+                  {
+                      "snid" : "tessn",
+                      "modal" : 0,
+                      "purchaseid" : "tes purchase",
+                      "fgsn" : "T"
+                  }
+              ]
+          }
+      ]
+  }
+}

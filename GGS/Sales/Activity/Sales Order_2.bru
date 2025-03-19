@@ -1,0 +1,51 @@
+meta {
+  name: Sales Order_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SO-GGS/202311/0001",
+      "custid": "DP036",
+      "salesid": "S001",
+      "transdate": "20231130",
+      "tglkirim": "20231130",
+      "note": "beli kamera",
+      "warehouseid": "R003",
+      "pocust": "123",
+      "fob": "Jakarta",
+      "nilaitax": 11,
+      "fgtax": "Y",
+      "currid": "IDR",
+      "address": "jl gunung sahari",
+      "attn": "ilham",
+      "telp" :  "0819181911",
+      "ship": "ilham",
+      "svc" : 10000,
+      "term" : "hari",
+      "termin" : 60,
+      "disc" : 0,
+      "detail": [
+          {
+              "itemid": "101.113.001",
+              "urut": "1",
+              "itemname": "Server Appliance Microservices Platform - Set ",
+              "qty": 1,
+              "price": 500000000,
+              "modal": 600000000,
+              "note": ""
+          }
+      ]
+  }
+}

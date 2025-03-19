@@ -1,0 +1,21 @@
+meta {
+  name: SO Pending
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{API_URL}}/sopending
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20230112"
+  }
+}

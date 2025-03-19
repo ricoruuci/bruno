@@ -1,0 +1,29 @@
+meta {
+  name: Customer_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/customer
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "custid" : "I002",
+          "custname": "ILHAM UPDATE",
+          "alamat": "Kartini raya",
+          "kota": "jakarta",
+          "telp": "021 55667788",
+          "contactperson" : "Ilham",
+          "limitpiutang": "500000000",
+          "termin": "30",
+          "note": ""
+  }
+}

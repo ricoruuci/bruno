@@ -1,0 +1,25 @@
+meta {
+  name: rekening_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "rekeningid" : "1.002.001",
+      "rekeningname" : "persediaan baaru",
+      "grouprekid" : "1.002",
+      "tipe" : "1",
+      "fgtipe" : "P"
+  }
+}

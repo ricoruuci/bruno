@@ -1,0 +1,23 @@
+meta {
+  name: Rpt Bank
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rptbank
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "bankid" : "OCBC",
+      "dari" : "20240301",
+      "sampai" : "20240318"
+  }
+}

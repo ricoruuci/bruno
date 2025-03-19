@@ -1,0 +1,21 @@
+meta {
+  name: stockopname_3
+  type: http
+  seq: 18
+}
+
+delete {
+  url: {{API_URL}}/stockopname
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "SO/HO/23/09/0001"
+  }
+}

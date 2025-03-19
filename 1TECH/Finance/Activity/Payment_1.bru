@@ -1,0 +1,35 @@
+meta {
+  name: Payment_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/payment
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"paymentid": "AP/1Tech/23/01/0016",
+      "flag": "K",
+      "transdate": "20240304",
+      "tglcair": "20240304",
+      "suppid": "CSP039",
+      "note": "",
+      "nobgcek": "",
+      "bankid": "",
+      "detail": [
+          {
+              "nomorap": "AP-SAS/23/01/0003",
+              "amount": "200000.0000",
+              "rekeningid": "210100.0001"
+          }
+      ]
+  }
+}

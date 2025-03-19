@@ -1,0 +1,21 @@
+meta {
+  name: Cek SN
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/cek-sn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "snid" : " 00A22450002732055"
+  }
+}

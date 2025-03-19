@@ -1,0 +1,22 @@
+meta {
+  name: item mr
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/itemmr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "lokasi" : "101",
+      "tanggal" : "20230918"
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: stockopname
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{API_URL}}/stockopname
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "SO/102/24/07/0002",
+      "dari" : 20230906,
+      "sampai" : 20230906,
+      "lokasi" : "100"
+  }
+}

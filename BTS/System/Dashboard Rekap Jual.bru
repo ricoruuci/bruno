@@ -1,0 +1,15 @@
+meta {
+  name: Dashboard Rekap Jual
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{API_URL}}/dashboard/rekapjual
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

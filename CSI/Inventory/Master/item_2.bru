@@ -1,0 +1,35 @@
+meta {
+  name: item_2
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/item/100.100.001
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "itemname": "123213sasas213",
+      "productid": "100",
+      "groupid": "100",
+      "uomid": "LOT",
+      "garantee": "0",
+      "currid": "IDR",
+      "userprice": ".0000",
+      "dealerprice": ".0000",
+      "jangkagarantee": "0",
+      "minimumstok": "0",
+      "ctk": "Y",
+      "komisi": "0",
+      "fgactive": "Y",
+      "note": null,
+      "partno": "123123"
+  }
+}

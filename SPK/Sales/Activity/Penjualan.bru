@@ -1,0 +1,29 @@
+meta {
+  name: Penjualan
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid" : "SPK23/XII/00001",
+      "saleidkeyword" : "",
+      "soidkeyword" : "SPK",
+      "dari": "20231201",
+      "sampai": "20241201",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "Eko",
+      "custidkeyword" : "",
+      "custnamekeyword" : ""
+  }
+}

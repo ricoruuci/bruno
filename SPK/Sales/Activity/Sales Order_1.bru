@@ -1,0 +1,44 @@
+meta {
+  name: Sales Order_1
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "custid": "UP109",
+      "transdate": "20241016",
+      "salesid": "F006",
+      "tglkirim" : "",
+      "fob" : "",
+      "poid" : "",
+      "nilaitax" : "11",
+      "detail": [
+          {
+              "itemid": "107.116.003",
+              "qty": 1,
+              "price": 500000000,
+              "modal": 0,
+              "bagasi": 0,
+              "note" : "tes note"
+          },
+          {
+              "itemid": "107.116.002",
+              "qty": 1,
+              "price": 500000000,
+              "modal": 0,
+              "bagasi": 0
+          }
+      ]
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Sales Order Cari Alamat
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/salesorder/cari-alamat
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "custid" : "DB002"
+  }
+}

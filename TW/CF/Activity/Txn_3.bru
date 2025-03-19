@@ -1,0 +1,21 @@
+meta {
+  name: Txn_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "voucherid": "APB/TW-B003/23/01/0003"
+  }
+}

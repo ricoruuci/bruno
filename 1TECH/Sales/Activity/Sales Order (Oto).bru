@@ -1,0 +1,22 @@
+meta {
+  name: Sales Order (Oto)
+  type: http
+  seq: 23
+}
+
+patch {
+  url: {{API_URL}}/otorisasiso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SOM/202502/0016",
+      "jenis": "Y"
+  }
+}

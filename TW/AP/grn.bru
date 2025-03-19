@@ -1,0 +1,24 @@
+meta {
+  name: grn
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/grn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "grnid" : "GRN/101/101/2308-0001",
+      "dari" : 20230831,
+      "sampai" : 20230831,
+      "lokasi" : "100"
+  }
+}

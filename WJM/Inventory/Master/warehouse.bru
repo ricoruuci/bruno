@@ -1,0 +1,23 @@
+meta {
+  name: warehouse
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/warehouse
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+       "warehouseid" : "02GK"
+       //"warehouseidkeyword" : "02GK",
+      // "warehousenamekeyword" : "GUDANG KALI MALANG"
+  }
+}

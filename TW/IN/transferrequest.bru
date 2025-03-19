@@ -1,0 +1,24 @@
+meta {
+  name: transferrequest
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{API_URL}}/transferrequest
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"requestid" : "REQ/0001/102/05/23",
+      "dari" : 20230106,
+      "sampai" : 20230906,
+      "lokasi" : "100"
+  }
+}

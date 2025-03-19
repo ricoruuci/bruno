@@ -1,0 +1,21 @@
+meta {
+  name: transferrequest_3
+  type: http
+  seq: 23
+}
+
+delete {
+  url: {{API_URL}}/transferrequest
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "requestid" : "REQ/0016/HO/01/23"
+  }
+}

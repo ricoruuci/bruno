@@ -1,0 +1,23 @@
+meta {
+  name: debitor
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/debitor
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"debitorid" : "DBT002",
+      "keyword" : "",
+      "sortby" : "id"
+  }
+}

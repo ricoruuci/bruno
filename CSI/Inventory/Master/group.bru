@@ -1,0 +1,15 @@
+meta {
+  name: group
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/in/group
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

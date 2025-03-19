@@ -1,0 +1,21 @@
+meta {
+  name: user
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/user
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"userid" : "raka"
+  }
+}

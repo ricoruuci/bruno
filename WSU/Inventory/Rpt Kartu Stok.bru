@@ -1,0 +1,25 @@
+meta {
+  name: Rpt Kartu Stok
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/rptkartustok
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20240101",
+      "sampai" : "20241231",
+     // "itemid" : "FGD.AR0009",
+     "loot" : "Y",
+      "warehouseid" : "01GU"
+  }
+}

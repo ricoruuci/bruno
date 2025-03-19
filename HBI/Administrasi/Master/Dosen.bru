@@ -1,0 +1,25 @@
+meta {
+  name: Dosen
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/view/dosen
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"dosenid" : "KM022",
+     "dosenidkeyword" : "",
+     "dosennamekeyword" : "",
+     "sortby" : "id"
+  
+  }
+}

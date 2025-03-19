@@ -1,0 +1,23 @@
+meta {
+  name: rpt stock akhir
+  type: http
+  seq: 28
+}
+
+get {
+  url: {{API_URL}}/rptstock
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20230101",
+      "sampai" : "20231016",
+      "gudang" : "01GU"
+  }
+}

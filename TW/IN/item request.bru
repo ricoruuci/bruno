@@ -1,0 +1,23 @@
+meta {
+  name: item request
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/itemrequest
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "lokasi" : "101",
+      "tanggal" : 20231002,
+      "gudang" : "100D"
+  }
+}

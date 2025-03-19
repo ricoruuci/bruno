@@ -1,0 +1,23 @@
+meta {
+  name: Penjualan Cari SO
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-so
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate": "20241201"//,
+      //"custnamekeyword" : "RAJA",
+      //"salesnamekeyword" : "rico"
+  }
+}

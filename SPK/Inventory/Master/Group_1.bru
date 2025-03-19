@@ -1,0 +1,22 @@
+meta {
+  name: Group_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/group
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "groupid" : "200",
+      "groupdesc" : "Testing"
+  }
+}

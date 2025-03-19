@@ -1,0 +1,34 @@
+meta {
+  name: Txn KKBB_1
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"paymentid": "AR/TC-K/24/03/0001",
+      "flag": "KK",
+      "transdate": "20240304",
+      "actor": "RICO",
+      "note": "TES",
+      "bankid": "OCBC",
+      "detail": [
+          {
+              "note": "AP-SAS/23/01/0003",
+              "amount": "200000.0000",
+              "rekeningid": "210100.0001",
+              "salesid" : ""
+          }
+      ]
+  }
+}

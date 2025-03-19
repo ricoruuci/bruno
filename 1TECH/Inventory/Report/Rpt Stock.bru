@@ -1,0 +1,27 @@
+meta {
+  name: Rpt Stock
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rptstock
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20241217",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : "belden",
+      "groupidkeyword" : "",
+      "groupdesckeyword" : "",
+      "productidkeyword" : "",
+      "productdesckeyword" : ""
+  }
+}

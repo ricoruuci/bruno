@@ -1,0 +1,21 @@
+meta {
+  name: Dashboard
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{API_URL}}/dashboard
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20240101"
+  }
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Penjualan
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid" : "BTS.24.07.049",
+      "dari": "20231201",
+      "sampai": "20241201",
+      "saleidkeyword" : "",
+      "salesidkeyword" : "D001",
+      "salesnamekeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "poidkeyword" : "",
+      "soidkeyword" : "",
+      "sortby" : "new"
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Dashboard User Aktif
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/dashboard/user
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

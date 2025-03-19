@@ -1,0 +1,30 @@
+meta {
+  name: mr
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/mr?dari=20231001&sampai=20231017&lokasi=100
+  body: json
+  auth: bearer
+}
+
+params:query {
+  dari: 20231001
+  sampai: 20231017
+  lokasi: 100
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"mrid" : "MR/100/2309-0204",
+      "dari" : 20230906,
+      "sampai" : 20230906,
+      "lokasi" : "100"
+  }
+}

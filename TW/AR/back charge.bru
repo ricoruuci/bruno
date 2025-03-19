@@ -1,0 +1,15 @@
+meta {
+  name: back charge
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/backcharge
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

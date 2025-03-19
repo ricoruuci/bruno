@@ -1,0 +1,23 @@
+meta {
+  name: Item
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/item
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"itemid" : "",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : ""
+  }
+}

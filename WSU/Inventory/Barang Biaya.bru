@@ -1,0 +1,21 @@
+meta {
+  name: Barang Biaya
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/barang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "ctk": "Y"
+  }
+}

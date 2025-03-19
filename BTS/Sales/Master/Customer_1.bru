@@ -1,0 +1,35 @@
+meta {
+  name: Customer_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/customer
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+     "custname" : "ILHAM",
+     "address" : "alamat",
+     "kota" : "kota",
+     "telp" : "",
+     "fax" : "",
+     "npwp" : "123",
+     "note" : "",
+     "limitpiutang" : 0,
+     "jenisfaktur" : "01",
+     "fgkoma" : "T",
+     "fgtipe" : "D",
+     "jenisfp" : "04",
+     "kodenitku" : "000000",
+     "term" : 90,
+     "fgterm" : "CBD" 
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Cari Nota
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/carinotakkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "fgtrans" : "KK",
+      "fgactor" : "ALL",
+      "actorid" : "DBT012"
+  
+  }
+}

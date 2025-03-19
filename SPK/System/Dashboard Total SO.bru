@@ -1,0 +1,15 @@
+meta {
+  name: Dashboard Total SO
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/dashboard/totalso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

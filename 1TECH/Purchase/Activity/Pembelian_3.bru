@@ -1,0 +1,47 @@
+meta {
+  name: Pembelian_3
+  type: http
+  seq: 17
+}
+
+patch {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "konsinyasiinvid": "AP-SAS/24/10/0003",
+     "noinvoice": "Test2",
+     "transdate" : "2024-10-04",
+     "nofps" : "102",
+     "konsinyasiid" : "1Tech/GR/2409/0063",
+     "suppid" : "CSP009",
+     "note" : "note",
+     "nilaitax" : "11",
+     "fgtax" : "Y",
+     "jatuhtempo" : 30,
+     "detail" : [
+      {
+          "itemid" : "55.979.009",
+          "qty" : 2,
+          "price" : 150000,
+          "detailsn" : [
+              {
+                  "snid" : "sn003"
+              },
+              {
+                  "snid" : "sn002"
+              }
+          ]
+      }
+  
+     ]
+      
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Warehouse
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/gudang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "warehouseidkeyword" : "01GU",
+      "warehousenamekeyword" : ""
+  }
+}

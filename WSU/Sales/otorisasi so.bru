@@ -1,0 +1,22 @@
+meta {
+  name: otorisasi so
+  type: http
+  seq: 11
+}
+
+patch {
+  url: {{API_URL}}/otorisasiso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SO/AAR/2404/0001",
+      "jenis": "T"
+  }
+}

@@ -1,0 +1,45 @@
+meta {
+  name: daily issued_1
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{API_URL}}/daily
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20230822",
+      "custid" : "A001",
+      "lokasi" : "101",
+      "kdcab" : "100",
+      "note" : "aaaa",
+      "warehouseid" : "101",
+      "rekpsd" : "11070000",
+      "rekhpp" : "50000000",
+      "fgjenis" : "Daily Issuet",
+      "detail" : [
+          {
+              "itemid" : "41070007",
+              "jumlah" : 10,
+              "price" : 1000,
+              "uomid" : "PCT",
+              "note" : "asasas"
+          },
+          {
+              "itemid" : "41070027",
+              "jumlah" : 10,
+              "price" : 1000,
+              "uomid" : "TIM",
+              "note" : "asasas"
+          }
+      ]
+  }
+}

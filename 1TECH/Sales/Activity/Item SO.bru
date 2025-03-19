@@ -1,0 +1,23 @@
+meta {
+  name: Item SO
+  type: http
+  seq: 26
+}
+
+get {
+  url: {{API_URL}}/itemso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-1Tech/2006/0005",
+      "itemidkeyword" : "23",
+      "itemnamekeyword" : "SAO"
+  }
+}
