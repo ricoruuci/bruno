@@ -1,0 +1,24 @@
+meta {
+  name: Berita
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/view/berita
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"beritaid" : "",
+     "beritaidkeyword" : "",
+     "judulkeyword" : ""
+  
+  }
+}

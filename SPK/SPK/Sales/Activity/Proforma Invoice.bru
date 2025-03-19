@@ -1,0 +1,37 @@
+meta {
+  name: Proforma Invoice
+  type: http
+  seq: 18
+}
+
+patch {
+  url: {{API_URL}}/performa
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "poid" : "PO-SPK/2410/0004",
+      "custid": "UP109",
+      "transdate": "20241016",
+      "salesid": "F006",
+      "note" : "tes note2",
+      "detail": [
+          {
+              "itemid": "item001",
+              "qty": 1,
+              "price": 500000000
+          },
+          {
+              "itemid": "item05",
+              "qty": 2,
+              "price": 120000000
+          }
+      ]
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Barang
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/barang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "ctk": "Y",
+      //"itemidkeyword" : "FGD."
+     // "typekeyword" : "NYM"
+     // "merkkeyword" : "Akita"
+      //"ukurankeyword" : "2x2.5"
+     //"itemnamekeyword" : "Akita NYM"
+  }
+}

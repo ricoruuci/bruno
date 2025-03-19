@@ -1,0 +1,32 @@
+meta {
+  name: Rpt Pembelian
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rptpembelian
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20240301",
+      "sampai" : "20240306",
+      "page" : "1",
+      "purchaseidkeyword" : "",
+      "suppidkeyword" : "",
+      "suppnamekeyword" : "",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : "",
+      "productidkeyword" : "",
+      "productdesckeyword" : "",
+      "groupidkeyword" : "",
+      "groupdesckeyword" : ""
+  }
+}

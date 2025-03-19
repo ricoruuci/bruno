@@ -1,0 +1,25 @@
+meta {
+  name: Cari RO
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/purchaseorder/roid
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "custidkeyword": "",
+      "custnamekeyword": "",
+      "saleidkeyword": "",
+      "sortby": "old"
+      
+  }
+}

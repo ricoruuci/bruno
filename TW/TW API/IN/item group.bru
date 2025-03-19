@@ -1,0 +1,25 @@
+meta {
+  name: item group
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/itemgroup
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "fgstock" : "Y",
+      "lokasi" : "101",
+      "tanggal" : "20230906",
+      "warehouseid" : "101C",
+      "groupid" : ""
+  }
+}

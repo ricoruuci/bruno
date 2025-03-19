@@ -1,0 +1,25 @@
+meta {
+  name: transferitem
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{API_URL}}/transferitem
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"transid" : "00165/ITN/HO/10/23/R",
+      "dari" : "20230922",
+      "sampai" : "20230922",
+      "lokasi" : "100",
+      "fgform" : "R"
+  }
+}

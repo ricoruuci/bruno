@@ -1,0 +1,21 @@
+meta {
+  name: Item_3
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{API_URL}}/item
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemid" : "101.001"
+  }
+}

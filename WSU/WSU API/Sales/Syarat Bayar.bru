@@ -1,0 +1,15 @@
+meta {
+  name: Syarat Bayar
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/syaratbayar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

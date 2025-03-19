@@ -1,0 +1,21 @@
+meta {
+  name: Surat Jalan_3
+  type: http
+  seq: 13
+}
+
+delete {
+  url: {{API_URL}}/suratjalan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "kontransbrgid": "SJ/11/31/00001"
+  }
+}

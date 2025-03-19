@@ -1,0 +1,24 @@
+meta {
+  name: dmsr
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/dmsr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"dmsrid" : "TW/I/0216/23",
+      "dari" : 20231208,
+      "sampai" : 20231208,
+      "lokasi" : "100"
+  }
+}

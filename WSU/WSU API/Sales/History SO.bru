@@ -1,0 +1,21 @@
+meta {
+  name: History SO
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{API_URL}}/historyso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "custid" : "ABG"
+  }
+}

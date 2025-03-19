@@ -1,0 +1,31 @@
+meta {
+  name: Surat Jalan
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/suratjalan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"kontransbrgid": "SJ/2024/04/0002",
+     //"/keyword" : "SJ/2024",
+      "saleidkeyword": "WM/PN/17352",
+      "fginv" : "P",
+       "dari" : "20210101",
+       "sampai" : "20251205"
+       //"custnamekeyword" : "bambang",
+       //"sortby" : "id",
+       //"custidkeyword" : "",
+       //"supiridkeyword" : "",
+       //"supirnamekeyword" : ""
+  }
+}

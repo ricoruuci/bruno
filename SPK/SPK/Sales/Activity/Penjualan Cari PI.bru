@@ -1,0 +1,23 @@
+meta {
+  name: Penjualan Cari PI
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-pi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "custid" : "",
+      "soid" : "",
+      "piidkeyword" : ""
+  }
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Laporan Assets
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/assets/report
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "assetskeyword" : "",
+      "debitoridkeyword" : "",
+      "debitornamekeyword" : "",
+      "kreditoridkeyword" : "",
+      "kreditornamekeyword" : "",
+      "mediatoridkeyword" : "",
+      "mediatornamekeyword" : "",
+      "notaryidkeyword" : "",
+      "notarynamekeyword" : "",
+      "fglunas" : "belum",
+      "sortby" : "id"
+  }
+}

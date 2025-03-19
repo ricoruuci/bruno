@@ -1,0 +1,26 @@
+meta {
+  name: user_1
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{API_URL}}/user
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "userid" : "rakaa",
+      "password" : "",
+      "kdgroup" : "admin",
+      "fghpp" : "T",
+      "fgsales" : "T",
+      "fgcabang" : "T"
+  }
+}

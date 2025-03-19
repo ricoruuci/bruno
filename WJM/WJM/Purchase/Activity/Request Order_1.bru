@@ -1,0 +1,43 @@
+meta {
+  name: Request Order_1
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{API_URL}}/requestorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate": "2024-03-28 00:00:00.000",
+      "saleid": "WM/PN/13115",
+      "warehouseid": "01GU",
+      "note": "",
+      "alamatkirim": "",
+          "detail": [
+              {
+                  "saleid": "WM/PN/13115",
+                  "itemid": "10006184",
+                  "qty": "4.0000",
+                  "price": ".0000",
+                  "uomid": "BTG",
+                  "note": ""
+              },
+              {
+                  "saleid": "WM/PN/13115",
+                  "itemid": "10006502",
+                  "qty": "7.0000",
+                  "price": ".0000",
+                  "uomid": "LBR",
+                  "note": ""
+              }
+      ]
+  }
+}

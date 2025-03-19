@@ -1,0 +1,42 @@
+meta {
+  name: Sales Order_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SOM-MAP/202411/0001",
+      "custid": "DD066",
+      "salesid": "M001",
+      "transdate": "20241112",
+      "tglkirim": "20241112",
+      "note": "",
+      "pocust": "1234",
+      "fob": "Jakarta",
+      "nilaitax": 11,
+      "fgtax": "Y",
+      "detail": [
+          {
+              "itemid": "104.221.001",
+              "urut": "1",
+              "itemname": "Takara tripod 193 A",
+              "qty": 1,
+              "price": 50000,
+              "modal": 45000,
+              "bagasi": 0,
+              "note": ""
+          }
+      ]
+  }
+}

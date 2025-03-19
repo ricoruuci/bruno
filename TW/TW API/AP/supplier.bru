@@ -1,0 +1,19 @@
+meta {
+  name: supplier
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/supplier?data.suppid=A007
+  body: none
+  auth: bearer
+}
+
+params:query {
+  data.suppid: A007
+}
+
+auth:bearer {
+  token: {{token}}
+}

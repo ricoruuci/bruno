@@ -1,0 +1,23 @@
+meta {
+  name: Rpt Biaya
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/rptbiaya
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "rekeningid" : "620000.001",
+      "dari" : "20240301",
+      "sampai" : "20240318"
+  }
+}

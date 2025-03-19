@@ -1,0 +1,23 @@
+meta {
+  name: Penjualan Cari Detail Barang
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-detail
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-MAP/2204/0003",
+      "itemidkeyword" : ""
+      
+  }
+}

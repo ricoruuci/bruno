@@ -1,0 +1,22 @@
+meta {
+  name: Marketplace_1
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{API_URL}}/market
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "marketid": "111111",
+          "marketdesc": "tes aja bang"
+  }
+}

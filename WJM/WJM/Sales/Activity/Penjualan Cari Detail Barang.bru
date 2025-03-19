@@ -1,0 +1,24 @@
+meta {
+  name: Penjualan Cari Detail Barang
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-detail
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+  
+      "transdate" : "2025-02-19",
+      "warehouseid" : "01GU"
+      
+  }
+}

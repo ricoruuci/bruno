@@ -1,0 +1,24 @@
+meta {
+  name: Mata Kuliah
+  type: http
+  seq: 22
+}
+
+get {
+  url: {{API_URL}}/matkul
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "mkid" : "IT1",
+     "mkidkeyword" : "",
+     "mknamekeyword" : ""
+  
+  }
+}

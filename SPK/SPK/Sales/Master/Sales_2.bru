@@ -1,0 +1,25 @@
+meta {
+  name: Sales_2
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "salesid" : "T001",
+     "salesname" : "tes ilham",
+     "address" : "address",
+     "hp" : "018152121",
+     "jabatan" : "jabatan"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Dosen_3
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{API_URL}}/dosen
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "dosenid" : "D00123"
+  }
+}

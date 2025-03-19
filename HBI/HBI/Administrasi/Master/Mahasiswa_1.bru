@@ -1,0 +1,36 @@
+meta {
+  name: Mahasiswa_1
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/mahasiswa
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "mhsid" : "mhs11",
+     "mhsname" : "perdi",
+     "address" : "address",
+     "telp" : "telp",
+     "hp" : "hp",
+     "email" : "email",
+     "note" : "note",
+     "rekeningid" : "123123",
+     "fgactive" : "Y",
+     "tglgabung" : "20240610",
+     "thnajar" : "2021-2",
+     "fakultas" : "KF001",
+     "progstudi" : "MTh",
+     "biayakuliah" : 10000,
+     "foto" : ""
+     
+  }
+}

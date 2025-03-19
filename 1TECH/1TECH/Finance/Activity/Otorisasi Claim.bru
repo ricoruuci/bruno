@@ -1,0 +1,25 @@
+meta {
+  name: Otorisasi Claim
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/otorisasi/claim
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"transid" : "PC/1Tech/24/04/0003",
+      "transidkeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "",
+      "sortby" : "old"
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: daily issued
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/daily
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"prid" : "DII-102/TW/2301/0001",
+      "dari" : "20230822",
+      "sampai" : "20230822",
+      "lokasi" : "100"
+  }
+}

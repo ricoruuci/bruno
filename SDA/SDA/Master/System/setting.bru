@@ -1,0 +1,15 @@
+meta {
+  name: setting
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/setting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

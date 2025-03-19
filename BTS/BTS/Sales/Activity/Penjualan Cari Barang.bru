@@ -1,0 +1,23 @@
+meta {
+  name: Penjualan Cari Barang
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-barang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "BTS-SO.24100056",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : ""
+  }
+}

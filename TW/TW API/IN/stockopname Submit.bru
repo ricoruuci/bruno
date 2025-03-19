@@ -1,0 +1,21 @@
+meta {
+  name: stockopname Submit
+  type: http
+  seq: 19
+}
+
+patch {
+  url: {{API_URL}}/submitopname
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "SO/102/23/09/0001"
+  }
+}

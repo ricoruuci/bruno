@@ -1,0 +1,21 @@
+meta {
+  name: Satuan
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/satuan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemid" : "FGD.AK0001"
+  }
+}

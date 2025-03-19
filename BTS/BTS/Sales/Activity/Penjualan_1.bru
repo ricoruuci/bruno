@@ -1,0 +1,58 @@
+meta {
+  name: Penjualan_1
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "BTS-SO.24110079",
+      "transdate" : "20241119",
+      "custid" : "DA001",
+      "salesid" : "A001",
+      "poid" : "",
+      "note" : "",
+      "term" : "30",
+      "discamount" : 0,
+      "dp" : 0,
+      "nama" : "tes nama",
+      "nilaitax" : 11,
+      "alamatkirim" : "tes alamat kirim",
+      "nofps" : "123123",
+      "tgltukarfaktur" : "",
+      "detail" : [
+          {
+              "itemid" : "100.100.001",
+              "itemname" : "tesitemname",
+              "qty" : 2,
+              "price" : "150000",
+              "uomid" : "unit",
+              "fgpph" : "T",
+              "nourut" : 1,
+              "note" : "tesnote",
+              "detailsn" : [
+                  {
+                      "snid" : "tessn",
+                      "modal" : "1000",
+                      "purchaseid" : "tes purchase"
+                  },
+                  {
+                      "snid" : "tessn2",
+                      "modal" : 1500,
+                      "purchaseid" : "tes purchase 2"
+                  }
+              ]
+          }
+      ]
+  }
+}

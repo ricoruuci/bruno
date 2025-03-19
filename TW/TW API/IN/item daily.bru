@@ -1,0 +1,28 @@
+meta {
+  name: item daily
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/itemdaily
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~itemid: 41010107
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "lokasi" : "100",
+      "tanggal" : "20231002",
+      "gudang" : "100C",
+      "alldata" : "Y"
+  }
+}

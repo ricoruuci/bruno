@@ -1,0 +1,25 @@
+meta {
+  name: Rpt Stock Akhir
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/rptstockakhir
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20250101",
+      "sampai" : "20250313",
+      "warehouseid" : "",
+      "productid" : "ASSET",
+      "stock" : "Y"
+  }
+}

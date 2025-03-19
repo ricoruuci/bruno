@@ -1,0 +1,25 @@
+meta {
+  name: Penjualan Cari SO
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-so
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"soidkeyword" : "BTS-SO.24100056",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : ""
+  }
+}

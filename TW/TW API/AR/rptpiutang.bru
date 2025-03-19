@@ -1,0 +1,21 @@
+meta {
+  name: rptpiutang
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/rptpiutang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "tanggal" : "20231016"
+  }
+}

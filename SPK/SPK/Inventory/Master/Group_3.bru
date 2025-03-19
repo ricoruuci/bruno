@@ -1,0 +1,21 @@
+meta {
+  name: Group_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/group
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "groupid" : "200"
+  }
+}

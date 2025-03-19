@@ -1,0 +1,26 @@
+meta {
+  name: Claim
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/claim
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "PC/1Tech/24/04/0005",
+      "dari" : "20240101",
+      "sampai" : "20241001",
+      "transidkeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : ""
+  }
+}

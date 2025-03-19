@@ -1,0 +1,26 @@
+meta {
+  name: Pembelian Cari Penerimaan
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/pembelian/cari-penerimaan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "transdate" : "20231009"
+     //"suppnamekeyword" : "MAKRO INFORMASI",
+     //"suppidkeyword" : "SC060",
+     //"konsinyasiidkeyword" : "1Tech/GR/2409/0063"
+     //"sortby" : "dateold"
+      
+  }
+}

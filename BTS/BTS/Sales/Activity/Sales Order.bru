@@ -1,0 +1,29 @@
+meta {
+  name: Sales Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     // "soid" : "BTS-SO.24110152",
+      "dari": "20231201",
+      "sampai": "20241201",
+      "soidkeyword" : "0158",
+      "salesidkeyword" : "D001",
+      "salesnamekeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "sortby" : "new"
+  }
+}

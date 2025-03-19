@@ -1,0 +1,30 @@
+meta {
+  name: salesorder
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SO/AAE/2410/0001",
+      //"oto" : 1,
+      "dari" : 20210917,
+      "sampai" : 20250917,
+      "jenis" : "S",
+      "keyword" : "",
+      "saleskeyword" : "",
+      "custkeyword" : "",
+      "pocustkeyword" : "",
+      "sortby" : "dateold"
+  }
+}

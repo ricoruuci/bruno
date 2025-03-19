@@ -1,0 +1,24 @@
+meta {
+  name: Item_1
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{API_URL}}/item
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemname" : "Testing Ilham",
+      "groupid" : "101",
+      "userprice" : "1000000000",
+      "uomid" : "PACK"
+  }
+}

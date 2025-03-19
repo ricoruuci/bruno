@@ -1,0 +1,25 @@
+meta {
+  name: Penjualan Cari Rekening
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-rekening
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+  
+     // "bankkeyword" : "2025-02-19",
+      //"rekeningkeyword" : "01GU",
+     // "namakeyword" : "01GU"
+      
+  }
+}

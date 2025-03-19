@@ -1,0 +1,22 @@
+meta {
+  name: product_3
+  type: http
+  seq: 10
+}
+
+patch {
+  url: {{API_URL}}/product
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "productid" : "P001",
+      "productdesc" : "PRODUCT"
+  }
+}

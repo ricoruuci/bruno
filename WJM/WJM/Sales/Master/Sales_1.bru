@@ -1,0 +1,35 @@
+meta {
+  name: Sales_1
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "salesname" : "salesname",
+     "alamat" : "address",
+     "telp" : "telp",
+     "hp" : "hp",
+     "email" : "email",
+     "note" : "note",
+     "limitkasbon" : 0,
+     "uangmakan" : 0,
+     "gajipokok" : 0,
+     "kerajinan" : 0,
+     "kendaraan" : 0,
+     "skend" : 0,
+     "jabatan" : "jabatan",
+     "fgactive" : 1,
+     "tglgabung" : "20240610"
+  }
+}

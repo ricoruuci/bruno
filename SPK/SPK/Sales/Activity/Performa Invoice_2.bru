@@ -1,0 +1,21 @@
+meta {
+  name: Performa Invoice_2
+  type: http
+  seq: 19
+}
+
+delete {
+  url: {{API_URL}}/proforma
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "poid" : "PO-SPK/2410/0004"
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: company
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/company
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

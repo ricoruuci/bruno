@@ -1,0 +1,26 @@
+meta {
+  name: po
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/po
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"poid" : "POIS23080001",
+      "oto" : 1,
+      "keyword" : "",
+      "suppkeyword" : "",
+      "jenis" : "all",
+      "sortby" : "dateold"
+  }
+}

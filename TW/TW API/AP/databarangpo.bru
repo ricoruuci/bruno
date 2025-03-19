@@ -1,0 +1,21 @@
+meta {
+  name: databarangpo
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/databarangpo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid" : "PO-TW/2204/0004"
+  }
+}

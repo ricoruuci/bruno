@@ -1,0 +1,24 @@
+meta {
+  name: Customer
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/customer
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "custid" : "UT001",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "sortby" : "custname"
+  }
+}

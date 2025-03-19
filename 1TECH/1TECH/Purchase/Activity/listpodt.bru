@@ -1,0 +1,22 @@
+meta {
+  name: listpodt
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/listpodt
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid": "1Tech-PO/2020-070065"
+    
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: bank
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/bank
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"bankid" : "CM"
+      "dari" : z,
+      "sampai" : x
+  
+  }
+}

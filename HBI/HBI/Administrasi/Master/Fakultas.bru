@@ -1,0 +1,24 @@
+meta {
+  name: Fakultas
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/fakultas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"fakultasid" : "KM022",
+     "fakultasidkeyword" : "",
+     "fakultasnamekeyword" : ""
+  
+  }
+}

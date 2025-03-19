@@ -1,0 +1,22 @@
+meta {
+  name: submit so
+  type: http
+  seq: 12
+}
+
+patch {
+  url: {{API_URL}}/submitso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SO/AAE/2409/0008",
+      "custid": "asasas"
+  }
+}

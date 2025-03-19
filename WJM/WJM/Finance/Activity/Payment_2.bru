@@ -1,0 +1,35 @@
+meta {
+  name: Payment_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/payment
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "paymentid": "APK/24/03/0001",
+      "flag": "SUP",
+      "fgbayar" : "K",
+      "transdate": "20240304",
+      "tglcair": "20240304",
+      "suppid": "SD003",
+      "note": "",
+      "bankid": "",
+      "detail": [
+          {
+              "purchaseid": "WM/PN/XII/21-DWP10766",
+              "amount": "200000.0000",
+              "nosj": "tes nosj"
+          }
+      ]
+  }
+}

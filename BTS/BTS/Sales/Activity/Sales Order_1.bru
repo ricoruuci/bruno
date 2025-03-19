@@ -1,0 +1,48 @@
+meta {
+  name: Sales Order_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "custid": "DA001",
+      "custname" : "PT.PRIVY IDENTITAS DIGITAL ",
+      "transdate": "20241118",
+      "salesid": "A001",
+      "up" : "",
+      "telp" : "",
+      "fax" : "123",
+      "email" : "",
+      "term" : "CBD",
+      "hari" : 30,
+      "note" : "tes note",
+      "alamatkirim" : "",
+      "pocust" : "pocust",
+      "fgtax" : "T",
+      "nilaitax" : 11,
+      "discount" : 0,
+      "detail": [
+          {
+              "urut" : 1,
+              "itemid": "100.100.001",
+              "qty": 1,
+              "price": 500000000,
+              "modal" : 150000,
+              "bagasi" : 100000,
+              "note" : "note",
+              "partno" : "partno"
+          }
+      ]
+  }
+}

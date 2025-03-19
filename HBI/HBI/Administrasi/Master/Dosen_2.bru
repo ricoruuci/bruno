@@ -1,0 +1,32 @@
+meta {
+  name: Dosen_2
+  type: http
+  seq: 8
+}
+
+patch {
+  url: {{API_URL}}/dosen
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "dosenid" : "D00123",
+     "dosenname" : "salesname22",
+     "address" : "address",
+     "telp" : "telp",
+     "hp" : "hp",
+     "email" : "email",
+     "note" : "note",
+     "rekeningid" : "123123",
+     "fgactive" : "Y",
+     "tglgabung" : "20240610",
+     "foto" : ""
+     
+  }
+}

@@ -1,0 +1,56 @@
+meta {
+  name: Penjualan_1
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "fginv" : "CRB",
+      "faktur" : "",
+      "transdate" : "20241001",
+      "custid" : "DI001",
+      "supirid" : "A004",
+      "tukangid" : "TA004",
+      "marketid" : "002",
+      "salesid" : "A005",
+      "term" : 30,
+      "disc" : 0,
+      "dp" : 20000,
+      "nama" : "ilham",
+      "fgtax" : "T",
+      "nilaitax" : 11,
+      "alamat" : "JAKARTA",
+      "tglkirim" : "20241001",
+      "nohp" : "08928291810919",
+      "tglpasang" : "20241001",
+      "fgdisc" : "A",
+      "ongkir" : 0,
+      "charge" : 0,
+      "note2" : "A",
+      "bankname" : "BCA",
+      "bankid" : "BCA",
+      "jenis" : "B",
+      "detail" : [
+          {
+              "itemid" : "10003554",
+              "price" : 150000,
+              "qty" : 1,
+              "modal" : 1500,
+              "note" : "SSSSSSSSSSSSSSS",
+              "uomid" : "pcs"
+              
+          }
+      ]    
+  }
+}

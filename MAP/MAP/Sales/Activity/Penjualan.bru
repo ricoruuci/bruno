@@ -1,0 +1,28 @@
+meta {
+  name: Penjualan
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid": "MAP-AR/2212/00030",
+       "dari" : "20240101",
+       "sampai" : "20241205"
+       //"custnamekeyword" : "Julianto"
+       //"sortby" : "id",
+       //"saleidkeyword" : "1Tech.24.09.0067"
+       //"soidkeyword" : "SO/202312/0058"
+       //"namakeyword" : "SAS.24.01.001"
+  }
+}

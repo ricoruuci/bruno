@@ -1,0 +1,21 @@
+meta {
+  name: grn_3
+  type: http
+  seq: 13
+}
+
+delete {
+  url: {{API_URL}}/grn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "grnid" : "GRN/203/203/2301-0005"
+  }
+}

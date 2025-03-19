@@ -1,0 +1,50 @@
+meta {
+  name: insert sales order
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-CSI/2309/0002",
+      "custid": "DP002",
+      "salesid": "sales2id1",
+      "transdate": "20230919",
+      "tglkirim": "20230919",
+      "note": "",
+      "prid": "123",
+      "currid": "IDR",
+      "fob": "Jakarta",
+      "ppn": 11,
+      "detail": [
+          {
+              "itemid": "100.100.001",
+              "itemname": "APC UPS B600LI 14\"",
+              "qty": 2,
+              "price": 100000,
+              "modal": 10000,
+              "bagasi": 100000,
+              "keterangan": null
+          },
+          {
+              "itemid": "100.102.004",
+              "itemname": "APC UPS B600LI 14\"",
+              "qty": 3,
+              "price": 500000,
+              "modal": 100000,
+              "bagasi": 100000,
+              "keterangan": null
+          }
+      ]
+  }
+}

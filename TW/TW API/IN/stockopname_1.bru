@@ -1,0 +1,48 @@
+meta {
+  name: stockopname_1
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{API_URL}}/stockopname
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20240711",
+      "warehouseid" : "102",
+      "kdcab" : "100",
+      "lokasi" : "102",
+      "note" : "",
+      "fgsubmit" : "T",
+      "detail" : [
+          {
+              "itemid" : "41010023",
+              "fgstatus" : "T",
+              "jumlah" : 10,
+              "qty" : 20,
+              "alasan" : "",
+              "uomid" : "NOS",
+              "price" : 0,
+              "stock" : 0
+          },
+          {
+              "itemid" : "41010024",
+              "fgstatus" : "T",
+              "jumlah" : 10,
+              "qty" : 20,
+              "alasan" : "",
+              "uomid" : "NOS",
+              "price" : 0,
+              "stock" : 0
+          }
+      ]
+  }
+}

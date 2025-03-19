@@ -1,0 +1,26 @@
+meta {
+  name: Sales Order Cari Detail
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/salesorder/cari-detail
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemidkeyword" : "",
+      "itemnamekeyword" : "",
+      "productidkeyword" : "",
+      "productdesckeyword" : "",
+      "groupidkeyword" : "",
+      "groupdesckeyword" : ""
+  }
+}

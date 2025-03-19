@@ -1,0 +1,24 @@
+meta {
+  name: Tukang
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/tukang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "tukangid": "TA002",
+     "tukangidkeyword" : "",
+     "tukangkeyword" : "",
+     "active" : "ya"
+  }
+}

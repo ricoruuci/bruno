@@ -1,0 +1,34 @@
+meta {
+  name: Customer_1
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{API_URL}}/customer
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "custname": "  Nadia +62 812-1055-0266 Dental clinic ",
+          "groupid": "",
+          "alamat": "Happy dental clinic puri indah mall lantai LG no 19,\r\nJl puri Agung kembangan selatan kode pos 11460\r\n",
+          "kota": "",
+          "telp": "62 812-1055-0266 ",
+          "fax": "",
+          "email": "",
+          "npwp": "",
+          "limitpiutang": "50000000",
+          "term": "7",
+          "fgmember": "Y",
+          "tipe": "D",
+          "fgnppkp": "T",
+          "note": ""
+  }
+}

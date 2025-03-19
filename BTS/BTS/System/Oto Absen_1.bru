@@ -1,0 +1,22 @@
+meta {
+  name: Oto Absen_1
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{API_URL}}/otoabsen
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  { 
+      "transid" : "2024R003002",
+      "jenis" : "Y"
+  }
+}

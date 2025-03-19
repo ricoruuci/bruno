@@ -1,0 +1,21 @@
+meta {
+  name: dmsr_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/dmsr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dmsrid" : "TW/I/0217/23"
+  }
+}

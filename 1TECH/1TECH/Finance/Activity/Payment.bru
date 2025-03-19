@@ -1,0 +1,30 @@
+meta {
+  name: Payment
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/payment
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"paymentid": "AP/1Tech/20/06/0060",
+      "dari" : "20230101",
+      "sampai" : "20240105",
+      "flag" : "B",
+      "bankid": "OCBC3",
+      "suppid" : "CSP008",
+      "sortby" : "new",
+      // "suppnamekeyword" : "new",
+      // "banknamekeyword" : "new",
+      "keyword" : "004"
+  }
+}

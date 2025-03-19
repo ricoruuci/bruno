@@ -1,0 +1,23 @@
+meta {
+  name: Group Customer_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/groupcust
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "groupid": "G001",
+          "groupdesc": "INTERNAL"
+  
+  }
+}

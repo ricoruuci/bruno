@@ -1,0 +1,21 @@
+meta {
+  name: gudang
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/gudang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "lokasi" : "100"
+  }
+}

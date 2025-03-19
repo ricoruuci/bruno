@@ -1,0 +1,49 @@
+meta {
+  name: Purchase Order_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid": "SAS-PO/2023-120001",
+      "suppid": "CSP055",
+      "transdate": "20231204",
+      "suppname": "PT. BERKAH PRIMA PERKASA TBK",
+      "up" : "Pak Tony",
+      "salesid": "F006",
+      "telp": "12345678",
+      "fax": "87654321",
+      "email": "kalau@sempat.com",
+      "note": "keterangan",
+      "fgtax": "Y",
+      "nilaitax": 11,
+      "soid": "SO/202306/0042",
+      "fgterm" : "X",
+      "fgjaminan" : "T",
+      "term" : 7,
+      "detail": [
+          {
+              "itemid": "14.1013.002",
+              "urut": "1",
+              "itemname": "APC UPS B600LI 14\"",
+              "qty": 1,
+              "price": 500000000,
+              "modal": 600000000,
+              "bagasi": 0,
+              "note": "",
+              "partno": "aaa"
+          }
+      ]
+  }
+}

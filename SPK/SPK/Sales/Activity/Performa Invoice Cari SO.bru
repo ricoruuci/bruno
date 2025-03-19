@@ -1,0 +1,22 @@
+meta {
+  name: Performa Invoice Cari SO
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{API_URL}}/proforma/cari-so
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "custid" : "DD001",
+      "transdate" : "20241021"
+  }
+}

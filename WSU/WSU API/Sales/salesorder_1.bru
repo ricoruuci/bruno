@@ -1,0 +1,62 @@
+meta {
+  name: salesorder_1
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO/AGS/2209/0002",
+      "custid" : "AAE",
+      "transdate" : "20241021",
+      "pocust" : "",
+      "salesid" : "DG",
+      "nodn" : "",
+      "deptsales" : "",
+      "deliveryid" : "",
+      "fgterm" : "K",
+      "term" : 30,
+      "fgharga" : "E",
+      "note" : "",
+      "jenis" : "S",
+      "fgdiscount" : "T",
+      "fgtax" : "Y",
+      "nilaipajak" : 11,
+      "fgpph" : "T",
+      "nilaipph" : 0,
+      "fgbiaya" : "Y",
+      "kddiscount" : "",
+      "fgtrans" : "T",
+      "disc1" : 0,
+      "disc2" : 0,
+      "disc3" : 0,
+      "disc4" : 0,
+      "disc5" : 0,
+      "reqdeliverydate" : "20250318",
+      "detail" : [
+          {
+              "itemid" : "FGD.AK0001",
+              "totalqty" : 800,
+              "qty" : 4,
+              "discitem" : 0,
+              "note" : "aaa",
+              "uomid" : "Roll",
+              "harga" : 7500,
+              "hargainput" : 7500,
+              "qty2" : 200,
+              "persenup" : 0,
+              "tgldelivery" : "20230830"
+          }
+      ]    
+  }
+}

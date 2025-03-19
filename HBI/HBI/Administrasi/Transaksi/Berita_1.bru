@@ -1,0 +1,24 @@
+meta {
+  name: Berita_1
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{API_URL}}/berita
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+   "judul" : "DATA MINING" ,
+   "note" : "",
+  "note1" : "",
+   "foto" : ""
+  }
+}

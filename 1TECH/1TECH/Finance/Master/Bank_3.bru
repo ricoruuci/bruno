@@ -1,0 +1,21 @@
+meta {
+  name: Bank_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/bank
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "bankid" : "tes"
+  }
+}

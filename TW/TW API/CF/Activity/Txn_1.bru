@@ -1,0 +1,38 @@
+meta {
+  name: Txn_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate": "20230705",
+      "actor": "Rico Bahari",
+      "bankid": "B003",
+      "note": "Tarik Tunai OCBC",
+      "fgtrans" : "BK",
+      "total": "70000.0000",
+      "nobgcek": null,
+      "transdate1": "20230705",
+      "juid": "",
+      "detail" : [
+          {
+              "rekeningid": "21010100",
+              "note": "SAS.23.03.011",
+              "amount": "70000.0000",
+              "jenis": "D",
+              "lokasi" : ""
+          }
+      ]
+  }
+}

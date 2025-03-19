@@ -1,0 +1,38 @@
+meta {
+  name: Txn_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "voucherid": "APB/TW-B003/23/01/0003",
+      "transdate": "20230705",
+      "actor": "Rico Bahari",
+      "bankid": "B003",
+      "note": "Tarik Tunai OCBC",
+      "currid": "IDR",
+      "fgtrans" : "BK",
+      "total": "70000.0000",
+      "nobgcek": null,
+      "transdate1": "20230705",
+      "detail" : [
+          {
+              "rekeningid": "21010100",
+              "note": "SAS.23.03.011",
+              "amount": "70000.0000",
+              "jenis": "D"
+          }
+      ]
+  }
+}

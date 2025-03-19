@@ -1,0 +1,49 @@
+meta {
+  name: Sales
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"salesid": "",
+     //"salesidkeyword": "A",
+      "salesnamekeyword": "Andi/SMG",
+      "sortby": "salesname"
+  }
+}
+
+tests {
+  test('Verify the format of the response body', function () {
+  //     pm.response.to.have.jsonBody('page');
+  //     pm.response.to.have.jsonBody('per_page');
+  //     pm.response.to.have.jsonBody('total');
+  //     pm.response.to.have.jsonBody('total_page');
+  //     pm.response.to.have.jsonBody('data');
+  //     pm.response.to.have.jsonBody('data[0].salesid');
+  //     pm.response.to.have.jsonBody('data[0].salesname');
+  //     pm.response.to.have.jsonBody('data[0].upddate');
+  //     pm.response.to.have.jsonBody('data[0].upduser');
+  //     pm.response.to.have.jsonBody('data[0].jabatan');
+  //     pm.response.to.have.jsonBody('data[0].statussales');
+  //     pm.response.to.have.jsonBody('data[0].tglgabung');
+  //     pm.response.to.have.jsonBody('data[0].ttd');
+  //     pm.response.to.have.jsonBody('data[0].uangmakan');
+  //     pm.response.to.have.jsonBody('data[0].kerajinan');
+  //     pm.response.to.have.jsonBody('data[0].limitkasbon');
+  //     pm.response.to.have.jsonBody('data[0].skend');
+  //     pm.response.to.have.jsonBody('data[0].gajipokok');
+  //     pm.response.to.have.jsonBody('data[0].kendaraan');
+  });
+  
+}

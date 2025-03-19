@@ -1,0 +1,21 @@
+meta {
+  name: Rpt Net Cash
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rptnetcash
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "202402"
+  }
+}

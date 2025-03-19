@@ -1,0 +1,21 @@
+meta {
+  name: purchase order_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid" : "CSI-PO/2023-030001"
+  }
+}

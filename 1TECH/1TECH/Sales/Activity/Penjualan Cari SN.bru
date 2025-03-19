@@ -1,0 +1,25 @@
+meta {
+  name: Penjualan Cari SN
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-sn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemid" : "99.999.023",
+      "suppidkeyword" : "",
+      "suppnamekeyword" : "",
+      "purchaseidkeyword" : "",
+      "snidkeyword" : "023225"
+  }
+}

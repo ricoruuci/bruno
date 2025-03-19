@@ -1,0 +1,24 @@
+meta {
+  name: Artikel
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/view/artikel
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"artikelid" : "",
+     "artikelidkeyword" : "",
+     "judulkeyword" : ""
+  
+  }
+}

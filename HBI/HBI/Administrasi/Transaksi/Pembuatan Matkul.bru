@@ -1,0 +1,28 @@
+meta {
+  name: Pembuatan Matkul
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/pembmatkul
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "transid" : "PMK/2025/002",
+     "dari" : "20250101",
+     "sampai" : "20250313",
+     "transidkeyword" : "",
+     "tahunkeyword" : "",
+     "psnamekeyword" : "",
+     "sortby" : "old"
+  
+  }
+}

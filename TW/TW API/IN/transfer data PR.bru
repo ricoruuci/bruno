@@ -1,0 +1,22 @@
+meta {
+  name: transfer data PR
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/transferdatapr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "lokasi" : "102",
+      "fgform" : "R"
+  }
+}

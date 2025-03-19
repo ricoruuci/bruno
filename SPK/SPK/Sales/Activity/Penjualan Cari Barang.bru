@@ -1,0 +1,23 @@
+meta {
+  name: Penjualan Cari Barang
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/penjualan/cari-barang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-SPK/2409/0001",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : ""
+  }
+}

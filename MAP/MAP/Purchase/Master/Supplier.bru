@@ -1,0 +1,24 @@
+meta {
+  name: Supplier
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/supplier
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"suppid": "A002",
+     "suppidkeyword" : "",
+     "suppnamekeyword" : "",
+     "active" : "ya"
+  }
+}

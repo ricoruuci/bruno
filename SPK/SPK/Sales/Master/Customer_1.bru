@@ -1,0 +1,28 @@
+meta {
+  name: Customer_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/customer
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "custname": "ILHAM TESTING",
+          "alamat": "Kartini raya",
+          "kota": "jakarta",
+          "telp": "021 55667788",
+          "contactperson" : "Ilham",
+          "limitpiutang": "500000000",
+          "termin": "30",
+          "note": ""
+  }
+}

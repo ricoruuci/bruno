@@ -1,0 +1,21 @@
+meta {
+  name: bank
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/bank
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "fgform" : "K" //kas = K, bank = B
+  }
+}

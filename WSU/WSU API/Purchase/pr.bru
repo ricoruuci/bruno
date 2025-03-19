@@ -1,0 +1,26 @@
+meta {
+  name: pr
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/pr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"prid" : "PRS23070173",
+      "oto" : 1,
+      "keyword" : "",
+      "saleskeyword" : "",
+      "jenis" : "all",
+      "sortby" : "dateold"
+  }
+}

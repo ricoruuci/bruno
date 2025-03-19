@@ -1,0 +1,21 @@
+meta {
+  name: Penjualan_3
+  type: http
+  seq: 14
+}
+
+delete {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "saleid" : "SPK24/XII/00002"
+  }
+}

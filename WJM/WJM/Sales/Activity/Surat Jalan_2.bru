@@ -1,0 +1,37 @@
+meta {
+  name: Surat Jalan_2
+  type: http
+  seq: 12
+}
+
+patch {
+  url: {{API_URL}}/suratjalan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "kontransbrgid" : "SJ/11/31/00001",
+      "saleid" : "WM/PN/17352",
+      "fginv" : "P",
+      "transdate" : "20250311",
+      "custid" : "DI001",
+      "supirid" : "A004",
+      "note" : "p",
+      "term" : 30,
+      "warehouseid" : "01GU",
+      "detail" : [
+          {
+              "itemid" : "10000009",
+              "qty" : 1,
+              "fgnum" : 236177
+              
+          }
+      ]    
+  }
+}

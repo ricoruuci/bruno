@@ -1,0 +1,26 @@
+meta {
+  name: Rpt SPK
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rptspk
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20240301",
+      "sampai" : "20240306",
+      "page" : "1",
+      "spkidkeyword" : "",
+      "tukangidkeyword" : "",
+      "tukangnamekeyword" : ""
+  }
+}

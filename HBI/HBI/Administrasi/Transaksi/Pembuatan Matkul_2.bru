@@ -1,0 +1,31 @@
+meta {
+  name: Pembuatan Matkul_2
+  type: http
+  seq: 15
+}
+
+patch {
+  url: {{API_URL}}/pembmatkul
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "PMK/2025/004",
+      "transdate" : "20250313",
+      "tahunid" : "2025-1",
+      "psid" : "PAK",
+      "note" : "tes note",
+      "detail" : [
+          {
+              "matkulid" : "MT008",
+              "bobot" : "2"
+          }
+      ]
+  }
+}

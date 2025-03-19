@@ -1,0 +1,32 @@
+meta {
+  name: Rpt Penjualan
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rptpenjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20231001",
+      "sampai" : "20231031",
+      "page" : "1",
+      "soidkeyword" : "",
+      "poidkeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "",
+      "custidkeyword" : "DP267",
+      "custnamekeyword" : "",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : "",
+      "sortby" : "new"
+  }
+}

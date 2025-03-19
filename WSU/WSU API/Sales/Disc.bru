@@ -1,0 +1,15 @@
+meta {
+  name: Disc
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/disc
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

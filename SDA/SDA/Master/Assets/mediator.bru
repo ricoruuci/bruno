@@ -1,0 +1,23 @@
+meta {
+  name: mediator
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{API_URL}}/mediator
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"mediatorid" : "MDT001",
+      "keyword" : "",
+      "sortby" : "id"
+  }
+}

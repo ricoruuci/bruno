@@ -1,0 +1,23 @@
+meta {
+  name: Item SO
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/itemso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-MAP/2204/0003",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : ""
+  }
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Rpt Sales Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rptsalesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"alldata" : "1",
+      "dari" : "20241101",
+      "sampai" : "20241130",
+      "soidkeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : "",
+      "sortby" : "new"
+  }
+}

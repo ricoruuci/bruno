@@ -1,0 +1,25 @@
+meta {
+  name: Rekening
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "rekeningidkeyword" : "",
+     "rekeningnamekeyword" : "",
+     "grouprekidkeyword" : "",
+     "groupreknamekeyword" : "",
+  
+  }
+}

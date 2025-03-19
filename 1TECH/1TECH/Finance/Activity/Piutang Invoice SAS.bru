@@ -1,0 +1,22 @@
+meta {
+  name: Piutang Invoice SAS
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{API_URL}}/piutang/invoicesas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "nomorar": "1Tech.23.02.0136",
+      "invoicekeyword" : "2"
+  }
+}

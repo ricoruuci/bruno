@@ -1,0 +1,30 @@
+meta {
+  name: SPK
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{API_URL}}/spk
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "spkid": "SPK/2401/0004",
+      "dari": "20240101",
+      "sampai": "20240929",
+      "spkidkeyword" : "",
+      "tukangidkeyword": "",
+      "tukangkeyword": "",
+      "nosjkeyword": "",
+      "poidkeyword" : "",
+      "sortby": "dateold"
+      
+  }
+}

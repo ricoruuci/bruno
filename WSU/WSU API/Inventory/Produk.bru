@@ -1,0 +1,22 @@
+meta {
+  name: Produk
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/produk
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+       //"productidkeyword" : "02GK",
+      // "productdesckeyword" : "GUDANG KALI MALANG"
+  }
+}

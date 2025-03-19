@@ -1,0 +1,22 @@
+meta {
+  name: otorisasi fin
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/otorisasifin
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "voucherid" : "ARB/01/2022/0001",
+      "fgoto" : "Y"
+  }
+}

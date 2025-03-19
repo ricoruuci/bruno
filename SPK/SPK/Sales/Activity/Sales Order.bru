@@ -1,0 +1,29 @@
+meta {
+  name: Sales Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-SPK/2410/0004",
+      "dari": "20231201",
+      "sampai": "20241201",
+      "soidkeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "Eko"
+      //"salesnamekeyword" : "rico"
+  }
+}

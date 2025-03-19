@@ -1,0 +1,30 @@
+meta {
+  name: Supplier_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/supplier
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "suppid": "S0003",
+     "suppname": "010.020-17.78785888",
+      "alamat": "GDG. PUSAT KOMPUTER HARCO MANGGA DUA, LANTAI 1 HALL TENGAH NO. M-29 JAKARTA PUSAT",
+      "kota": "JAKARTA",
+      "contact": "087884974126",
+      "telp": "021",
+      "fax": "-",
+      "email": "-",
+      "note": "",
+      "termin": "30"
+  }
+}

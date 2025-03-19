@@ -1,0 +1,21 @@
+meta {
+  name: Otorisasi Sales Order_1
+  type: http
+  seq: 21
+}
+
+patch {
+  url: {{API_URL}}/sales/otorisasiso
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-SPK/2407/0002"
+  }
+}
