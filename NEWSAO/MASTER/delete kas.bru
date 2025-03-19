@@ -1,0 +1,11 @@
+meta {
+  name: delete kas
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{API_URL}}/kas
+  body: json
+  auth: inherit
+}

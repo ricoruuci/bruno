@@ -1,0 +1,21 @@
+meta {
+  name: create kas
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{API_URL}}/kas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "KAS",
+    "name" : "KAS",
+    "coa_id" : 3,
+    "currency_id" : "1",
+    "note" : ""
+  }
+}

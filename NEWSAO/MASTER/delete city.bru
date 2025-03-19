@@ -1,0 +1,11 @@
+meta {
+  name: delete city
+  type: http
+  seq: 15
+}
+
+delete {
+  url: {{API_URL}}/city/1
+  body: json
+  auth: inherit
+}

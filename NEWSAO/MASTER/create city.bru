@@ -1,0 +1,18 @@
+meta {
+  name: create city
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{API_URL}}/city
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "TGR",
+    "name" : "TANGERANG"
+  }
+}

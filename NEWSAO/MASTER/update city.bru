@@ -1,0 +1,18 @@
+meta {
+  name: update city
+  type: http
+  seq: 14
+}
+
+patch {
+  url: {{API_URL}}/city/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "BGR",
+    "name" : "BOGOR"
+  }
+}
