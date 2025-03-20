@@ -1,18 +1,18 @@
 meta {
-  name: Penj Detil Barang SO
+  name: Rekap Penjualan
   type: http
-  seq: 20
+  seq: 21
 }
 
 get {
-  url: {{API_URL}}/rptpenjdetil
+  url: {{API_URL}}/rptpenjualan
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "sisa" : "Y",  
+    "jenis" : "S",  
     "dari": "20240101",
     "sampai": "20240231",
     "salesidkeyword": "",
