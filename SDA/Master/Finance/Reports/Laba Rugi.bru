@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/rptlabarugi
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       "dari" : 20240101,
-      "sampai" : 20240501
+      "sampai" : 20250321
   }   
 }

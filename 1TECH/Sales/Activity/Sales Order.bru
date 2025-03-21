@@ -7,11 +7,7 @@ meta {
 get {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -20,11 +16,11 @@ body:json {
       "oto": 1,
       //"alldata" : "Y",
       "dari": "20230101",
-      "sampai": "20230919",
+      "sampai": "20250321",
       "custid": "",
       "salesid": "",
-      "sortby": "old",
-      "keyword": "0080"
+      "sortby": "old"
+     // "keyword": "0080"
       
   }
 }
