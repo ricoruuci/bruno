@@ -1,0 +1,18 @@
+meta {
+  name: patch company
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/dev-company/7
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "code": "direktur",
+      "value": "ilham"
+  }
+}
