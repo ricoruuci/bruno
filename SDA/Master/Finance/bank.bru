@@ -7,18 +7,17 @@ meta {
 get {
   url: {{API_URL}}/bank
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       //"bankid" : "CM"
-      "dari" : z,
-      "sampai" : x
+      "bankidkeyword" : "",
+    "banknamekeyword" : "",
+    "sortby" : "id"
+  
+  
   
   }
 }

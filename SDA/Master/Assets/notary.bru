@@ -7,17 +7,14 @@ meta {
 get {
   url: {{API_URL}}/notary
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       //"notaryid" : "NTR001",
-      "keyword" : "",
+      "notaryidkeyword" : "",
+    "notarynamekeyword" : "",
       "sortby" : "id"
   }
 }

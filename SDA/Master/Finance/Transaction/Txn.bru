@@ -7,11 +7,7 @@ meta {
 get {
   url: {{API_URL}}/txnkkbb
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -19,11 +15,12 @@ body:json {
       //"voucherid" : "APB/23/04-0003",
       "dari" : 20250227,
       "sampai" : 20250227,
-      "fgtrans" : "BK"
-      //"keyword" : "",
-      //"actorkeyword" : "",
-     // "bankkeyword" : "",
-     // "notekeyword" : "",
-     // "sortby" : "id"
+      "fgtrans" : "BK",
+      "voucheridkeyword" : "",
+      "actorkeyword" : "",
+     "bankidkeyword" : "",
+    "banknamekeyword" : "",
+     "notekeyword" : "",
+     "sortby" : "id"
   }
 }
