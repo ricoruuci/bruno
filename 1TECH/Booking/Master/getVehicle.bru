@@ -1,0 +1,21 @@
+meta {
+  name: getVehicle
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/vehicle
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     //"vehicleid": "1TECH",
+     "vehicleidkeyword" : "",
+     "vehiclenamekeyword" : "",
+     "active" : "ya",
+     "sortby" : "id"
+  }
+}
