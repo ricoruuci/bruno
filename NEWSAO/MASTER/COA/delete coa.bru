@@ -1,0 +1,11 @@
+meta {
+  name: delete coa
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/coa/70
+  body: json
+  auth: inherit
+}

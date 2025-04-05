@@ -7,15 +7,11 @@ meta {
 get {
   url: {{API_URL}}/rptneraca
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "periode" : 20240530
+      "periode" : 20250530
   }   
 }

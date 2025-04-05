@@ -1,0 +1,11 @@
+meta {
+  name: delete warehouse
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/warehouse/3
+  body: json
+  auth: inherit
+}

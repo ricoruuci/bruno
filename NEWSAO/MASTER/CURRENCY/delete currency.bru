@@ -1,0 +1,11 @@
+meta {
+  name: delete currency
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/currency/4
+  body: json
+  auth: inherit
+}

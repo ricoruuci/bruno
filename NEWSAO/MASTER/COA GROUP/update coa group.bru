@@ -1,0 +1,19 @@
+meta {
+  name: update coa group
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/coa-group/24
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "01.01",
+    "name" : "BAHAN TEST",
+    "coa_type_id" : 1
+  }
+}
