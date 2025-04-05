@@ -7,19 +7,15 @@ meta {
 get {
   url: {{API_URL}}/rptkartustok
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       "dari" : "20240101",
-      "sampai" : "20241231",
+      "sampai" : "20250102",
      // "itemid" : "FGD.AR0009",
-     "loot" : "Y",
+     "loot" : "T",
       "warehouseid" : "01GU"
   }
 }

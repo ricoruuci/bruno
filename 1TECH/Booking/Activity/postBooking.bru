@@ -1,0 +1,30 @@
+meta {
+  name: postBooking
+  type: http
+  seq: 21
+}
+
+post {
+  url: {{API_URL}}/booking
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "bookby": "H005",
+      "transdate": "20250201",
+      "booktime": "15:30",
+    "origin" : "MDS",
+      "origindate": "20250311",
+      "destination": "Bandung",
+      "note": "",
+      "detail": [
+          {
+              "vehicleid": "VHCA001",
+              "driverid": "A012",
+              "note": ""
+          }
+      ]
+  }
+}

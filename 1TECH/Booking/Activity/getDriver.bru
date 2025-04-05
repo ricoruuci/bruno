@@ -1,0 +1,18 @@
+meta {
+  name: getDriver
+  type: http
+  seq: 23
+}
+
+get {
+  url: {{API_URL}}/booking/cari-driver
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "driveridkeyword": "",
+      "drivernamekeyword": ""
+  }
+}

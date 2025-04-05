@@ -7,11 +7,7 @@ meta {
 get {
   url: {{API_URL}}/rptstockakhir
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -20,6 +16,7 @@ body:json {
       "sampai" : "20250313",
       "warehouseid" : "",
       "productid" : "ASSET",
-      "stock" : "Y"
+      "stock" : "Y",
+    "per_page" : 1
   }
 }
