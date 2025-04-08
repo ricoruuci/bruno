@@ -1,18 +1,18 @@
 meta {
-  name: update city
+  name: update country
   type: http
   seq: 4
 }
 
 patch {
-  url: {{API_URL}}/city/3
+  url: {{API_URL}}/country/2
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "code" : "BGR",
-    "name" : "BOGOR"
+    "code" : "BRA",
+    "name" : "Brazil"
   }
 }

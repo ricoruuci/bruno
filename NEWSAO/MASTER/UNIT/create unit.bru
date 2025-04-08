@@ -1,0 +1,19 @@
+meta {
+  name: create unit
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/unit
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "RIM",
+    "name" : "RIM",
+    "tax_code" : "UM.034"
+  }
+}

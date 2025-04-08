@@ -1,0 +1,27 @@
+meta {
+  name: update vendor
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/vendor/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "SP001",
+    "name" : "NAMA VENDOR",
+    "country_id" : 1,
+    "city_id" : 1,
+    "person" : "Bapak A",
+    "email" : "BapakA@gmail.com",
+    "phone" : "1223334444",
+    "address" : "KARTINI RAYA",
+    "note" : "KETERANGAN",
+    "coa_debt" : 24,
+    "coa_accrued_debt" : 25
+  }
+}

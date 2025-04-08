@@ -1,0 +1,18 @@
+meta {
+  name: update customer type
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/dev-customer-type/11
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "11",
+    "name" : "11 - Pelanggan Asing"
+  }
+}

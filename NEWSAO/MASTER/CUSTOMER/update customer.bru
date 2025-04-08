@@ -1,0 +1,30 @@
+meta {
+  name: update customer
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/customer/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "CS001",
+    "name" : "NAMA CUSTOMER",
+    "tin_number" : "1234567890123456",
+    "nitku_number" : "1234567890123456000000",
+    "customer_type_id" : 4,
+    "country_id" : 1,
+    "city_id" : 1,
+    "person" : "HINDRA",
+    "email" : "shoen@satu-tech.com",
+    "phone" : "0811xxx",
+    "address" : "VILA TAMAN MERUYA",
+    "note" : "KETERANGAN",
+    "coa_receivable" : 5,
+    "coa_sales" : 34
+  }
+}
