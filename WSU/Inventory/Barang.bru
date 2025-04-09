@@ -7,11 +7,7 @@ meta {
 get {
   url: {{API_URL}}/barang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -21,6 +17,7 @@ body:json {
      // "typekeyword" : "NYM"
      // "merkkeyword" : "Akita"
       //"ukurankeyword" : "2x2.5"
-     //"itemnamekeyword" : "Akita NYM"
+     //"itemnamekeyword" : "Akita NYM",
+    "sortby" : "itemid"
   }
 }

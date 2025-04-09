@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/matkul
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "mkid" : "IT1",
+     //"mkid" : "IT1",
      "mkidkeyword" : "",
      "mknamekeyword" : ""
   
