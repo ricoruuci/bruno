@@ -1,0 +1,27 @@
+meta {
+  name: create vendor
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/vendor
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "S001",
+    "name" : "NAMA VENDOR",
+    "country_id" : 1,
+    "city_id" : 1,
+    "person" : "",
+    "email" : "",
+    "phone" : "",
+    "address" : "",
+    "note" : "",
+    "coa_debt" : 24,
+    "coa_accrued_debt" : 25
+  }
+}

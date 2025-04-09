@@ -1,0 +1,18 @@
+meta {
+  name: create tax item
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/dev-tax-item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "000001",
+    "name" : "MESIN & PERALATAN"
+  }
+}

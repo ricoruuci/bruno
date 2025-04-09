@@ -1,0 +1,18 @@
+meta {
+  name: create customer type
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/dev-customer-type
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "11",
+    "name" : "11 - Pelanggan Bukan Wilayah Indonesia"
+  }
+}

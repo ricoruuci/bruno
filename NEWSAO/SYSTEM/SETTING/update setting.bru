@@ -1,0 +1,36 @@
+meta {
+  name: update setting
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/setting
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "currency_id": "1",
+    "warehouse_id": "1",
+    "country_id": "1",
+    "city_id": "1",
+    "tax_amount": "0",
+    "rate": "1",
+    "coa_stock": "9",
+    "coa_cogs": "37",
+    "coa_accrued_debt": "25",
+    "coa_debt": "24",
+    "coa_vat_in": "8",
+    "coa_vat_out": "26",
+    "coa_sales": "34",
+    "coa_receivable": "5",
+    "coa_ap_return": "27",
+    "coa_ap_accrued_return": "10",
+    "coa_ar_return": "36",
+    "coa_ar_accrued_return": "11",
+    "coa_adjustment": "71",
+    "coa_transfer": "12"
+  }
+}

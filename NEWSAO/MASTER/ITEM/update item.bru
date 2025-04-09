@@ -1,0 +1,22 @@
+meta {
+  name: update item
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/item/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code" : "100.100.001",
+    "name" : "DYNABOOK SATELLITE J",
+    "unit_id" : 17,
+    "tax_opt" : "B",
+    "tax_item_id" : 1,
+    "note" : "KETERANGAN"
+  }
+}
