@@ -7,15 +7,11 @@ meta {
 get {
   url: {{API_URL}}/bank
   body: json
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
   ~fgactive: 'T'
-}
-
-auth:bearer {
-  token: {{token}}
 }
 
 body:json {
