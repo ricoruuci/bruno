@@ -5,11 +5,11 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/warehouse/01GU
-  body: none
-  auth: bearer
+  url: {{API_URL}}/warehouse?alldata=1
+  body: json
+  auth: inherit
 }
 
-auth:bearer {
-  token: {{token}}
+params:query {
+  alldata: 1
 }
