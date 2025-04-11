@@ -1,0 +1,22 @@
+meta {
+  name: klaimkomisi_1
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/klaimkomisioto
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid": "NKK/2024/0001",
+      "fgoto": "W"
+  }
+}
