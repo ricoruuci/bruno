@@ -1,19 +1,18 @@
 meta {
-  name: Buku Besar
+  name: Laba Rugi
   type: http
-  seq: 1
+  seq: 2
 }
 
 get {
-  url: {{API_URL}}/rptbukubesar
+  url: {{API_URL}}/rptlabarugi
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "rekeningid": "",
       "dari" : 20250101,
       "sampai" : 20250411
-  }
+  }   
 }
