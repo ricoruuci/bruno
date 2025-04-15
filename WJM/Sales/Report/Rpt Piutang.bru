@@ -1,0 +1,21 @@
+meta {
+  name: Rpt Piutang
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rptpiutang
+  body: json
+  auth: inherit
+}
+
+body:json {
+   {
+     "alldata" : 1,
+      "transdate" : "20250415"
+       
+   }
+  
+  
+}
