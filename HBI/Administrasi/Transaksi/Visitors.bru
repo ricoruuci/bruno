@@ -1,0 +1,15 @@
+meta {
+  name: Visitors
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{API_URL}}/view/visitors
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
