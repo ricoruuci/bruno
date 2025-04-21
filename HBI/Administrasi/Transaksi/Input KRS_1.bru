@@ -1,11 +1,11 @@
 meta {
-  name: Pembuatan Matkul
+  name: Input KRS_1
   type: http
-  seq: 23
+  seq: 13
 }
 
 get {
-  url: {{API_URL}}/pembmatkul
+  url: {{API_URL}}/krs
   body: json
   auth: inherit
 }
@@ -13,12 +13,13 @@ get {
 body:json {
   {
      //"transid" : "PMK/2025/002",
-    //"oto" : 1,
      "dari" : "20250101",
      "sampai" : "20250313",
      "transidkeyword" : "",
      "tahunkeyword" : "",
      "psnamekeyword" : "",
+    "mhsnamekeyword" : "",
+    "mhsidkeyword" : "",
      "sortby" : "old"
   
   }

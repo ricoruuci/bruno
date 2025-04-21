@@ -1,22 +1,23 @@
 meta {
-  name: Pembuatan Matkul_1
+  name: Input Jadwal_3
   type: http
-  seq: 24
+  seq: 20
 }
 
-post {
-  url: {{API_URL}}/pembmatkul
+patch {
+  url: {{API_URL}}/jadwal
   body: json
   auth: inherit
 }
 
 body:json {
   {
-  //  "transid" : "",
+      "transid" : "JDW/2025/001",
       "transdate" : "20250313",
       "tahunid" : "2025-1",
       "psid" : "PAK",
       "note" : "tes note",
+    "dosenid" : "CH001",
       "detail" : [
           {
               "mkid" : "MT008",
