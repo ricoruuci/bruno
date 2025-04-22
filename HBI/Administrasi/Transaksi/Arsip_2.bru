@@ -1,0 +1,17 @@
+meta {
+  name: Arsip_2
+  type: http
+  seq: 36
+}
+
+delete {
+  url: {{API_URL}}/arsip
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "id" : "1"
+  }
+}
