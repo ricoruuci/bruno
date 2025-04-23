@@ -7,16 +7,12 @@ meta {
 patch {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "soid": "SO/202311/0001",
+      "soid": "SOM/202411/0009",
       "custid": "CNP350",
       "salesid": "D013",
       "transdate": "20231130",
@@ -28,6 +24,7 @@ body:json {
       "fob": "Jakarta",
       "nilaitax": 11,
       "fgtax": "Y",
+    "termin":30,
       "detail": [
           {
               "itemid": "14.1013.002",
