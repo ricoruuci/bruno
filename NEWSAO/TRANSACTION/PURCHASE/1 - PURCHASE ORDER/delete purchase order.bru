@@ -1,0 +1,11 @@
+meta {
+  name: delete purchase order
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/purchase-order/1
+  body: json
+  auth: inherit
+}

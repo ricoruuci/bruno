@@ -1,0 +1,11 @@
+meta {
+  name: get goods receiving by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/goods-receiving/1
+  body: json
+  auth: inherit
+}

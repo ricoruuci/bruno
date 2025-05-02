@@ -1,0 +1,11 @@
+meta {
+  name: delete sales return
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/sales-return/1
+  body: json
+  auth: inherit
+}

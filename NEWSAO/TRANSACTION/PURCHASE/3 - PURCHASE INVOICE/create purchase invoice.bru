@@ -1,0 +1,38 @@
+meta {
+  name: create purchase invoice
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/purchase-invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number" : "PI/2025/04/15",
+    "purchase_order_id" : 1,
+    "tx_date" : "2025-04-15",
+    "vendor_id" : 1,
+    "tax_amount" : 11,
+    "currency_id" : 1,
+    "rate" : 1,
+    "coa_debt" : 24,
+    "coa_accrued_debt" : 25,
+    "coa_vat_in" : 8,
+    "detail" : [
+      {
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000
+      },
+      {
+        "item_id" : 2,
+        "qty" : 2,
+        "price" : 50000
+      }
+    ]
+  }
+}

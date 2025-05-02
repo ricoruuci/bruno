@@ -6,6 +6,21 @@ meta {
 
 get {
   url: {{API_URL}}/vendor
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "vendor" : "",
+      "city" : "",
+      "country" : ""
+    },
+    "sort_by" : {
+      "field" : "vendor.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
 }

@@ -1,0 +1,45 @@
+meta {
+  name: update sales invoice
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/sales-invoice/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number" : "INV/2025/04/01",
+    "tx_date" : "2025-04-21",
+    "sales_order_id" : 1,
+    "customer_id" : 1,
+    "tax_amount" : 11,
+    "currency_id" : 1,
+    "rate" : 1,
+    "coa_sales" : 34,
+    "coa_receivable" : 5,
+    "coa_vat_out" : 26,
+    "detail" : [
+      {
+        "status" : "update",
+        "id" : 1,
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000
+      },
+      {
+        "status" : "delete",
+        "id" : 2
+      },
+      {
+        "status" : "insert",
+        "item_id" : 2,
+        "qty" : 2,
+        "price" : 50000
+      }
+    ]
+  }
+}

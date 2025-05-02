@@ -1,0 +1,11 @@
+meta {
+  name: delete purchase invoice
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/purchase-invoice/2
+  body: json
+  auth: inherit
+}

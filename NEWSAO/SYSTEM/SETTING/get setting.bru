@@ -6,6 +6,17 @@ meta {
 
 get {
   url: {{API_URL}}/setting
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "currency_id" : 1,
+    "currency_code" : "IDR",
+    "currency_name" : "RUPIAH",
+    "warehouse_id" : 1,
+    "warehouse_code" : "01GU",
+    "warehouse_name" : "GUDANG UTAMA"
+  }
 }

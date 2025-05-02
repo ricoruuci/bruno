@@ -1,0 +1,27 @@
+meta {
+  name: get sales invoice
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/sales-invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "start_date" : "2025-01-01",
+    "end_date" : "2025-12-31",
+    "filter" : {
+      "sales_order" : "",
+      "sales_invoice" : ""
+    },
+    "sort_by" : {
+      "field" : "sales_invoice.number",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
+}

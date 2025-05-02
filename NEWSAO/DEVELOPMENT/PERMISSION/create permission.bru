@@ -1,0 +1,20 @@
+meta {
+  name: create permission
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/dev-permission
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code": "AAA",
+    "name": "SYSTEM",
+    "parent_id": 1,
+    "is_menu": "Y"
+  }
+}

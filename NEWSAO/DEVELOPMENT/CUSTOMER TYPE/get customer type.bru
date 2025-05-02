@@ -6,6 +6,19 @@ meta {
 
 get {
   url: {{API_URL}}/dev-customer-type
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "customer_type" : ""
+    },
+    "sort_by" : {
+      "field" : "customer_type.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
 }

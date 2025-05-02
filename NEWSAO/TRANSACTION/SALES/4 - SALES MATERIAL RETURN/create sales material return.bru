@@ -1,0 +1,38 @@
+meta {
+  name: create sales material return
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/sales-material-return
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number" : "SMR/2025/04/01",
+    "tx_date" : "2025-04-21",
+    "sales_invoice_id" : 1,
+    "customer_id" : 1,
+    "currency_id" : 1,
+    "rate" : 1,
+    "coa_stock" : 9,
+    "coa_ar_accrued_return" : 10,
+    "detail" : [
+      {
+        "warehouse_id" : 1,
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000
+      },
+      {
+        "warehouse_id" : 1,
+        "item_id" : 2,
+        "qty" : 2,
+        "price" : 50000
+      }
+    ]
+  }
+}
