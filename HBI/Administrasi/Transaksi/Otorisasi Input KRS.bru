@@ -1,0 +1,18 @@
+meta {
+  name: Otorisasi Input KRS
+  type: http
+  seq: 17
+}
+
+patch {
+  url: {{API_URL}}/krs/otorisasi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transid" : "KRS/2025/001",
+      "fgoto" : "Y"
+  }
+}

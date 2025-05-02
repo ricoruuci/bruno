@@ -5,13 +5,9 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/barang
+  url: {{API_URL}}/barangbiaya
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {

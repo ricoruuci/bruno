@@ -5,11 +5,7 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/warehouse/01GU
-  body: none
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  url: {{API_URL}}/warehouse
+  body: json
+  auth: inherit
 }

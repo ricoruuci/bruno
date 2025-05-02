@@ -7,11 +7,7 @@ meta {
 post {
   url: {{API_URL}}/berita
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -19,6 +15,9 @@ body:json {
    "judul" : "DATA MINING" ,
    "note" : "",
   "note1" : "",
-   "foto" : ""
+   "foto" : "",
+    "foto1" : "",
+    "foto2" : "",
+    "filearsip" : ""
   }
 }

@@ -1,0 +1,32 @@
+meta {
+  name: Piutang_1
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{API_URL}}/piutang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      //"paymentid": "AR/TC-K/24/03/0001",
+      "flag": "K",
+      "transdate": "20240304",
+      "tglcair": "20240304",
+      "custid": "CSP039",
+      "note": "",
+      "nobgcek": "",
+      "bankid": "",
+      "detail": [
+          {
+              "nomorar": "AP-SAS/23/01/0003",
+              "amount": "200000.0000",
+              "rekeningid": "210100.0001",
+              "invoice" : ""
+          }
+      ]
+  }
+}

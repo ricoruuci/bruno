@@ -1,0 +1,26 @@
+meta {
+  name: Input Jadwal_1
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{API_URL}}/jadwal
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     //"transid" : "PMK/2025/002",
+     "dari" : "20250101",
+     "sampai" : "20250313",
+     "transidkeyword" : "",
+     "tahunkeyword" : "",
+     "psnamekeyword" : "",
+    "dosenamekeyword" : "",
+    "dosenidkeyword" : "",
+     "sortby" : "old"
+  
+  }
+}

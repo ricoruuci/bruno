@@ -1,0 +1,20 @@
+meta {
+  name: rekening
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "rekeningidkeyword" : "",
+      "rekeningnamekeyword" : "",
+      "grouprekidkeyword" : "",
+      "groupreknamekeyword" : ""
+  }
+}

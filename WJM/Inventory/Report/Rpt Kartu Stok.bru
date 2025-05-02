@@ -1,0 +1,20 @@
+meta {
+  name: Rpt Kartu Stok
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/rptkartustok
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "dari" : "20220101",
+      "sampai" : "20220102",
+     // "itemid" : "10000048",
+      "warehouseid" : "01GU"
+  }
+}

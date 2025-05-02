@@ -7,11 +7,7 @@ meta {
 patch {
   url: {{API_URL}}/txnkkbb
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -19,7 +15,7 @@ body:json {
       "voucherid": "BK/24/08-0001", 
       "transdate": "20240813",
       "actor": "Rico Bahari",
-      "bankid": "BCA",
+      "bankid": "1.002.001",
       "note": "Tarik Tunai OCBC",
       "currid": "IDR",
       "fgtrans" : "BK",
@@ -31,13 +27,19 @@ body:json {
               "rekeningid": "1.003.001",
               "note": "SAS.23.03.011",
               "amount": "2000000.0000",
-              "jenis": "D"
+              "jenis": "D",
+            "assetsid": "",
+              "flag" : "",
+              "kreditorid": ""
           },
           {
               "rekeningid": "1.003.001",
               "note": "SAS.23.03.011",
               "amount": "0.0000",
-              "jenis": "D"
+              "jenis": "D",
+            "assetsid": "",
+              "flag" : "",
+              "kreditorid": ""
           }
       ]
   }

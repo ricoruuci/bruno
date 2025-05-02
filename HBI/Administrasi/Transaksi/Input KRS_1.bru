@@ -1,0 +1,26 @@
+meta {
+  name: Input KRS_1
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/krs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     //"transid" : "PMK/2025/002",
+     "dari" : "20250101",
+     "sampai" : "20250313",
+     "transidkeyword" : "",
+     "tahunkeyword" : "",
+     "psnamekeyword" : "",
+    "mhsnamekeyword" : "",
+    "mhsidkeyword" : "",
+     "sortby" : "old"
+  
+  }
+}

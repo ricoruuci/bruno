@@ -1,0 +1,18 @@
+meta {
+  name: Otorisasi Input Jadwal
+  type: http
+  seq: 22
+}
+
+patch {
+  url: {{API_URL}}/jadwal/otorisasi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transid" : "JDW/2025/002",
+      "fgoto" : "Y"
+  }
+}

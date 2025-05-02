@@ -1,0 +1,15 @@
+meta {
+  name: Arsip umum
+  type: http
+  seq: 34
+}
+
+get {
+  url: {{API_URL}}/view/arsip
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

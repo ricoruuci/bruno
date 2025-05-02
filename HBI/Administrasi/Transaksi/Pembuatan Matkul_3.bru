@@ -1,21 +1,17 @@
 meta {
   name: Pembuatan Matkul_3
   type: http
-  seq: 16
+  seq: 28
 }
 
 delete {
   url: {{API_URL}}/pembmatkul
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "transid" : "PMK/2025/004"
+     "transid" : "PMK/2025/002"
   }
 }

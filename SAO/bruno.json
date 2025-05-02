@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "SAO",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

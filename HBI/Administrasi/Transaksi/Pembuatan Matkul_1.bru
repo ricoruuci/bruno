@@ -1,17 +1,13 @@
 meta {
   name: Pembuatan Matkul_1
   type: http
-  seq: 14
+  seq: 24
 }
 
 post {
   url: {{API_URL}}/pembmatkul
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -23,7 +19,7 @@ body:json {
       "note" : "tes note",
       "detail" : [
           {
-              "matkulid" : "MT008",
+              "mkid" : "MT008",
               "bobot" : "2"
           }
       ]

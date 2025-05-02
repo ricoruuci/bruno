@@ -1,0 +1,25 @@
+meta {
+  name: Rpt Stock Akhir Excel
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/rptstock
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      
+      "transdate": "20250422",
+      "itemidkeyword": "",
+      "itemnamekeyword": "", 
+      "groupidkeyword": "",
+      "groupdesckeyword": "",
+      "productidkeyword": "",
+      "productdesckeyword": ""
+  
+  }
+}
