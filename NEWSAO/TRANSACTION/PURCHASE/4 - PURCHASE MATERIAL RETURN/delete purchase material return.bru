@@ -1,0 +1,11 @@
+meta {
+  name: delete purchase material return
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/purchase-material-return/1
+  body: json
+  auth: inherit
+}

@@ -6,6 +6,21 @@ meta {
 
 get {
   url: {{API_URL}}/customer
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "customer" : "",
+      "city" : "",
+      "country" : ""
+    },
+    "sort_by" : {
+      "field" : "customer.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
 }

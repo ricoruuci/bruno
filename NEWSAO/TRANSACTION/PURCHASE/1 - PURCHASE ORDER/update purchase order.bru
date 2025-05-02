@@ -1,0 +1,41 @@
+meta {
+  name: update purchase order
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/purchase-order/2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number" : "PO/2025/04/15",
+    "tx_date" : "2025-04-15",
+    "vendor_id" : 1,
+    "tax_amount" : 11,
+    "currency_id" : 1,
+    "rate" : 1,
+    "detail" : [
+      {
+        "status" : "update",
+        "id" : 1,
+        "item_id" : 1,
+        "qty" : 2,
+        "price" : 50000
+      },
+      {
+        "status" : "delete",
+        "id" : 2
+      },
+      {
+        "status" : "insert",
+        "item_id" : 3,
+        "qty" : 2,
+        "price" : 50000
+      }
+    ]
+  }
+}

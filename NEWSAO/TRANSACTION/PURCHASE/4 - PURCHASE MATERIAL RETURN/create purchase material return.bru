@@ -1,0 +1,38 @@
+meta {
+  name: create purchase material return
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/purchase-material-return
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number" : "PMR/2025/04/15",
+    "purchase_invoice_id" : 2,
+    "tx_date" : "2025-04-15",
+    "vendor_id" : 1,
+    "currency_id" : 1,
+    "rate" : 1,
+    "coa_ap_accrued_return" : 10,
+    "coa_stock" : 1,
+    "detail" : [
+      {
+        "warehouse_id" : 1,
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000
+      },
+      {
+        "warehouse_id" : 1,
+        "item_id" : 2,
+        "qty" : 2,
+        "price" : 50000
+      }
+    ]
+  }
+}

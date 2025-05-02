@@ -1,0 +1,45 @@
+meta {
+  name: update purchase goods return
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/purchase-goods-return/2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number" : "PO/2025/04/15",
+    "purchase_material_return_id" : 1,
+    "tx_date" : "2025-04-15",
+    "vendor_id" : 1,
+    "currency_id" : 1,
+    "rate" : 1,
+    "coa_ap_accrued_return" : 10,
+    "coa_stock" : 9,
+    "detail" : [
+      {
+        "status" : "update",
+        "id" : 3,
+        "warehouse_id" : 1,
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000
+      },
+      {
+        "status" : "delete",
+        "id" : 2
+      },
+      {
+        "status" : "insert",
+        "warehouse_id" : 1,
+        "item_id" : 2,
+        "qty" : 2,
+        "price" : 50000
+      }
+    ]
+  }
+}

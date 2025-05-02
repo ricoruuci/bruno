@@ -6,6 +6,19 @@ meta {
 
 get {
   url: {{API_URL}}/coa-group
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "coa_group" : ""
+    },
+    "sort_by" : {
+      "field" : "coa_group.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
 }

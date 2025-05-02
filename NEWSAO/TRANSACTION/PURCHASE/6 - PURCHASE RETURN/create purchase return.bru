@@ -1,0 +1,38 @@
+meta {
+  name: create purchase return
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/purchase-return
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number": "PO/2025/04/15",
+    "tx_date": "2025-04-15",
+    "purchase_material_return_id": 1,
+    "vendor_id": 1,
+    "tax_amount": 11,
+    "currency_id": 1,
+    "rate": 1,
+    "coa_ap_accrued_return": 10,
+    "coa_ap_return": 27,
+    "coa_vat_in": 8,
+    "detail": [
+      {
+        "item_id": 1,
+        "qty": 1,
+        "price": 50000
+      },
+      {
+        "item_id": 2,
+        "qty": 2,
+        "price": 50000
+      }
+    ]
+  }
+}

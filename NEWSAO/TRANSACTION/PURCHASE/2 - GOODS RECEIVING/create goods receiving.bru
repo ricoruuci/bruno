@@ -1,0 +1,38 @@
+meta {
+  name: create goods receiving
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/goods-receiving
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number" : "GRN/2025/04/15",
+    "purchase_order_id" : 1,
+    "tx_date" : "2025-04-15",
+    "vendor_id" : 1,
+    "currency_id" : 1,
+    "rate" : 1,
+    "coa_stock" : 9,
+    "coa_accrued_debt" : 25,
+    "detail" : [
+      {
+        "warehouse_id" : 1,
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000
+      },
+      {
+        "warehouse_id" : 1,
+        "item_id" : 2,
+        "qty" : 2,
+        "price" : 50000
+      }
+    ]
+  }
+}

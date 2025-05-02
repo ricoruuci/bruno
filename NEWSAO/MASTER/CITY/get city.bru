@@ -6,6 +6,19 @@ meta {
 
 get {
   url: {{API_URL}}/city
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "city" : ""
+    },
+    "sort_by" : {
+      "field" : "city.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
 }

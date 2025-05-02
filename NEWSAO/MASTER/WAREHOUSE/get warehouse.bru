@@ -6,6 +6,19 @@ meta {
 
 get {
   url: {{API_URL}}/warehouse
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "warehouse" : ""
+    },
+    "sort_by" : {
+      "field" : "warehouse.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
 }

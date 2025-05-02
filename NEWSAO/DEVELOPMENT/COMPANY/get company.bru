@@ -9,3 +9,16 @@ get {
   body: json
   auth: inherit
 }
+
+body:json {
+  {
+    "filter" : {
+      "company" : ""
+    },
+    "sort_by" : {
+      "field" : "company.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
+}

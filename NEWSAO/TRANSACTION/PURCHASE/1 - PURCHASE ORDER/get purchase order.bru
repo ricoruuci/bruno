@@ -1,0 +1,26 @@
+meta {
+  name: get purchase order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/purchase-order
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "start_date" : "2025-01-01",
+    "end_date" : "2025-12-31",
+    "filter" : {
+      "purchase_order" : ""
+    },
+    "sort_by" : {
+      "field" : "purchase_order.number",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
+}

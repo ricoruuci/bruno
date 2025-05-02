@@ -1,0 +1,25 @@
+meta {
+  name: get user role
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/user-role
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "user" : "",
+      "role" : ""
+    },
+    "sort_by" : {
+      "field" : "role.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
+}

@@ -1,0 +1,25 @@
+meta {
+  name: get role permission
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/role-permission
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "role" : "",
+      "permission" : ""
+    },
+    "sort_by" : {
+      "field" : "role.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
+}

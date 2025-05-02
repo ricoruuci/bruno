@@ -12,6 +12,13 @@ get {
 
 body:json {
   {
-    "alldata" : 1
+    "filter" : {
+      "coa_type" : ""
+    },
+    "sort_by" : {
+      "field" : "coa_type.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
   }
 }

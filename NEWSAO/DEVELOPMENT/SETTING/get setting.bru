@@ -6,6 +6,19 @@ meta {
 
 get {
   url: {{API_URL}}/dev-setting
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "setting" : ""
+    },
+    "sort_by" : {
+      "field" : "setting.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
 }

@@ -1,0 +1,45 @@
+meta {
+  name: update goods receiving
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/goods-receiving/2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "number" : "GRN/2025/04/15",
+    "purchase_order_id" : 1,
+    "tx_date" : "2025-04-15",
+    "vendor_id" : 1,
+    "currency_id" : 1,
+    "rate" : 1,
+    "coa_stock" : 9,
+    "coa_accrued_debt" : 25,
+    "detail" : [
+      {
+        "id" : 1,
+        "status" : "update",
+        "warehouse_id" : 1,
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000
+      },
+      {
+        "id" : 2,
+        "status" : "delete"
+      },
+      {
+        "status" : "insert",
+        "warehouse_id" : 1,
+        "item_id" : 2,
+        "qty" : 2,
+        "price" : 50000
+      }     
+    ]
+  }
+}

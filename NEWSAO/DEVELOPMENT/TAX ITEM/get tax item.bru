@@ -6,6 +6,19 @@ meta {
 
 get {
   url: {{API_URL}}/dev-tax-item
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "filter" : {
+      "tax_item" : ""
+    },
+    "sort_by" : {
+      "field" : "tax_item.code",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
 }
