@@ -7,19 +7,16 @@ meta {
 patch {
   url: {{API_URL}}/user
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       "userid" : "albob",
+    "password" : "1234",
       "kdgroup" : "admin",
       "fghpp" : "T",
       "fgsales" : "T",
-      "fgcabang" : "T"
+      "fgcabang" : "P"
   }
 }

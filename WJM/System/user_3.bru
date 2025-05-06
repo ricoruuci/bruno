@@ -7,15 +7,11 @@ meta {
 delete {
   url: {{API_URL}}/user
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "userid" : "rakaa"
+      "userid" : "albob"
   }
 }
