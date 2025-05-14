@@ -1,0 +1,21 @@
+meta {
+  name: Kartu Piutang
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{API_URL}}/rptkartupiutang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "sisa" : "Y",
+    "mutasi" : "Y",
+    "custid" : "",
+    "koninvpelid" : "",
+    "sampai": "20250514"
+  }
+}
