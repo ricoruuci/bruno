@@ -1,0 +1,17 @@
+meta {
+  name: group user_2
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{API_URL}}/security/group
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "kdgroup" : "tes"
+  }
+}

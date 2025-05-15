@@ -1,11 +1,11 @@
 meta {
-  name: Cari Matkul Input Jadwal
+  name: Cari Matkul Input krs
   type: http
-  seq: 19
+  seq: 13
 }
 
 get {
-  url: {{API_URL}}/jadwal/carimatkul
+  url: {{API_URL}}/krs/carimatkul
   body: json
   auth: inherit
 }
@@ -15,7 +15,7 @@ body:json {
      //"transid" : "PMK/2025/002",
      "tahunid" : "2021-2",
     "psid" : "PAK",
-     "dosenid" : "CH001"
+     "mhsid" : "CH001"
   
   }
 }

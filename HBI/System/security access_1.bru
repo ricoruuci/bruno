@@ -1,0 +1,17 @@
+meta {
+  name: security access_1
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/security
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "kdgroup" : "admin"
+  }
+}
