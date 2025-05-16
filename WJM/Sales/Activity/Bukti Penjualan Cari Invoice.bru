@@ -1,0 +1,23 @@
+meta {
+  name: Bukti Penjualan Cari Invoice
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/penjualan/bukti/cari-invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  
+      "saleidkeyword" : "",
+      "custidkeyword" : "",
+     "custnamekeyword" : "",
+     "salesidkeyword" : "",
+    "salesnamekeyword" : ""
+      
+  }
+}
