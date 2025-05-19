@@ -7,21 +7,17 @@ meta {
 get {
   url: {{API_URL}}/suratjalan
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     //"kontransbrgid": "SJ/2024/04/0002",
+     "kontransbrgid": "SJ/19/51/00001",
      //"/keyword" : "SJ/2024",
-      "saleidkeyword": "WM/PN/17352",
+      "saleidkeyword": "",
       "fginv" : "P",
-       "dari" : "20210101",
-       "sampai" : "20251205"
+       "dari" : "20250519",
+       "sampai" : "20250519"
        //"custnamekeyword" : "bambang",
        //"sortby" : "id",
        //"custidkeyword" : "",
