@@ -1,0 +1,25 @@
+meta {
+  name: Penjualan Cari PI
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/penjualan/caripi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid": "SO-MAP/2406/0005",
+     "custid": "DB031",
+     "nopikeyword" : "",
+     "poidkeyword" : "" 
+  
+  }
+}
