@@ -1,0 +1,23 @@
+meta {
+  name: Summary Order
+  type: http
+  seq: 25
+}
+
+get {
+  url: {{API_URL}}/rptsummaryorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "sisa" : "Y",  
+    "dari": "20240101",
+    "sampai": "20240231",
+    "salesidkeyword": "",
+    "salesnamekeyword": "",
+    "custidkeyword": "",
+    "custnamekeyword": ""
+  }
+}
