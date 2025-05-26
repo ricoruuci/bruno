@@ -7,15 +7,16 @@ meta {
 get {
   url: {{API_URL}}/rptpiutang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "transdate" : "20230112"
+      "dari" : "20250101",
+    "sampai" : "20250526",
+    "custidkeyword" : "",
+    "custnamekeyword" : "",
+    "salesidkeyword" : "",
+    "salesnamekeyword" : ""
   }
 }
