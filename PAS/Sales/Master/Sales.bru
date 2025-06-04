@@ -1,0 +1,25 @@
+meta {
+  name: Sales
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"salesid": "A002",
+     "salesidkeyword" : "",
+     "salesnamekeyword" : "",
+     "active" : "ya",
+     "sortby" : "salesid"
+  }
+}

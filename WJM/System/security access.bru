@@ -7,11 +7,7 @@ meta {
 patch {
   url: {{API_URL}}/security
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -35,7 +31,11 @@ body:json {
           },
           {
               "kdmenu": "1230300000"
-          }
+          },
+        {
+          "kdmenu": "1710100000"
+        }
+        
   ]
   }
 }

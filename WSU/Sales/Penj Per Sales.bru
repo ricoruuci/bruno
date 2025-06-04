@@ -7,17 +7,13 @@ meta {
 get {
   url: {{API_URL}}/rptpenjpersales
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "dari" : "20230112",
-      "sampai" : "20240101",
-      "saleskeyword" : "Iwan"
+      "dari" : "20210112",
+      "sampai" : "20250505"
+  //     "saleskeyword" : "Iwan"
   }
 }

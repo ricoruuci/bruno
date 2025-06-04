@@ -7,16 +7,12 @@ meta {
 post {
   url: {{API_URL}}/sales
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "salesname" : "salesname",
+     "salesname" : "albob",
      "alamat" : "address",
      "telp" : "telp",
      "hp" : "hp",

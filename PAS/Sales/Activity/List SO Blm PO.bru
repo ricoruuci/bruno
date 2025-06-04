@@ -1,0 +1,23 @@
+meta {
+  name: List SO Blm PO
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/listsoblmpo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate": "20241112",
+      "custnamekeyword" : "",
+      "soidkeyword" : ""
+  }
+}

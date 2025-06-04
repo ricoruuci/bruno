@@ -7,18 +7,14 @@ meta {
 patch {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "soid" : "SO/AGS/2209/0002",
+      "soid" : "SO/AAE/2505/0002",
       "custid" : "AAE",
-      "transdate" : "20230814",
+      "transdate" : "20250519",
       "pocust" : "",
       "salesid" : "DG",
       "nodn" : "",
@@ -34,7 +30,7 @@ body:json {
       "nilaipajak" : 11,
       "fgpph" : "T",
       "nilaipph" : 0,
-      "fgbiaya" : "T",
+      "fgbiaya" : "Y",
       "kddiscount" : "",
       "fgtrans" : "T",
       "disc1" : 0,
@@ -45,15 +41,16 @@ body:json {
       "reqdeliverydate" : "20250318",
       "detail" : [
           {
-              "itemid" : "FGD.PO0072",
-              "totalqty" : 200,
-              "qty" : 200,
+              "itemid" : "FGD.WI1602",
+              "totalqty" : 800,
+              "qty" : 24,
               "discitem" : 0,
-              "note" : "",
+              "note" : "aaa",
               "uomid" : "Roll",
-              "harga" : 3003,
-              "hargainput" : 3003,
-              "qty2" : 0,
+              "harga" : 7500,
+              "hargainput" : 7500,
+              "qty2" : 200,
+              "persenup" : 0,
               "tgldelivery" : "20230830"
           }
       ]    

@@ -7,18 +7,14 @@ meta {
 post {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "soid" : "SO/AGS/2209/0002",
+      "soid" : "SO/AAE/2505/0001",
       "custid" : "AAE",
-      "transdate" : "20241021",
+      "transdate" : "20250519",
       "pocust" : "",
       "salesid" : "DG",
       "nodn" : "",
@@ -45,9 +41,9 @@ body:json {
       "reqdeliverydate" : "20250318",
       "detail" : [
           {
-              "itemid" : "FGD.AK0001",
+              "itemid" : "FGD.WI1602",
               "totalqty" : 800,
-              "qty" : 4,
+              "qty" : 24,
               "discitem" : 0,
               "note" : "aaa",
               "uomid" : "Roll",

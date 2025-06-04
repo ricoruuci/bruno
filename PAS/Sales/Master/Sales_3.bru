@@ -1,0 +1,21 @@
+meta {
+  name: Sales_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "salesid" : "S002"
+  }
+}
