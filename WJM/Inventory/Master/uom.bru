@@ -1,21 +1,17 @@
 meta {
   name: uom
   type: http
-  seq: 2
+  seq: 9
 }
 
 get {
-  url: {{API_URL}}/item/cariuom
+  url: {{API_URL}}/uom
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "itemid": "10000181"
+      "uomidkeyword": ""
   }
 }
