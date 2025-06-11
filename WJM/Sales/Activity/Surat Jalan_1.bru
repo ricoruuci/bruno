@@ -7,18 +7,14 @@ meta {
 post {
   url: {{API_URL}}/suratjalan
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       "saleid" : "WM/PN/17352",
       "fginv" : "P",
-      "transdate" : "20250311",
+      "transdate" : "20250611",
       "custid" : "DI001",
       "supirid" : "A004",
       "note" : "ss",

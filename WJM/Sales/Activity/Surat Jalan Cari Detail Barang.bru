@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/suratjalan/cari-detail
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "saleid" : "WM/PN/17352",
+      "saleid" : "SRG/PN/0589",
       "itemidkeyword" : "",
       "itemnamekeyword" : ""
       
