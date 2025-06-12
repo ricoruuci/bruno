@@ -7,16 +7,12 @@ meta {
 patch {
   url: {{API_URL}}/suratjalan
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "kontransbrgid" : "SJ/11/31/00001",
+     "kontransbrgid" : "SJ/WM/2025/06/0001",
       "saleid" : "WM/PN/17352",
       "fginv" : "P",
       "transdate" : "20250311",

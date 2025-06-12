@@ -1,0 +1,21 @@
+meta {
+  name: Rpt Bank MANI
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/rptlaporanbank
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20250508"
+  }
+}

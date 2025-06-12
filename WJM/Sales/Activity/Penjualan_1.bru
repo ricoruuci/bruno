@@ -7,16 +7,12 @@ meta {
 post {
   url: {{API_URL}}/penjualan
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "fginv" : "CRB",
+      "fginv" : "P",
       "faktur" : "",
       "transdate" : "20241001",
       "custid" : "DI001",

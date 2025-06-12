@@ -7,16 +7,12 @@ meta {
 post {
   url: {{API_URL}}/requestorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "transdate": "2024-03-28 00:00:00.000",
+      "transdate": "2025-05-28 00:00:00.000",
       "saleid": "WM/PN/13115",
       "warehouseid": "01GU",
       "note": "",
