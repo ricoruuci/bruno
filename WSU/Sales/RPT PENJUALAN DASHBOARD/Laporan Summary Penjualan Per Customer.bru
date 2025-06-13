@@ -1,0 +1,18 @@
+meta {
+  name: Laporan Summary Penjualan Per Customer
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rpt-summary-penjualan-per-customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    //"custid" : "ADL",
+    "tahun" : "2025"
+  }
+}
