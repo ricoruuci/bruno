@@ -1,13 +1,17 @@
 meta {
   name: Summary Order
   type: http
-  seq: 25
+  seq: 18
 }
 
 get {
   url: {{API_URL}}/rptsummaryorder
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: 625|wQImQOnONSqEbIaRR6rXpucv4QiVSG7yVreBqxeCbbc217c3
 }
 
 body:json {
