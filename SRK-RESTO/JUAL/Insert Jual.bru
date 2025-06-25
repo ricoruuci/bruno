@@ -1,0 +1,35 @@
+meta {
+  name: Insert Jual
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20250623",
+    "cashier" : "shoen",
+    "waiter" : "Lia",
+    "nomor_meja" : "001",
+    "note" : "",
+    "detail" : [
+      {
+        "menu_id" : "102",
+        "qty" : 1,
+        "price" : 10000,
+        "note" : ""
+      },
+      {
+        "menu_id" : "103",
+        "qty" : 1,
+        "price" : 10000,
+        "note" : ""
+      }
+    ]
+  }
+}
