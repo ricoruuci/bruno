@@ -1,0 +1,19 @@
+meta {
+  name: Laporan Absen Dosen
+  type: http
+  seq: 50
+}
+
+get {
+  url: {{API_URL}}/rptabsensidosen
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "dari" : "20250101",
+    "sampai" : "20250616"
+  
+  }
+}

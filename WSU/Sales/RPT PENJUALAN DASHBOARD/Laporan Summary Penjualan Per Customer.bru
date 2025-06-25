@@ -7,12 +7,17 @@ meta {
 get {
   url: {{API_URL}}/rpt-summary-penjualan-per-customer
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: 628|mZNXxlbDubX3pO83gYYquEMzh1xnsB8b7w3jJxcB548f3fc1
 }
 
 body:json {
   {
-    //"custid" : "ADL",
+    //"custname" : "Anugrah Dewata Listrik",
+    //"salesname" : "Bambang",
     "tahun" : "2025"
   }
 }

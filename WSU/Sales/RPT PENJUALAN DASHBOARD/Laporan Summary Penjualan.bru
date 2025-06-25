@@ -7,12 +7,16 @@ meta {
 get {
   url: {{API_URL}}/rpt-summary-penjualan
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: 627|wKSg66F1DjpVccqoUY9DiRhqqc7Pqt9LesEecBqrae6e309d
 }
 
 body:json {
   {
-    "salesid" : "BH",
+    //"salesname" : "Bambang",
     "tahun" : "2025"
   }
 }
