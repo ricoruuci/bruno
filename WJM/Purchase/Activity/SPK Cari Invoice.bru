@@ -7,18 +7,14 @@ meta {
 get {
   url: {{API_URL}}/spk/cari-invoice
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
      //"custnamekeyword" : "PT.Multi Teknik Interior"
      //"custidkeyword" : "SA004"
-    // "saleidkeyword" : "KLM/PN/0524"
+     "saleidkeyword" : "KLM/PN/0524"
       
   }
 }

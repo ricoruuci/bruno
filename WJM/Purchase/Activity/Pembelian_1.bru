@@ -7,11 +7,7 @@ meta {
 post {
   url: {{API_URL}}/pembelian
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -27,10 +23,10 @@ body:json {
      "jatuhtempo" : 30,
      "detail" : [
       {
-          "itemid" : "10005675",
-          "qty" : 2,
+          "itemid" : "10005851",
+          "qty" : 4,
           "price" : 150000,
-          "uomid" : "UNIT",
+          "uomid" : "BTG",
           "warehouseid" : "01GU",
           "fgukuran" : "T",
           "disc" : 0

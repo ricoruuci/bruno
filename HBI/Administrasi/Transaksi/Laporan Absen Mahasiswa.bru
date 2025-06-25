@@ -1,0 +1,19 @@
+meta {
+  name: Laporan Absen Mahasiswa
+  type: http
+  seq: 51
+}
+
+get {
+  url: {{API_URL}}/rptabsensimhs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "dari" : "20250101",
+    "sampai" : "20250616"
+  
+  }
+}

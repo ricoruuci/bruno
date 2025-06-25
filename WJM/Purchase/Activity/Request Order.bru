@@ -7,19 +7,16 @@ meta {
 get {
   url: {{API_URL}}/requestorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "roid": "RO/00001",
+      //"roid": "RO/00017",
       //"alldata" : "Y",
       "dari": "20230101",
       "sampai": "20240919",
+    "roididkeyword": "00009",
       "custidkeyword": "",
       "custnamekeyword": "",
       "saleidkeyword": "",

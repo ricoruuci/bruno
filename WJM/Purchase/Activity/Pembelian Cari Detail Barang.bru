@@ -7,11 +7,7 @@ meta {
 get {
   url: {{API_URL}}/pembelian/cari-detailbarang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {

@@ -7,22 +7,18 @@ meta {
 get {
   url: {{API_URL}}/penjualan
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       //"saleid": "CRB/PN/0001",
-      "fginv" : "P",
+      "fginv" : "CRB",
        "dari" : "20210101",
-       "sampai" : "20251205"
+       "sampai" : "20251205",
        //"custnamekeyword" : "bambang"
        //"sortby" : "id",
-       //"saleidkeyword" : "CRB/PN/0001"
+       "saleidkeyword" : "CRB/PN/00"
        //"namakeyword" : ""
   }
 }

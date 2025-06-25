@@ -1,17 +1,18 @@
 meta {
-  name: uom
+  name: Absen Dosen
   type: http
-  seq: 9
+  seq: 43
 }
 
 get {
-  url: {{API_URL}}/uom
+  url: {{API_URL}}/absensi/dosen
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "uomidkeyword": ""
+     "oto" : "1"
+  
   }
 }

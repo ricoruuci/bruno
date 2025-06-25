@@ -7,7 +7,11 @@ meta {
 get {
   url: {{API_URL}}/barang
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: 628|mZNXxlbDubX3pO83gYYquEMzh1xnsB8b7w3jJxcB548f3fc1
 }
 
 body:json {
@@ -18,6 +22,7 @@ body:json {
      // "merkkeyword" : "Akita"
       //"ukurankeyword" : "2x2.5"
      //"itemnamekeyword" : "Akita NYM",
+    //"panjangkeyword" : "250",
     "sortby" : "itemid"
   }
 }
