@@ -1,0 +1,27 @@
+meta {
+  name: Get Retur Jual
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/retur-jual
+  body: json
+  auth: inherit
+}
+
+body:json {
+  /*jika pakai returnid */
+  {
+    "returnid" : "RJB/B/24/01/0001"
+  }
+  
+  /*jika tidak pakai returnid */
+  // {
+  //   "dari" : "20250101",
+  //   "sampai" : "20251231",
+  //   "returnidkeyword" : "",
+  //   "custidkeyword" : "",
+  //   "custnamekeyword" : ""
+  // }
+}

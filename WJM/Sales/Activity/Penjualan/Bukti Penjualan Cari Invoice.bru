@@ -1,18 +1,18 @@
 meta {
-  name: Bukti Cari Surat Jalan
+  name: Bukti Penjualan Cari Invoice
   type: http
-  seq: 17
+  seq: 3
 }
 
 get {
-  url: {{API_URL}}/suratjalan/bukti/cari-suratjalan
+  url: {{API_URL}}/penjualan/bukti/cari-invoice
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "kontransbrgidkeyword" : "",
+  
       "saleidkeyword" : "",
       "custidkeyword" : "",
      "custnamekeyword" : "",

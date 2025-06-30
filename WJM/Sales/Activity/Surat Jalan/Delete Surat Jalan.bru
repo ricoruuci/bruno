@@ -1,11 +1,11 @@
 meta {
-  name: Penjualan_3
+  name: Delete Surat Jalan
   type: http
-  seq: 9
+  seq: 8
 }
 
 delete {
-  url: {{API_URL}}/penjualan
+  url: {{API_URL}}/suratjalan
   body: json
   auth: bearer
 }
@@ -16,6 +16,6 @@ auth:bearer {
 
 body:json {
   {
-      "saleid" : "CRB-W/PN/00002"
+      "kontransbrgid": "SJ/11/31/00001"
   }
 }
