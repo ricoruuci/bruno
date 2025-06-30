@@ -1,0 +1,35 @@
+meta {
+  name: customer_1
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{API_URL}}/customer
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "custid": "DS00112",
+          "custname": "SATU TECH",
+          "address": null,
+          "up": null,
+          "city": null,
+          "phone": null,
+          "email": null,
+          "npwp": null,
+          "salesid": null,
+          "limitpiutang": "500000000",
+          "term": "0",
+          "note": null,
+          "kodefp": "01",
+          "custtype": "D",
+          "fgkoma": "T"
+  }
+}
