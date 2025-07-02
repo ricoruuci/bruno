@@ -1,0 +1,11 @@
+meta {
+  name: delete supplier
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/supplier/SS002
+  body: json
+  auth: inherit
+}

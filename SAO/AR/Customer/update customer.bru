@@ -1,0 +1,31 @@
+meta {
+  name: update customer
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/customer/DS003
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+          "custid": "DS003",
+          "custname": "SATU TECH",
+          "address": null,
+          "up": null,
+          "city": null,
+          "phone": null,
+          "email": null,
+          "npwp": null,
+          "salesid": null,
+          "limitpiutang": "500000000",
+          "term": "0",
+          "note": null,
+          "kodefp": "01",
+          "custtype": "D",
+          "fgkoma": "T"
+  }
+}
