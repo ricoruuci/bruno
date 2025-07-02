@@ -5,23 +5,23 @@ meta {
 }
 
 post {
-  url: {{API_URL}}/retur-jual
+  url: {{API_URL}}/retur-beli
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "suppid" : "DI001",
+    "suppid" : "SP001",
     "transdate" : "20250630",
     "note" : "",
     "detail" : [
       {
-        "itemid" : "10005429",
+        "itemid" : "10005262",
         "qty" : 1,
-        "price" : 120000,
+        "price" : 65500,
         "warehouseid" : "GD.KD01",
-        "purchaseid" : "BIN/PN/1586",
+        "purchaseid" : "AP/2311/0026",
         "note" : ""
       }
     ]

@@ -5,14 +5,14 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/retur-jual/cari-nota
+  url: {{API_URL}}/retur-beli/cari-nota
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "suppid" : "",
+    "suppid" : "SP001",
     "purchaseidkeyword" : "",
     "itemidkeyword" : "",
     "itemnamekeyword" : ""
