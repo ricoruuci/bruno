@@ -1,0 +1,17 @@
+meta {
+  name: Delete Retur Jual
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/retur-beli
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "returnid": "RBB.WM.25.06.0001"
+  }
+}

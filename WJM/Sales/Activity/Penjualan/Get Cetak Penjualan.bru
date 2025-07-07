@@ -1,0 +1,24 @@
+meta {
+  name: Get Cetak Penjualan
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/penjualan/cetak
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": "CRB/PN/0001",
+      "fginv" : "CRB",
+       "dari" : "20210101",
+       "sampai" : "20251205",
+       //"custnamekeyword" : "bambang"
+       //"sortby" : "id",
+       "saleidkeyword" : "CRB/PN/00"
+       //"namakeyword" : ""
+  }
+}
