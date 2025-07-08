@@ -1,0 +1,19 @@
+meta {
+  name: get txnkkbb cari-nota
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/txnkkbb/carinota
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transdate" : 20231231,
+      "actor" : "UP001",
+      "fgtrans" : "ARK"
+  }
+}

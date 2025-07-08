@@ -1,0 +1,15 @@
+meta {
+  name: uomid
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/uomid
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

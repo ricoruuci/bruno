@@ -1,0 +1,27 @@
+meta {
+  name: Get Surat Jalan
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/suratjalan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "kontransbrgid": "SJ/19/51/00001",
+     //"/keyword" : "SJ/2024",
+      "saleidkeyword": "",
+      "fginv" : "P",
+       "dari" : "20250519",
+       "sampai" : "20250519"
+       //"custnamekeyword" : "bambang",
+       //"sortby" : "id",
+       //"custidkeyword" : "",
+       //"supiridkeyword" : "",
+       //"supirnamekeyword" : ""
+  }
+}

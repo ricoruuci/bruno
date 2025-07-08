@@ -1,0 +1,20 @@
+meta {
+  name: Get Invoice Jual Untuk Retur
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/retur-beli/cari-nota
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "suppid" : "SP001",
+    "purchaseidkeyword" : "",
+    "itemidkeyword" : "",
+    "itemnamekeyword" : ""
+  }
+}

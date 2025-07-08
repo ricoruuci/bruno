@@ -1,0 +1,20 @@
+meta {
+  name: get txnkkbb
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      //"voucherid" : "BK/24/04-0001",
+      "dari" : 20230705,
+      "sampai" : 20230705,
+      "fgtrans" : "BM"
+  }
+}

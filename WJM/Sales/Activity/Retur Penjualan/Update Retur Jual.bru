@@ -1,0 +1,30 @@
+meta {
+  name: Update Retur Jual
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/retur-jual
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "returnid": "RJB/B/25/06/0001",
+    "custid" : "DI001",
+    "transdate" : "20250630",
+    "note" : "",
+    "detail" : [
+      {
+        "itemid" : "10005429",
+        "qty" : 1,
+        "price" : 120000,
+        "warehouseid" : "GD.KD01",
+        "saleid" : "BIN/PN/1586",
+        "note" : ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+meta {
+  name: pembelian_3
+  type: http
+  seq: 10
+}
+
+patch {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "purchaseid": "AP-SM/2503/0001",
+     "transdate" : "20250319",
+     "fpsid" : "292121",
+     "suppid" : "SA001",
+     "note" : "note",
+     "nilaitax" : "11",
+     "fgtax" : "Y",
+     "detail" : [
+      {
+          "itemid" : "100.100.001",
+          "qty" : 2,
+          "price" : 150000,
+          "detailsn" : [
+              {
+                  "snid" : "sn001"
+              },
+              {
+                  "snid" : "sn002"
+              }
+          ]
+      }
+  
+     ]
+      
+  }
+}

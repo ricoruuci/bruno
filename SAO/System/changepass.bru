@@ -1,0 +1,21 @@
+meta {
+  name: changepass
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/changepass
+  body: json
+  auth: inherit
+}
+
+body:json {
+   {
+       "userid" : "admin",
+       "oldpassword" : "110108",
+       "newpassword" : "isnothing1"
+   }
+  
+  
+}

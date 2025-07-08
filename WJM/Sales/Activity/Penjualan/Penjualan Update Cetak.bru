@@ -1,0 +1,18 @@
+meta {
+  name: Penjualan Update Cetak
+  type: http
+  seq: 10
+}
+
+patch {
+  url: {{API_URL}}/penjualan/updatecetak
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": "CRB/PN/0001"
+  
+  }
+}

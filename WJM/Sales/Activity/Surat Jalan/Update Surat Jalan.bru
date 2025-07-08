@@ -1,0 +1,33 @@
+meta {
+  name: Update Surat Jalan
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/suratjalan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "kontransbrgid" : "SJ/WM/2025/06/0001",
+      "saleid" : "WM/PN/17352",
+      "fginv" : "P",
+      "transdate" : "20250311",
+      "custid" : "DI001",
+      "supirid" : "A004",
+      "note" : "p",
+      "term" : 30,
+      "warehouseid" : "01GU",
+      "detail" : [
+          {
+              "itemid" : "10000009",
+              "qty" : 1,
+              "fgnum" : 236177
+              
+          }
+      ]    
+  }
+}

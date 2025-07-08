@@ -1,0 +1,20 @@
+meta {
+  name: Update Payment
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/payment
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nota_jual": "202506230001",
+    "payment_type" : 0,
+    "payment_code" : "",
+    "payment_card_number" : ""
+  }
+}

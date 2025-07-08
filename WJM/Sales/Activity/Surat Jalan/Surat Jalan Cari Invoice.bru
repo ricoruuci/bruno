@@ -1,0 +1,23 @@
+meta {
+  name: Surat Jalan Cari Invoice
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/suratjalan/cari-invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  
+     "saleidkeyword" : "",
+      //"custidkeyword" : "",
+     // "custnamekeyword" : "",
+    //"salesidkeyword" : "",
+     // "salesnamekeyword" : "",
+     "fginv" : "P" 
+  }
+}
