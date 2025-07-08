@@ -1,13 +1,17 @@
 meta {
   name: salesorder_1
   type: http
-  seq: 9
+  seq: 2
 }
 
 post {
   url: {{API_URL}}/salesorder
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: 801|DTL8q9vJu0YXtsoKEV6hssDXDOWQIDsrDZUhb6Gd38db9f87
 }
 
 body:json {
@@ -32,18 +36,20 @@ body:json {
       "nilaipph" : 0,
       "fgbiaya" : "Y",
       "kddiscount" : "",
-      "fgtrans" : "T",
+      "fgtrans" : "K",
       "disc1" : 0,
       "disc2" : 0,
       "disc3" : 0,
       "disc4" : 0,
       "disc5" : 0,
       "reqdeliverydate" : "20250318",
+      "typeorder" : "N",
       "detail" : [
           {
               "itemid" : "FGD.WI1602",
+              "warehouseid": "03",
               "totalqty" : 800,
-              "qty" : 24,
+              "qty" : 4,
               "discitem" : 0,
               "note" : "aaa",
               "uomid" : "Roll",

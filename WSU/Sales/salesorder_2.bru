@@ -1,7 +1,7 @@
 meta {
   name: salesorder_2
   type: http
-  seq: 10
+  seq: 3
 }
 
 patch {
@@ -12,7 +12,7 @@ patch {
 
 body:json {
   {
-      "soid" : "SO/AAE/2505/0002",
+      "soid" : "SOK/AAE/2505/0003",
       "custid" : "AAE",
       "transdate" : "20250519",
       "pocust" : "",
@@ -32,18 +32,20 @@ body:json {
       "nilaipph" : 0,
       "fgbiaya" : "Y",
       "kddiscount" : "",
-      "fgtrans" : "T",
+      "fgtrans" : "K",
       "disc1" : 0,
       "disc2" : 0,
       "disc3" : 0,
       "disc4" : 0,
       "disc5" : 0,
       "reqdeliverydate" : "20250318",
+      "typeorder" : "N",
       "detail" : [
           {
               "itemid" : "FGD.WI1602",
+              "warehouseid": "03",
               "totalqty" : 800,
-              "qty" : 24,
+              "qty" : 5,
               "discitem" : 0,
               "note" : "aaa",
               "uomid" : "Roll",

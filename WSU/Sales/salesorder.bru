@@ -1,18 +1,22 @@
 meta {
   name: salesorder
   type: http
-  seq: 8
+  seq: 1
 }
 
 get {
   url: {{API_URL}}/salesorder
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: 632|ApUUBvepE576beG70rmXcGSq0sF4OjEWRVBJ8z0Ad9e91750
 }
 
 body:json {
   {
-  //     "soid": "SO/AAE/2505/0002",
+      "soid": "SO/PPK/2411/0007",
       //"oto" : 1,
       "dari" : 20210917,
       "sampai" : 20250917,
