@@ -1,0 +1,26 @@
+meta {
+  name: Get Retur Jual
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/transfer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  /*jika pakai transferid */
+  {
+    "transferid" : "TRS/25/01/0002"
+  }
+  
+  /*jika tidak pakai transferid */
+  // {
+  //   "dari" : "20250101",
+  //   "sampai" : "20251231",
+  //   "transferidkeyword" : "",
+  //   "sortby" : "id" //ada dateold,datenew sama id
+  // }
+}

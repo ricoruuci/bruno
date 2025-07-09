@@ -5,13 +5,13 @@ meta {
 }
 
 delete {
-  url: {{API_URL}}/retur-jual
+  url: {{API_URL}}/transfer
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "returnid": "RJB/WM/25/06/0001"
+    "transferid": "TRS/25/06/0001"
   }
 }

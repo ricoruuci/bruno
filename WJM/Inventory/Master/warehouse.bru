@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/warehouse
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-       "warehouseid" : "02GK"
+       //"warehouseid" : ""
        //"warehouseidkeyword" : "02GK",
       // "warehousenamekeyword" : "GUDANG KALI MALANG"
   }
