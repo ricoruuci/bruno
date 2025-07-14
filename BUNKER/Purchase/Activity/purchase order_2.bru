@@ -1,0 +1,56 @@
+meta {
+  name: purchase order_2
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid": "CSI-PO/2024-010002",
+      "transdate": "20240113",
+      "currid": "IDR",
+      "suppname": "PT. ADAKOM INTERNATIONAL TECHNOLOGY",
+      "suppid": "SP003",
+      "up": "RICO",
+      "purchasingid": "U002",
+      "telp": "0811xxxx",
+      "fax": "021xxxx",
+      "email": "test@email.com",
+      "note": "keterangan",
+      "fgtax": "Y",
+      "discamount": 10000,
+      "soid": "SO-CSI/2302/0001",
+      "fob": "Jakarta",
+      "nilaitax": 11,
+      "detail": [
+          {
+              "urut": 1,
+              "itemid": "100.102.002",
+              "itemname": "Notebook Lenovo Thinkpad L14 i5",
+              "note": "",
+              "partno": "A02",
+              "qty": 2,
+              "price": 100000
+          },
+          {
+              "urut": 2,
+              "itemid": "100.102.003",
+              "itemname": "LENOVO THINKPAD X13 YOGA GEN 3 21AW0054ID",
+              "note": "",
+              "partno": "A01",
+              "qty": 3,
+              "price": 550000
+          }
+      ]
+  }
+}

@@ -1,10 +1,10 @@
 meta {
-  name: item
+  name: item_3
   type: http
-  seq: 12
+  seq: 15
 }
 
-get {
+delete {
   url: {{API_URL}}/item
   body: json
   auth: bearer
@@ -16,8 +16,6 @@ auth:bearer {
 
 body:json {
   {
-      //"itemid" : "",
-      "itemidkeyword" : "",
-      "itemnamekeyword" : "" 
+      "itemid" : "100.100.002"
   }
 }
