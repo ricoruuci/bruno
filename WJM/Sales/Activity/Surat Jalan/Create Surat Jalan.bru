@@ -1,0 +1,32 @@
+meta {
+  name: Create Surat Jalan
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{API_URL}}/suratjalan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid" : "WM-W/PN/00002",
+      "fginv" : "P",
+      "transdate" : "20250611",
+      "custid" : "DI001",
+      "supirid" : "A004",
+      "note" : "ss",
+      "term" : 30,
+      "warehouseid" : "01GU",
+      "detail" : [
+          {
+              "itemid" : "10000003",
+              "qty" : 1,
+              "fgnum" : 250614
+              
+          }
+      ]    
+  }
+}

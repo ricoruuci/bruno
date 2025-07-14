@@ -7,7 +7,11 @@ meta {
 post {
   url: {{API_URL}}/login
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: 630|O7IsLOnm6Hf3FHiZnRA2hpLwSHDLLwLYWyyxKketd7f0ac73
 }
 
 body:json {
@@ -15,7 +19,7 @@ body:json {
       //"query" : "1",
       //  "userid" : "admin",
       //  "password" : "Superadmin2021!"
-      "userid" : "budi",
+      "userid" : "shoen",
       "password" : "1"
    }
 }

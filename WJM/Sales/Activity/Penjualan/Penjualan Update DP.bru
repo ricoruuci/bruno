@@ -1,0 +1,28 @@
+meta {
+  name: Penjualan Update DP
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/penjualan/updatedp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid": "BIN/PN/3933",
+      "jenis" : "K",
+      "transdate" : "20250220",
+      "dp" : 10,
+      "bankid" : "B001",
+      "bankname" : "BCA",
+      "custid" : "DI001"
+  
+  }
+}

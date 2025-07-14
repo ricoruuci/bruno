@@ -1,21 +1,17 @@
 meta {
   name: salesorder_3
   type: http
-  seq: 13
+  seq: 6
 }
 
 delete {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "soid" : "SOI/COI/2307/0011"
+      "soid" : "SO/AAE/2307/0001"
   }
 }

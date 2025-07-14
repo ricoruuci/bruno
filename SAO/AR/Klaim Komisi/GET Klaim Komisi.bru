@@ -1,0 +1,18 @@
+meta {
+  name: GET Klaim Komisi
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/klaimkomisi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transid": "NKK/2024/0001"
+      //"oto": 1
+  }
+}

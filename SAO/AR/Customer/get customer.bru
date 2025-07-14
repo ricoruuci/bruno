@@ -1,0 +1,21 @@
+meta {
+  name: get customer
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/customer?page=2
+  body: json
+  auth: inherit
+}
+
+params:query {
+  page: 2
+}
+
+body:json {
+  {
+  //   "custid": "DB001"
+  }
+}

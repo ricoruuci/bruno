@@ -1,0 +1,21 @@
+meta {
+  name: Delivery
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/delivery
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 632|ApUUBvepE576beG70rmXcGSq0sF4OjEWRVBJ8z0Ad9e91750
+}
+
+body:json {
+  {
+      "custid": "PPK"
+  }
+}
