@@ -1,0 +1,25 @@
+meta {
+  name: item_1
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{API_URL}}/item
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "itemname": "123213213",
+      "productid": "100",
+      "groupid": "100",
+      "note" : "",
+      "tahun" : "2025"
+  }
+}

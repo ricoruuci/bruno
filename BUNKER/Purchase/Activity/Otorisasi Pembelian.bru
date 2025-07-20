@@ -1,0 +1,26 @@
+meta {
+  name: Otorisasi Pembelian
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/otorisasi/pembelian?per_page=100
+  body: json
+  auth: bearer
+}
+
+params:query {
+  per_page: 100
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"purchaseidkeyword" : "ATM",
+      // "suppnamekeyyword" : "162945"
+  }
+}

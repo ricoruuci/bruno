@@ -1,0 +1,25 @@
+meta {
+  name: sales order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"soid": "SO-CSI/2307/0002",
+      //"oto": 1,
+      //"alldata" : "Y",
+      "dari": "20230919",
+      "sampai": "20230919"
+  }
+}

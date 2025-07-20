@@ -1,0 +1,17 @@
+meta {
+  name: proforma sales order
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{API_URL}}/proforma
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "soid": "so/an/2310/0001"
+  }
+}
