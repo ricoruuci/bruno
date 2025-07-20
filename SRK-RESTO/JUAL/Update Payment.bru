@@ -13,8 +13,12 @@ patch {
 body:json {
   {
     "nota_jual": "202506230001",
-    "payment_type" : 0,
-    "payment_code" : "",
-    "payment_card_number" : ""
+    "payment_type" : 0
+    /*
+    0 = QRIS
+    1 = DEBIT need payment code (BCA/MANDIRI/etc) * number
+    2 = CREDIT need payment code (BCA/MANDIRI/etc) * number
+    3 = CASH
+    */
   }
 }

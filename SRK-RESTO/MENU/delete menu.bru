@@ -1,10 +1,10 @@
 meta {
-  name: get menu
+  name: delete menu
   type: http
-  seq: 1
+  seq: 3
 }
 
-get {
+delete {
   url: {{API_URL}}/menu
   body: json
   auth: inherit
@@ -12,6 +12,6 @@ get {
 
 body:json {
   {
-    "search_keyword" : "Sunny"
+    "menu_id" : "RM0019"
   }
 }

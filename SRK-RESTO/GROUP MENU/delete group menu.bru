@@ -1,0 +1,17 @@
+meta {
+  name: delete group menu
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/group-menu
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "group_menu_id" : "GRM0004"
+  }
+}

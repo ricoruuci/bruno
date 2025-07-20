@@ -1,0 +1,22 @@
+meta {
+  name: create menu
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/menu
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "menu_name": "American Breakfast 1 - Sunny",
+    "item_picture": null,
+    "price": "35000.0000",
+    "fg_item": "A",
+    "group_menu_id": "GRM0001",
+    "group_menu_name": "BREAKFAST"  
+  }
+}
