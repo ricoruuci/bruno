@@ -1,17 +1,17 @@
 meta {
-  name: Get Jual
+  name: get group menu
   type: http
   seq: 1
 }
 
 get {
-  url: {{API_URL}}/penjualan
+  url: {{API_URL}}/group-menu
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "nota_jual" : "202506230002"
+    "search_keyword" : "pl"
   }
 }

@@ -1,0 +1,23 @@
+meta {
+  name: update menu
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{API_URL}}/menu
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "menu_id" : "RM0047",
+    "menu_name": "American Breakfast 1 - Sunny",
+    "item_picture": null,
+    "price": "35000.0000",
+    "fg_item": "A",
+    /* A=makanan, B=minuman */
+    "group_menu_id": "GRM0001"
+  }
+}

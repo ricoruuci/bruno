@@ -1,17 +1,17 @@
 meta {
-  name: Delete Transfer
+  name: delete bahan baku
   type: http
   seq: 5
 }
 
 delete {
-  url: {{API_URL}}/transfer
+  url: {{API_URL}}/bahan-baku
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "transferid": "TRS/25/06/0001"
+    "bahan_baku_id": "BB0002"
   }
 }

@@ -7,15 +7,11 @@ meta {
 get {
   url: {{API_URL}}/rptlaporanbank
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "transdate" : "20250508"
+      "transdate" : "20250717"
   }
 }
