@@ -1,0 +1,23 @@
+meta {
+  name: get Purchase Order Cari Detail
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/purchaseorder/cari-detail
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-SPK/2507/0004",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : ""
+  }
+}

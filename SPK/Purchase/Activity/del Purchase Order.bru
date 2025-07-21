@@ -1,0 +1,21 @@
+meta {
+  name: del Purchase Order
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "poid" : "SPK-PO/2024-100004"
+  }
+}

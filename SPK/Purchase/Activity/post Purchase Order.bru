@@ -1,0 +1,51 @@
+meta {
+  name: post Purchase Order
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "suppid": "UP109",
+      "soid": "UP109",
+      "transdate": "20241016",
+      "salesid": "F006",
+      "currid" : "IDR",
+      "custname" : "",
+      "up" : "",
+      "phone" : "",
+      "fax" : "",
+      "email" : "",
+      "fgtax" : "Y",
+      "nilaitax" : 11,
+      "disc" : 0,
+      "detail": [
+          {
+              "itemid": "107.116.003",
+              "itemname": "",
+              "qty": 1,
+              "price": 500000000,
+              "note" : "tes note",
+            "urut" : 1
+          },
+          {
+              "itemid": "107.116.002",
+              "itemname": "",
+              "qty": 1,
+              "price": 500000000,
+              "note" : "tes note",
+            "urut" : 2
+          }
+      ]
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: get Purchase Order Cari SO
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/purchaseorder/cari-so
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate" : "20250721",
+      "soidkeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : ""
+  }
+}
