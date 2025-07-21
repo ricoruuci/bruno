@@ -1,0 +1,17 @@
+meta {
+  name: get bahan baku by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/bahan-baku-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bahan_baku_id": "BB0002"
+  }
+}
