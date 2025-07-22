@@ -1,0 +1,17 @@
+meta {
+  name: get rekening by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rekening-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "rekening_id" : "100.01"
+  }
+}

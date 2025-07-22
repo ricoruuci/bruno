@@ -1,0 +1,17 @@
+meta {
+  name: get txnkkbb by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/txnkkbb-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "voucher_id": "KK/25/06/0001"
+  }
+}

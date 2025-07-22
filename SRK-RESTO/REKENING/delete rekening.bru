@@ -1,0 +1,17 @@
+meta {
+  name: delete rekening
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "rekening_id" : "100.01"
+  }
+}

@@ -1,0 +1,37 @@
+meta {
+  name: update txnkkbb
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "voucher_id": "KK/25/07-0001",
+    "transdate" : "20250722",
+    "actor" : "Rico",
+    "bank_id" : "BCA",
+    "note" : "",
+    "flagkkbb" : "BK",
+    "total" : "2000000",
+    "detail" : [
+      {
+        "rekeningid" : "600.05",
+        "note" : "biaya atk",
+        "amount" : 1000000,
+        "jenis" : "D"
+      },
+      {
+        "rekeningid" : "600.06",
+        "note" : "biaya atk",
+        "amount" : 1000000,
+        "jenis" : "D"
+      }
+    ]
+  }
+}

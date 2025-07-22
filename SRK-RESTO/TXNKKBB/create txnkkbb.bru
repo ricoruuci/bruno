@@ -1,0 +1,30 @@
+meta {
+  name: create txnkkbb
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20250722",
+    "actor" : "Rico",
+    "bank_id" : "",
+    "note" : "",
+    "flagkkbb" : "APK",
+    "total" : "1000000",
+    "detail" : [
+      {
+        "rekeningid" : "600.05",
+        "note" : "biaya atk",
+        "amount" : 1000000,
+        "jenis" : "D"
+      }
+    ]
+  }
+}
