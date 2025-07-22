@@ -1,0 +1,29 @@
+meta {
+  name: get Purchase Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"poid" : "SPK-PO/2025-070003",
+      "dari": "20231201",
+      "sampai": "20241201",
+      "poidkeyword" : "",
+      "suppidkeyword" : "",
+      "suppnamekeyword" : "jesp",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "Eko"
+      //"salesnamekeyword" : "rico"
+  }
+}

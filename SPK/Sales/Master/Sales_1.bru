@@ -7,11 +7,7 @@ meta {
 post {
   url: {{API_URL}}/sales
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -19,6 +15,13 @@ body:json {
      "salesname" : "tes ilham",
      "address" : "address",
      "hp" : "018152121",
-     "jabatan" : "jabatan"
+     "jabatan" : "jabatan",
+    "ttdsales" : "",
+    "note" : "",
+    "telp" : "",
+    "email" : "",
+    "fgactive" : "",
+    "tglgabung" : ""
+    
   }
 }
