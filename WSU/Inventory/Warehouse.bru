@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/gudang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "warehouseidkeyword" : "01GU",
+      "warehouseidkeyword" : "",
       "warehousenamekeyword" : ""
   }
 }
