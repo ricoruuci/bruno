@@ -1,17 +1,17 @@
 meta {
-  name: get menu by id
+  name: get beli by id
   type: http
   seq: 2
 }
 
 get {
-  url: {{API_URL}}/menu-by-id
+  url: {{API_URL}}/beli-by-id
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "menu_id" : "RM0050"
+    "nota_beli": "PBL/25/07/0001"
   }
 }

@@ -1,0 +1,28 @@
+meta {
+  name: create beli
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/beli
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20250723",
+    "supplier_id" : "SUP0002",
+    "ppn" : 11,
+    "note" : "",
+    "detail" : [
+      {
+        "bahan_baku_id" : "BB0001",
+        "qty" : 2,
+        "price" : 5000,
+        "satuan" : "KG"
+      }
+    ]
+  }
+}
