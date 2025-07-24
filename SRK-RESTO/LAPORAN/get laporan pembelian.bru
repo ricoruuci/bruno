@@ -1,0 +1,24 @@
+meta {
+  name: get laporan pembelian
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rpt-pembelian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20250101",
+    "sampai" : "20251231",
+    "search_keyword" : "",
+    "supplier_keyword" : ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}
