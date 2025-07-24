@@ -1,0 +1,23 @@
+meta {
+  name: get laporan hutang
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rpt-hutang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20251231",
+    "search_keyword" : "",
+    "supplier_keyword" : ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

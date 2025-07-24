@@ -1,0 +1,21 @@
+meta {
+  name: get laporan neraca
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/rpt-neraca
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "periode" : "20251231"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
