@@ -1,11 +1,11 @@
 meta {
-  name: get laporan laba rugi
+  name: get laporan penjualan
   type: http
-  seq: 5
+  seq: 7
 }
 
 get {
-  url: {{API_URL}}/rpt-laba-rugi
+  url: {{API_URL}}/rpt-penjualan
   body: json
   auth: inherit
 }
@@ -13,7 +13,8 @@ get {
 body:json {
   {
     "dari" : "20250101",
-    "sampai" : "20251231"
+    "sampai" : "20251231",
+    "search_keyword" : ""
     
   }
 }

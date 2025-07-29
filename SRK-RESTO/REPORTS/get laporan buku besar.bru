@@ -1,11 +1,11 @@
 meta {
-  name: get laporan penjualan
+  name: get laporan buku besar
   type: http
-  seq: 1
+  seq: 7
 }
 
 get {
-  url: {{API_URL}}/rpt-penjualan
+  url: {{API_URL}}/rpt-buku-besar
   body: json
   auth: inherit
 }
@@ -14,7 +14,7 @@ body:json {
   {
     "dari" : "20250101",
     "sampai" : "20251231",
-    "search_keyword" : ""
+    "rekening_id" : ""
     
   }
 }
