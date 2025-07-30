@@ -5,11 +5,14 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/dashboardstock/2
+  url: {{API_URL}}/dashboardstock/3
   body: json
-  auth: bearer
+  auth: inherit
 }
 
-auth:bearer {
-  token: {{token}}
+body:json {
+  {
+      "sampai" : "20250730",
+      "warehouseid" : ""
+  }
 }
