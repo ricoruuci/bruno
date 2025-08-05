@@ -1,0 +1,18 @@
+meta {
+  name: Rpt Material Request
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/rptmaterialrequest
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "itemid" : "FGD.WI4247",
+      "custid" : ""
+  }
+}
