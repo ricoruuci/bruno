@@ -1,0 +1,21 @@
+meta {
+  name: get lap neraca
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rpt-neraca
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "periode" : "20251231"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

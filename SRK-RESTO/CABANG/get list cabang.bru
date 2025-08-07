@@ -1,0 +1,15 @@
+meta {
+  name: get list cabang
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/list-cabang
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
