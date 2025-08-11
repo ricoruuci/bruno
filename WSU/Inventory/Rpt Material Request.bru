@@ -1,0 +1,20 @@
+meta {
+  name: Rpt Material Request
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/rptmaterialrequest
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20250701",
+    "sampai" : "20250807", 
+    "itemid" : "",
+    "custid" : ""
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: get lap buku besar
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rpt-buku-besar
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  //   "rekeningid" : "",
+    "dari" : "20250101",
+    "sampai" : "20251231"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

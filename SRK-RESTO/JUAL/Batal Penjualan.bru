@@ -1,0 +1,17 @@
+meta {
+  name: Batal Penjualan
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{API_URL}}/batal-penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nota_jual": "202507240001"
+  }
+}

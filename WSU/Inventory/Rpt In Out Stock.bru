@@ -1,0 +1,19 @@
+meta {
+  name: Rpt In Out Stock
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/rptinoutstock
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transdate" : "20250101",
+      "warehouseid" : "01GU",
+      "groupid" : ""
+  }
+}

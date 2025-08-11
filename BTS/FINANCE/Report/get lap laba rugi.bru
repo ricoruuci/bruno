@@ -1,0 +1,22 @@
+meta {
+  name: get lap laba rugi
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rpt-laba-rugi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20250801",
+    "sampai" : "20251231"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
