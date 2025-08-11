@@ -1,0 +1,45 @@
+meta {
+  name: update stock adjustment
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/stock-adjustment/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tx_date" : "2025-04-21",
+    "warehouse_id" : 1,
+    "note" : "",
+    "coa_stock" : 1,
+    "coa_adjustment" : 1,
+    "detail" : [
+      {
+        "status" : "update",
+        "id" : 1,
+        "type" : "T",
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000,
+        "note" : ""
+      },
+      {
+        "status" : "update",
+        "id" : 2,
+        "type" : "T",
+        "item_id" : 2,
+        "qty" : 1,  
+        "price" : 50000,
+        "note" : ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: delete stock receive
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/stock-receive/2
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
