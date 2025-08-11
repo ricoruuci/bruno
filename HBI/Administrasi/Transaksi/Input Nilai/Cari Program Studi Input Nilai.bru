@@ -1,0 +1,18 @@
+meta {
+  name: Cari Program Studi Input Nilai
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/nilai/cari-ps
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "tahunid" : "2025-1"
+  
+  }
+}

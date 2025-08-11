@@ -1,17 +1,17 @@
 meta {
-  name: Input Jadwal
+  name: delete Input Nilai
   type: http
   seq: 23
 }
 
 delete {
-  url: {{API_URL}}/jadwal
+  url: {{API_URL}}/nilai
   body: json
   auth: inherit
 }
 
 body:json {
   {
-     "transid" : "JDW/2025/011"
+     "nilaiid" : "SCR/2025/001"
   }
 }

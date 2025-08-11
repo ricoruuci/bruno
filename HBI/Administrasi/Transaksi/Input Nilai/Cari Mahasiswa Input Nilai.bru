@@ -1,0 +1,20 @@
+meta {
+  name: Cari Mahasiswa Input Nilai
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/nilai/cari-mhs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "tahunid" : "2025-1",
+      "mkid" : "",
+    "psid" : "PAK"
+  
+  }
+}

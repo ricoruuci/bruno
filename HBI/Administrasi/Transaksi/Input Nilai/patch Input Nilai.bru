@@ -1,0 +1,34 @@
+meta {
+  name: patch Input Nilai
+  type: http
+  seq: 22
+}
+
+patch {
+  url: {{API_URL}}/nilai
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "nilaiid" : "SCR/2025/001",
+      "tahunid" : "2025-1",
+      "psid" : "PAK",
+      "note" : "tes note",
+    "dosenid" : "CH004",
+    "mkid" : "MKB0101",
+      "detail" : [
+          {
+            "mhsid" : "2186208006",
+            "uts" : "2",
+            "uas" : "2",
+            "tugas" : "2",
+            "kehadiran" : "2",
+            "others" : "2",
+            "jmutu" : "2",
+            "jangka" : "2"
+          }
+      ]
+  }
+}

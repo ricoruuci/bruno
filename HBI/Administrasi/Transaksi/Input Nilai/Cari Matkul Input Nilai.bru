@@ -1,0 +1,21 @@
+meta {
+  name: Cari Matkul Input Nilai
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{API_URL}}/nilai/cari-matkul
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "tahunid" : "2021-2",
+    "psid" : "PAK"
+  
+    
+  
+  }
+}
