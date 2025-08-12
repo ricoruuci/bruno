@@ -1,0 +1,41 @@
+meta {
+  name: create stock adjustment
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/stock-adjustment
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tx_date" : "2025-04-21",
+    "warehouse_id" : 1,
+    "note" : "",
+    "coa_stock" : 1,
+    "coa_adjustment" : 1,
+    "detail" : [
+      {
+        "type" : "T",
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000,
+        "note" : ""
+      },
+      {
+        "type" : "T",
+        "item_id" : 2,
+        "qty" : 1,  
+        "price" : 50000,
+        "note" : ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

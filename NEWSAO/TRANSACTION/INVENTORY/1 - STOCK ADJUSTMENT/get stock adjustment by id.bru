@@ -1,0 +1,15 @@
+meta {
+  name: get stock adjustment by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/stock-adjustment/1
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

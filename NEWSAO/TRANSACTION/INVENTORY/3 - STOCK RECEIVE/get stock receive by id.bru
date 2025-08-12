@@ -1,0 +1,15 @@
+meta {
+  name: get stock receive by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/stock-receive/1
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,40 @@
+meta {
+  name: create stock transfer 
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/stock-transfer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tx_date" : "2025-04-21",
+    "warehouse_src" : 1,
+    "warehouse_dest" : 2,
+    "note" : "",
+    "coa_stock" : 1,
+    "coa_transfer" : 1,
+    "detail" : [
+      {
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000,
+        "note" : ""
+      },
+      {
+        "item_id" : 2,
+        "qty" : 1,  
+        "price" : 50000,
+        "note" : ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

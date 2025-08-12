@@ -1,0 +1,30 @@
+meta {
+  name: get stock adjustment
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/stock-adjustment
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "start_date" : "2025-01-01",
+    "end_date" : "2025-12-31",
+    "filter" : {
+      "stock_adjustment" : ""
+    },
+    "sort_by" : {
+      "field" : "stock_adjustment.number",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

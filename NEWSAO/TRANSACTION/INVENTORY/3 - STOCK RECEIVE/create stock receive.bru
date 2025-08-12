@@ -1,0 +1,39 @@
+meta {
+  name: create stock receive
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/stock-receive
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tx_date" : "2025-04-21",
+    "warehouse_id" : 1,
+    "stock_transfer_id" : 1,
+    "coa_stock" : 1,
+    "coa_transfer" : 1,
+    "detail" : [
+      {
+        "item_id" : 1,
+        "qty" : 1,  
+        "price" : 50000,
+        "note" : ""
+      },
+      {
+        "item_id" : 2,
+        "qty" : 1,  
+        "price" : 50000,
+        "note" : ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}
