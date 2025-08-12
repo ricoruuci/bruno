@@ -1,0 +1,15 @@
+meta {
+  name: delete cash in
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/cash-in/4
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

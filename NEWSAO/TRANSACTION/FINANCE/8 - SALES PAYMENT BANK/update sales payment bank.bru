@@ -1,0 +1,46 @@
+meta {
+  name: update sales payment bank
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/sales-payment-bank/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tx_date" : "2025-08-12",
+    "bank_id" : 1,
+    "customer_id" : 1,
+    "note" : "",
+    "currency_id" : 1,
+    "rate" : 1,
+    "detail" : [
+      {
+        "status" : "update",
+        "id" : 5,
+        "coa_id" : 1,
+        "coa_entry_side" : "D",
+        "amount" : 1000,  
+        "sales_invoice_id" : 1,
+        "note" : "bayar 1"
+      },
+      {
+        "status" : "update",
+        "id" : 6,
+        "coa_id" : 2,
+        "coa_entry_side" : "K",
+        "amount" : 1000,  
+        "sales_invoice_id" : 1,
+        "note" : "bayar 2"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

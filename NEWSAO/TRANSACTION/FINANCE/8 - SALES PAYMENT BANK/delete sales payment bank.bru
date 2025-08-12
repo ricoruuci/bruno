@@ -1,0 +1,15 @@
+meta {
+  name: delete sales payment bank
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/sales-payment-bank/4
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

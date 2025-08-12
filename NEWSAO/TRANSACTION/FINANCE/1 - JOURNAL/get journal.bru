@@ -1,0 +1,30 @@
+meta {
+  name: get journal
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/journal
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "start_date" : "2025-01-01",
+    "end_date" : "2025-12-31",
+    "filter" : {
+      "journal" : ""
+    },
+    "sort_by" : {
+      "field" : "journal.number",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

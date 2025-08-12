@@ -1,0 +1,30 @@
+meta {
+  name: get dept payment bank
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/dept-payment-bank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "start_date" : "2025-01-01",
+    "end_date" : "2025-12-31",
+    "filter" : {
+      "dept_payment_bank" : ""
+    },
+    "sort_by" : {
+      "field" : "dept_payment_bank.number",
+      "direction" : "asc"
+    },
+    "all_data" : "Y"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
