@@ -1,0 +1,15 @@
+meta {
+  name: delete journal
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/journal/4
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

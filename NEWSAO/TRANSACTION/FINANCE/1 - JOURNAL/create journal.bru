@@ -1,0 +1,40 @@
+meta {
+  name: create journal
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/journal
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tx_date" : "2025-08-12",
+    "note" : "",
+    "currency_id" : 1,
+    "rate" : 1,
+    "detail" : [
+      {
+        "coa_id" : 1,
+        "coa_entry_side" : "D",
+        "amount" : 1000,  
+        "reff_id" : "",
+        "note" : "bayar 1"
+      },
+      {
+        "coa_id" : 2,
+        "coa_entry_side" : "K",
+        "amount" : 1000,  
+        "reff_id" : "",
+        "note" : "bayar 2"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

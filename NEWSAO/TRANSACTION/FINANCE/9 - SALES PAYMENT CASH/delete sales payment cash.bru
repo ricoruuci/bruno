@@ -1,0 +1,15 @@
+meta {
+  name: delete sales payment cash
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/sales-payment-cash/4
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

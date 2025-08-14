@@ -1,0 +1,15 @@
+meta {
+  name: delete bank out
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/bank-out/4
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
