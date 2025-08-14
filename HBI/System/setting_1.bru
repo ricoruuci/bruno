@@ -7,15 +7,11 @@ meta {
 patch {
   url: {{API_URL}}/setting
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-          "tahunid": ""
+          "tahunid": "2025-1"
       }
 }
