@@ -1,0 +1,19 @@
+meta {
+  name: Rpt Rekap Purchase Invoice
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/rptrekappurchaseinvoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "dari" : "20250701",
+      "sampai" : "20250731",
+      "jenis" : "S" //Jenis S ATAU J
+  }
+}
