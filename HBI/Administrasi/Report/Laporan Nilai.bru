@@ -1,0 +1,18 @@
+meta {
+  name: Laporan Nilai
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rptnilai
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tahunid" : "2025-1"
+  
+  }
+}
