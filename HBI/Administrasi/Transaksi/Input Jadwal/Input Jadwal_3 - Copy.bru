@@ -1,0 +1,26 @@
+meta {
+  name: Input Jadwal_3
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/jadwal
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transid" : "JDW/2025/014",
+      "tahunid" : "2025-1",
+      "psid" : "PAK",
+      "note" : "tes note",
+      "detail" : [
+          {
+              "mkid" : "MKB0101",
+              "bobot" : "2"
+          }
+      ]
+  }
+}

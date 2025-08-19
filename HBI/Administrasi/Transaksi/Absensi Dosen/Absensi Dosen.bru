@@ -1,0 +1,18 @@
+meta {
+  name: Absensi Dosen
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/absensi/dosen
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+   "mkid" : "MKK0231 ",
+  "tahunid" : "2025-1"
+  }
+}

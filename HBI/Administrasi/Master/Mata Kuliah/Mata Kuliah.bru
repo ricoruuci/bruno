@@ -1,0 +1,20 @@
+meta {
+  name: Mata Kuliah
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/matkul
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "mkid" : "",
+     "mkidkeyword" : "",
+     "mknamekeyword" : ""
+  
+  }
+}

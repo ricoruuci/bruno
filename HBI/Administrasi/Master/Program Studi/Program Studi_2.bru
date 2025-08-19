@@ -1,0 +1,23 @@
+meta {
+  name: Program Studi_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/progstudi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+   "psid" : "SS",
+   "psname" : "Nama Progstudi" ,
+   "note" : ""
+  }
+}

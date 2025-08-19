@@ -1,0 +1,17 @@
+meta {
+  name: Laporan Absen Per Dosen
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/rptabsenperdosen
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+       "tahunid" : "2025-1"
+  }
+}

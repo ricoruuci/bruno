@@ -1,0 +1,23 @@
+meta {
+  name: Tahun Ajaran_2
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/tahunajaran
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+   "tahunid" : "FK01",
+   "tahunname" : "Nama Fakultas",
+   "note" : "Nama Fakultas"  
+  }
+}

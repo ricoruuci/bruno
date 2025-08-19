@@ -1,0 +1,30 @@
+meta {
+  name: Pembuatan Matkul_1
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/pembmatkul
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  //  "transid" : "",
+      "tahunid" : "2025-3",
+      "psid" : "PAK",
+      "note" : "tes note",
+      "detail" : [
+          {
+              "mkid" : "MKB0101",
+              "bobot" : "2"
+          },
+         {
+              "mkid" : "MKB0102",
+              "bobot" : "2"
+          }
+      ]
+  }
+}

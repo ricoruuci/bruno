@@ -1,0 +1,21 @@
+meta {
+  name: Berita_3
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/berita
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "beritaid" : "BRT-0001"
+  }
+}

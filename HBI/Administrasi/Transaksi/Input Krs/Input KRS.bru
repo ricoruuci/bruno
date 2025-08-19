@@ -1,0 +1,17 @@
+meta {
+  name: Input KRS
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/krs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "transid" : "KRS/2025/002"
+  }
+}

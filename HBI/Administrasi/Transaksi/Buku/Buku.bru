@@ -1,0 +1,24 @@
+meta {
+  name: Buku
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/view/buku
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"beritaid" : "",
+     "bukuidkeyword" : "",
+     "bukukeyword" : ""
+  
+  }
+}

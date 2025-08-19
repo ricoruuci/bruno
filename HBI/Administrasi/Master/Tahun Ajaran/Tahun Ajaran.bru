@@ -1,0 +1,20 @@
+meta {
+  name: Tahun Ajaran
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/tahunajaran
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     //"tahunid" : "KM022",
+     "tahunidkeyword" : "",
+     "tahunnamekeyword" : ""
+  
+  }
+}

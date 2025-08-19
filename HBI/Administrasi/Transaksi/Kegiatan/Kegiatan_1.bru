@@ -1,0 +1,23 @@
+meta {
+  name: Kegiatan_1
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/kegiatan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+   "judul" : "DATA MINING" ,
+   "note" : "",
+   "video" : ""
+  }
+}

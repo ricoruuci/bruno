@@ -1,0 +1,32 @@
+meta {
+  name: Input Jadwal_2
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/jadwal
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tahunid" : "2025-1",
+    "psid" : "PAK",
+      "detail" : [
+          {
+              "mkid" : "MKB0101",
+              "bobot" : "2"
+          },
+        {
+              "mkid" : "MKB0102",
+              "bobot" : "2"
+          },
+        {
+              "mkid" : "MKB0102",
+              "bobot" : "2"
+          }
+      ]
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Fakultas_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/fakultas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+   "fakultasid" : "FK01",
+   "fakultasname" : "Nama Fakultas"  
+  }
+}

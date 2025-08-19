@@ -1,0 +1,18 @@
+meta {
+  name: Oto Absen Dosen
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/absensi/dosen/otorisasi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "numall" : "1709",
+  "fgoto": "Y"
+  }
+}

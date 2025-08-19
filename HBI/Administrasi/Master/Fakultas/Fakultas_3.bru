@@ -1,0 +1,21 @@
+meta {
+  name: Fakultas_3
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{API_URL}}/fakultas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "fakultasid" : "D00123"
+  }
+}

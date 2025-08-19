@@ -1,0 +1,21 @@
+meta {
+  name: Mata Kuliah_3
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/matkul
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "mkid" : "IT1"
+  }
+}

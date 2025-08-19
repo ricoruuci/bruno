@@ -1,0 +1,21 @@
+meta {
+  name: Buku_3
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/buku
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "bukuid" : "BKU-0001"
+  }
+}
