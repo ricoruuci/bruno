@@ -5,19 +5,20 @@ meta {
 }
 
 post {
-  url: {{API_URL}}/tahunajaran
+  url: {{API_URL}}/bobot
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-   "tahunid" : "FK01",
-   "tahunname" : "Nama Fakultas",
-   "note" : "Nama Fakultas"  
+   "bobotid" : "BT01",
+   "bobotname" : "Bobot Pak Miswanto",
+    "ptugas" : 20,
+    "puts" : 30,
+    "puas" : 40,
+    "pkehadiran" : 10,
+    "pothers" : 10,
+   "note" : "tes"  
   }
 }

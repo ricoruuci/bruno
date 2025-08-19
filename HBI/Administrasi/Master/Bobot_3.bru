@@ -5,17 +5,13 @@ meta {
 }
 
 delete {
-  url: {{API_URL}}/tahunajaran
+  url: {{API_URL}}/bobot
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "tahunid" : "D00123"
+     "bobotid" : "BB01"
   }
 }
