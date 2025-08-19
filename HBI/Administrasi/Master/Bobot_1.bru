@@ -1,0 +1,23 @@
+meta {
+  name: Bobot_1
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{API_URL}}/tahunajaran
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+   "tahunid" : "FK01",
+   "tahunname" : "Nama Fakultas",
+   "note" : "Nama Fakultas"  
+  }
+}

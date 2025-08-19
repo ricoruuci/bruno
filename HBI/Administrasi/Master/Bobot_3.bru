@@ -1,11 +1,11 @@
 meta {
-  name: Mata Kuliah_3
+  name: Bobot_3
   type: http
-  seq: 29
+  seq: 21
 }
 
 delete {
-  url: {{API_URL}}/matkul
+  url: {{API_URL}}/tahunajaran
   body: json
   auth: bearer
 }
@@ -16,6 +16,6 @@ auth:bearer {
 
 body:json {
   {
-     "mkid" : "IT1"
+     "tahunid" : "D00123"
   }
 }
