@@ -1,0 +1,38 @@
+meta {
+  name: Claim_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/claim
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "PC/1Tech/24/04/0003",
+      "salesid" : "S002",
+      "transdate" : "20240411",
+      "note" : "tes note",
+      "detail" : [
+          {
+              "transdate" : "20240411",
+              "amount" : 1,
+              "jumlah" : 1,
+              "note" : "tes note"
+          },
+          {
+              "transdate" : "20240411",
+              "amount" : 2,
+              "jumlah" : 2,
+              "note" : "tes note 2"
+          }
+      ]
+  }
+}

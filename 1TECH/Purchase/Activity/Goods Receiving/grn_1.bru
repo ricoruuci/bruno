@@ -1,0 +1,39 @@
+meta {
+  name: grn_1
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/grn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid": "SAS-PO/2023-120020",
+      "transdate": "20240918",
+      "suppid": "CSP055",
+      "warehouseid" : "01GU",
+      "nomordo": "12345678",
+      "note": "keterangan",
+      "detail": [
+          {
+              "itemid": "13.999.1734",
+              "qty": 1,
+              "price": 500000000,
+              "detailsn":[
+                  {
+                      "snid": "123",
+                      "fgjual": "T"
+                  }
+              ]
+          }
+      ]
+  }
+}

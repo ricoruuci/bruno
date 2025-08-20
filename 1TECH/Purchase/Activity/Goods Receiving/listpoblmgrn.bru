@@ -1,0 +1,26 @@
+meta {
+  name: listpoblmgrn
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/listpoblmgrn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate": "20240104",
+      "suppkeyword": "",
+      "suppnamekeyword": "",
+      "sortby": "dateold",
+      "pokeyword": ""
+      //"page" : 185
+  }
+}

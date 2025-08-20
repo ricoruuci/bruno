@@ -1,0 +1,34 @@
+meta {
+  name: Txn KKBB_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "voucherid": "BK/1Tech/24/03/0002",
+      "flag": "BK",
+      "transdate": "20240304",
+      "actor": "RICO",
+      "note": "TES",
+      "bankid": "OCBC",
+      "detail": [
+          {
+              "note": "AP-SAS/23/01/0003",
+              "amount": "200000.0000",
+              "rekeningid": "210100.0001",
+              "salesid" : ""
+          }
+      ]
+  }
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Txn KKBB
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"voucherid": "BK/1Tech/22/01/0005",
+      "dari" : "20220101",
+      "sampai" : "20241231",
+      "flag" : "PIB",
+      "bankid" : "",
+      "actorkeyword" : "",
+      "voucherkeyword" : "",
+      "sortby" : "old"
+  }
+}

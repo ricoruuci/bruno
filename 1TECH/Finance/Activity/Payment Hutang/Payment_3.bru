@@ -1,0 +1,21 @@
+meta {
+  name: Payment_3
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/payment
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "paymentid": "AP/TC-K/24/03/0002"
+  }
+}

@@ -1,0 +1,34 @@
+meta {
+  name: grn
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/grn
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     "grnid": "1Tech/GR/2002/0002",
+     //"page" : 114,
+      "dari": "20240101",
+      "sampai": "20240929",
+      "pokeyword": "",
+      "sokeyword": "",
+      "suppkeyword": "",
+      "suppnamekeyword": "",
+      "custkeyword": "",
+      "custnamekeyword": "",
+      "soid": "",
+      "sortby": "dateold",
+      "grnkeyword": ""
+      
+  }
+}

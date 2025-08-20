@@ -1,0 +1,21 @@
+meta {
+  name: postVehicle
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/vehicle
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "vehiclename" : "Avanza",
+     "vehicletype" : "Mobil",
+     "plat_no" : "B1982NAU",
+     "expireddate" : "20291001",
+     "productionyear" : "2024"
+  }
+}

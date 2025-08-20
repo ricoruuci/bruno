@@ -1,0 +1,23 @@
+meta {
+  name: Payment Invoice
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/payment/invoice
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "paymentid": "AP/1Tech/24/09/0044",
+      "suppid" : "CSP022",
+      "transdate" : "20241012"
+  }
+}
