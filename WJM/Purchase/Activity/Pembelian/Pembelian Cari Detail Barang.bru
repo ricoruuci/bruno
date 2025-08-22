@@ -1,0 +1,19 @@
+meta {
+  name: Pembelian Cari Detail Barang
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/pembelian/cari-detailbarang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "poid" : "PO/08850"
+     //"itemnamekeyword" : "10005675",
+    // "itemidkeyword" : "List"
+  }
+}

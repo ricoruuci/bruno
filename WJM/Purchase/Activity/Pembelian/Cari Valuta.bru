@@ -1,0 +1,15 @@
+meta {
+  name: Cari Valuta
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/cari-valuta
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

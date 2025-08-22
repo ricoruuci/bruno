@@ -1,0 +1,23 @@
+meta {
+  name: Group Customer_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/groupcust
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "groupid": "G001",
+          "groupdesc": "EXXTERNAL"
+  
+  }
+}
