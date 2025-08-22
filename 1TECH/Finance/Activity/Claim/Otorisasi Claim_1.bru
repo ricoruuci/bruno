@@ -1,0 +1,21 @@
+meta {
+  name: Otorisasi Claim_1
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/otorisasi/claim
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transid" : "PC/1Tech/24/04/0003"
+  }
+}

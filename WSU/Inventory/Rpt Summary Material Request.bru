@@ -1,0 +1,21 @@
+meta {
+  name: Rpt Summary Material Request
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/rptmaterialrequest
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20250705",
+    "sampai" : "20250705", 
+    "itemid" : "",
+    "productID" : "",
+    "custid" : ""
+  }
+}
