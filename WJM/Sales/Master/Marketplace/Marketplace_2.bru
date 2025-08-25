@@ -1,0 +1,22 @@
+meta {
+  name: Marketplace_2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/market
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+          "marketid": "111111",
+          "marketdesc": "tes aja edit"
+  }
+}

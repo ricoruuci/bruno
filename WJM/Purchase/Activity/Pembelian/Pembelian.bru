@@ -1,0 +1,30 @@
+meta {
+  name: Pembelian
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"purchaseid": "AP/2401/0065",
+      "dari": "20240101",
+      "sampai": "20240929",
+      "purchaseidkeyword" : "",
+      "suppidkeyword": "",
+      "suppnamekeyword": "",
+      "nosjkeyword": "",
+      "poidkeyword" : "",
+      "sortby": "dateold"
+      
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: SPK Cari Invoice
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/spk/cari-invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     //"custnamekeyword" : "PT.Multi Teknik Interior"
+     //"custidkeyword" : "SA004"
+     "saleidkeyword" : "KLM/PN/0524"
+      
+  }
+}
