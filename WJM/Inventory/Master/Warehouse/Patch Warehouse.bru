@@ -1,0 +1,26 @@
+meta {
+  name: Patch Warehouse
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/warehouse
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "itemid": "104.342.001",
+      "itemname": " barang tes",
+      "productid": "342",
+      "productdesc": "GOPRO HERO 8",
+      "groupid": "104",
+      "groupdesc": "ACCESORIES",
+      "uomid": "Unit",
+      "userprice" : 5000,
+      "dealerprice" : 2000
+         
+   }
+}
