@@ -1,0 +1,25 @@
+meta {
+  name: create komisi
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{API_URL}}/komisi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {   
+      "transdate" : "20240930",
+      "assetsid" : "SDA-ASSETS/0002",
+      "note" : "FEE OPERASIONAL",
+      "baseamount" : 1000000,
+      "amount" : 1000000,
+      "interest" : 12,
+      "cof" : 10000,
+      "term" : 12,
+      "kreditor" : "CRD001"
+  }
+}

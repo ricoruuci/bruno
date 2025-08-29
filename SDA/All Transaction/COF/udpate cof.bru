@@ -1,0 +1,27 @@
+meta {
+  name: udpate cof
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/cof
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "transid": "COF/2024/0001",
+      "transdate" : "20240930",
+      "assetsid" : "SDA-ASSETS/0002",
+      "note" : "FEE OPERASIONAL",
+      "amount" : 1000000,
+      "interest" : 12,
+      "cof" : 10000
+  }
+}

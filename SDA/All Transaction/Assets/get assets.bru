@@ -1,0 +1,20 @@
+meta {
+  name: get assets
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/assets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "assetsid" : "SDA-ASSETS/0009",
+      "keyword" : "",
+      "debitorkeyword" : "",
+      "sortby" : "debitor"
+  }
+}

@@ -1,0 +1,36 @@
+meta {
+  name: create txnkkbb
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transdate": "20250227",
+      "actor": "Rico Bahari",
+      "bankid": "1.002.001",
+      "note": "Tarik Tunai OCBC",
+      "currid": "IDR",
+      "fgtrans" : "BK",
+      "total": "70000.0000",
+      "nobgcek": null,
+      "transdate1": "20240813",
+      "detail" : [
+          {
+              "rekeningid": "1.003.001",
+              "note": "SAS.23.03.011",
+              "amount": "70000.0000",
+              "jenis": "D",
+              "assetsid": "SDA-ASSETS/0002",
+              "flag" : "TKM",
+              "kreditorid": "CRD003"
+          }
+      ]
+  }
+}

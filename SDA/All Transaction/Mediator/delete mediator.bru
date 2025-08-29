@@ -1,0 +1,21 @@
+meta {
+  name: delete mediator
+  type: http
+  seq: 12
+}
+
+delete {
+  url: {{API_URL}}/mediator
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "mediatorid" : "MDT003"
+  }
+}

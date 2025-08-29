@@ -1,0 +1,20 @@
+meta {
+  name: get grouprek
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/grouprek
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      //"grouprekid" : "110100",
+    "grouprekidkeyword" : "",
+    "groupreknamekeyword" : "",
+    "sortby" : "id",
+  }
+}

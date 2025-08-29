@@ -1,0 +1,22 @@
+meta {
+  name: create notary
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{API_URL}}/notary
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"mediatorid" : "MDT003",
+      "notaryname" : "B"
+  }
+}

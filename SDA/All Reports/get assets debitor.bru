@@ -1,0 +1,11 @@
+meta {
+  name: get assets debitor
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/assets/report/kreditor
+  body: json
+  auth: inherit
+}

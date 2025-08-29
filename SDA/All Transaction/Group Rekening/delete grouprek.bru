@@ -1,0 +1,21 @@
+meta {
+  name: delete grouprek
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/grouprek
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "grouprekid": "1.002"
+  }
+}

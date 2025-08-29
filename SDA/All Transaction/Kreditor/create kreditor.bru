@@ -1,0 +1,22 @@
+meta {
+  name: create kreditor
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{API_URL}}/kreditor
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"mediatorid" : "MDT003",
+      "kreditorname" : "B"
+  }
+}

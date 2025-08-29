@@ -1,0 +1,22 @@
+meta {
+  name: create mediator
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{API_URL}}/mediator
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"mediatorid" : "MDT003",
+      "mediatorname" : "B"
+  }
+}

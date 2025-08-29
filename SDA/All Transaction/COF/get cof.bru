@@ -1,0 +1,23 @@
+meta {
+  name: get cof
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/cof
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {   
+      "dari" : "20240101",
+      "sampai" : "20250930",
+      "keyword" : "",
+      "assetsidkeyword" : "",
+      "assetsnamekeyword" : "",
+      "notekeyword" : "",
+      "sortby" : "id"
+  }
+}

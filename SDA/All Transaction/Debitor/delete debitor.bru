@@ -1,0 +1,21 @@
+meta {
+  name: delete debitor
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/debitor
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "debitorid" : "DBT001"
+  }
+}

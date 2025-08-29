@@ -1,0 +1,22 @@
+meta {
+  name: create debitor
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/debitor
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"debitorid" : "MDT003",
+      "debitorname" : "B"
+  }
+}

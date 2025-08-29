@@ -1,0 +1,21 @@
+meta {
+  name: delete txnkkbb
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "voucherid" : "BK/24/08-0001"
+  }
+}

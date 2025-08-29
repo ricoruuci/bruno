@@ -1,0 +1,21 @@
+meta {
+  name: delete bunga
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/bunga
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "transid": "INT/2024/0001"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: update mediator
+  type: http
+  seq: 11
+}
+
+patch {
+  url: {{API_URL}}/mediator
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "mediatorid" : "MDT003",
+      "mediatorname" : "B"
+  }
+}

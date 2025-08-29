@@ -1,0 +1,17 @@
+meta {
+  name: delete komisi
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/komisi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {   
+      "transid": "COM/2024/0001"
+  }
+}

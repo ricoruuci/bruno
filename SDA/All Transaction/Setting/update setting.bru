@@ -1,0 +1,28 @@
+meta {
+  name: update setting
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/setting
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "drpiutangpinjaman": "1.001.001",
+      "drfeenotaris": "1.001.001",
+      "drfeemediator": "1.001.001",
+      "drkomisikreditor": "1.001.001",
+      "drdepositkreditor": "1.001.001",
+      "drfeeprovisi": "1.001.001",
+      "drfeeinterest": "1.001.001",
+      "drtotalpinjaman": "1.001.001",
+      "drbiayacof": "1.001.001",
+      "drkomisitambahan": "1.001.001",
+      "droperasional": "1.001.001",
+      "drbungatambahan": "1.001.001"
+  }
+}

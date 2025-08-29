@@ -1,0 +1,22 @@
+meta {
+  name: create cof
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/cof
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {   
+      "transdate" : "20240930",
+      "assetsid" : "SDA-ASSETS/0002",
+      "note" : "FEE OPERASIONAL",
+      "amount" : 1000000,
+      "interest" : 12,
+      "cof" : 10000
+  }
+}

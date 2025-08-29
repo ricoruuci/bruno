@@ -1,0 +1,23 @@
+meta {
+  name: update bank
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/bank
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "bankid" : "BCA",
+      "bankname" : "persediaan baru",
+      "rekeningid" : "1.002.001"
+  }
+}

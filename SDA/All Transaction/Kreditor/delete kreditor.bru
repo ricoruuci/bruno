@@ -1,0 +1,21 @@
+meta {
+  name: delete kreditor
+  type: http
+  seq: 12
+}
+
+delete {
+  url: {{API_URL}}/kreditor
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "kreditorid" : "CRD001"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: delete operasional
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{API_URL}}/opr
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "transid": "OPR/2024/0001"
+  }
+}

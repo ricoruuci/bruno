@@ -1,0 +1,21 @@
+meta {
+  name: delete assets
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/assets
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "assetsid": "SDA-ASSETS/0002"
+  }
+}

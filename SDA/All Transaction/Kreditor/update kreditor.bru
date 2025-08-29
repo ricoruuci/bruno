@@ -1,0 +1,22 @@
+meta {
+  name: update kreditor
+  type: http
+  seq: 11
+}
+
+patch {
+  url: {{API_URL}}/kreditor
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "kreditorid" : "CRD002",
+      "kreditorname" : "B"
+  }
+}

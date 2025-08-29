@@ -1,0 +1,21 @@
+meta {
+  name: delete notary
+  type: http
+  seq: 12
+}
+
+delete {
+  url: {{API_URL}}/notary
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "notaryid" : "NTR001"
+  }
+}

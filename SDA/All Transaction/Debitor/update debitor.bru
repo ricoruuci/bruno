@@ -1,0 +1,22 @@
+meta {
+  name: update debitor
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/debitor
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "debitorid" : "DBT004",
+      "debitorname" : "B"
+  }
+}
