@@ -1,0 +1,15 @@
+meta {
+  name: supplier_3
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/supplier/KdSupp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

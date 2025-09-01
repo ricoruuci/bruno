@@ -1,0 +1,23 @@
+meta {
+  name: Rpt Kas
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rptkas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"bankid" : "OCBC DEMI ",
+      "dari" : "20240101",
+      "sampai" : "20250101"
+  }
+}
