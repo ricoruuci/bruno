@@ -1,7 +1,7 @@
 meta {
   name: Create Penjualan
   type: http
-  seq: 6
+  seq: 7
 }
 
 post {
@@ -14,7 +14,7 @@ body:json {
   {
       "fginv" : "P",
       "faktur" : "",
-      "transdate" : "20240102",
+      "transdate" : "20250902",
       "custid" : "DI001",
       "supirid" : "A004",
       "tukangid" : "TA004",
@@ -48,6 +48,18 @@ body:json {
               "uomid" : "pcs"
               
           }
-      ]    
+      ],
+    "detailfoto" : [
+      {
+              "foto" : "",
+              "keterangan" :"tes"
+              
+          },
+      {
+             "foto" : "",
+              "keterangan" : "tes2"
+              
+          }
+    ]    
   }
 }

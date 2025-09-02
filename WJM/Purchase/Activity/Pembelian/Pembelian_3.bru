@@ -7,15 +7,11 @@ meta {
 delete {
   url: {{API_URL}}/pembelian
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "purchaseid": "AP/2410/0582"
+      "purchaseid": "AP/202410/0001"
   }
 }

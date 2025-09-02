@@ -1,18 +1,18 @@
 meta {
-  name: Bukti Surat Jalan
+  name: Bukti Pembayaran
   type: http
   seq: 4
 }
 
 patch {
-  url: {{API_URL}}/suratjalan/bukti
+  url: {{API_URL}}/penjualan/bukti
   body: json
   auth: inherit
 }
 
 body:json {
   {
-   "kontransbrgid" : "SJ/CRB/2025/09/0001",
+   "saleid" : "BDG/PN/5794",
     "detailfoto" : [
       {
               "foto" : "",
