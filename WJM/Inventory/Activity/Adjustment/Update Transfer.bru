@@ -5,22 +5,29 @@ meta {
 }
 
 patch {
-  url: {{API_URL}}/transfer
+  url: {{API_URL}}/adjustment
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "transferid": "TRS/25/06/0001",
-    "transferdate" : "20250630",
-    "warehousesrc" : "01GU",
-    "warehousedest" : "02GK",
+     "transid": "ADJ/25/09/0002",
+    "transdate" : "20250909",
+    "warehouseid" : "01GU",
     "note" : "",
     "detail" : [
       {
         "itemid" : "10005429",
-        "qty" : 1
+        "qty" : 1,
+        "fgstatus" : "T",
+        "alasan" : "rusak"
+      },
+      {
+        "itemid" : "10005428",
+        "qty" : 1,
+        "fgstatus" : "K",
+        "alasan" : "rusak"
       }
     ]
   }
