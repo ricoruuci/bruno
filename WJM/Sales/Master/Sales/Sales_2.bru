@@ -7,17 +7,13 @@ meta {
 patch {
   url: {{API_URL}}/sales
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "salesid": "s013",
-     "salesname" : "salesname",
+      "salesid": "A005",
+     "salesname" : "ASEP",
      "alamat" : "address",
      "telp" : "telp",
      "hp" : "hp",
@@ -36,11 +32,6 @@ body:json {
       {
               "foto" : "",
               "keterangan" :"tes"
-              
-          },
-      {
-             "foto" : "",
-              "keterangan" : "tes2"
               
           }
     ] 
