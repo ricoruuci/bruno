@@ -1,0 +1,20 @@
+meta {
+  name: user_1
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{API_URL}}/user
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "userid" : "Albob",
+      "password" : "123",
+      "kdgroup" : "sales",
+    "salesid" : ""
+  }
+}
