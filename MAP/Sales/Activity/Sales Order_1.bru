@@ -7,11 +7,7 @@ meta {
 post {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -32,7 +28,7 @@ body:json {
               "itemname": "Takara tripod 193 A",
               "qty": 1,
               "price": 50000,
-              "modal": 45000,
+              "modal": 1000,
               "bagasi": 0,
               "note": ""
           }

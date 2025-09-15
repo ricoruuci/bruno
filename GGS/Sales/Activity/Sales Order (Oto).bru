@@ -7,16 +7,12 @@ meta {
 patch {
   url: {{API_URL}}/salesorder/otorisasi
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "soid": "SO-GGS/2412/0027",
+      "soid": "SO-GGS/202311/0001",
       "jenis": "Y"
   }
 }

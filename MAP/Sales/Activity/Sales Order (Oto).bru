@@ -7,16 +7,12 @@ meta {
 patch {
   url: {{API_URL}}/otorisasiso
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "soid": "SOM-MAP/202411/0001",
+      "soid": "SOM-MAP/202411/0002",
       "jenis": "Y"
   }
 }

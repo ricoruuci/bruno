@@ -7,16 +7,12 @@ meta {
 post {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "custid": "DP036",
+      "custid": "DP035",
       "salesid": "S001",
       "transdate": "20231130",
       "tglkirim": "20231130",
