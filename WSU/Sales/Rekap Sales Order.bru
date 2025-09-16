@@ -1,0 +1,20 @@
+meta {
+  name: Rekap Sales Order
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{API_URL}}/rptrekapsalesorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari": "20250701",
+    "sampai": "20250916",
+    "fgoto": "",
+    "fgcetak": "T"
+  }
+}
