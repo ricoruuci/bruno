@@ -1,0 +1,19 @@
+meta {
+  name: Ms BOM
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/bom
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bomidkeyword" : "",
+    "itemidkeyword" : "",
+    "itemnamekeyword" : ""
+  }
+}
