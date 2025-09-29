@@ -1,0 +1,17 @@
+meta {
+  name: Absen Pulang
+  type: http
+  seq: 12
+}
+
+patch {
+  url: {{API_URL}}/absen-pulang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  { 
+      "transid" : "2025s015007"
+  }
+}
