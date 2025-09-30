@@ -1,0 +1,18 @@
+meta {
+  name: Standart
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/standart
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+       "brandkeyword" : "",
+       "fgmasterkeyword" : "S"
+  }
+}
