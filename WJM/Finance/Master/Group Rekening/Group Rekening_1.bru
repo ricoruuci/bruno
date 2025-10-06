@@ -1,22 +1,19 @@
 meta {
   name: Group Rekening_1
   type: http
-  seq: 7
+  seq: 2
 }
 
 post {
   url: {{API_URL}}/grouprek
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       "grouprekid" : "pp",
-      "grouprekname" : "p"
+      "grouprekname" : "p",
+      "note" : ""
   }
 }
