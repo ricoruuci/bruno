@@ -1,11 +1,11 @@
 meta {
-  name: get laporan penjualan
+  name: get beli
   type: http
-  seq: 7
+  seq: 1
 }
 
 get {
-  url: {{API_URL}}/rpt-penjualan
+  url: {{API_URL}}/beli
   body: json
   auth: inherit
 }
@@ -15,11 +15,6 @@ body:json {
     "dari" : "20250101",
     "sampai" : "20251231",
     "search_keyword" : "",
-    "company_id" : 3
-    
+    "supplier_keyword" : ""
   }
-}
-
-settings {
-  encodeUrl: true
 }

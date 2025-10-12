@@ -1,0 +1,19 @@
+meta {
+  name: create bahan baku
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/bahan-baku
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bahan_baku_name" : "KENTANG",
+    "satuan" : "KG",
+    "group_bahan_baku_id" : "GRUP01"
+  }
+}

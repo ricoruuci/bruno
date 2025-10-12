@@ -1,0 +1,25 @@
+meta {
+  name: get txnkkbb
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20250122",
+    "sampai" : "20251231",
+    "flagkkbb" : "KK",
+    //flagkkbb : KM,KK,BM,BK,JU,APB,APK
+    "bank_id" : "",
+    "actorkeyword" : "",
+    "voucherkeyword" : "",
+    "sortby" : "old"
+    //sort by : new, old
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: delete bahan baku
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/bahan-baku
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bahan_baku_id": "BB0002"
+  }
+}

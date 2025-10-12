@@ -1,0 +1,21 @@
+meta {
+  name: Update bank
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{API_URL}}/bank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bank_id": "MANDIRI",
+    "bank_name": "MANDIRI",
+    "rekening_id": "100.02",
+    "note": "",
+    "fgactive": "Y"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: get beli by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/beli-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nota_beli": "PBL/25/07/0001"
+  }
+}

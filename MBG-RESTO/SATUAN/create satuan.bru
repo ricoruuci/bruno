@@ -1,0 +1,17 @@
+meta {
+  name: create satuan
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/satuan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "satuan" : "KG"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: get menu by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/menu-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "menu_id" : "RM0050"
+  }
+}

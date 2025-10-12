@@ -1,0 +1,28 @@
+meta {
+  name: update set rekening
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/set-rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "rek_pembelian": "500.01",
+    "rek_ppn_beli": "102.01",
+    "rek_hutang": "200.01",
+    "rek_penjualan": "400.01",
+    "rek_ppn_jual": "201.01",
+    "rek_piutang": "101.01",
+    "rek_kas": "100.01",
+    "rek_laba": "302.01"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

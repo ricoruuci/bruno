@@ -1,0 +1,25 @@
+meta {
+  name: update user
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{API_URL}}/user
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "userid" : "rico",
+    "group_user" : "ADM",
+    /* group user hardcode = ADM USR */
+    "company_id" : "1"
+    /* ambil dari list-cabang */
+  }
+}
+
+settings {
+  encodeUrl: true
+}
