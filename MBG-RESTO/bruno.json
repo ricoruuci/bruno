@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "MBG-RESTO",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

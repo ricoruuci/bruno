@@ -1,0 +1,17 @@
+meta {
+  name: delete beli
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{API_URL}}/beli
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nota_beli": "PBL/25/07/0003"
+  }
+}

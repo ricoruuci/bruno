@@ -1,0 +1,22 @@
+meta {
+  name: get laporan penjualan harian
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/rpt-penjualan-harian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20250724"
+    
+  }
+}
+
+settings {
+  encodeUrl: true
+}

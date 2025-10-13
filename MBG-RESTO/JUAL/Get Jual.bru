@@ -1,0 +1,17 @@
+meta {
+  name: Get Jual
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nota_jual" : "MR202507240001"
+  }
+}

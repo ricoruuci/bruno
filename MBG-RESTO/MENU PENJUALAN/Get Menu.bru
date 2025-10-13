@@ -1,0 +1,11 @@
+meta {
+  name: Get Menu
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/menu-penjualan
+  body: json
+  auth: inherit
+}

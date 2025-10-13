@@ -7,16 +7,12 @@ meta {
 post {
   url: {{API_URL}}/payment
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      //"paymentid": "AP/1Tech/23/01/0016",
+      "paymentid": "AP/1Tech/23/01/0016",
       "flag": "K",
       "transdate": "20240304",
       "tglcair": "20240304",

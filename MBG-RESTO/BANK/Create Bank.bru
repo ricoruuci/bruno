@@ -1,0 +1,21 @@
+meta {
+  name: Create Bank
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/bank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bank_id": "BNI",
+    "bank_name": "BANK OCBC",
+    "rekening_id": "100.02",
+    "note": "",
+    "fgactive": "Y"
+  }
+}

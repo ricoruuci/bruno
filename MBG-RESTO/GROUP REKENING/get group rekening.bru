@@ -1,0 +1,17 @@
+meta {
+  name: get group rekening
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/group-rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "search_keyword" : ""
+  }
+}

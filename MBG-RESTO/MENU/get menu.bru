@@ -1,0 +1,17 @@
+meta {
+  name: get menu
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/menu
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "search_keyword" : "Sunny"
+  }
+}

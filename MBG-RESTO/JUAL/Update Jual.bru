@@ -1,10 +1,10 @@
 meta {
-  name: Insert Jual
+  name: Update Jual
   type: http
-  seq: 2
+  seq: 3
 }
 
-post {
+patch {
   url: {{API_URL}}/penjualan
   body: json
   auth: inherit
@@ -12,16 +12,16 @@ post {
 
 body:json {
   {
-    "transdate" : "20250806",
+    "nota_jual": "MR202507240001",
+    "transdate" : "20250623",
     "cashier" : "shoen",
-    "nomor_meja" : "006",
+    "fgstatus" : 0,
+    "nomor_meja" : "001",
     "note" : "",
-    "fgstatus" : "0",
-    /* 0=dine in,1=take away,2=delivery */
     "detail" : [
       {
         "menu_id" : "RM0051",
-        "qty" : 7,
+        "qty" : 15,
         "price" : 10000,
         "note" : ""
       }

@@ -1,0 +1,17 @@
+meta {
+  name: Get Meja Ada Order
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/data-meja
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20250806"
+  }
+}

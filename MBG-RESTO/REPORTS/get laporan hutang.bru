@@ -1,21 +1,20 @@
 meta {
-  name: get laporan penjualan
+  name: get laporan hutang
   type: http
   seq: 7
 }
 
 get {
-  url: {{API_URL}}/rpt-penjualan
+  url: {{API_URL}}/rpt-hutang
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "dari" : "20250101",
-    "sampai" : "20251231",
+    "transdate" : "20251231",
     "search_keyword" : "",
-    "company_id" : 3
+    "supplier_keyword" : ""
     
   }
 }

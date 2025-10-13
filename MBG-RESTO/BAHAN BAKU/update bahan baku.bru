@@ -1,0 +1,20 @@
+meta {
+  name: update bahan baku
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/bahan-baku
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "bahan_baku_id": "BB0002",
+    "bahan_baku_name" : "BROKOLI",
+    "satuan" : "KG",
+    "group_bahan_baku_id" : "GRUP01"
+  }
+}

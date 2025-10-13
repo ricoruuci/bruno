@@ -1,0 +1,18 @@
+meta {
+  name: get nota belum lunas
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/cari-nota-belum-lunas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "actor" : "SUP0002",
+    "transdate" : "20251231"
+  }
+}

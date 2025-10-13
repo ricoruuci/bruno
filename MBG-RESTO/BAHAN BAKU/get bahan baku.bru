@@ -1,0 +1,17 @@
+meta {
+  name: get bahan baku
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/bahan-baku
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "search_keyword" : ""
+  }
+}
