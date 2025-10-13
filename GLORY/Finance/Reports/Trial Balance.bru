@@ -1,0 +1,18 @@
+meta {
+  name: Trial Balance
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rpttrialbalance
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "dari" : "20251001",
+      "sampai" : "20251010"
+  }   
+}

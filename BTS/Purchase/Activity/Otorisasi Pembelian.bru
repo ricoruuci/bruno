@@ -1,0 +1,27 @@
+meta {
+  name: Otorisasi Pembelian
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/pembelian/otorisasi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  //     "purchaseid" : "INV-001314680",
+      "dari" : "20250101",
+      "sampai" : "20251013",
+      "purchaseidkeyword" : "",
+      "nodokeyword" : "",
+      "suppidkeyword" : "",
+      "suppnamekeyword" : "",
+      "fgoto" : "T",
+      "sortby" : "date"
+      //"sampai": "20241111"
+      
+  }
+}

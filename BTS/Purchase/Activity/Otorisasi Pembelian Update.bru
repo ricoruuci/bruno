@@ -1,0 +1,18 @@
+meta {
+  name: Otorisasi Pembelian Update
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/pembelian/otorisasi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+       "purchaseid" : "INV-001314680",
+       "fgoto" : "Y"
+  }
+}
