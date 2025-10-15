@@ -1,0 +1,21 @@
+meta {
+  name: Otorisasi Pembelian
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/purchase/otorisasi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "purchaseid" : "ZJ24I01185"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Penjualan Cek Bayar
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/penjualan/cekbayar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "saleid": "MAP-AR/2402/00001"
+  
+  }
+}

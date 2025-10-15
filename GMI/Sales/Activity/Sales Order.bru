@@ -1,0 +1,32 @@
+meta {
+  name: Sales Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"soid": "SOM-MAP/202411/0001",
+      //"oto": 1,
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20230919",
+      "custidkeyword": "",
+      "custnamekeyword": "",
+      "salesidkeyword": "",
+      "salesnamekeyword": "",
+      "sortby": "old",
+      "soidkeyword": ""
+      
+  }
+}
