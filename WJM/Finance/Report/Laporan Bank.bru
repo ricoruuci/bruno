@@ -1,0 +1,19 @@
+meta {
+  name: Laporan Bank
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/rptbank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "bankid": "",
+        "dari" :"20240101",
+      "sampai" : "20240531"
+  }
+}
