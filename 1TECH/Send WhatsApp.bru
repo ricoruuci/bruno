@@ -1,0 +1,27 @@
+meta {
+  name: Send WhatsApp
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{API_URL}}/send-whatsapp
+  body: json
+  auth: inherit
+}
+
+body:json {
+  
+  
+  
+  {"token":"LhWLbLUkjeN8aePHhxqR","to":"6285322991179",
+   
+   "message":"Uang Makan Hindra Kumala\nUMK Hindra Kumala : 250,000.00\nBensin dan Parkir Hindra Kumala : 200,000.00\nService Hindra Kumala : 100,000.00\nTerima kasih."}
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
