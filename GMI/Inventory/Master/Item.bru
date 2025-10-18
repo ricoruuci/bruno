@@ -1,0 +1,30 @@
+meta {
+  name: item
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/item
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+              "itemname": " barang tes",
+              "productid": "342",
+              "productdesc": "GOPRO HERO 8",
+              "groupid": "104",
+              "groupdesc": "ACCESORIES",
+              "partno": "HERO8",
+              "uomid": "Unit",
+              "userprice" : 5000,
+              "dealerprice" : 2000
+         
+   }
+}

@@ -1,0 +1,34 @@
+meta {
+  name: supplier
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/supplier
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "salesname" : "nama salesa",
+      "address" : "jakarta",
+      "phone" : "",
+      "hp" : "081xxx",
+      "email" : "testing@gmail.com",
+      "note" : "",
+      "jabatan" : "sales",
+      "uangmakan" : 0,
+      "uangbulanan" : 0,
+      "fgactive" : "Y",
+      "tglgabung" : "20171101",
+      "limitkasbon" : 0,
+      "kerajinan" : 0,
+      "tomzet" : 0,
+      "kom1" : 0,
+      "kom2" : 0,
+      "kom3" : 0,
+      "kom4" : 0
+  }
+}

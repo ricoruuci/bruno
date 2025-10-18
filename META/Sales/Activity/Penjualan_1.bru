@@ -1,0 +1,74 @@
+meta {
+  name: Penjualan_1
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "SO-MAP/2111/0015",
+      "transdate" : "20241001",
+      "custid" : "DP177",
+      "salesid" : "E003",
+      "term" : 30,
+      "dp" : 0,
+      "nama" : "ilham",
+      "fgtax" : "T",
+      "fgtrans" : "I",
+      "nilaitax" : 11,
+      "alamat" : "JAKARTA",
+      "administrasi" : 0,
+      "namappk" : "",
+      "note" : "",
+      "pekerjaan" : "",
+      "tgldo" : "",
+      "nosp" : "",
+      "tglsp" : "",
+      "taxid" : ".005-24.78458946",
+      "fgdetail" : "Y",
+      "nopi" : "",
+      "pocust" : "",
+      "fgrek" : "Y",
+      "detail" : [
+          {
+              "itemid" : "104.221.001",
+              "price" : 150000,
+              "qty" : 1,
+              "bagasi" : 1500,
+              "modal" : 1000,
+              "uomid" : "unit",
+              "note" : "SSSSSSSSSSSSSSS",
+              "fgtampil" : "Y",
+              "fgpph" : "P",
+              "pph" : 0,
+              "detailsn" : [
+                  {
+                      "snid" : "sn001",
+                      "price" : 150000,
+                      "purchaseid" : "1Tech/GR/2101/0059",
+                      "modal" : 10000,
+                      "fgsn" : "Y"
+                  }
+                  // ,
+                  // {
+                  //     "snid" : "sn003",
+                  //     "price" : 150000,
+                  //     "purchaseid" : "GRN-0001",
+                  //     "modal" : 10000,
+                  //     "fgsn" : "Y"
+                  // }
+              ]
+          }
+      ]    
+  }
+}
