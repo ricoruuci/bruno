@@ -1,0 +1,19 @@
+meta {
+  name: Patch Bayar Mahasiswa
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{API_URL}}/mahasiswa/bayar
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "mhsid" : "20250101",
+     "fgbayar" : "Y"
+     
+  }
+}
