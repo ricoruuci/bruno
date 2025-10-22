@@ -1,0 +1,19 @@
+meta {
+  name: updateGroup
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/groupitem
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {   
+    "groupid": "G/W-001",
+    "groupdesc": " barang tes"
+         
+   }
+}

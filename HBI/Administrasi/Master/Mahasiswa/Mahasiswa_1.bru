@@ -7,17 +7,13 @@ meta {
 post {
   url: {{API_URL}}/mahasiswa
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "mhsid" : "mhs11",
-     "mhsname" : "perdi",
+     "mhsid" : "mhs50",
+     "mhsname" : "erik",
      "address" : "address",
      "telp" : "telp",
      "hp" : "hp",
@@ -30,7 +26,8 @@ body:json {
      "fakultas" : "KF001",
      "progstudi" : "MTh",
      "biayakuliah" : 10000,
-     "foto" : ""
+     "foto" : "",
+    "angkatan" : "2025"
      
   }
 }
