@@ -5,7 +5,7 @@ meta {
 }
 
 patch {
-  url: {{API_URL}}/purchase-invoice/2
+  url: {{API_URL}}/purchase-invoice/1
   body: json
   auth: inherit
 }
@@ -23,24 +23,24 @@ body:json {
     "coa_vat_in" : 8,
     "detail" : [
       {
-        "id" : 3,
+        "id" : 1,
         "status" : "update",
-        "warehouse_id" : 1,
         "item_id" : 1,
-        "qty" : 1,  
-        "price" : 50000
+        "qty" : 4,  
+        "price" : 1250000
       },
-      {
-        "id" : 4,
-        "status" : "delete"
-      },
+      /*
       {
         "status" : "insert",
-        "warehouse_id" : 1,
-        "item_id" : 2,
-        "qty" : 2,
-        "price" : 50000
-      }     
+        "item_id" : 4,
+        "qty" : 1,
+        "price" : 2000000
+      },
+      */
+      {
+        "id" : 2,
+        "status" : "delete"
+      }    
     ]
   }
 }

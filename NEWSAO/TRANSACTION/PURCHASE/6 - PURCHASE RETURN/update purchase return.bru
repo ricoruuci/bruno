@@ -5,7 +5,7 @@ meta {
 }
 
 patch {
-  url: {{API_URL}}/purchase-return/8
+  url: {{API_URL}}/purchase-return/1
   body: json
   auth: inherit
 }
@@ -22,22 +22,24 @@ body:json {
     "coa_ap_return": 27,
     "coa_vat_in": 8,
     "detail": [
-      {
-        "status" : "update",
-        "id" : 7,
-        "item_id": 1,
-        "qty": 1,
-        "price": 50000
-      },
+      /*
       {
         "status" : "delete",
-        "id" : 8
+        "id" : 1
       },
       {
         "status" : "insert",
-        "item_id": 2,
-        "qty": 2,
-        "price": 50000
+        "item_id": 3,
+        "qty": 1,
+        "price": 1250000
+      },
+      */
+      {
+        "status" : "update",
+        "id" : 1,
+        "item_id": 3,
+        "qty": 1,
+        "price": 1250000
       }
     ]
   }

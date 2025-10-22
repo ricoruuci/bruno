@@ -5,7 +5,7 @@ meta {
 }
 
 patch {
-  url: {{API_URL}}/purchase-order/2
+  url: {{API_URL}}/purchase-order/3
   body: json
   auth: inherit
 }
@@ -22,8 +22,8 @@ body:json {
         "status" : "update",
         "id" : 1,
         "item_id" : 1,
-        "qty" : 2,
-        "price" : 50000
+        "qty" : 3,
+        "price" : 1000000
       },
       {
         "status" : "delete",
@@ -31,9 +31,9 @@ body:json {
       },
       {
         "status" : "insert",
-        "item_id" : 3,
-        "qty" : 2,
-        "price" : 50000
+        "item_id" : 4,
+        "qty" : 1,
+        "price" : 2000000
       }
     ]
   }

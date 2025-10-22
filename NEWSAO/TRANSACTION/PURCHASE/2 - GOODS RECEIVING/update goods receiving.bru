@@ -5,7 +5,7 @@ meta {
 }
 
 patch {
-  url: {{API_URL}}/goods-receiving/2
+  url: {{API_URL}}/goods-receiving/1
   body: json
   auth: inherit
 }
@@ -21,24 +21,25 @@ body:json {
     "coa_accrued_debt" : 25,
     "detail" : [
       {
-        "id" : 1,
-        "status" : "update",
-        "warehouse_id" : 1,
-        "item_id" : 1,
-        "qty" : 1,  
-        "price" : 50000
+        "status" : "delete",
+        "id" : 1
       },
       {
         "id" : 2,
-        "status" : "delete"
+        "status" : "update",
+        "warehouse_id" : 1,
+        "item_id" : 3,
+        "qty" : 4,  
+        "price" : 1250000
       },
       {
         "status" : "insert",
         "warehouse_id" : 1,
-        "item_id" : 2,
-        "qty" : 2,
-        "price" : 50000
-      }     
+        "item_id" : 4,
+        "qty" : 1,
+        "price" : 2000000
+      }
     ]
   }
+  
 }
