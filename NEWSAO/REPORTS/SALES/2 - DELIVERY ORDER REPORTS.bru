@@ -1,0 +1,16 @@
+meta {
+  name: 2 - DELIVERY ORDER REPORTS
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/purchase-order-reports
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

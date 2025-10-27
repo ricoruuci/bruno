@@ -14,23 +14,23 @@ body:json {
   {
     "tx_date" : "2025-04-21",
     "warehouse_id" : 1,
-    "stock_transfer_id" : 1,
+    "stock_transfer_id" : 2,
     "note" : "",
     "currency_id" : 1,
     "rate" : 1,
-    "coa_stock" : 1,
-    "coa_transfer" : 1,
+    "coa_stock" : 9,
+    "coa_transfer" : 12,
     "detail" : [
       {
         "item_id" : 1,
         "qty" : 1,  
-        "price" : 50000,
+        "price" : 900000,
         "note" : ""
       },
       {
         "item_id" : 2,
         "qty" : 1,  
-        "price" : 50000,
+        "price" : 850000,
         "note" : ""
       }
     ]
@@ -39,4 +39,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

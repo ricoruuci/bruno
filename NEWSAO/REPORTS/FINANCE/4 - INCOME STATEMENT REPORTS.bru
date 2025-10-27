@@ -1,0 +1,16 @@
+meta {
+  name: 4 - INCOME STATEMENT REPORTS
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/purchase-order-reports
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

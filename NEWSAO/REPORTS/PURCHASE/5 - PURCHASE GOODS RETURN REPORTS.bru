@@ -1,0 +1,16 @@
+meta {
+  name: 5 - PURCHASE GOODS RETURN REPORTS
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/purchase-order-reports
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

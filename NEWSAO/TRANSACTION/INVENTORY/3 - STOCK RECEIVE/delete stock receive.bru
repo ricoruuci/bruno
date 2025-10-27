@@ -5,11 +5,12 @@ meta {
 }
 
 delete {
-  url: {{API_URL}}/stock-receive/2
+  url: {{API_URL}}/stock-receive/1
   body: json
   auth: inherit
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
