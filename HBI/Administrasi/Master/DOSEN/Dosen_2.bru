@@ -7,11 +7,7 @@ meta {
 patch {
   url: {{API_URL}}/dosen
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -26,7 +22,11 @@ body:json {
      "rekeningid" : "123123",
      "fgactive" : "Y",
      "tglgabung" : "20240610",
-     "foto" : ""
+     "foto" : "",
+    "fb" : "2",
+    "tiktok" : "2",
+    "ig" : "2",
+    "gs" : "1"
      
   }
 }
