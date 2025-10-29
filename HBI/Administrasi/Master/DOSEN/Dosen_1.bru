@@ -7,11 +7,7 @@ meta {
 post {
   url: {{API_URL}}/dosen
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -27,9 +23,9 @@ body:json {
      "fgactive" : "Y",
      "tglgabung" : "20240610",
      "foto" : "",
-    "fb" : "",
-    "tiktok" : "",
-    "ig" : ""
+    "fb" : "1",
+    "tiktok" : "2",
+    "ig" : "3"
     
      
   }
