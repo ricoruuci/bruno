@@ -5,9 +5,26 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/purchase-order-reports
-  body: none
+  url: {{API_URL}}/goods-receiving-reports
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "start_date" : "2025-01-01",
+    "end_date" : "2025-12-31",
+    "group_by" : "vendor",
+    "filter" : {
+      "goods_receiving" : "",
+      "vendor" : "",
+      "item" : ""
+    },
+    "sort_by" : {
+      "field" : "goods_receiving.tx_date",
+      "direction" : "asc"
+    }
+  }
 }
 
 settings {
