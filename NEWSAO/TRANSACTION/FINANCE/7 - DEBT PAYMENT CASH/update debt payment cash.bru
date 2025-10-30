@@ -1,11 +1,11 @@
 meta {
-  name: create dept payment cash
+  name: update debt payment cash
   type: http
-  seq: 3
+  seq: 4
 }
 
-post {
-  url: {{API_URL}}/dept-payment-cash
+patch {
+  url: {{API_URL}}/debt-payment-cash/3
   body: json
   auth: inherit
 }
@@ -20,6 +20,8 @@ body:json {
     "rate" : 1,
     "detail" : [
       {
+        "status" : "update",
+        "id" : 5,
         "coa_id" : 1,
         "coa_entry_side" : "D",
         "amount" : 1000,  
@@ -27,6 +29,8 @@ body:json {
         "note" : "bayar 1"
       },
       {
+        "status" : "update",
+        "id" : 6,
         "coa_id" : 2,
         "coa_entry_side" : "K",
         "amount" : 1000,  
@@ -39,4 +43,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

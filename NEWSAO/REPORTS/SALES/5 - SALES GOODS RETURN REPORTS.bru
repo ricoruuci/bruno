@@ -5,9 +5,26 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/purchase-order-reports
-  body: none
+  url: {{API_URL}}/sales-goods-return-reports
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "start_date" : "2025-01-01",
+    "end_date" : "2025-12-31",
+    "group_by" : "customer",
+    "filter" : {
+      "sales_goods_return" : "",
+      "customer" : "",
+      "item" : ""
+    },
+    "sort_by" : {
+      "field" : "sales_goods_return.tx_date",
+      "direction" : "asc"
+    }
+  }
 }
 
 settings {

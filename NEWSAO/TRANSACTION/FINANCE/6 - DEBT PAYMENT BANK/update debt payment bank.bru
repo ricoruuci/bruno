@@ -1,11 +1,11 @@
 meta {
-  name: update dept payment cash
+  name: update debt payment bank
   type: http
   seq: 4
 }
 
 patch {
-  url: {{API_URL}}/dept-payment-cash/3
+  url: {{API_URL}}/debt-payment-bank/3
   body: json
   auth: inherit
 }
@@ -13,7 +13,7 @@ patch {
 body:json {
   {
     "tx_date" : "2025-08-12",
-    "cash_id" : 1,
+    "bank_id" : 1,
     "vendor_id" : 1,
     "note" : "",
     "currency_id" : 1,
@@ -43,4 +43,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
