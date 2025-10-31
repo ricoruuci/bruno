@@ -1,11 +1,11 @@
 meta {
-  name: create dept payment bank
+  name: create debt payment bank
   type: http
   seq: 3
 }
 
 post {
-  url: {{API_URL}}/dept-payment-bank
+  url: {{API_URL}}/debt-payment-bank
   body: json
   auth: inherit
 }
@@ -39,4 +39,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

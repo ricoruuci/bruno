@@ -1,11 +1,11 @@
 meta {
-  name: 2 - DELIVERY ORDER REPORTS
+  name: get debt payment bank
   type: http
-  seq: 2
+  seq: 1
 }
 
 get {
-  url: {{API_URL}}/delivery-order-reports
+  url: {{API_URL}}/debt-payment-bank
   body: json
   auth: inherit
 }
@@ -14,14 +14,11 @@ body:json {
   {
     "start_date" : "2025-01-01",
     "end_date" : "2025-12-31",
-    "group_by" : "customer",
     "filter" : {
-      "delivery_order" : "",
-      "customer" : "",
-      "item" : ""
+      "debt_payment_bank" : ""
     },
     "sort_by" : {
-      "field" : "delivery_order.tx_date",
+      "field" : "debt_payment_bank.number",
       "direction" : "asc"
     }
   }

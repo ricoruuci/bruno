@@ -1,0 +1,33 @@
+meta {
+  name: update fg upload
+  type: http
+  seq: 11
+}
+
+patch {
+  url: {{API_URL}}/update-nota-beli
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "adjustment" : 0,
+    "data" : [
+      {
+        "nota_beli" : "MBGKT/25/10/001"
+      },
+      {
+        "nota_beli" : "MBGKT/25/10/001"
+      },
+      {
+        "nota_beli" : "MBGKT/25/10/001"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

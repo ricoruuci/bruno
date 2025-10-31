@@ -1,11 +1,11 @@
 meta {
-  name: get dept payment bank
+  name: 7 - PAYABLE REPORTS
   type: http
-  seq: 1
+  seq: 7
 }
 
 get {
-  url: {{API_URL}}/dept-payment-bank
+  url: {{API_URL}}/payable-reports
   body: json
   auth: inherit
 }
@@ -15,10 +15,12 @@ body:json {
     "start_date" : "2025-01-01",
     "end_date" : "2025-12-31",
     "filter" : {
-      "dept_payment_bank" : ""
+      "purchase_invoice" : "",
+      "vendor" : "",
+      "item" : ""
     },
     "sort_by" : {
-      "field" : "dept_payment_bank.number",
+      "field" : "purchase_invoice.tx_date",
       "direction" : "asc"
     }
   }

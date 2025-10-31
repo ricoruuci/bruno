@@ -1,11 +1,11 @@
 meta {
-  name: get dept payment cash
+  name: get debt payment cash
   type: http
   seq: 1
 }
 
 get {
-  url: {{API_URL}}/dept-payment-cash
+  url: {{API_URL}}/debt-payment-cash
   body: json
   auth: inherit
 }
@@ -15,10 +15,10 @@ body:json {
     "start_date" : "2025-01-01",
     "end_date" : "2025-12-31",
     "filter" : {
-      "dept_payment_cash" : ""
+      "debt_payment_cash" : ""
     },
     "sort_by" : {
-      "field" : "dept_payment_cash.number",
+      "field" : "debt_payment_cash.number",
       "direction" : "asc"
     }
   }

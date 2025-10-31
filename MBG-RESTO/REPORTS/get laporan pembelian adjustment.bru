@@ -1,11 +1,11 @@
 meta {
-  name: get laporan penjualan
+  name: get laporan pembelian adjustment
   type: http
-  seq: 7
+  seq: 10
 }
 
 get {
-  url: {{API_URL}}/rpt-penjualan
+  url: {{API_URL}}/rpt-beli-adjustment
   body: json
   auth: inherit
 }
@@ -14,8 +14,8 @@ body:json {
   {
     "dari" : "20250101",
     "sampai" : "20251231",
-    "search_keyword" : "",
-    "company_id" : 3
+    "adjustment" : 30,
+    "company_id" : 4
   }
 }
 
