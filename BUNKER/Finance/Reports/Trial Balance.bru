@@ -7,16 +7,14 @@ meta {
 get {
   url: {{API_URL}}/rpttrialbalance
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       "dari" : "20251010",
-      "sampai" : "20251010"
+      "sampai" : "20251010",
+      "groupreknamekeyword" : "",
+      "rekeningnamekeyword" : "kas"
   }   
 }
