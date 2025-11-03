@@ -1,0 +1,18 @@
+meta {
+  name: Otorisasi Input Jadwal
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/skripsi/otorisasi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transid" : "SKR-0001",
+      "fgoto" : "Y"
+  }
+}

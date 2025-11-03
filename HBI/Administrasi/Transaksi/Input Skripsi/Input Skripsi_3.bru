@@ -1,0 +1,23 @@
+meta {
+  name: Input Skripsi_3
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/skripsi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transid" : "SKR-0001",
+    "tahunid" : "2026-1",
+    "psid" : "PAK",
+    "dosenid" : "DSN001",
+    "angkatan" : "2025",
+    "judul" : "Pengembangan Aplikasi ERP",
+    "note" : ""
+  }
+}
