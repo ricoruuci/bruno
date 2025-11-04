@@ -1,0 +1,22 @@
+meta {
+  name: Otorisasi Pembelian_1
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/pembelian/otorisasi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+       "purchaseid" : "1/06/2016",
+       "fgoto" : "Y"
+  }
+}

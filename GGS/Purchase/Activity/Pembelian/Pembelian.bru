@@ -1,0 +1,28 @@
+meta {
+  name: Pembelian
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  //    "purchaseid": "AP-SAS/24/10/0005",
+      "dari": "20240101",
+      "sampai": "20240929",
+  //   "purchaseidkeyword": "AP-SAS/24/10/0005",
+  //     "konsinyasiidkeyword" : "",
+  //     "suppid": "",
+  //     "suppnamekeyword": "",
+  //     "custidkeyword": "",
+  //     "custnamekeyword": "",
+  //     "poidkeyword" : "SAS",
+      "sortby": "dateold"
+      
+  }
+}
