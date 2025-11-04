@@ -1,0 +1,19 @@
+meta {
+  name: Rpt Average Costing
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{API_URL}}/rptaveragecosting?
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tahun" : "2024",
+    "itemid" : "",
+    "groupid" : ""
+  }
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Purchase Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"poid": "SAS-PO/2023-120001",
+      "dari": "20210104",
+      "sampai": "20241231",
+      "custid": "",
+      "suppid": "",
+      "sortby": "new",
+      "keyword": "2023-120002",
+      "page" : 1
+  }
+}

@@ -1,0 +1,57 @@
+meta {
+  name: Pembelian_3
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "transdate": "2024-10-04",
+    "nofps": "292121",
+    "konsinyasiid": "1Tech/GR/2409/0063",
+    "suppid": "CSP009",
+    "note": "Pembelian konsinyasi dari supplier CSP009",
+    "nilaitax": 11,
+    "fgtax": "Y",
+    "jatuhtempo": 30,
+    "rekeningp": "111-001",          // Rekening pembelian
+    "rekeningu": "112-001",          // Rekening uang muka
+    "rekeningk": "211-001",          // Rekening hutang
+    "rekpersediaan": "114-001",      // Rekening persediaan
+    "rekhpp": "511-001",             // Rekening HPP
+    "npwp": "01.234.567.8-901.000",
+    "detail": [
+      {
+        "itemid": "55.979.009",
+        "qty": 2,
+        "price": 150000,
+        "detailsn": [
+          { "snid": "SN001" },
+          { "snid": "SN002" }
+        ]
+      },
+      {
+        "itemid": "66.111.008",
+        "qty": 1,
+        "price": 300000,
+        "detailsn": [
+          { 
+            "snid": "SN003",
+            "fgsn" : "Y" // kalo Y isi sendiri kalo T Generate
+          }
+        ]
+      }
+    ]
+  }
+  
+}

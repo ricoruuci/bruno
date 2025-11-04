@@ -1,0 +1,22 @@
+meta {
+  name: grouprek_1
+  type: http
+  seq: 10
+}
+
+patch {
+  url: {{API_URL}}/grouprek
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "grouprekid": "1.002",
+      "grouprekname" : "cogs"
+  }
+}
