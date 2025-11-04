@@ -1,0 +1,16 @@
+meta {
+  name: 14 - SALES PAYMENT CASH REPORTS
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{API_URL}}/journal-reports
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: 12 - DEBT PAYMENT CASH REPORTS
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{API_URL}}/journal-reports
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
