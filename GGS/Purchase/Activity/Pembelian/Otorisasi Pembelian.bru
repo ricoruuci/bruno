@@ -5,19 +5,15 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/pembelian/otorisasi
+  url: {{API_URL}}/purchase/otorisasi
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "purchaseid" : "20160601DEMI"
-      //"sampai": "20241111"
+      //"purchaseidkeyword" : ""
+      //"suppnamekeyword": ""
       
   }
 }

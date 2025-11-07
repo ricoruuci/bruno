@@ -1,0 +1,20 @@
+meta {
+  name: Cari-SN Pembelian
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/pembelian/cari-sn
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {     //"snidkeyword": "",
+      "grnid" : "GGS/GR/2405/0002",
+      "itemid": "104.1005.004"
+    
+      
+  }
+}

@@ -5,7 +5,7 @@ meta {
 }
 
 patch {
-  url: {{API_URL}}/pembelian/otorisasi
+  url: {{API_URL}}/purchase/otorisasi
   body: json
   auth: bearer
 }
@@ -17,6 +17,6 @@ auth:bearer {
 body:json {
   {
        "purchaseid" : "1/06/2016",
-       "fgoto" : "Y"
+       "jenis" : "Y"
   }
 }
