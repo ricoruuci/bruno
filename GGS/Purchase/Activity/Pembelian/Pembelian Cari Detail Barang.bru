@@ -7,18 +7,14 @@ meta {
 get {
   url: {{API_URL}}/pembelian/cari-detailbarang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "konsinyasiid" : "1Tech/GR/2409/0063",
-     "suppid" : "CSP009",
-     "itemnamekeyword" : "bel",
-     "itemidkeyword" : "55"
+     "grnid" : "GGS/GR/2405/0002",
+     "suppid" : "SP039",
+     "itemnamekeyword" : "",
+     "itemidkeyword" : ""
   }
 }

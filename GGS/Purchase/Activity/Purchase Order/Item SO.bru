@@ -5,18 +5,14 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/itemso
+  url: {{API_URL}}/salesorder/item
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "soid" : "SO-1Tech/2006/0005",
+      "soid" : "SO-GGS/2109/0001",
       "itemidkeyword" : "23",
       "itemnamekeyword" : "SAO"
   }
