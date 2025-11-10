@@ -12,39 +12,30 @@ post {
 
 body:json {
   {
-    "transdate": "2024-10-04",
+    "purchaseid" : "1234567891234",
+    "transdate": "20251107",
     "nofps": "292121",
-    "konsinyasiid": "1Tech/GR/2409/0063",
-    "suppid": "CSP009",
+    "grnid": "GGS/GR/2405/0002",
+    "suppid": "SP039",
     "note": "Pembelian konsinyasi dari supplier CSP009",
     "nilaitax": 11,
     "fgtax": "Y",
     "jatuhtempo": 30,
-    "rekeningp": "111-001",          // Rekening pembelian
-    "rekeningu": "112-001",          // Rekening uang muka
-    "rekeningk": "211-001",          // Rekening hutang
-    "rekpersediaan": "114-001",      // Rekening persediaan
-    "rekhpp": "511-001",             // Rekening HPP
+  //   "rekeningp": "111-001",          // Rekening pembelian
+  //   "rekeningu": "112-001",          // Rekening uang muka
+  //   "rekeningk": "211-001",          // Rekening hutang
+  //   "rekpersediaan": "114-001",      // Rekening persediaan
+  //   "rekhpp": "511-001",             // Rekening HPP
     "npwp": "01.234.567.8-901.000",
     "detail": [
       {
-        "itemid": "55.979.009",
-        "qty": 2,
+        "itemid": "104.1005.004",
+        "qty": 3,
         "price": 150000,
         "detailsn": [
-          { "snid": "SN001" },
-          { "snid": "SN002" }
-        ]
-      },
-      {
-        "itemid": "66.111.008",
-        "qty": 1,
-        "price": 300000,
-        "detailsn": [
-          { 
-            "snid": "SN003",
-            "fgsn" : "Y" // kalo Y isi sendiri kalo T Generate
-          }
+          { "snid": "K20240506104.1005.004 001","fgsn": "T" },
+          { "snid": "K20240506104.1005.004 002","fgsn": "T" },
+          { "snid": "K20240506104.1005.004 003","fgsn": "T" }
         ]
       }
     ]

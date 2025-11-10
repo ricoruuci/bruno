@@ -5,9 +5,26 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/journal-reports
-  body: none
+  url: {{API_URL}}/debt-payment-cash-reports
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "start_date" : "2025-01-01",
+    "end_date" : "2025-12-31",
+    "group_by" : "tx_date",
+    "filter" : {
+      "debt_payment_cash" : "",
+      "vendor" : "",
+      "bank" : ""
+    },
+    "sort_by" : {
+      "field" : "debt_payment_cash.tx_date",
+      "direction" : "asc"
+    }
+  }
 }
 
 settings {
