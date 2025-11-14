@@ -5,15 +5,15 @@ meta {
 }
 
 patch {
-  url: {{API_URL}}/skripsi/otorisasi
+  url: {{API_URL}}/bimbingan/otorisasi
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "transid" : "SKR-0001",
+      "transid" : "PRS0001",
       "fgoto" : "Y",
-      "dosenid" : "DSN001"
+      "ttddosen" : ""
   }
 }
