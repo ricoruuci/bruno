@@ -1,0 +1,25 @@
+meta {
+  name: get user copy
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/user/cari-sales
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    /* 
+      K=Kreditor
+      D=Debitor
+      N=Notary
+      M=Mediator
+    */
+      "flag" : "N",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : ""
+  }
+}
