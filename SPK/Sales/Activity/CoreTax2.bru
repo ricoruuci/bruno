@@ -1,0 +1,19 @@
+meta {
+  name: CoreTax2
+  type: http
+  seq: 23
+}
+
+get {
+  url: {{API_URL}}/coretax2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20240101",
+    "sampai" : "20240131",
+    "saleidkeyword" : ""
+  }
+}

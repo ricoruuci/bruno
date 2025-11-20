@@ -1,0 +1,20 @@
+meta {
+  name: CoreTax Invoice
+  type: http
+  seq: 25
+}
+
+get {
+  url: {{API_URL}}/coretax/invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20240101",
+    "sampai" : "20240131",
+    "saleidkeyword" : "",
+    "custnamekeyword" : ""
+  }
+}
