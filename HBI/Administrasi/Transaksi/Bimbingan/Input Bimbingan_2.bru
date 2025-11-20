@@ -1,0 +1,22 @@
+meta {
+  name: Input Bimbingan_2
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/bimbingan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20251111",
+    "dosenid" : "123",
+    "judulid" : "Pengembangan Aplikasi ERP",
+    "note" : "",
+    "ttdmhs" : ""
+    
+  }
+}
