@@ -1,0 +1,17 @@
+meta {
+  name: get beli by id adjustment
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/beli-by-id-adjustment
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nota_beli": "MBG/25/07/004"
+  }
+}
