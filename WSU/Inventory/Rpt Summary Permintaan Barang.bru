@@ -1,0 +1,18 @@
+meta {
+  name: Rpt Summary Permintaan Barang
+  type: http
+  seq: 20
+}
+
+get {
+  url: {{API_URL}}/rptsummarypermintaanbarang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20250101",
+    "sampai" : "20251121"
+  }
+}
