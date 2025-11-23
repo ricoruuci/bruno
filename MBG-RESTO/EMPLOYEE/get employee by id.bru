@@ -1,0 +1,17 @@
+meta {
+  name: get employee by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/employee-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 2
+  }
+}
