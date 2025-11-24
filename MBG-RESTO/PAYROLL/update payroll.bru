@@ -1,0 +1,44 @@
+meta {
+  name: update payroll
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{API_URL}}/payroll
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id" : 7,
+    "tx_date" : "20251124",
+    "tx_period" : "NOV2025",
+    "work_days" : 22,
+    "company_id" : 4,
+    "detail" : [
+      {
+        "employee_id" : 3,
+        "meal_amount" : 1000,
+        "salary_amount" : 20000,
+        "other_amount" : 10000,
+        "present_days" : 10
+      },
+      {
+        "employee_id" : 4,
+        "meal_amount" : 1000,
+        "salary_amount" : 20000,
+        "other_amount" : 10000,
+        "present_days" : 10
+      },
+      {
+        "employee_id" : 2,
+        "meal_amount" : 1000,
+        "salary_amount" : 20000,
+        "other_amount" : 10000,
+        "present_days" : 10
+      }
+    ]
+  }
+}
