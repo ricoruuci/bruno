@@ -1,0 +1,17 @@
+meta {
+  name: Delete Transfer
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/adjustment
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transid": "ADJ/25/09/0002"
+  }
+}

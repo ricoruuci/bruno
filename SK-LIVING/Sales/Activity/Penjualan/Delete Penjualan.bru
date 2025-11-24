@@ -1,0 +1,17 @@
+meta {
+  name: Delete Penjualan
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid" : "WM-W/PN/00007"
+  }
+}

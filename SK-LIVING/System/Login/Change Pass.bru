@@ -1,0 +1,25 @@
+meta {
+  name: Change Pass
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/changepass
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+   {
+       "userid" : "shoen",
+       "oldpassword" : "110108",
+       "newpassword" : ""
+   }
+  
+  
+}

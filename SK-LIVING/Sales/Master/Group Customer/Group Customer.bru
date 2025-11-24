@@ -1,0 +1,23 @@
+meta {
+  name: Group Customer
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/groupcust
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     // "groupid": "DN005",
+     //"groupidkeyword": "A",
+     // "groupdesckeyowrd": ""
+  }
+}

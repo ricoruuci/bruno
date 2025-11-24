@@ -1,0 +1,17 @@
+meta {
+  name: uom
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/uom
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "uomidkeyword": ""
+  }
+}

@@ -1,0 +1,45 @@
+meta {
+  name: Update Surat Jalan
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/suratjalan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "kontransbrgid" : "SJ/CRB/2025/09/0001",
+      "saleid" : "CRB/PN/0006",
+      "fginv" : "CRB",
+      "transdate" : "20250901",
+      "custid" : "UI6113",
+      "supirid" : "A004",
+      "note" : "ss",
+      "term" : 30,
+      "warehouseid" : "01GU",
+      "detail" : [
+          {
+              "itemid" : "10006374",
+              "qty" : 1,
+              "fgnum" : 241100
+              
+          }
+      ] ,
+    "detailfoto" : [
+      {
+              "foto" : "",
+              "keterangan" :"tes"
+              
+          },
+      {
+             "foto" : "",
+              "keterangan" : "tes2"
+              
+          }
+    ]
+  }
+}

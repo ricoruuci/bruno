@@ -1,0 +1,23 @@
+meta {
+  name: Bukti Cari Surat Jalan
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/suratjalan/bukti/cari-suratjalan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "kontransbrgidkeyword" : "",
+      "saleidkeyword" : "",
+      "custidkeyword" : "",
+     "custnamekeyword" : "",
+     "salesidkeyword" : "",
+    "salesnamekeyword" : ""
+      
+  }
+}

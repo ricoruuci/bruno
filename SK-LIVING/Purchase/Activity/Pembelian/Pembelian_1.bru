@@ -1,0 +1,52 @@
+meta {
+  name: Pembelian_1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/pembelian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "poid": "PO/08850",
+     "transdate" : "2024-10-04",
+     "nosj" : "292121",
+     "rate" : 1,
+     "suppid" : "SA004",
+     "note" : "note",
+     "nilaitax" : "11",
+     "fgtax" : "T",
+     "jatuhtempo" : 30,
+     "foto" : "",
+     "detail" : [
+      {
+          "itemid" : "10005851",
+          "qty" : 2,
+          "price" : 150000,
+          "uomid" : "BTG",
+          "warehouseid" : "01GU",
+          "fgukuran" : "T",
+          "disc" : 0
+         
+      }
+  
+     ],
+    "detailfoto" : [
+      {
+              "foto" : "",
+              "keterangan" :"tes"
+              
+          },
+      {
+             "foto" : "",
+              "keterangan" : "tes2"
+              
+          }
+    ]    
+      
+  }
+}

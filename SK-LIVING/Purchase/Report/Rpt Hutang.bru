@@ -1,0 +1,23 @@
+meta {
+  name: Rpt Hutang
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/rpthutang
+  body: json
+  auth: inherit
+}
+
+body:json {
+   {
+       "sampai" : "20250520",
+     "suppidkeyword" : " ",
+      "suppnamekeyword" : " ",
+     "purchaseidkeyword" : " ",
+      "sisa" : "Y"
+   }
+  
+  
+}

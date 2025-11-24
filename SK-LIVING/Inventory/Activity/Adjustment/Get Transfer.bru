@@ -1,0 +1,28 @@
+meta {
+  name: Get Transfer
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/adjustment
+  body: json
+  auth: inherit
+}
+
+body:json {
+  /*jika pakai transix */
+  {
+    "transid" : "ADJ/25/09/0001"
+  }
+  
+  /*jika tidak pakai transferid */
+  // {
+  //   "dari" : "20250101",
+  //   "sampai" : "20251231",
+  //   "transidleyword" : "",
+  //   "warehouseidkeyword" : "",
+  //   "warehousenamekyword" : "",
+  //   "sortby" : "id" //ada dateold,datenew sama id
+  // }
+}

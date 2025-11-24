@@ -1,0 +1,32 @@
+meta {
+  name: Payment
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/payment
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "paymentid": "APB/WM/25/03/0001",
+      "paymentidkeyword": "APB/WM/25/03/0001",
+      "dari" : "20230101",
+      "sampai" : "20250703",
+      "flag" : "SUP",
+      "fgbayar" : "B",
+      "bankid": "OCBC3",
+      "suppid" : "CSP008",
+      "sortby" : "new"
+      // "suppnamekeyword" : "new",
+      // "banknamekeyword" : "new",
+  
+  }
+}

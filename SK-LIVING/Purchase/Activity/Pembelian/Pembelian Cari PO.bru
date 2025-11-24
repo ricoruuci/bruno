@@ -1,0 +1,24 @@
+meta {
+  name: Pembelian Cari PO
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/pembelian/cari-po
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+     //"suppnamekeyword" : "PT.Multi Teknik Interior"
+     //"suppidkeyword" : "SA004"
+     //"poidkeyword" : "PO/08850"
+      
+  }
+}
