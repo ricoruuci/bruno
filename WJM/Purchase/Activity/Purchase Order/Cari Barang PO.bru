@@ -7,16 +7,13 @@ meta {
 get {
   url: {{API_URL}}/purchaseorder/item
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "roid": "RO/00007"
+      "roid": "RO/00007",
+    "status" : "g"
       
   }
 }
