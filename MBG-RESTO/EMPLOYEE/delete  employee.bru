@@ -1,0 +1,17 @@
+meta {
+  name: delete  employee
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/employee
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id" : 1
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get Cetak Penjualan
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{API_URL}}/penjualan/cetak
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": "WM-W/PN/00003",
+      "fginv" : "P",
+       "dari" : "20210101",
+       "sampai" : "20251205",
+       //"custnamekeyword" : "bambang"
+       //"sortby" : "id",
+       "saleidkeyword" : ""
+       //"namakeyword" : ""
+  }
+}

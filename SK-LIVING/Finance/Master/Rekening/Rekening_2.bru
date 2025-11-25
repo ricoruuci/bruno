@@ -1,0 +1,21 @@
+meta {
+  name: Rekening_2
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+          "rekeningid": "G001",
+          "rekeningname": "EXXTERNAL",
+          "grouprekid": "EXXTERNAL",
+          "note" : ""
+  
+  }
+}

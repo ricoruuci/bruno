@@ -1,0 +1,21 @@
+meta {
+  name: get payroll
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/payroll
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20250101",
+    "sampai" : "20251231",
+    "tx_id_keyword" : "",
+    "tx_peiod_keyword" : "",
+    "company_id" : 1
+  }
+}

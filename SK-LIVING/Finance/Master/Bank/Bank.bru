@@ -1,0 +1,25 @@
+meta {
+  name: Bank
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/bank
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~fgactive: 'T'
+}
+
+body:json {
+  {
+      //"bankid" : "",
+      "bankidkeyword" : "",
+      "banknamekeyword" : "",
+     "sortby" : "bankid",
+    "fgbank" : "T"
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: item_3
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{API_URL}}/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+              "itemname": " barang tes",
+              "productid": "P001",
+              "groupid": "G001",
+              "uomid": "Unit",
+              "userprice" : 5000,
+              "dealerprice" : 2000,
+              "ctk" : "T"
+         
+   }
+}

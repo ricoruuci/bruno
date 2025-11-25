@@ -1,0 +1,37 @@
+meta {
+  name: Txn KKBB_2
+  type: http
+  seq: 20
+}
+
+patch {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "voucherid": "BK/WM/24/03/0008",
+      "flag": "BK",
+      "transdate": "20240304",
+      "actor": "RICO",
+      "note": "TES",
+      "bankid": "BC001",
+    "fgcabang": "P",
+      "detail": [
+          {
+              "note": "AP-SAS/23/01/0003",
+              "amount": "200000.0000",
+              "rekeningid": "600.05",
+            "jam" : "08:30:00"
+          }
+      ],
+    "detailfoto": [
+          {
+              "foto": "111",
+              "keterangan": "111"
+          }
+      ]
+  }
+}

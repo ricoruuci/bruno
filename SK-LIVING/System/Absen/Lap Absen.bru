@@ -1,0 +1,20 @@
+meta {
+  name: Lap Absen
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/laporanabsen
+  body: json
+  auth: inherit
+}
+
+body:json {
+   {
+       //"salesidkeyword" : "",
+       "dari" : "20251101",
+       "sampai" : "20251117"
+   //"alldata" : 1
+   }
+}

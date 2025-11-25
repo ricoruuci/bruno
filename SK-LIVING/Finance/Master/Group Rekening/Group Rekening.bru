@@ -1,0 +1,20 @@
+meta {
+  name: Group Rekening
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/grouprek
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     // "grouprekid" :"",
+      "grouprekidkeyword" : "",
+      "groupreknamekeyword" : "",
+     "sortby" : "grouprekid"
+  }
+}

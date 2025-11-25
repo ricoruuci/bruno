@@ -1,0 +1,24 @@
+meta {
+  name: Payment Invoice
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/payment/invoice
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "flag": "SUP",
+      "suppid" : "SD003",
+      "transdate" : "20240304",
+      "purchaseidkeyword" : ""
+  }
+}

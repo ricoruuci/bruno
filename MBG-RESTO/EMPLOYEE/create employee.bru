@@ -1,0 +1,23 @@
+meta {
+  name: create employee
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/employee
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "employee_name" : "Miswanto",
+    "join_date" : "20250201",
+    "fg_active" : "Y",
+    "meal_amount" : 50000,
+    "salary_amount" : 1000000,
+    "other_amount" : 200000,
+    "company_id" : 1
+  }
+}

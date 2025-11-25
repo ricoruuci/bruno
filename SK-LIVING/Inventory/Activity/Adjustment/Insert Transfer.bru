@@ -1,0 +1,33 @@
+meta {
+  name: Insert Transfer
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/adjustment
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20250909",
+    "warehouseid" : "01GU",
+    "note" : "",
+    "detail" : [
+      {
+        "itemid" : "10005429",
+        "qty" : 1,
+        "fgstatus" : "T",
+        "alasan" : "rusak"
+      },
+      {
+        "itemid" : "10005428",
+        "qty" : 1,
+        "fgstatus" : "K",
+        "alasan" : "rusak"
+      }
+    ]
+  }
+}
