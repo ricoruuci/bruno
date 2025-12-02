@@ -1,0 +1,18 @@
+meta {
+  name: laporan stock
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rptstock
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "tanggal" : "20250101",
+      "warehouseid" : "01GU"
+  }
+}

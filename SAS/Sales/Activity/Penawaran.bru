@@ -1,0 +1,29 @@
+meta {
+  name: Penawaran
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/penawaran
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "gbuid": "CSI-QUOT/2502.0002",
+      //"oto": 1,
+      //"alldata" : "Y",
+      "dari": "20240101",
+      "sampai": "20250227",
+      //"custid": "DP092-MAP",
+      "salesid": "",
+      "sortby": "new",
+      "keyword": ""
+  }
+}

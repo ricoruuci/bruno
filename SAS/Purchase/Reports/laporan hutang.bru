@@ -1,0 +1,22 @@
+meta {
+  name: laporan hutang
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rpthutang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "tanggal" : "20230523",
+      "fglunas" : "Y"
+  }
+}

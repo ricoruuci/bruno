@@ -1,0 +1,21 @@
+meta {
+  name: list so for po
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/listsoblmpo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "transdate": "20240113"
+  }
+}

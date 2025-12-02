@@ -1,0 +1,21 @@
+meta {
+  name: Penawaran_3
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{API_URL}}/penawaran
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {   
+      "gbuid": "CSI-QUOT/2502.0002"
+  }
+}
