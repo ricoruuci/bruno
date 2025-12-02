@@ -1,0 +1,18 @@
+meta {
+  name: patchStatusUploadCoretax
+  type: http
+  seq: 19
+}
+
+patch {
+  url: {{API_URL}}/coretax/update-status
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": ["MAP-AR/2308/00006"],
+      "fgupload": "Y"
+  }
+}

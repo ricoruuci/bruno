@@ -1,0 +1,44 @@
+meta {
+  name: Sales_1
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/sales
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "salesname" : "albob",
+     "alamat" : "address",
+     "telp" : "telp",
+     "hp" : "hp",
+     "email" : "email",
+     "note" : "note",
+     "limitkasbon" : 0,
+     "uangmakan" : 0,
+     "gajipokok" : 0,
+     "kerajinan" : 0,
+     "kendaraan" : 0,
+     "skend" : 0,
+     "nik"  : "",
+     "jabatan" : "jabatan",
+     "fgactive" : 1,
+     "tglgabung" : "20240610",
+     "detailfoto" : [
+      {
+              "foto" : "",
+              "keterangan" :"tes"
+              
+          },
+      {
+             "foto" : "",
+              "keterangan" : "tes2"
+              
+          }
+    ]    
+  }
+}

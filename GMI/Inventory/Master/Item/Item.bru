@@ -7,22 +7,17 @@ meta {
 post {
   url: {{API_URL}}/item
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
               "itemname": " barang tes",
-              "productid": "342",
-              "productdesc": "GOPRO HERO 8",
-              "groupid": "104",
-              "groupdesc": "ACCESORIES",
+              "productid": "P002",
+              "groupid": "G002",
               "partno": "HERO8",
               "uomid": "Unit",
+              "note" : "",
               "userprice" : 5000,
               "dealerprice" : 2000
          

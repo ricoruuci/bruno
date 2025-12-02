@@ -1,0 +1,26 @@
+meta {
+  name: Absen
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{API_URL}}/absen
+  body: json
+  auth: inherit
+}
+
+body:json {
+   {
+       "keperluan" : "Y",
+       "keterangan" : "coba",
+     "detailfoto" : [
+       {
+         "foto" : "123",
+         "keterangan" : ""
+       }
+     ]
+   }
+  
+  
+}

@@ -7,11 +7,7 @@ meta {
 post {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: 801|DTL8q9vJu0YXtsoKEV6hssDXDOWQIDsrDZUhb6Gd38db9f87
+  auth: inherit
 }
 
 body:json {
@@ -19,7 +15,7 @@ body:json {
       "soid" : "SO/AAE/2505/0001",
       "custid" : "AAE",
       "transdate" : "20250519",
-      "pocust" : "",
+      "pocust" : "01",
       "salesid" : "DG",
       "nodn" : "",
       "deptsales" : "",

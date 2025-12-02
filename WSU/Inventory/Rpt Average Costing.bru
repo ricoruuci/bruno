@@ -5,19 +5,16 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/rptaveragecosting?page=1
+  url: {{API_URL}}/rptaveragecosting?
   body: json
   auth: inherit
 }
 
-params:query {
-  page: 1
-}
-
 body:json {
   {
-    "tahun" : "2025",
-    "itemid" : "",
-    "groupid" : "RWM"
+    "tahun" : "2024",
+    "itemid" : "RWM.0.0140",
+    "groupid" : "RWM",
+    "warehouseid" : "03ds"
   }
 }

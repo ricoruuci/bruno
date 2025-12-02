@@ -1,0 +1,19 @@
+meta {
+  name: Rpt Kartu Stok Harian
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/rptkartustokharian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "dari" : "20240101",
+     "sampai" : "20240107",
+     "itemid" : "10000089"
+  }
+}

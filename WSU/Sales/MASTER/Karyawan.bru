@@ -1,0 +1,18 @@
+meta {
+  name: Karyawan
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/sales/karyawan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "salesidkeyword" : "",
+      "salesnamekeyword" : ""
+  }
+}

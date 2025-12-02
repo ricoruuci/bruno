@@ -1,0 +1,25 @@
+meta {
+  name: Purchase Order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "poid": "PO/10721",
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20240919",
+      "suppidkeyword": "",
+      "suppnamekeyword": "",
+      "roidkeyword": "",
+      "sortby": "old"
+      
+  }
+}

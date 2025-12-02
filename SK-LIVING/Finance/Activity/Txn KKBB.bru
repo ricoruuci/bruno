@@ -1,0 +1,24 @@
+meta {
+  name: Txn KKBB
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{API_URL}}/txnkkbb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "voucherid": "BK/WM/24/03/0008",
+      "dari" : "20220101",
+      "sampai" : "20250101",
+      "flag" : "BK",
+      "bankid" : "BC001",
+      "actorkeyword" : "",
+      "voucherkeyword" : "",
+      "sortby" : "old"
+  }
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Rpt Penjualan
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rptpenjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "dari" : "20240301",
+      "sampai" : "20240306",
+      "page" : "1",
+      "saleidkeyword" : "",
+      "salesidkeyword" : "",
+      "salesnamekeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : "",
+      "productidkeyword" : "",
+      "productdesckeyword" : "",
+      "groupidkeyword" : "",
+      "groupdesckeyword" : "",
+      "alldata" : 1
+  }
+}

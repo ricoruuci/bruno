@@ -1,0 +1,18 @@
+meta {
+  name: createProduk
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/produk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {   
+    "productdesc": " barang tes"
+         
+   }
+}

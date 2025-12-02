@@ -1,0 +1,69 @@
+meta {
+  name: Create Penjualan
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{API_URL}}/penjualan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "fginv" : "P",
+      "faktur" : "",
+      "transdate" : "20241001",
+      "custid" : "DI001",
+      "supirid" : "A004",
+      "tukangid" : "TA004",
+      "marketid" : "002",
+      "salesid" : "A005",
+      "term" : 30,
+      "disc" : 0,
+      "dp" : 0,
+      "nama" : "ilham",
+      "fgtax" : "T",
+      "nilaitax" : 11,
+      "alamat" : "JAKARTA",
+      "tglkirim" : "20241001",
+      "nohp" : "08928291810919",
+      "tglpasang" : "20241001",
+      "fgpasang" : "T",
+      "fgdisc" : "A",
+      "ongkir" : 0,
+      "charge" : 0,
+      "rekid" : "A",
+      "warehouseid": "GD.PST",
+      "taxid": "",
+      "note": "",
+      "fgproyek" : "T" ,
+      "pph" : 10,
+      "detail" : [
+          {
+              "itemid" : "10000006",
+              "price" : 150000,
+              "qty" : 1,
+              "modal" : 1500,
+              "note" : "SSSSSSSSSSSSSSS",
+              "uomid" : "pcs",
+              "warehouseid": "01GU"
+  
+              
+          }
+                    ],
+      "detailfoto" : [
+      {
+              "foto" : "",
+              "keterangan" :"tes"
+              
+          },
+      {
+             "foto" : "",
+              "keterangan" : "tes2"
+              
+          }
+    ]   
+  }
+}

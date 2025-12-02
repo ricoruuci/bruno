@@ -1,0 +1,18 @@
+meta {
+  name: Cari Barang PO
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/purchaseorder/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "roid": "RO/00007"
+      
+  }
+}
