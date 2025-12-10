@@ -1,0 +1,18 @@
+meta {
+  name: Sales Order (Close)
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{API_URL}}/salesorder/close
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "soid": "SO-GGS/2301/0080",
+      "fgclose": "T"
+  }
+}
