@@ -1,0 +1,23 @@
+meta {
+  name: purchase order
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/purchaseorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "poid" : "CSI-PO/2023-030001",
+      "dari" : "20230101",
+      "sampai" : "20231231"
+  }
+}

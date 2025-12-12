@@ -1,0 +1,23 @@
+meta {
+  name: Buku Besar
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rptbukubesar
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20250101",
+      "sampai" : "20250313",
+      "rekeningid" : "111100.0001"
+  }
+}
