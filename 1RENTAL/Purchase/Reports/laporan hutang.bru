@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/rpthutang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "tanggal" : "20230523",
+      "tanggal" : "20251212",
       "fglunas" : "Y"
   }
 }
