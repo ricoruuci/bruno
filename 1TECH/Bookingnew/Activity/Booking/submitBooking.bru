@@ -1,0 +1,21 @@
+meta {
+  name: submitBooking
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/booking/submit
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+    "bookid": "Book/25/02-0001"
+  }
+}

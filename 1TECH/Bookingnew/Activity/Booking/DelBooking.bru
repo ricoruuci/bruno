@@ -1,21 +1,21 @@
 meta {
-  name: Request Order_3
+  name: DelBooking
   type: http
   seq: 2
 }
 
 delete {
-  url: {{API_URL}}/requestorder
+  url: {{API_URL}}/booking
   body: json
   auth: bearer
 }
 
 auth:bearer {
-  token: {{token}}
+  token: 110108Tech
 }
 
 body:json {
   {
-      "roid": "RO/05000"
+      "bookid": "Book\/Vhc\/202502\/0001"
   }
 }

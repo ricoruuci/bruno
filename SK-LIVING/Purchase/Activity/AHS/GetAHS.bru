@@ -1,22 +1,22 @@
 meta {
-  name: Request Order
+  name: GetAHS
   type: http
   seq: 2
 }
 
 get {
-  url: {{API_URL}}/requestorder
+  url: {{API_URL}}/ahs
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      //"roid": "RO/00017",
+      "ahsid": "AHS/W/00001",
       //"alldata" : "Y",
       "dari": "20230101",
       "sampai": "20240919",
-    "roididkeyword": "00009",
+    "ahsidkeyword": "00009",
       "custidkeyword": "",
       "custnamekeyword": "",
       "saleidkeyword": "",

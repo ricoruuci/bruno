@@ -1,0 +1,32 @@
+meta {
+  name: CreateAHS
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/ahs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transdate": "2025-05-28",
+      "saleid": "SK/PN/3726",
+      "warehouseid": "01GU",
+      "note": "",
+      "alamatkirim": "",
+      "hargajual" : 10000,
+      "tambahan" : 10,
+          "detail": [
+              {
+                  "itemid": "00000351",
+                  "qty": 1,
+                  "price": 400000,
+                  "uomid": "PCS",
+                  "note": "Uk L 80 cm x T 40 cm "
+              }
+      ]
+  }
+}

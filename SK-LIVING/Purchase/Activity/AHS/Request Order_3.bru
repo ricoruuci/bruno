@@ -1,17 +1,17 @@
 meta {
-  name: Supplier_3
+  name: Request Order_3
   type: http
-  seq: 1
+  seq: 2
 }
 
 delete {
-  url: {{API_URL}}/supplier
+  url: {{API_URL}}/ahs
   body: json
   auth: inherit
 }
 
 body:json {
   {
-     "suppid": "S0001"
+      "ahsid": "AHS/W/00001"
   }
 }

@@ -1,25 +1,27 @@
 meta {
-  name: Request Order_1
+  name: UpdateAHS
   type: http
   seq: 2
 }
 
-post {
-  url: {{API_URL}}/requestorder
+patch {
+  url: {{API_URL}}/ahs
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "transdate": "2025-05-28 00:00:00.000",
+      "ahsid": "AHS/W/00001",
+      "transdate": "2024-03-28 00:00:00.000",
       "saleid": "WM/PN/13115",
       "warehouseid": "01GU",
       "note": "",
       "alamatkirim": "",
+      "hargajual" : 10000,
+      "tambahan" : 10,
           "detail": [
               {
-                  "saleid": "WM/PN/13115",
                   "itemid": "10006184",
                   "qty": "4.0000",
                   "price": ".0000",
@@ -27,7 +29,6 @@ body:json {
                   "note": ""
               },
               {
-                  "saleid": "WM/PN/13115",
                   "itemid": "10006502",
                   "qty": "7.0000",
                   "price": ".0000",

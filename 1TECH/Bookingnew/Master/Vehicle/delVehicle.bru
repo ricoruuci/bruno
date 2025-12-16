@@ -1,0 +1,21 @@
+meta {
+  name: delVehicle
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/sales
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+     "salesid" : "S007"
+  }
+}

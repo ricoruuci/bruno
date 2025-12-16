@@ -5,18 +5,14 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/requestorder/item
+  url: {{API_URL}}/ahs/item
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "saleid": "WM/PN/13499",
+      "saleid": "SK/PN/3726",
     "itemidkeyword" : "",
     "itemnamekeyword" : ""
       

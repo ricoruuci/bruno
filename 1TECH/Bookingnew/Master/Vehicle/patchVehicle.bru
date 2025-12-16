@@ -1,0 +1,26 @@
+meta {
+  name: patchVehicle
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/vehicle
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+    "vehicleid" : "VHCA002",
+     "vehiclename" : "Avanza",
+    "vehicletype" : "Mobil",
+     "plat_no" : "B1982NAU",
+     "expireddate" : "20291002",
+     "productionyear" : "2024"
+  }
+}

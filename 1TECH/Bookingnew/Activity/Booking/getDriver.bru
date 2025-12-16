@@ -1,0 +1,22 @@
+meta {
+  name: getDriver
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/booking/cari-driver
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+      "driveridkeyword": "",
+      "drivernamekeyword": ""
+  }
+}

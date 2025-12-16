@@ -1,0 +1,25 @@
+meta {
+  name: getVehicle
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/vehicle
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+     //"vehicleid": "1TECH",
+     "vehicleidkeyword" : "",
+     "vehiclenamekeyword" : "",
+     "active" : "ya",
+     "sortby" : "id"
+  }
+}

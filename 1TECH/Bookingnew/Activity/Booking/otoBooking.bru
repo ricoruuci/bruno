@@ -1,0 +1,22 @@
+meta {
+  name: otoBooking
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{API_URL}}/booking/otorisasi
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+    "bookid": "Book/25/02-0001",
+      "fgoto": "Y"
+  }
+}
