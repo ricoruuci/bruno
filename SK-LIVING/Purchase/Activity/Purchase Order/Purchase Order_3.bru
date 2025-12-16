@@ -7,15 +7,11 @@ meta {
 delete {
   url: {{API_URL}}/purchaseorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "poid": "PO/16756"
+     "poid": "PO/W/00001"
   }
 }
