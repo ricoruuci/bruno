@@ -1,0 +1,26 @@
+meta {
+  name: GetAHS
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/ahs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "ahsid": "AHS/W/00001",
+      //"alldata" : "Y",
+      "dari": "20230101",
+      "sampai": "20240919",
+    "ahsidkeyword": "00009",
+      "custidkeyword": "",
+      "custnamekeyword": "",
+      "saleidkeyword": "",
+      "sortby": "old"
+      
+  }
+}

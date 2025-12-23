@@ -7,15 +7,11 @@ meta {
 delete {
   url: {{API_URL}}/spk
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "spkid": "SPK/2401/0004"
+      "spkid": "SPK/202410/0001"
   }
 }

@@ -1,0 +1,18 @@
+meta {
+  name: laporan piutang
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rptpiutang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "tanggal" : "20251212",
+      "fglunas" : "Y"
+  }
+}

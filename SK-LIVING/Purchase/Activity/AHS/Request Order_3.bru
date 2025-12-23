@@ -1,0 +1,17 @@
+meta {
+  name: Request Order_3
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{API_URL}}/ahs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "ahsid": "AHS/W/00001"
+  }
+}

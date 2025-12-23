@@ -1,0 +1,20 @@
+meta {
+  name: Cari Barang RO
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/ahs/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": "SK/PN/3726",
+    "itemidkeyword" : "",
+    "itemnamekeyword" : ""
+      
+  }
+}

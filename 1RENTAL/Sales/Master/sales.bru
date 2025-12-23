@@ -1,0 +1,11 @@
+meta {
+  name: sales
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/sales
+  body: json
+  auth: inherit
+}

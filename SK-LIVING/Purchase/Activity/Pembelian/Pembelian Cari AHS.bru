@@ -1,0 +1,20 @@
+meta {
+  name: Pembelian Cari AHS
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/pembelian/cari-ahs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     //"suppnamekeyword" : "PT.Multi Teknik Interior"
+     //"suppidkeyword" : "SA004"
+     "ahsidkeyword" : ""
+      
+  }
+}

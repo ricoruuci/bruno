@@ -7,18 +7,14 @@ meta {
 get {
   url: {{API_URL}}/spk/cari-detailbarang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
      //"itemnamekeyword" : "PT.Multi Teknik Interior"
      //"itemidkeyword" : "SA004"
-     "saleidkeyword" : "KLM/PN/0524"
+     "saleid" : "SK/PN/0108"
       
   }
 }
