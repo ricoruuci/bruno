@@ -1,0 +1,22 @@
+meta {
+  name: CreateBAST
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/bast
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transdate": "2025-05-28",
+      "custid" : "U 121",
+      "saleid": "SK-W//PN/00001",
+      "address": "jl tes aja",
+      "poid  ": "",
+      "note": ""
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Cari Penjualan
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/bast/cari-invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "custidkeyword": "",
+      "custnamekeyword": "",
+      "saleidkeyword": "",
+      "sortby": "old"
+      
+  }
+}

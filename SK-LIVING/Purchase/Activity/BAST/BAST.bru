@@ -1,0 +1,25 @@
+meta {
+  name: BAST
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/bast
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     //"bastid": "",
+      "dari": "20240101",
+      "sampai": "20251212",
+      "custidkeyword" : "",
+      "custnamekeyword": "",
+      "saleidkeyword" : "",
+      "bastidkeyword" : "",
+      "sortby": "dateold"
+      
+  }
+}

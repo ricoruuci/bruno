@@ -1,17 +1,17 @@
 meta {
-  name: Delete Retur Jual
+  name: delBAST
   type: http
   seq: 5
 }
 
 delete {
-  url: {{API_URL}}/retur-jual
+  url: {{API_URL}}/bast
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "returnid": "RJB/SK/25/06/0001"
+      "bastid": "BAST2512/00001"
   }
 }
