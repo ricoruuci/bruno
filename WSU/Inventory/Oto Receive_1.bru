@@ -7,16 +7,12 @@ meta {
 patch {
   url: {{API_URL}}/otoreceive
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "requestid": "FPB/IN/23/06/0190",
-      "fgoto": "X"
+      "requestid": ["FPB/IN/23/06/0190","FPB/IN/23/06/0191"],
+      "fgoto": "Y"
   }
 }
