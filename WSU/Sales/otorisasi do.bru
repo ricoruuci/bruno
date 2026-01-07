@@ -1,0 +1,18 @@
+meta {
+  name: otorisasi do
+  type: http
+  seq: 21
+}
+
+patch {
+  url: {{API_URL}}/otorisasido
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "kontransbrgid": ["0004/SAMPLE-WSU-25"],
+      "jenis": "y"
+  }
+}
