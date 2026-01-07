@@ -5,15 +5,15 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/purchaseorder/roid
+  url: {{API_URL}}/purchaseorder/ahsid
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "custidkeyword": "",
-      "custnamekeyword": "",
+      "suppidkeyword": "",
+      "suppnamekeyword": "",
       "ahsidkeyword": "",
       "sortby": "old"
       
