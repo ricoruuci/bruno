@@ -5,16 +5,16 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/do
+  url: {{API_URL}}/konretur
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      //"kontransbrgid" : "0005/SAMPLE-WSU-25",
-      "dari" : "20250101",
-      "sampai" : "20251231",
+      "konreturid" : "RJK/26/01/0001",
+      "dari" : "20260114",
+      "sampai" : "20260114",
       "soid" : "",
       "sortby" : ""
   }
