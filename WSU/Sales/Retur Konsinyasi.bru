@@ -1,0 +1,21 @@
+meta {
+  name: Retur Konsinyasi
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{API_URL}}/do
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      //"kontransbrgid" : "0005/SAMPLE-WSU-25",
+      "dari" : "20250101",
+      "sampai" : "20251231",
+      "soid" : "",
+      "sortby" : ""
+  }
+}
