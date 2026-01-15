@@ -5,11 +5,7 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/in/product
+  url: {{API_URL}}/product
   body: none
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
