@@ -1,0 +1,22 @@
+meta {
+  name: Rpt AHS
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/rptahs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "dari" : "20250101",
+      "sampai" : "20251010",
+      "page" : "1",
+      "ahsidkeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : ""
+  }
+}

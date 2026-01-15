@@ -1,0 +1,21 @@
+meta {
+  name: delVehicle
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{API_URL}}/vehicle-st
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+     "vehicle" : "S007"
+  }
+}

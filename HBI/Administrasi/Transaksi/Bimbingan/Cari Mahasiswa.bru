@@ -1,0 +1,20 @@
+meta {
+  name: Cari Mahasiswa
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/bimbingan/cari-mahasiswa
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+   
+     "keyword" : ""
+  
+     
+  }
+}

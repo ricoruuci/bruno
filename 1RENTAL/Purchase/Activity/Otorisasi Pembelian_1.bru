@@ -1,0 +1,21 @@
+meta {
+  name: Otorisasi Pembelian_1
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{API_URL}}/otorisasi/pembelian
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "purchaseid" : "162945"
+  }
+}

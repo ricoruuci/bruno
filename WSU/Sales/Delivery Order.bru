@@ -1,0 +1,21 @@
+meta {
+  name: Delivery Order
+  type: http
+  seq: 22
+}
+
+get {
+  url: {{API_URL}}/do
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      //"kontransbrgid" : "0005/SAMPLE-WSU-25",
+      "dari" : "20250101",
+      "sampai" : "20251231",
+      "soid" : "",
+      "sortby" : ""
+  }
+}

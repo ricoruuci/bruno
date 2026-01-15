@@ -1,17 +1,13 @@
 meta {
   name: Penjualan Cari SO
   type: http
-  seq: 9
+  seq: 10
 }
 
 get {
   url: {{API_URL}}/penjualan/cari-so
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {

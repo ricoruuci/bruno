@@ -1,0 +1,19 @@
+meta {
+  name: bank
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/bank?fgactive='T'
+  body: none
+  auth: bearer
+}
+
+params:query {
+  fgactive: 'T'
+}
+
+auth:bearer {
+  token: {{token}}
+}

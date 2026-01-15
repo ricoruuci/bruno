@@ -1,0 +1,29 @@
+meta {
+  name: getBooking
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/booking-st
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+    "oto" : 1,
+      "bookid": "Book/25/02-0001",
+      "dari": "20230101",
+      "sampai": "20250321",
+      "bookidkeyword": "",
+      "booknamekeyword": "",
+    "bookbykeyword": "",
+      "sortby": "old"
+      
+  }
+}

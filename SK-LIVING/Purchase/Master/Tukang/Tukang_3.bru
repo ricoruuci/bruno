@@ -7,15 +7,11 @@ meta {
 delete {
   url: {{API_URL}}/tukang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "tukangid": "T0001"
+      "tukangid": "Tb018"
   }
 }

@@ -1,0 +1,18 @@
+meta {
+  name: Otorisasi Delivery Order
+  type: http
+  seq: 21
+}
+
+patch {
+  url: {{API_URL}}/otorisasido
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "kontransbrgid": ["SJK/25/12/0008"],
+      "jenis": "Y"
+  }
+}

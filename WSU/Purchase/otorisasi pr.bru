@@ -7,16 +7,12 @@ meta {
 patch {
   url: {{API_URL}}/otorisasipr
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "prid" : "PRS23070173",
+      "prid" : ["PRJ25080014","PRJ25080015"],
       "fgoto" : "Y"
   }
 }

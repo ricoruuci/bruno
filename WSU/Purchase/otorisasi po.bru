@@ -7,16 +7,12 @@ meta {
 patch {
   url: {{API_URL}}/otorisasipo
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "poid" : "POIS23080001",
+      "poid" : ["POIS23080001","POIS23080002"],
       "fgoto" : "Y"
   }
 }

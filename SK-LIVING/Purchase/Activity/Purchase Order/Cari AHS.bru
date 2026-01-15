@@ -1,0 +1,21 @@
+meta {
+  name: Cari AHS
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{API_URL}}/purchaseorder/ahsid
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "suppidkeyword": "",
+      "suppnamekeyword": "",
+      "ahsidkeyword": "",
+      "sortby": "old"
+      
+  }
+}

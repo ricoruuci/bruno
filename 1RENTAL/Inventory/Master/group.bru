@@ -1,0 +1,22 @@
+meta {
+  name: group
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/group
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "groupidkeyword" : "",
+      "groupdesckeyword" : "gad"
+  }
+}

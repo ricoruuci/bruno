@@ -1,0 +1,18 @@
+meta {
+  name: Penjualan Update Pasang
+  type: http
+  seq: 13
+}
+
+patch {
+  url: {{API_URL}}/penjualan/updatepasang
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": "SK-W//PN/00001"
+  
+  }
+}

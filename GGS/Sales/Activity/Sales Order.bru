@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     // "soid": "SO-GGS/202311/0006",
+      "soid": "SO-GGS/202311/0001",
       //"alldata" : "Y",
       "dari": "20230101",
       "sampai": "20230919",

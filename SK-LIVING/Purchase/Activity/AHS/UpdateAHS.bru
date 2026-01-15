@@ -1,0 +1,41 @@
+meta {
+  name: UpdateAHS
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/ahs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "ahsid": "AHS/W/00001",
+      "transdate": "2024-03-28 00:00:00.000",
+      "suppid" : "",
+      "saleid": "WM/PN/13115",
+      "warehouseid": "01GU",
+      "note": "",
+      "alamatkirim": "",
+      "hargajual" : 50000000,
+      "tambahan" : 10,
+          "detail": [
+              {
+                  "itemid": "10006184",
+                  "qty": "4.0000",
+                  "price": "500000",
+                  "uomid": "BTG",
+                  "note": ""
+              },
+              {
+                  "itemid": "10006502",
+                  "qty": "7.0000",
+                  "price": "50000",
+                  "uomid": "LBR",
+                  "note": ""
+              }
+      ]
+  }
+}

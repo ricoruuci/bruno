@@ -1,0 +1,18 @@
+meta {
+  name: Otorisasi Retur Konsinyasi
+  type: http
+  seq: 23
+}
+
+patch {
+  url: {{API_URL}}/otorisasikonretur
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "konreturid": ["RJK/26/01/0001"],
+      "jenis": "Y"
+  }
+}

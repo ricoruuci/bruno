@@ -1,0 +1,17 @@
+meta {
+  name: delBAST
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/bast
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "bastid": "BAST2512/00001"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Retur Konsinyasi
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{API_URL}}/konretur
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "konreturid" : "RJK/26/01/0001",
+      "dari" : "20260114",
+      "sampai" : "20260114",
+      "soid" : "",
+      "sortby" : ""
+  }
+}

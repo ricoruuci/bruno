@@ -1,33 +1,29 @@
 meta {
   name: SPK_2
   type: http
-  seq: 2
+  seq: 5
 }
 
 patch {
   url: {{API_URL}}/spk
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-  "spkid": "SPK/2401/0004",
-     "saleid": "PO/08850",
+     "spkid": "SPK/202410/00222",
+     "saleid": "PO/0885011",
      "transdate" : "2024-10-04",
-     "nosj" : "292121",
-     "rate" : 1,
+     "ahsid": "292121",
      "tukangid" : "SA004",
-     "nilaitax" : "11",
+     "nilaitax" : 11,
      "fgtax" : "T",
-     "jatuhtempo" : 30,
+     "jatuhtempo" : 0,
+    "rate" : 1,
      "detail" : [
       {
-          "itemid" : "10005675",
+          "itemid" : "100056750",
           "qty" : 2,
           "price" : 150000,
           "uomid" : "UNIT",

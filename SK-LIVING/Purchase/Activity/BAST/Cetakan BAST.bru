@@ -1,0 +1,18 @@
+meta {
+  name: Cetakan BAST
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/bast/cetakan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "bastid": "BAST/2405/00001"
+      
+  }
+}

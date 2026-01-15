@@ -1,0 +1,36 @@
+meta {
+  name: patchBooking
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/booking-st
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 110108Tech
+}
+
+body:json {
+  {
+    "bookid": "Book/25/02-0001",
+      "bookby": "H005",
+      "transdate": "20250201",
+      "booktime": "15:30",
+    "origin" : "MDS",
+      "origindate": "20250311",
+      "destination": "Bogor",
+      "note": "",
+    "upduser" : "Faiz",
+      "detail": [
+          {
+              "vehicleid": "VHCA001",
+              "note": "",
+            "upduser" : "Faiz"
+          }
+      ]
+  }
+}

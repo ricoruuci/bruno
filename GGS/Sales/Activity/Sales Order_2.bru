@@ -7,11 +7,7 @@ meta {
 patch {
   url: {{API_URL}}/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
@@ -44,7 +40,8 @@ body:json {
               "qty": 1,
               "price": 500000000,
               "modal": 600000000,
-              "note": ""
+              "note": "",
+             "bagasi":0
           }
       ]
   }

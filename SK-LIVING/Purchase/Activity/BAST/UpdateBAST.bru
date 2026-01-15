@@ -1,0 +1,23 @@
+meta {
+  name: UpdateBAST
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{API_URL}}/bast
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "bastid" : "BAST2512/00001",
+      "transdate": "2025-05-28",
+      "custid" : "U 121",
+      "saleid": "SK-W//PN/00001",
+      "address": "jl tes banget",
+      "poid  ": "",
+      "note": ""
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Penjualan Update Kirim
+  type: http
+  seq: 12
+}
+
+patch {
+  url: {{API_URL}}/penjualan/updatekirim
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "saleid": "SK-W//PN/00001"
+  
+  }
+}
