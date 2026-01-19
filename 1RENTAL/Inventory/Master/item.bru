@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/item
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "itemid" : "",
+      //"itemid" : "100.100.001",
       "itemidkeyword" : "",
       "itemnamekeyword" : "123213213" 
   }
