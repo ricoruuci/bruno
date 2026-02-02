@@ -1,0 +1,44 @@
+meta {
+  name: import data update
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{API_URL}}/item/import-data-update
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "data": [
+      {
+        "itemid": "100000K0",
+        "itemname": "Stepnosing Karet 4M STORE COKLAT POLOS",
+        "productid": "P06P7",
+        "productname": "Stepnosing Karet",
+        "groupid": "G034",
+        "groupname": "Stepnosing Karet",
+        "uomid": "PCS",
+        "userprice": "90000.0000",
+        "dealerprice": "45000.0000",
+        "ctk" : "Y",
+        "fgactive": "Y"
+      },
+      {
+        "itemid": "10000KK01",
+        "itemname": "Stepnosing Karet 4M STORE HITAM POLOS",
+        "productid": "P067",
+        "productname": "Stepnosing Karet",
+        "groupid": "G034",
+        "groupname": "Stepnosing Karet",
+        "uomid": "PCS",
+        "userprice": "90000.0000",
+        "dealerprice": "45000.0000",
+        "ctk" : "Y",
+        "fgactive": "Y"
+      }
+    ]
+  }
+}
