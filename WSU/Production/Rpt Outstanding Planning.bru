@@ -1,0 +1,18 @@
+meta {
+  name: Rpt Outstanding Planning
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/rptoutstandingplanning
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20251201",
+    "sampai" : "20251231"
+  }
+}

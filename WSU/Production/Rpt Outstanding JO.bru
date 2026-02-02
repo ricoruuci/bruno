@@ -1,0 +1,19 @@
+meta {
+  name: Rpt Outstanding JO
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/rptoutstandingJO
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20250101",
+    "sampai" : "20260131",
+    "stage" : "STAGE 1"
+  }
+}
