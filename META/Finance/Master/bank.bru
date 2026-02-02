@@ -1,0 +1,20 @@
+meta {
+  name: bank
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/bank
+  body: json
+  auth: inherit
+}
+
+body:json {
+  
+  {
+      "bankidkeyword" : "",
+      "banknamekeyword" : ""
+  }
+  
+}
