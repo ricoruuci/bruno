@@ -1,0 +1,17 @@
+meta {
+  name: Pricelist
+  type: http
+  seq: 25
+}
+
+get {
+  url: {{API_URL}}/rptpricelist
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "itemidkeyword" : "SUP.LA0666"
+  }
+}
