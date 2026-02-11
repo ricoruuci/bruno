@@ -7,15 +7,12 @@ meta {
 get {
   url: {{API_URL}}/historyso
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "custid" : "ABG"
+      "custid" : "ABG",
+      "jenis" : "K"
   }
 }
