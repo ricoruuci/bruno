@@ -1,0 +1,36 @@
+info:
+  name: Customer_1
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{API_URL}}/customer"
+  body:
+    type: json
+    data: |-
+      {
+        "custname": "test",
+        "alamat": "test 123 test",
+        "kota": "test",
+        "telp": "021 55667788",
+        "fax": "021 55990011",
+        "email": "test@aja.com",
+        "salesid": "A003",
+        "limitpiutang": "500000000",
+        "limitasli": "500000000",
+        "termin": "30",
+        "term": "hari",
+        "cp": "anton",
+        "tipe": "D",
+        "note": "",
+        "fgkoma": "",
+        "kodefp": "01"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: Penjualan
+  type: http
+  seq: 20
+
+http:
+  method: GET
+  url: "{{API_URL}}/penjualan"
+  body:
+    type: json
+    data: |-
+      {
+      //     "saleid": "MAP-AR/2212/00030",
+           "dari" : "20240101",
+           "sampai" : "20241205",
+           //"custnamekeyword" : "Julianto"
+           "sortby" : "old"
+      //      "saleidkeyword" : "1Tech.24.09.0067",
+      //      "soidkeyword" : "SO/202312/0058",
+      //      "namakeyword" : "SAS.24.01.001"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,40 @@
+info:
+  name: Sales_1
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{API_URL}}/sales"
+  body:
+    type: json
+    data: |-
+      {
+         
+         "salesname" : "salesnamea",
+         "address" : "address",
+         "telp" : "telp",
+         "hp" : "hp",
+         "email" : "email",
+         "note" : "note",
+         "jabatan" : "jabatan",
+         "fgactive" : 1,
+         "tglgabung" : "20240610",
+         "tomzet" : 1000,
+         "kom1" : 50,
+         "kom2" : 0,
+         "kom3" : 0,
+         "kom4" : 0,
+         "uangmakan" : 0,
+         "gajipokok" : 0,
+         "limitkasbon" : 0,
+         "kerajinan" : 0
+
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

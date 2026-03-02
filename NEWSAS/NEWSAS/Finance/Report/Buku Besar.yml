@@ -1,0 +1,23 @@
+info:
+  name: Buku Besar
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{API_URL}}/rptbukubesar"
+  body:
+    type: json
+    data: |-
+      {
+          "rekeningid": "",
+          "dari" : 20250101,
+          "sampai" : 20250411
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

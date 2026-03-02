@@ -1,0 +1,32 @@
+info:
+  name: Penawaran
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{API_URL}}/penawaran"
+  body:
+    type: json
+    data: |-
+      {
+          "penawaranid" : "SAS-PO/2024-010002",
+          "sortby" : "baru",
+          "dari" :20240101,
+          "sampai" :20241016,
+          "pokeyword" : "",
+          "sokeyword" : "",
+          "suppidkeyword" : "",
+          "suppnamekeyword" : "",
+          "purchasingidkeyword" : "",
+          "purchasingnamekeyword" : "",
+          "custidkeyword" : "",
+          "custnamekeyword" : ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

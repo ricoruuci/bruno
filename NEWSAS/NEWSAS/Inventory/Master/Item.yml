@@ -1,0 +1,32 @@
+info:
+  name: item
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{API_URL}}/item"
+  body:
+    type: json
+    data: |-
+      {
+                  "itemname": " barang tes",
+                  "productid": "342",
+                  "productdesc": "GOPRO HERO 8",
+                  "groupid": "104",
+                  "groupdesc": "ACCESORIES",
+                  "partno": "HERO8",
+                  "uomid": "Unit",
+                  "userprice" : 5000,
+                  "dealerprice" : 2000
+             
+       }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

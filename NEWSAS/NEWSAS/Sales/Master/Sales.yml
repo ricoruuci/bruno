@@ -1,0 +1,25 @@
+info:
+  name: Sales
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{API_URL}}/sales"
+  body:
+    type: json
+    data: |-
+      {
+      //    "salesid": "D013",
+         "salesidkeyword" : "",
+         "salesnamekeyword" : "",
+         "active" : "ya",
+         "sortby" : "salesid"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

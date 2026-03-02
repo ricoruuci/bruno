@@ -1,0 +1,25 @@
+info:
+  name: Penjualan Cari SO
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: "{{API_URL}}/penjualan/cari-so"
+  body:
+    type: json
+    data: |-
+      {
+          "transdate": "20241201"//,
+          //"custnamekeyword" : "RAJA",
+          //"salesnamekeyword" : "rico"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

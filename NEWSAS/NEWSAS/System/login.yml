@@ -1,0 +1,21 @@
+info:
+  name: login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{API_URL}}/login"
+  body:
+    type: json
+    data: |2+
+       {
+           "userid" : "rico",
+           "password" : "110108"
+       }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

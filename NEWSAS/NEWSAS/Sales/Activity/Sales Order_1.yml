@@ -1,0 +1,44 @@
+info:
+  name: Sales Order_1
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{API_URL}}/salesorder"
+  body:
+    type: json
+    data: |-
+      {
+          "custid": "1tech",
+          "salesid": "A002",
+          "transdate": "20260226",
+          "tglkirim": "20260226",
+          "note": "",
+          "pocust": "test",
+          "fob": "Jakarta",
+          "nilaitax": 11,
+          "fgtax": "Y",
+      //     "currid": "IDR",
+      //     "term" : "hari",
+      //     "termin" : 30,
+          "detail": [
+              {
+                  "itemid": "18.999.026",
+                  "urut": "1",
+                  "itemname": "64P8156 BM-2Gb Dual Port PCi-X Fiber Channel Card",
+                  "qty": 1,
+                  "price": 50000,
+                  "modal": 1000,
+                  "bagasi": 0,
+                  "note": ""
+              }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

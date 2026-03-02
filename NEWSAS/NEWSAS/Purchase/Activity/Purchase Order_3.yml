@@ -1,0 +1,24 @@
+info:
+  name: Purchase Order_3
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/purchaseorder"
+  body:
+    type: json
+    data: |-
+      {
+          "poid": "MAP-PO/2024--00002"
+         
+          }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

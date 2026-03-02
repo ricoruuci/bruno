@@ -1,0 +1,22 @@
+info:
+  name: patchStatusUploadCoretax
+  type: http
+  seq: 19
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/coretax/update-status"
+  body:
+    type: json
+    data: |-
+      {
+          "saleid": ["MAP-AR/2308/00006"],
+          "fgupload": "Y"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

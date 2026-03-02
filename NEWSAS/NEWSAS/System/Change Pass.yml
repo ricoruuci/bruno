@@ -1,0 +1,26 @@
+info:
+  name: Change Pass
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/changepass"
+  body:
+    type: json
+    data: |2+
+       {
+           "userid" : "admin",
+           "oldpassword" : "",
+           "newpassword" : ""
+       }
+
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

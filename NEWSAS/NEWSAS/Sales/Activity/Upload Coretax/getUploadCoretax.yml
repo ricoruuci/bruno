@@ -1,0 +1,39 @@
+info:
+  name: getUploadCoretax
+  type: http
+  seq: 19
+
+http:
+  method: GET
+  url: "{{API_URL}}/coretax"
+  body:
+    type: json
+    data: |-
+      {  
+          //ini wajib
+          "dari": "20230101",
+          "sampai": "20250919"
+        ////////////////////////
+        //gunakan ini untuk pilih beberapa data untuk diupload
+      //      "saleid": ["sss","MAP-AR/2308/00006"]
+        
+      //gunakan ini untuk menampilkan list data penjualan
+      //dengan tambahan beberapa filter
+      //     "listdata" : 1,    
+      //     "custidkeyword": "",
+      //     "custnamekeyword": "",
+      //     "salesidkeyword": "",
+      //     "salesnamekeyword": "",
+      //     "status": "Y",
+      //     "sortby": "old",
+      //     "saleidkeyword": "",
+      //     "npwpkeyword": ""
+          
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: NEWSAS
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: 40727|ugFb0TyCc4Ap9mEqfelEKmwAGpUsbKUkZLEmpXuI85e09ca9
+  variables:
+    - name: API_URL
+      value: http://127.0.0.1:8080/api
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

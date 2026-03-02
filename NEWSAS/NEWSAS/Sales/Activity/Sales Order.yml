@@ -1,0 +1,32 @@
+info:
+  name: Sales Order
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{API_URL}}/salesorder"
+  body:
+    type: json
+    data: |-
+      {
+          "soid": "SO-1Tech/2006/0038",
+      //     "oto": 1,
+          //"alldata" : "Y",
+          "dari": "20260225",
+          "sampai": "20260226",
+      //     "custidkeyword": "",
+      //     "custnamekeyword": "",
+      //     "salesidkeyword": "",
+      //     "salesnamekeyword": "",
+          "sortby": "old",
+          "soidkeyword": ""
+          
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

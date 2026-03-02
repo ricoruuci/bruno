@@ -1,0 +1,35 @@
+info:
+  name: Rpt Penjualan Detail
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{API_URL}}/rptpenjualandetail"
+  body:
+    type: json
+    data: |2+
+       {
+           "dari" : "11111111",
+           "sampai" : "20240102",
+           "saleidkeyword" : "",
+           "custidkeyword" : "",
+           "custnamekeyword" : "",
+           "salesidkeyword" : "",
+           "salesnamekeyword" : "",
+           "itemidkeyword" : "",
+           "itemnamekeyword" : "",
+           "productidkeyword" : "",
+           "productnamekeyword" : "",
+           "sortby" : "new"
+       }
+
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

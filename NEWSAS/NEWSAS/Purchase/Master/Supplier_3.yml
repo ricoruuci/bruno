@@ -1,0 +1,23 @@
+info:
+  name: Supplier_3
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/supplier"
+  body:
+    type: json
+    data: |-
+      {
+         "suppid": "S0003"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

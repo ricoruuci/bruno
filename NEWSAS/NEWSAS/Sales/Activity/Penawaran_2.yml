@@ -1,0 +1,54 @@
+info:
+  name: Penawaran_2
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/penawaran"
+  body:
+    type: json
+    data: |-
+      {
+          "penawaranid": "SAS/QUOT/2602/0037",
+          "transdate": "2026-02-03 00:00:00.000",
+          "currid": "IDR",
+          "suppid": "SP141",
+          "suppname": "PT ANEKA BERKAH SEJAHTERA",
+          "up": "Bpk Rudi",
+          "telp": "877-8827-0055",
+          "fax": "",
+          "email": "",
+          "note": "",
+          "salesid": "A001",
+          "salesname": "TEST",
+          "upddate": "2026-02-03 10:40:39.000",
+          "upduser": "hanny",
+          "soid": "SO2026020008",
+          "custid": "1tech",
+          "custname": "1 Tech",
+          "fgtax": "T",
+          "nilaitax": "0.0000",
+          "discamount": ".0000",
+              "detail": [
+              {
+                  "urut": "1",
+      //             "itemid": "99.999.001",
+                  "itemname": "Service",
+                  "note": "PN : ST16000VE002",
+                  "qty": "1",
+                  "price": "7009009.0090",
+                  "upddate": "2024-01-03 10:42:17.000",
+                  "upduser": "hanny",
+                  "partno": null,
+                  "total": "7009009.0090"
+              }
+          ]
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
