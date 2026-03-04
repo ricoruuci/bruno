@@ -1,0 +1,15 @@
+meta {
+  name: Gudang
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/gudang
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
