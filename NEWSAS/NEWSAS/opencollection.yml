@@ -17,10 +17,10 @@ config:
 request:
   auth:
     type: bearer
-    token: 40727|ugFb0TyCc4Ap9mEqfelEKmwAGpUsbKUkZLEmpXuI85e09ca9
+    token: 80723|hPH4cVItZzREP06fmqiFvq7DjyWRLZRQvIuuDAjj0fc125fa
   variables:
     - name: API_URL
-      value: http://127.0.0.1:8080/api
+      value: http://127.0.0.1:8000/api
 bundled: false
 extensions:
   bruno:

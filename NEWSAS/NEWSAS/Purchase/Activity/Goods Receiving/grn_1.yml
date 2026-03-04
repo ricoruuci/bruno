@@ -1,0 +1,38 @@
+info:
+  name: grn_1
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{API_URL}}/grn"
+  body:
+    type: json
+    data: |-
+      {
+          "poid": "SAS-PO/2023-120020",
+          "transdate": "20240918",
+          "suppid": "CSP055",
+          "warehouseid" : "01GU",
+          "note": "keterangan",
+          "detail": [
+              {
+                  "itemid": "13.999.1734",
+                  "qty": 1,
+                  "price": 500000000,
+                  "detailsn":[
+                      {
+                          "snid": "123",
+                          "fgsn": "T"
+                      }
+                  ]
+              }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
