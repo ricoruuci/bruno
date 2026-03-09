@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-          "soid" : "SO/202503/0055"
-          //"soidkeyword" : "BTS-SO.24110157"
+          "soid" : "SO2026030032"
+      //     "soidkeyword" : ""
       }
   auth: inherit
 
