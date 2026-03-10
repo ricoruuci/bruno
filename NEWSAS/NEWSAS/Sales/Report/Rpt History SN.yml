@@ -1,0 +1,24 @@
+info:
+  name: Rpt History SN
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{API_URL}}/rpthistorysn"
+  body:
+    type: json
+    data: |2+
+       {
+           "itemid" : "19.129.021",
+           "notakeyword" : "",
+           "fgjenis" : "J"
+       }
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
