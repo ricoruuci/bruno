@@ -10,24 +10,25 @@ http:
     type: json
     data: |-
       {
-          "konsinyasiinvid": "AP-SAS/24/10/0003",
-         "noinvoice": "Test2",
-         "transdate" : "2024-10-04",
-         "nofps" : "102",
-         "konsinyasiid" : "1Tech/GR/2409/0063",
-         "suppid" : "CSP009",
+         "purchaseid": "Test2",
+         "transdate" : "2026-03-10",
+         "nofps" : "292121",
+         "konsinyasiid" : "1Tech/GR/2311/0132",
+         "suppid" : "CSC010",
          "note" : "note",
+         "currid" : "IDR",
          "nilaitax" : "11",
          "fgtax" : "Y",
          "jatuhtempo" : 30,
          "detail" : [
           {
-              "itemid" : "55.979.009",
+              "itemid" : "101.999.007",
               "qty" : 2,
               "price" : 150000,
+              "disc" : 0,
               "detailsn" : [
                   {
-                      "snid" : "sn003"
+                      "snid" : "sn001"
                   },
                   {
                       "snid" : "sn002"
@@ -38,9 +39,7 @@ http:
          ]
           
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

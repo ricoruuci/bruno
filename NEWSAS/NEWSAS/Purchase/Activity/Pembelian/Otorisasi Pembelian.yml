@@ -10,11 +10,9 @@ http:
     type: json
     data: |-
       {
-          "purchaseid" : "ZJ24I01185"
+          "purchaseid" : "Test2"
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

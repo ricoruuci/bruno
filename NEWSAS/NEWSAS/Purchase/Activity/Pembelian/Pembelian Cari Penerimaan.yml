@@ -10,16 +10,14 @@ http:
     type: json
     data: |-
       {
-         "transdate" : "20231009"
+         "transdate" : "20260310",
+         "suppid" : "CSC010"
          //"suppnamekeyword" : "MAKRO INFORMASI",
-         //"suppidkeyword" : "SC060",
          //"konsinyasiidkeyword" : "1Tech/GR/2409/0063"
          //"sortby" : "dateold"
           
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true
