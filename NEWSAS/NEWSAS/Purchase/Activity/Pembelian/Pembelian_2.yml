@@ -1,18 +1,20 @@
 info:
-  name: Penjualan_3
+  name: Pembelian_2
   type: http
-  seq: 24
+  seq: 5
 
 http:
   method: DELETE
-  url: "{{API_URL}}/penjualan"
+  url: "{{API_URL}}/pembelian"
   body:
     type: json
     data: |-
       {
-          "saleid" : "SAS.26.03.028"
+          "konsinyasiinvid" : "AP-SAS/24/10/0004"
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

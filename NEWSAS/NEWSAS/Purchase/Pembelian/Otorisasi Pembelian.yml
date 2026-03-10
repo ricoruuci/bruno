@@ -1,17 +1,18 @@
 info:
-  name: Otorisasi Pembelian_1
+  name: Otorisasi Pembelian
   type: http
-  seq: 2
+  seq: 1
 
 http:
-  method: PATCH
-  url: "{{API_URL}}/purchase/otorisasi"
+  method: GET
+  url: "{{API_URL}}/pembelian/otorisasi"
   body:
     type: json
     data: |-
       {
-          "purchaseid" : "ZJ24I01185",
-          "jenis" : "X"
+          "purchaseid" : "20160601DEMI"
+          //"sampai": "20241111"
+          
       }
   auth:
     type: bearer

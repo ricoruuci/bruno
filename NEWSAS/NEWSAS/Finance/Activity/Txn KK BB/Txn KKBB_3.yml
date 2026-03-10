@@ -1,16 +1,16 @@
 info:
-  name: Penjualan_3
+  name: Txn KKBB_3
   type: http
-  seq: 24
+  seq: 4
 
 http:
   method: DELETE
-  url: "{{API_URL}}/penjualan"
+  url: "{{API_URL}}/txnkkbb"
   body:
     type: json
     data: |-
       {
-          "saleid" : "SAS.26.03.028"
+          "voucherid": "BM/YUYU/26/03/0003"
       }
   auth: inherit
 
