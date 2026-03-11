@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{API_URL}}/listpodt"
+  url: "{{API_URL}}/autosn"
   body:
     type: json
     data: |-
