@@ -1,0 +1,48 @@
+info:
+  name: Pembelian_3
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/pembelian"
+  body:
+    type: json
+    data: |-
+      {
+         "purchaseid": "Test2",
+         "transdate" : "2026-03-10",
+         "nofps" : "292121",
+         "konsinyasiid" : "1Tech/GR/2311/0132",
+         "suppid" : "CSC010",
+         "note" : "note",
+         "currid" : "IDR",
+         "nilaitax" : "11",
+         "fgtax" : "Y",
+         "jatuhtempo" : 30,
+         "detail" : [
+          {
+              "itemid" : "101.999.007",
+              "qty" : 2,
+              "price" : 150000,
+              "disc" : 0,
+              "detailsn" : [
+                  {
+                      "snid" : "sn001"
+                  },
+                  {
+                      "snid" : "sn002"
+                  }
+              ]
+          }
+
+         ]
+          
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

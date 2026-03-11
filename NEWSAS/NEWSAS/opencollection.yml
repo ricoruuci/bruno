@@ -17,7 +17,7 @@ config:
 request:
   auth:
     type: bearer
-    token: 50757|uMfU2WOPVVGTWYW7vegzSw5tqWbzi4fHR8KUvMqmd9c64cc8
+    token: 70757|8H4CXnT6xSehrboUQVzvZofQruz68eDpoZrcgYG52fd6bb31
   variables:
     - name: API_URL
       value: http://127.0.0.1:8000/api

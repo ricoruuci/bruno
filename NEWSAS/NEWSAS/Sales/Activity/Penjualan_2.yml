@@ -10,11 +10,11 @@ http:
     type: json
     data: |-
       {
-          "saleid" : "MAP-AR/2402/00001",
-          "soid" : "SO-MAP/2111/0015",
-          "transdate" : "20241001",
-          "custid" : "DP177",
-          "salesid" : "E003",
+          "saleid" : "SAS.26.03.027",
+          "soid" : "SO2026030034",
+          "transdate" : "20260309",
+          "custid" : "CNP403",
+          "salesid" : "D013",
           "term" : 30,
           "dp" : 0,
           "nama" : "ilham",
@@ -23,7 +23,6 @@ http:
           "nilaitax" : 11,
           "alamat" : "JAKARTA",
           "administrasi" : 0,
-          "namappk" : "",
           "note" : "",
           "pekerjaan" : "",
           "tgldo" : "",
@@ -36,8 +35,9 @@ http:
           "fgrek" : "Y",
           "detail" : [
               {
-                  "itemid" : "104.221.001",
+                  "itemid" : "10.156.042",
                   "price" : 150000,
+                  "itemname" : "APPLE MACBOOK PRO 14 INCH M5 CHIP WITH 10 CORE CPU AND 10 CORE GPU 16GB 512GB SSD ",
                   "qty" : 1,
                   "bagasi" : 1500,
                   "modal" : 1000,
@@ -54,13 +54,19 @@ http:
                           "modal" : 10000,
                           "fgsn" : "Y"
                       }
+                      // ,
+                      // {
+                      //     "snid" : "sn003",
+                      //     "price" : 150000,
+                      //     "purchaseid" : "GRN-0001",
+                      //     "modal" : 10000,
+                      //     "fgsn" : "Y"
+                      // }
                   ]
               }
           ]    
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

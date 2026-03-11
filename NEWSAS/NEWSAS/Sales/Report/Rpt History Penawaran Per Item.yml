@@ -1,0 +1,25 @@
+info:
+  name: Rpt History Penawaran Per Item
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{API_URL}}/rptpenjualan/history-harga-penawaran"
+  body:
+    type: json
+    data: |2+
+       {
+           "dari" : "11111111",
+           "sampai" : "20261231",
+           "custid" : "",
+           "itemnamekeyword" : ""
+       }
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
