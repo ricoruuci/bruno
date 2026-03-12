@@ -1,0 +1,22 @@
+meta {
+  name: Delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "invoice_code": "INV/MBG/24/-0/001"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
