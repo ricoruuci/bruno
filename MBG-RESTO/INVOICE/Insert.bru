@@ -1,0 +1,40 @@
+meta {
+  name: Insert
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/invoice
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "invoice_date": "20250202",
+    "invoice_to": "PT. Test Client",
+    "invoice_note": "Test invoice",
+    "invoice_ppn": 10,
+    "invoice_ppn_flag": true,
+    "company_id": 1,
+    "company_code": "MBG",
+    "detail": [
+      {
+        "invoice_detail_description": "Consulting Service 1",
+        "invoice_detail_qty": 2,
+        "invoice_detail_price": 1000000
+      },
+      {
+        "invoice_detail_description": "Consulting Service 2",
+        "invoice_detail_qty": 3,
+        "invoice_detail_price": 1000000
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
