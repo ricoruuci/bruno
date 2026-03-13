@@ -1,16 +1,18 @@
 info:
-  name: Sales Order_3
+  name: Penjualan Cari Detail Barang
   type: http
-  seq: 9
+  seq: 1
 
 http:
-  method: DELETE
-  url: "{{API_URL}}/salesorder"
+  method: GET
+  url: "{{API_URL}}/penjualan/cari-detail"
   body:
     type: json
     data: |-
       {
-          "soid": "SOM-MAP/202411/0001"
+          "soid" : "SO-MAP/2204/0003",
+          "itemidkeyword" : ""
+          
       }
   auth:
     type: bearer

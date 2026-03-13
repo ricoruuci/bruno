@@ -1,7 +1,7 @@
 info:
   name: Penjualan
   type: http
-  seq: 20
+  seq: 1
 
 http:
   method: GET

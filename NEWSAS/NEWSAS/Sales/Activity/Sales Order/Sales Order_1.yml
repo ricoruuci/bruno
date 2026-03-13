@@ -1,41 +1,41 @@
 info:
-  name: Sales Order_2
+  name: Sales Order_1
   type: http
-  seq: 7
+  seq: 5
 
 http:
-  method: PATCH
+  method: POST
   url: "{{API_URL}}/salesorder"
   body:
     type: json
     data: |-
       {
-          "soid": "SOM-MAP/202411/0001",
-          "custid": "DD066",
-          "salesid": "M001",
-          "transdate": "20241112",
-          "tglkirim": "20241112",
+          "custid": "1tech",
+          "salesid": "A002",
+          "transdate": "20260226",
+          "tglkirim": "20260226",
           "note": "",
-          "pocust": "1234",
+          "pocust": "test",
           "fob": "Jakarta",
           "nilaitax": 11,
           "fgtax": "Y",
+      //     "currid": "IDR",
+      //     "term" : "hari",
+      //     "termin" : 30,
           "detail": [
               {
-                  "itemid": "104.221.001",
+                  "itemid": "18.999.026",
                   "urut": "1",
-                  "itemname": "Takara tripod 193 A",
+                  "itemname": "64P8156 BM-2Gb Dual Port PCi-X Fiber Channel Card",
                   "qty": 1,
                   "price": 50000,
-                  "modal": 45000,
+                  "modal": 1000,
                   "bagasi": 0,
                   "note": ""
               }
           ]
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

@@ -1,18 +1,17 @@
 info:
-  name: Penawaran_3
+  name: Sales Order_3
   type: http
   seq: 4
 
 http:
   method: DELETE
-  url: "{{API_URL}}/penawaran"
+  url: "{{API_URL}}/performa"
   body:
     type: json
     data: |-
       {
-          "penawaranid": "SAS/QUOT/2602/0037"
-         
-          }
+          "performaid": "PI-SAS/26/03/005"
+      }
   auth: inherit
 
 settings:

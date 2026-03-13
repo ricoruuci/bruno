@@ -1,0 +1,29 @@
+info:
+  name: Performa
+  type: http
+  seq: 25
+
+http:
+  method: GET
+  url: "{{API_URL}}/performa"
+  body:
+    type: json
+    data: |-
+      {
+      //     "performaid": "PI-SAS/26/01/001",
+          "performaidkeyword": "",
+          "dari": "20210101",
+          "sampai": "20260226",
+          "custidkeyword": "",
+          "custnamekeyword": "",
+          "sortby": "old",
+          "soidkeyword": "SOM/202505/0021"
+          
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,7 +1,7 @@
 info:
-  name: Upload Coretax
+  name: Sales Order
   type: folder
-  seq: 1
+  seq: 3
 
 request:
   auth: inherit

@@ -1,7 +1,7 @@
 info:
   name: Otorisasi Sales Order_1
   type: http
-  seq: 15
+  seq: 6
 
 http:
   method: PATCH

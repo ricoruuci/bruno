@@ -1,18 +1,18 @@
 info:
-  name: List SO Blm PO
+  name: Item SO
   type: http
-  seq: 10
+  seq: 2
 
 http:
   method: GET
-  url: "{{API_URL}}/listsoblmpo"
+  url: "{{API_URL}}/itemso"
   body:
     type: json
     data: |-
       {
-          "transdate": "20260227",
-          "custnamekeyword" : "",
-          "soidkeyword" : "SO2026020051"
+      //     "soid" : "SO-MAP/2204/0003",
+          "itemidkeyword" : "",
+          "itemnamekeyword" : ""
       }
   auth: inherit
 

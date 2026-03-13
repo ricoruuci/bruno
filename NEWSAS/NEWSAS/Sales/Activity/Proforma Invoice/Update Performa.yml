@@ -1,0 +1,38 @@
+info:
+  name: Update Performa
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/performa"
+  body:
+    type: json
+    data: |-
+      {
+          "performaid" : "PI-SAS/26/03/005",
+          "soid": "SOM/202505/0021",
+          "custid": "1Tech",
+          "pocust": "tes po cust",
+          "transdate": "20260313",
+          "up": "tes up",
+          "fgdp": "A",
+          "dp": "150000",
+          "fgpayment": "K",
+          "jthtempo": 30,
+          "detail": [
+              {
+                  "itemid": "32.1002.001",
+                  "itemname": "Microsoft Office",
+                  "qty": 1,
+                  "price": 50000
+              }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
