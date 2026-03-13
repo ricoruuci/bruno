@@ -1,7 +1,7 @@
 info:
   name: Penjualan Cari SN
   type: http
-  seq: 16
+  seq: 1
 
 http:
   method: GET

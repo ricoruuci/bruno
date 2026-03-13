@@ -1,18 +1,17 @@
 info:
-  name: Penjualan Cari SO
+  name: Penjualan Cetakan
   type: http
-  seq: 12
+  seq: 1
 
 http:
   method: GET
-  url: "{{API_URL}}/penjualan/cari-so"
+  url: "{{API_URL}}/penjualan/format"
   body:
     type: json
     data: |-
       {
-          "transdate": "20241201"//,
-          //"custnamekeyword" : "RAJA",
-          //"salesnamekeyword" : "rico"
+          "saleid": "MAP-AR/2411/00002"
+
       }
   auth:
     type: bearer

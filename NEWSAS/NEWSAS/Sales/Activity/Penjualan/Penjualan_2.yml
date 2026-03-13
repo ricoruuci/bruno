@@ -1,7 +1,7 @@
 info:
   name: Penjualan_2
   type: http
-  seq: 23
+  seq: 1
 
 http:
   method: PATCH

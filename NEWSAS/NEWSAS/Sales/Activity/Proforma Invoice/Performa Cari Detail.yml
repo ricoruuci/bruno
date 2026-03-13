@@ -1,18 +1,19 @@
 info:
-  name: Item SO
+  name: Performa Cari Detail
   type: http
-  seq: 11
+  seq: 5
 
 http:
   method: GET
-  url: "{{API_URL}}/itemso"
+  url: "{{API_URL}}/performa/cari-detail"
   body:
     type: json
     data: |-
       {
-      //     "soid" : "SO-MAP/2204/0003",
+          "soid" : "SOM/202505/0021",
           "itemidkeyword" : "",
           "itemnamekeyword" : ""
+          
       }
   auth: inherit
 
