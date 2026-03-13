@@ -1,17 +1,16 @@
 info:
-  name: Otorisasi Sales Order
+  name: Pembelian_2
   type: http
-  seq: 14
+  seq: 5
 
 http:
-  method: GET
-  url: "{{API_URL}}/otorisasi/salesorder"
+  method: DELETE
+  url: "{{API_URL}}/pembelian"
   body:
     type: json
     data: |-
       {
-          "soid" : "SO2026030032"
-      //     "soidkeyword" : ""
+          "purchaseid" : "Test2"
       }
   auth: inherit
 

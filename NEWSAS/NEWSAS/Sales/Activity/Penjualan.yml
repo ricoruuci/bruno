@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-      //     "saleid": "MAP-AR/2212/00030",
+          "saleid": "SAS.26.03.027",
            "dari" : "20240101",
-           "sampai" : "20241205",
+           "sampai" : "20261231",
            //"custnamekeyword" : "Julianto"
            "sortby" : "old"
       //      "saleidkeyword" : "1Tech.24.09.0067",

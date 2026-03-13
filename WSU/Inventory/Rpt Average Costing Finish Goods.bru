@@ -1,0 +1,20 @@
+meta {
+  name: Rpt Average Costing Finish Goods
+  type: http
+  seq: 21
+}
+
+get {
+  url: {{API_URL}}/rptaveragecostingfg
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tahun" : "2025",
+    "groupid" : "",
+    "warehouseID" : "03",
+    "itemid" : ""
+  }
+}

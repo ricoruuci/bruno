@@ -1,0 +1,24 @@
+info:
+  name: Otorisasi Pembelian_1
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/pembelian/otorisasi"
+  body:
+    type: json
+    data: |-
+      {
+           "purchaseid" : "1/06/2016",
+           "fgoto" : "Y"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

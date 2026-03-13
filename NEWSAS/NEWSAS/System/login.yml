@@ -10,8 +10,8 @@ http:
     type: json
     data: |2+
        {
-           "userid" : "admin",
-           "password" : ""
+           "userid" : "rico",
+           "password" : "110108"
        }
 
 settings:

@@ -1,0 +1,36 @@
+info:
+  name: Txn KKBB_2
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/txnkkbb"
+  body:
+    type: json
+    data: |-
+      {
+          "voucherid": "BM/YUYU/26/03/0003",
+          "fgtrans": "BM",
+          "transdate": "20260310",
+          "actor": "RICO",
+          "note": "TES",
+          "bankid": "YUYU",
+          "total": "200000.0000",
+          "detail": [
+              {
+                  "note": "AP-SAS/23/01/0003",
+                  "amount": "200000.0000",
+                  "rekeningid": "123000.0001",
+                  "jenis" : "K",
+                  "salesid" : ""
+              }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
