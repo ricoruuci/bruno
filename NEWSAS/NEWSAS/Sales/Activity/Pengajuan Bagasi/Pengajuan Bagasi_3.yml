@@ -1,0 +1,26 @@
+info:
+  name: Pengajuan Bagasi_3
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{API_URL}}/pengajuanbagasi"
+  body:
+    type: json
+    data: |-
+      {
+          "transid" : "PKB/2026/0038",
+          "dari" : "20240101",
+          "sampai" : "20260325",
+          "transidkeyword" : "",
+          "salesidkeyword" : "",
+          "salesnamekeyword" :""    
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

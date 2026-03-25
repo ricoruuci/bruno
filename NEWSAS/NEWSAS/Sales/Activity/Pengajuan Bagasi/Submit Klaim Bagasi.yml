@@ -1,0 +1,21 @@
+info:
+  name: Submit Klaim Bagasi
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/pengajuanbagasi/submit"
+  body:
+    type: json
+    data: |-
+      {   
+          "transid" : "PKB/2026/0038"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

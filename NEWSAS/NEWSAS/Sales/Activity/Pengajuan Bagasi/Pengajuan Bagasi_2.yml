@@ -1,0 +1,34 @@
+info:
+  name: Pengajuan Bagasi_2
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/pengajuanbagasi"
+  body:
+    type: json
+    data: |-
+      {   
+          "transid" : "PKB/2026/0038",
+          "transdate" : "2026-03-25",
+          "salesid" : "1TECH",
+          "up" : "tes up",
+          "namarekening" : "tes nama rek",
+          "norekening" : "tes no rek",
+          "bank" : "tes bank",
+          "cabang" : "tes cabang",
+          "detail" : [
+              {
+                  "saleid" : "SAS.26.01.057",
+                  "amount" : 2299500.0000
+              }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
