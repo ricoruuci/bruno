@@ -1,0 +1,42 @@
+info:
+  name: Post Klaim Budget Sales
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{API_URL}}/klaimbudgetsales"
+  body:
+    type: json
+    data: |-
+      {
+        "transdate": "2026-03-25 00:00:00.000",
+        "custname": "1 Tech",
+        "salesid": "1tech",
+        "note": "123",
+        "detail": [
+          {
+            "transdate": "2026-03-25 00:00:00.000",
+            "note": "PN : ST16000VE002",
+            "estimasiproject": "1",
+            "jumlah": "7009009.0090",
+            "upddate": "2024-01-03 10:42:17.000",
+            "upduser": "hanny"
+          },
+          {
+            "transdate": "2026-03-25 00:00:00.000",
+            "note": "PN : ST16000VE002",
+            "estimasiproject": "2",
+            "jumlah": "150000.0090",
+            "upddate": "2024-01-03 10:42:17.000",
+            "upduser": "hanny"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
