@@ -1,0 +1,28 @@
+info:
+  name: Rpt PO Pending
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{API_URL}}/rptpopending"
+  body:
+    type: json
+    data: |2+
+       {
+           "dari" : "11111111",
+           "sampai" : "20260331",
+           "suppidkeyword" : "",
+           "suppnamekeyword" : "sa",
+           "itemidkeyword" : "",
+           "itemnamekeyword" : "",
+           "poidkeyword" : "sas"
+       }
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
