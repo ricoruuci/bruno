@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-          "saleid" : "SAS.26.03.027",
-          "soid" : "SO2026030034",
+          "saleid" : 1,
+          "soid" : "SO20260s30034",
           "transdate" : "20260309",
           "custid" : "CNP403",
           "salesid" : "D013",

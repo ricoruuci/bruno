@@ -11,7 +11,7 @@ http:
     data: |-
       {
          "purchaseid": "Test2",
-         "transdate" : "2026-03-10",
+         "transdate" : "20260310",
          "nofps" : "292121",
          "konsinyasiid" : "1Tech/GR/2311/0132",
          "suppid" : "CSC010",

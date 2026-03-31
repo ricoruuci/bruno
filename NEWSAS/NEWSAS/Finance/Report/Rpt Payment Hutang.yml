@@ -1,0 +1,26 @@
+info:
+  name: Rpt Payment Hutang
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{API_URL}}/rptpaymenthutang"
+  body:
+    type: json
+    data: |2+
+       {
+           "dari" : "11111111",
+           "sampai" : "20260325",
+           "suppidkeyword" : "",
+           "suppnamekeyword" : "",
+           "purchaseidkeyword" : "AP-TEC/26/01/0009"
+       }
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

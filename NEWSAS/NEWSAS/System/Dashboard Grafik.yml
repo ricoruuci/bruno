@@ -9,9 +9,7 @@ http:
   body:
     type: json
     data: "\n\n"
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

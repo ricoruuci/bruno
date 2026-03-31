@@ -1,0 +1,27 @@
+info:
+  name: Rpt Rekap Piutang
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{API_URL}}/rptpaymentpiutang"
+  body:
+    type: json
+    data: |2+
+       {
+           "dari" : "11111111",
+           "sampai" : "20260330",
+           "custidkeyword" : "",
+           "custnamekeyword" : "",
+           "saleidkeyword" : "",
+           "fglunas" : "Y"
+       }
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

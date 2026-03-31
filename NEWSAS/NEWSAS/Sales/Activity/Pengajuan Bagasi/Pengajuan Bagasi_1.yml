@@ -12,9 +12,7 @@ http:
       {
           "transid" : "PKB/2024/0001"
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true
