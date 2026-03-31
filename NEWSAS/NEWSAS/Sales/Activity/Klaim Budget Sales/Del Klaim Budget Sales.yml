@@ -1,0 +1,22 @@
+info:
+  name: Del Klaim Budget Sales
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/klaimbudgetsales"
+  body:
+    type: json
+    data: |-
+      {
+          "voucherid": "PC/26/-0/0001"
+         
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

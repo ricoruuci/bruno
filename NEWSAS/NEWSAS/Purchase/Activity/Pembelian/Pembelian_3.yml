@@ -10,11 +10,11 @@ http:
     type: json
     data: |-
       {
-         "purchaseid": "Test2",
-         "transdate" : "2026-03-10",
+         "purchaseid": "1800002070",
+         "transdate" : "20260325",
          "nofps" : "292121",
-         "konsinyasiid" : "1Tech/GR/2311/0132",
-         "suppid" : "CSC010",
+         "konsinyasiid" : "SAS/GR/2603/0069",
+         "suppid" : "M013",
          "note" : "note",
          "currid" : "IDR",
          "nilaitax" : "11",
@@ -22,16 +22,13 @@ http:
          "jatuhtempo" : 30,
          "detail" : [
           {
-              "itemid" : "101.999.007",
-              "qty" : 2,
+              "itemid" : "88.1002.018",
+              "qty" : 1,
               "price" : 150000,
               "disc" : 0,
               "detailsn" : [
                   {
                       "snid" : "sn001"
-                  },
-                  {
-                      "snid" : "sn002"
                   }
               ]
           }

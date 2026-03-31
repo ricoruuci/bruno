@@ -1,0 +1,21 @@
+info:
+  name: Pengajuan Bagasi_1
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/pengajuanbagasi"
+  body:
+    type: json
+    data: |-
+      {
+          "transid" : "PKB/2024/0001"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

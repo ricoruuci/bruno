@@ -1,0 +1,20 @@
+meta {
+  name: Laporan Kas Harian
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/rptkasharian
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      
+      "dari" :"20250502",
+      "sampai" : "20250502",
+     "bankid" :""
+  }
+}

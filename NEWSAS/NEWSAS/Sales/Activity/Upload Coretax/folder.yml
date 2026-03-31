@@ -1,7 +1,7 @@
 info:
   name: Upload Coretax
   type: folder
-  seq: 25
+  seq: 1
 
 request:
   auth: inherit

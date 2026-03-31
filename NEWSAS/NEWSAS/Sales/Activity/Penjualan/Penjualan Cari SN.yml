@@ -1,0 +1,24 @@
+info:
+  name: Penjualan Cari SN
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{API_URL}}/penjualan/cari-sn"
+  body:
+    type: json
+    data: |-
+      {
+          "itemid" : "100.102.009"
+          //"suppidkeyword" : "s1"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

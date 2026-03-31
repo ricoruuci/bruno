@@ -1,0 +1,75 @@
+info:
+  name: Penjualan_2
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/penjualan"
+  body:
+    type: json
+    data: |-
+      {
+          "saleid" : 1,
+          "soid" : "SO20260s30034",
+          "transdate" : "20260309",
+          "custid" : "CNP403",
+          "salesid" : "D013",
+          "term" : 30,
+          "dp" : 0,
+          "nama" : "ilham",
+          "fgtax" : "T",
+          "fgtrans" : "I",
+          "nilaitax" : 11,
+          "alamat" : "JAKARTA",
+          "administrasi" : 0,
+          "note" : "",
+          "pekerjaan" : "",
+          "tgldo" : "",
+          "nosp" : "",
+          "tglsp" : "",
+          "taxid" : ".005-24.78458946",
+          "fgdetail" : "Y",
+          "nopi" : "",
+          "pocust" : "",
+          "fgrek" : "Y",
+          "detail" : [
+              {
+                  "itemid" : "10.156.042",
+                  "price" : 150000,
+                  "itemname" : "APPLE MACBOOK PRO 14 INCH M5 CHIP WITH 10 CORE CPU AND 10 CORE GPU 16GB 512GB SSD ",
+                  "qty" : 1,
+                  "bagasi" : 1500,
+                  "modal" : 1000,
+                  "uomid" : "unit",
+                  "note" : "SSSSSSSSSSSSSSS",
+                  "fgtampil" : "Y",
+                  "fgpph" : "P",
+                  "pph" : 0,
+                  "detailsn" : [
+                      {
+                          "snid" : "sn001",
+                          "price" : 150000,
+                          "purchaseid" : "1Tech/GR/2101/0059",
+                          "modal" : 10000,
+                          "fgsn" : "Y"
+                      }
+                      // ,
+                      // {
+                      //     "snid" : "sn003",
+                      //     "price" : 150000,
+                      //     "purchaseid" : "GRN-0001",
+                      //     "modal" : 10000,
+                      //     "fgsn" : "Y"
+                      // }
+                  ]
+              }
+          ]    
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: Penawaran_3
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/penawaran"
+  body:
+    type: json
+    data: |-
+      {
+          "penawaranid": "SAS/QUOT/2602/0037"
+         
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
