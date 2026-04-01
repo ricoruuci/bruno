@@ -1,0 +1,28 @@
+meta {
+  name: create customer
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "customer_name" : "Miswanto", 
+    "customer_contact_person" : "Miswanto- 0980808908", 
+    "customer_city" : "Jakarta", 
+    "customer_phone" : "0908090880", 
+    "customer_email" : "miswanto@gmail.com", 
+    "customer_npwp" : "090900808089080", 
+    "customer_account_manager" : "Ali", 
+    "customer_limit_piutang" : "1500000000", 
+    "customer_address" : "Jalan Budi Mulya", 
+    "customer_address_npwp" : "Jalan Budi Mulya No 1", 
+    "customer_note" : "Keterangan", 
+    "customer_term" : "0"
+  }
+}
