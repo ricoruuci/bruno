@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-          "soid" : "SO/202503/0055",
-          "fgoto" : "DR"
+          "soid" : "SO2026030154",
+          "fgoto" : "Y"
       }
   auth: inherit
 

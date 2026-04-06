@@ -1,11 +1,11 @@
 info:
-  name: Rpt PO Pending
+  name: Rpt Penerimaan Pending
   type: http
-  seq: 5
+  seq: 6
 
 http:
   method: GET
-  url: "{{API_URL}}/rptpopending"
+  url: "{{API_URL}}/rptpenerimaanpending"
   body:
     type: json
     data: |2+
@@ -16,7 +16,7 @@ http:
            "suppnamekeyword" : "sa",
            "itemidkeyword" : "",
            "itemnamekeyword" : "",
-           "poidkeyword" : ""
+           "konsinyasiidkeyword" : "sas"
        }
 
   auth: inherit

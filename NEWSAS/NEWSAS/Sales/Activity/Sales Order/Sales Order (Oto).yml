@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "soid": "SOM-MAP/202411/0002",
+          "soid": "SO-1Tech/2002/0001",
           "jenis": "Y"
       }
   auth: inherit
