@@ -1,0 +1,17 @@
+meta {
+  name: get type item
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/type-item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type_item_id": "A00"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: create market
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/market
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "market_name" : "TOKOPEDIA"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: get discount
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/discount
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "discount_id": "PD001"
+  }
+}

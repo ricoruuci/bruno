@@ -1,0 +1,20 @@
+meta {
+  name: create discount
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/discount
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "discount_name" : "DISC AWAL TAHUN",
+    "fg_active" : "Y",
+    "discount_type" : "P",
+    "discount_amount" : 10
+  }
+}

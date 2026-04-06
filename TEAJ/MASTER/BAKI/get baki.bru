@@ -1,0 +1,17 @@
+meta {
+  name: get baki
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/baki
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "baki_id" : "B0001"
+  }
+}

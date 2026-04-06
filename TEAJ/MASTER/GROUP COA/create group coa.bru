@@ -1,0 +1,20 @@
+meta {
+  name: create group coa
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/group-coa
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "group_coa_id" : "100",
+    "group_coa_name" : "AKTIVA",
+    "fg_tipe" : "A",
+    "tipe" : "1"
+  }
+}

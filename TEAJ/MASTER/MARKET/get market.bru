@@ -1,0 +1,17 @@
+meta {
+  name: get market
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/market
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "market_id" : "MP001"
+  }
+}

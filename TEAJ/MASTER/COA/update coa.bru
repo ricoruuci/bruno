@@ -1,0 +1,19 @@
+meta {
+  name: update coa
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/coa
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "coa_id" : "100.0001",
+    "coa_name" : "PIUTANG",
+    "group_coa_id" : "100"
+  }
+}
