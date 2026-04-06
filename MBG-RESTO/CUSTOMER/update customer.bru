@@ -1,0 +1,29 @@
+meta {
+  name: update customer
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "customer_id" : "CUS0001",
+    "customer_name" : "Miswanto Update", 
+    "customer_contact_person" : "Miswanto Update- 0980808908", 
+    "customer_city" : "Jakarta Update", 
+    "customer_phone" : "000000", 
+    "customer_email" : "miswantoUpdate@gmail.com", 
+    "customer_npwp" : "0000000", 
+    "customer_account_manager" : "Ali Update", 
+    "customer_limit_piutang" : "15111111", 
+    "customer_address" : "Jalan Budi Mulya Update", 
+    "customer_address_npwp" : "Jalan Budi Mulya No 1 Update", 
+    "customer_note" : "Keterangan Update", 
+    "customer_term" : "1"
+  }
+}
