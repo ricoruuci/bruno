@@ -1,0 +1,21 @@
+meta {
+  name: update group item
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/group-item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "group_item_id" : "A00",
+    "group_item_name" : "AKTIVA",
+    "group_type_id": "A00",
+    "buy_price" : 0,
+    "sell_price" : 0
+  }
+}

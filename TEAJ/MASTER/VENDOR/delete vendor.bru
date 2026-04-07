@@ -1,0 +1,17 @@
+meta {
+  name: delete vendor
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/vendor
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "vendor_id" : "VN0001"
+  }
+}

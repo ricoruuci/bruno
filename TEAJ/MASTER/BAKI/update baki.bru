@@ -1,0 +1,20 @@
+meta {
+  name: update baki
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/baki
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "baki_id" : "B0001",
+    "baki_name" : "ETALASE 1-A",
+    "warehouse_id" : "WR002",
+    "baki_weight" : 0.5
+  }
+}

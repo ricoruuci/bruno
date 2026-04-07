@@ -1,0 +1,22 @@
+meta {
+  name: Get Data By Id
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/purchase-order-kitchen-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "purchase_order_kitchen_id": "005/INV/ECS/IV/2026"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

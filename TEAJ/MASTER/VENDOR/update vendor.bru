@@ -1,0 +1,18 @@
+meta {
+  name: update vendor
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/vendor
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "vendor_id" : "VN0001",
+    "vendor_name" : "TOKOPEDIA"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: delete group coa
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/group-coa
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "group_coa_id" : "100"
+  }
+}
