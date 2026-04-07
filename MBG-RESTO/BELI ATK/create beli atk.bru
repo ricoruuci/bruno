@@ -1,0 +1,45 @@
+meta {
+  name: create beli atk
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/beli-atk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20250723",
+    "supplier_id" : "SUP0002",
+    "disc_amount" : 0,
+    "ppn" : 11,
+    "note" : "",
+    "company_id" : 4,
+    "company_code" : "MBGKT",
+    "detail" : [
+      {
+        "bahan_baku_id" : "BB0001",
+        "qty" : 10,
+        "price" : 7000,
+        "satuan" : "KG"
+      },
+      {
+        "bahan_baku_id" : "BB0002",
+        "qty" : 10,
+        "price" : 7000,
+        "satuan" : "KG"
+      }
+    ],
+    "detailfoto" : [
+      {
+        "foto" : "akdjaldjasldsajdkl"
+      },
+      {
+        "foto" : "akdjaldjasldsajdaaakl"
+      }
+    ]
+  }
+}
