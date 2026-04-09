@@ -1,0 +1,46 @@
+meta {
+  name: Insert
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/purchase-order-atk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "purchase_order_atk_date": "20260403",
+    "purchase_order_atk_supplier_id": "SUP0006",
+    "purchase_order_atk_to": "Kepada",
+    "purchase_order_atk_koefisien": 40,
+    "purchase_order_atk_budget": 1000000,
+    "purchase_order_atk_budget_over": 0,
+    "purchase_order_atk_address": "Jl. Mawar No. 10, Jakarta",
+    "purchase_order_atk_note": "Keterangan",
+    "purchase_order_atk_discount": 10000,
+    "purchase_order_atk_tax": 0,
+    "detail": [
+      {
+      "purchase_order_atk_detail_itemid": "Daging Sapi",
+      "purchase_order_atk_detail_itemname": "Daging Sapi",
+      "purchase_order_atk_detail_qty": 5,
+      "purchase_order_atk_detail_formula": 5,
+      "purchase_order_atk_detail_qty_invoice": 5,
+      "purchase_order_atk_detail_last_price": 120000,
+      "purchase_order_atk_detail_uom": "KG",
+      "purchase_order_atk_detail_price": 120000,
+      "purchase_order_atk_detail_send_date": "20260403"
+      }
+    ]
+  }
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
