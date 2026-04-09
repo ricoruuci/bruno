@@ -1,0 +1,21 @@
+meta {
+  name: update customer
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/customer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "customer_id" : "CC0001",
+    "customer_name" : "CUSTOMER",
+    "discount_id" : "PD001",
+    "alamat" : "JAKARTA",
+    "phone" : "0811xxx"
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: update employee
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/employee
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "employee_id" : "E0002",
+    "employee_name" : "BUDI"
+  }
+}

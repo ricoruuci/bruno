@@ -1,0 +1,17 @@
+meta {
+  name: create employee
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/employee
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "employee_name" : "ANDI"
+  }
+}

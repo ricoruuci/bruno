@@ -1,0 +1,17 @@
+meta {
+  name: create vendor
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/vendor
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "vendor_name" : "TOKOPEDIA"
+  }
+}

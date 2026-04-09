@@ -1,0 +1,17 @@
+meta {
+  name: get volunter salary by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/volunteer-salary-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "volunteer_salary_code": "001/KJ/04/2026"
+  }
+}

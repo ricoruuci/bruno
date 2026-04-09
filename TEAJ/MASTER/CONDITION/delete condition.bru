@@ -1,0 +1,17 @@
+meta {
+  name: delete condition
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/condition
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "condition_id" : "K001"
+  }
+}

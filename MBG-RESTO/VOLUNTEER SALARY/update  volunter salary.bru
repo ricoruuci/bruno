@@ -1,0 +1,26 @@
+meta {
+  name: update  volunter salary
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/volunteer-salary
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "volunteer_salary_code": "001/KJ/04/2026",
+    "volunteer_salary_instansi": "Yayasan Maju Bersama",
+    "volunteer_salary_date": "2026-04-06",
+    "volunteer_salary_date_from": "2026-04-01",
+    "volunteer_salary_date_to": "2026-04-30",
+    "volunteer_salary_name": "Kevin Jon",
+    "volunteer_salary_position": "Koordinator Relawan",
+    "volunteer_salary_price": 175000,
+    "volunteer_salary_qty": 20,
+    "volunteer_salary_overtime": 300000
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: delete discount
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{API_URL}}/discount
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "discount_id": "PD001"
+  }
+}
