@@ -14,6 +14,11 @@ http:
            "password" : "1"
        }
 
+runtime:
+  variables:
+    - name: API_URL
+      value: http://127.0.0.1:8000/api
+
 settings:
   encodeUrl: true
   timeout: 0
