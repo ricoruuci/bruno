@@ -1,11 +1,11 @@
 meta {
-  name: get group bahan baku
+  name: get bahan atk
   type: http
   seq: 1
 }
 
 get {
-  url: {{API_URL}}/group-bahan-baku
+  url: {{API_URL}}/bahan-atk
   body: json
   auth: inherit
 }
@@ -13,6 +13,6 @@ get {
 body:json {
   {
     "search_keyword" : "",
-  "alldata": 1
+    "alldata": 1
   }
 }

@@ -1,0 +1,45 @@
+info:
+  name: security access
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/security"
+  body:
+    type: json
+    data: |-
+      {
+          "kdgroup" : "admin",
+          "menu" : [
+            {
+                  "kdmenu": "1000000000"
+              },
+              {
+                  "kdmenu": "1010000000"
+              },
+              {
+                  "kdmenu": "1200000000"
+              },
+              {
+                  "kdmenu": "1230000000"
+              },
+              {
+                  "kdmenu": "1230100000"
+              },
+              {
+                  "kdmenu": "1230300000"
+              },
+            {
+              "kdmenu": "1710100000"
+            }
+            
+      ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
