@@ -1,0 +1,23 @@
+meta {
+  name: get item
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    //"item_id" : "I2026000002",
+    "item_name" : "",
+    "group_type_id" : "",
+    "group_item_id" : "",
+    "type_item_id" : "",
+    "item_weight_min" : 1,
+    "item_weight_max" : 2
+  }
+}

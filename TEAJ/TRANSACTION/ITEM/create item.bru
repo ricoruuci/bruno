@@ -1,0 +1,28 @@
+meta {
+  name: create item
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_name" : "cincin",
+    "group_type_id" : "A010",
+    "group_item_id" : "A00",
+    "type_item_id" : "AA0",
+    "item_weight" : 1.2,
+    "warehouse_id" : "WR002",
+    "baki_id" : "B0001",
+    "detail_foto" : [
+      {
+        "foto" : "AasasaasA"
+      }
+    ]
+  }
+}
