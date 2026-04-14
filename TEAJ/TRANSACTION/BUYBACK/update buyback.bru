@@ -1,0 +1,43 @@
+meta {
+  name: update buyback
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/buyback
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "buyback_id": "BB26040002",
+      "transdate" : "20260413",
+      "market_id" : "MP001",
+      "customer_id" : "",
+      "sale_id" : "",
+      "employee_id" : "E0001",
+      "item_id" : "",
+      "item_name" : "APAAJA",
+      "group_type_id" : "A010",
+      "group_item_id" : "A00",
+      "type_item_id" : "AA0",
+      "condition_id" : "K001",
+      "item_weight" : "1.2000",
+      "buy_price" : "2000000.0000",
+      "discount_total" : 0,
+      "detail_bayar" : [
+        {
+          "bank_id" : "BK001",
+          "transdate" : "20260413",
+          "amount" : 2400000
+        }
+      ],
+      "detail_foto" : [
+        {
+          "foto" : "AasasBBaaaasA"
+        }
+      ]
+  }
+}
