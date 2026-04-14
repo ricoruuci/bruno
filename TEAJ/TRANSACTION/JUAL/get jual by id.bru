@@ -1,0 +1,17 @@
+meta {
+  name: get jual by id
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/jual-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "sale_id": "SALE26040001"
+  }
+}

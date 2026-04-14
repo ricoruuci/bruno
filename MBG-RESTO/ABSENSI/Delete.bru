@@ -1,0 +1,22 @@
+meta {
+  name: Delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/tr-absensi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "tr_absensi_header_code": "ABS/2026/0003"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,17 +1,17 @@
 meta {
-  name: get beli by id
+  name: get item by id
   type: http
   seq: 2
 }
 
 get {
-  url: {{API_URL}}/beli-by-id
+  url: {{API_URL}}/item-by-id
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "nota_beli": "MBGKT/26/04/018"
+    "item_id" : "I2026000002"
   }
 }
