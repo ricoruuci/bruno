@@ -1,11 +1,18 @@
 info:
-  name: logout
+  name: Oto Absen
   type: http
-  seq: 3
+  seq: 5
 
 http:
   method: POST
-  url: "{{API_URL}}/logout"
+  url: "{{API_URL}}/otoabsen"
+  body:
+    type: json
+    data: |-
+      { 
+          "transid" : "2024R003002",
+          "jenis" : "Y"
+      }
   auth:
     type: bearer
     token: "{{token}}"
