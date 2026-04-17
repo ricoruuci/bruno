@@ -1,0 +1,21 @@
+meta {
+  name: update company
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/company
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_name": "toko",
+    "company_address": "bekasi",
+    "company_phone": "0811",
+    "company_sites": "www.sasas.com",
+    "company_mail": "asas@asas.com"
+  }
+}
