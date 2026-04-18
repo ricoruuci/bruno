@@ -1,0 +1,26 @@
+meta {
+  name: update set default
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/set-default
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "rek_beli": "100.0001",
+    "rek_ppn": "100.0001",
+    "rek_discount_beli": "100.0001",
+    "rek_hutang": "100.0001",
+    "rek_piutang": "100.0001",
+    "rek_discount_jual": "100.0001",
+    "rek_jual": "100.0001",
+    "rek_buyback": "100.0001",
+    "rek_discount_buyback": "100.0001",
+    "rek_hutang_buyback": "100.0001"
+  }
+}

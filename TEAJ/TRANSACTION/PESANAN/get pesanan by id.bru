@@ -1,17 +1,17 @@
 meta {
-  name: get jual by id
+  name: get pesanan by id
   type: http
   seq: 2
 }
 
 get {
-  url: {{API_URL}}/jual-by-id
+  url: {{API_URL}}/pesanan-by-id
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "sale_id": "SALE26040001"
+    "order_id": "ORD26040001"
   }
 }

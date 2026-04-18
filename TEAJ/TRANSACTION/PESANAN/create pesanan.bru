@@ -1,11 +1,11 @@
 meta {
-  name: create jual
+  name: create pesanan
   type: http
   seq: 3
 }
 
 post {
-  url: {{API_URL}}/jual
+  url: {{API_URL}}/pesanan
   body: json
   auth: inherit
 }
@@ -13,31 +13,20 @@ post {
 body:json {
   {
       "transdate" : "20260413",
-      "market_id" : "MP001",
       "customer_id" : "CC0001",
       "employee_id" : "E0001",
-      "item_id" : "I2026000001",
+      "item_name" : "CINCIN KAWIN",
       "group_type_id" : "A010",
       "group_item_id" : "A00",
       "type_item_id" : "AA0",
-      "condition_id" : "K001",
-      "item_weight" : "1.2000",
-      "warehouse_id" : "WR002",
-      "baki_id": "B0001",
+      "item_weight" : "2.2000",
       "sell_price" : "2000000.0000",
-      "service_amount" : 500000,
-      "discount_id" : "PD001",
-      "discount_name" : "DISC AWAL TAHUN",
-      "discount_type" : "P",
-      "discount_amount" : "10.0000",
-      "discount_total" : 200000,
-      "order_id" : "",
-      "dp_amount" : 0,
+      "service_amount" : 1000000,
       "detail_bayar" : [
         {
           "bank_id" : "BK001",
           "transdate" : "20260413",
-          "amount" : 1000000
+          "amount" : 2400000
         }
       ],
       "detail_foto" : [
