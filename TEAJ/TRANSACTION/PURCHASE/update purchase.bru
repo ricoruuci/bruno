@@ -1,0 +1,47 @@
+meta {
+  name: update purchase
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/purchase
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "purchase_id": "PCH26040002",
+      "transdate" : "20260413",
+      "market_id" : "MP001",
+      "vendor_id" : "VN0001",
+      "employee_id" : "E0001",
+      "note" : "pembelian toko",
+      "tax_amount" : 11,
+      "discount_total" : 660000,
+      "detail" : [
+        {
+          "source_no" : "PCH26040002-001",
+          "item_name" : "KALUNG",
+          "item_weight" : 1.5,
+          "buy_price" : 2000000,
+          "condition_id": "K001"
+        },
+        {
+          "source_no" : "PCH26040002-002",
+          "item_name" : "CINCIN",
+          "item_weight" : 1.5,
+          "buy_price" : 2000000,
+          "condition_id": "K001"
+        }
+      ],
+      "detail_bayar" : [
+        {
+          "bank_id" : "BK001",
+          "transdate" : "20260413",
+          "amount" : 660000
+        }
+      ]
+  }
+}

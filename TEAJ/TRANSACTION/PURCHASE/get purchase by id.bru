@@ -1,0 +1,17 @@
+meta {
+  name: get purchase by id
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/purchase-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "purchase_id": "PCH26040002"
+  }
+}
