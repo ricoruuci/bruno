@@ -1,0 +1,17 @@
+meta {
+  name: get item from buyback
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/item-from-buyback
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_name" : ""
+  }
+}
