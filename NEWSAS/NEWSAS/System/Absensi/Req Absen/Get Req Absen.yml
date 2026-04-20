@@ -1,0 +1,26 @@
+info:
+  name: Get Req Absen
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{API_URL}}/reqabsen"
+  body:
+    type: json
+    data: |-
+      {
+      //     "transdate" : "20260420",
+      //     "salesid" : "I005",
+          "dari" : "20240401",
+          "sampai" : "20260420",
+          "salesidkeyword" : "",
+          "salesnamekeyword" : ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,7 +1,7 @@
 info:
   name: Absensi
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: GET
@@ -10,6 +10,8 @@ http:
     type: json
     data: |-
       {
+      //     "transdate" : "20260223",
+      //     "salesid" : "I005",
           "dari" : "20240401",
           "sampai" : "20260314",
           "salesidkeyword" : "",

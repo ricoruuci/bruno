@@ -1,19 +1,18 @@
 info:
-  name: Absen
+  name: Lap Absen
   type: http
-  seq: 1
+  seq: 2
 
 http:
-  method: POST
-  url: "{{API_URL}}/absen"
+  method: GET
+  url: "{{API_URL}}/laporanabsen"
   body:
     type: json
     data: |2+
        {
            "userid" : "rico",
-           "keperluan" : "L",
-           "keterangan" : "coba",
-           "foto" : ""
+           "dari" : "20260417",
+           "sampai" : "20260417"
        }
 
   auth: inherit
