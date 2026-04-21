@@ -1,0 +1,24 @@
+info:
+  name: Absensi Summary
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{API_URL}}/absensi/summary-absensi"
+  body:
+    type: json
+    data: |-
+      {
+          "dari" : "20240401",
+          "sampai" : "20260414",
+          "salesidkeyword" : "R003",
+          "salesnamekeyword" : ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

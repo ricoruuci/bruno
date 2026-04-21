@@ -1,7 +1,7 @@
 info:
   name: Oto Absen
   type: http
-  seq: 5
+  seq: 3
 
 http:
   method: POST
@@ -10,12 +10,10 @@ http:
     type: json
     data: |-
       { 
-          "transid" : "2024R003002",
+          "transid" : "2026R003003",
           "jenis" : "Y"
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true
