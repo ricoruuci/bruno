@@ -1,0 +1,22 @@
+meta {
+  name: Delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/purchase-order-atk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "purchase_order_atk_id": "001/INV/PSRB/IV/2026"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

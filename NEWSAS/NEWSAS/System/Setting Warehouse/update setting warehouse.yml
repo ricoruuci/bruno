@@ -1,0 +1,55 @@
+info:
+  name: update setting warehouse
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/setting"
+  body:
+    type: json
+    data: |-
+      {
+        "dgpb": "01GU",
+        "dgpj": "01GU",
+
+        "rek_piutangdagang": "120000.0001",
+        "rek_hutangdagang": "210000.0001",
+
+        "rek_kas": "110000.0001",
+        "rek_uangmuka": "240000.0001",
+        "rek_penjualan": "410000.0001",
+        "rek_pembelian": "510000.0001",
+
+        "rek_ppnmasukkan": "150000.0001",
+        "rek_ppnkeluaran": "220000.0001",
+
+        "rek_pph": "620000.0002",
+        "rek_lababerjalan": "340000",
+
+        "rek_persediaan": "140000.0001",
+        "rek_hpp": "510000.0001",
+
+        "rek_piutanginternal": "122000.0001",
+        "rek_hutanginternal": "222000.0002",
+
+        "rek_uangmakan": "610000.0047",
+        "rek_bensin": "610000.0041",
+        "rek_service": "610000.0045",
+        "rek_jamuan": "610000.0043",
+        "rek_pulsa": "610000.0042",
+        "rek_lembur": "610000.0046",
+        "rek_tunjangan": "610000.0040",
+
+        "rek_aset": "990000.0001",
+        "rek_hutangaset": "222000.0002",
+        "rek_labaaset": "420000.0001",
+        "rek_piutangaset": "121000.0001"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

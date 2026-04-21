@@ -1,0 +1,17 @@
+meta {
+  name: delete jual
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/jual
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "sale_id": "SALE26040001"
+  }
+}

@@ -1,0 +1,7 @@
+info:
+  name: Absensi
+  type: folder
+  seq: 7
+
+request:
+  auth: inherit

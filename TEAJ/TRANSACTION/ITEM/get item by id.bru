@@ -1,0 +1,17 @@
+meta {
+  name: get item by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/item-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_id" : "I2026000002"
+  }
+}

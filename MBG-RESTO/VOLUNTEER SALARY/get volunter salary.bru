@@ -1,0 +1,20 @@
+meta {
+  name: get volunter salary
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/volunteer-salary
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari": "20260416",
+    "sampai": "20260416",
+    "search_keyword": "",
+    "page": 1
+  }
+}

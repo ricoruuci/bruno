@@ -1,0 +1,25 @@
+info:
+  name: Post Req Absen
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{API_URL}}/reqabsen"
+  body:
+    type: json
+    data: |2+
+       {
+           "userid" : "ilham",
+           "keperluan" : "L",
+           "keterangan" : "coba",
+           "foto" : ""
+       }
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

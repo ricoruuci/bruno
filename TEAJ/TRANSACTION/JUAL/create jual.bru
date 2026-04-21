@@ -1,0 +1,46 @@
+meta {
+  name: create jual
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/jual
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transdate" : "20260413",
+      "market_id" : "MP001",
+      "customer_id" : "CC0001",
+      "employee_id" : "E0001",
+      "item_id" : "I2026000001",
+      "group_type_id" : "A010",
+      "group_item_id" : "A00",
+      "type_item_id" : "AA0",
+      "condition_id" : "K001",
+      "item_weight" : "1.2000",
+      "warehouse_id" : "WR002",
+      "baki_id": "B0001",
+      "sell_price" : "2000000.0000",
+      "discount_id" : "PD001",
+      "discount_name" : "DISC AWAL TAHUN",
+      "discount_type" : "P",
+      "discount_amount" : "10.0000",
+      "discount_total" : 200000,
+      "detail_bayar" : [
+        {
+          "bank_id" : "BK001",
+          "transdate" : "20260413",
+          "amount" : 1000000
+        }
+      ],
+      "detail_foto" : [
+        {
+          "foto" : "AasasBBaaaasA"
+        }
+      ]
+  }
+}

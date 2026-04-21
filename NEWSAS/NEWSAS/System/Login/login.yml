@@ -1,7 +1,7 @@
 info:
   name: login
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
@@ -10,9 +10,14 @@ http:
     type: json
     data: |2+
        {
-           "userid" : "ilham",
-           "password" : "1"
+           "userid" : "admin",
+           "password" : ""
        }
+
+runtime:
+  variables:
+    - name: API_URL
+      value: http://127.0.0.1:8000/api
 
 settings:
   encodeUrl: true

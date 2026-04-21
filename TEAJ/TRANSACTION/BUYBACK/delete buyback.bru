@@ -1,0 +1,17 @@
+meta {
+  name: delete buyback
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/buyback
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "buyback_id": "BB26040002"
+  }
+}

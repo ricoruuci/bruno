@@ -1,0 +1,21 @@
+info:
+  name: Upd Otorisasi Klaim Budget Sales
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/otorisasi/klaimbudgetsales"
+  body:
+    type: json
+    data: |-
+      {   
+          "transid" : "PC/SAS/26/02/0001"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

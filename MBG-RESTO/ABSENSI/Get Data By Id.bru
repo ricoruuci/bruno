@@ -1,0 +1,22 @@
+meta {
+  name: Get Data By Id
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/tr-absensi-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "tr_absensi_header_code": "ABS/2026/0004"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

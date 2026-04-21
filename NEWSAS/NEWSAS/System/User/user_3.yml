@@ -1,14 +1,17 @@
 info:
-  name: Dashboard Grafik
+  name: user_3
   type: http
-  seq: 4
+  seq: 11
 
 http:
-  method: GET
-  url: "{{API_URL}}/dashboard"
+  method: DELETE
+  url: "{{API_URL}}/user"
   body:
     type: json
-    data: "\n\n"
+    data: |-
+      {
+          "userid" : "test"
+      }
   auth: inherit
 
 settings:

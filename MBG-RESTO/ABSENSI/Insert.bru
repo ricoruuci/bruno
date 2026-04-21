@@ -1,0 +1,41 @@
+meta {
+  name: Insert
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/tr-absensi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tr_absensi_header_date": "2026-04-14",
+    "tr_absensi_header_name": "Absensi Periode 9 -10 April",
+    "detail": [
+      {
+        "tr_absensi_dt_id": "001",
+        "tr_absensi_dt_name": "Budi",
+        "tr_absensi_dt_date": "2026-04-14",
+        "tr_absensi_dt_clock_in": "08:00",
+        "tr_absensi_dt_clock_out": "17:00",
+        "tr_absensi_dt_nominal": 50000
+      },
+      {
+        "tr_absensi_dt_id": "001",
+        "tr_absensi_dt_name": "Budi",
+        "tr_absensi_dt_date": "2026-04-14",
+        "tr_absensi_dt_clock_in": "08:05",
+        "tr_absensi_dt_clock_out": "17:10",
+        "tr_absensi_dt_nominal": 50000
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

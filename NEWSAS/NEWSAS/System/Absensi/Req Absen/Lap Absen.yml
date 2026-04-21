@@ -1,0 +1,24 @@
+info:
+  name: Lap Absen
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{API_URL}}/laporanabsen"
+  body:
+    type: json
+    data: |2+
+       {
+           "userid" : "rico",
+           "dari" : "20260417",
+           "sampai" : "20260417"
+       }
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

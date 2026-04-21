@@ -1,0 +1,21 @@
+meta {
+  name: get beli atk
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/beli-atk
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20260409",
+    "sampai" : "20260409",
+    "search_keyword" : "",
+    "supplier_keyword" : "",
+    "company_id" : 1
+  }
+}
