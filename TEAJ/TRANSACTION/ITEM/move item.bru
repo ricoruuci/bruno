@@ -1,0 +1,21 @@
+meta {
+  name: move item
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{API_URL}}/move-data
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_id": "I2026000003",
+    "old_warehouse_id": "WR002",
+    "old_baki_id": "B0001",
+    "new_warehouse_id": "WR002",
+    "new_baki_id": "B0002"
+  }
+}
