@@ -1,17 +1,19 @@
 info:
-  name: Absensi Summary
+  name: Absensi
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: GET
-  url: "{{API_URL}}/absensi/summary-absensi"
+  url: "{{API_URL}}/absensi"
   body:
     type: json
     data: |-
       {
+      //     "transdate" : "20260223",
+      //     "salesid" : "I005",
           "dari" : "20240401",
-          "sampai" : "20240430",
+          "sampai" : "20260314",
           "salesidkeyword" : "",
           "salesnamekeyword" : "ilham"
       }

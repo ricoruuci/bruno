@@ -1,19 +1,21 @@
 info:
-  name: Absensi
+  name: Get Req Absen
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: GET
-  url: "{{API_URL}}/absensi"
+  url: "{{API_URL}}/reqabsen"
   body:
     type: json
     data: |-
       {
+          "transdate" : "20260420",
+          "salesid" : "I005",
           "dari" : "20240401",
-          "sampai" : "20260314",
+          "sampai" : "20260420",
           "salesidkeyword" : "",
-          "salesnamekeyword" : "ilham"
+          "salesnamekeyword" : ""
       }
   auth: inherit
 

@@ -1,0 +1,7 @@
+info:
+  name: Req Absen
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit
