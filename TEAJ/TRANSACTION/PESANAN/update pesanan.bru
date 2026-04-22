@@ -1,32 +1,28 @@
 meta {
-  name: update buyback
+  name: update pesanan
   type: http
   seq: 4
 }
 
 patch {
-  url: {{API_URL}}/buyback
+  url: {{API_URL}}/pesanan
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "buyback_id": "BB26040002",
+      "order_id": "ORD26040001",
       "transdate" : "20260413",
-      "market_id" : "MP001",
-      "customer_id" : "",
-      "sale_id" : "",
+      "customer_id" : "CC0001",
       "employee_id" : "E0001",
-      "item_id" : "",
-      "item_name" : "APAAJA",
+      "item_name" : "CINCIN KAWIN",
       "group_type_id" : "A010",
       "group_item_id" : "A00",
       "type_item_id" : "AA0",
-      "condition_id" : "K001",
-      "item_weight" : "1.2000",
-      "buy_price" : "2000000.0000",
-      "discount_total" : 0,
+      "item_weight" : "2.2000",
+      "sell_price" : "2000000.0000",
+      "service_amount" : 1000000,
       "detail_bayar" : [
         {
           "bank_id" : "BK001",

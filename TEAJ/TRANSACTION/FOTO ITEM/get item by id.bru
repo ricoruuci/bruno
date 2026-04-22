@@ -1,17 +1,17 @@
 meta {
-  name: get vendor
+  name: get item by id
   type: http
   seq: 1
 }
 
 get {
-  url: {{API_URL}}/vendor
+  url: {{API_URL}}/foto-item
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    //"vendor_id" : "VN0001"
+    "item_id" : "I2026000002"
   }
 }

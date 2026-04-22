@@ -1,0 +1,17 @@
+meta {
+  name: delete txn-kk-bb
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/txn-kk-bb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "voucher_id": "KM/26/04/0001"
+  }
+}

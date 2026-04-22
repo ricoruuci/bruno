@@ -1,11 +1,11 @@
 meta {
-  name: get buyback
+  name: get pesanan
   type: http
   seq: 1
 }
 
 get {
-  url: {{API_URL}}/buyback
+  url: {{API_URL}}/pesanan
   body: json
   auth: inherit
 }
@@ -14,9 +14,8 @@ body:json {
   {
       "date_from" : "20260101",
       "date_to" : "20261231",
-      "item_id" : "", //I2026000001
-      "sale_id" : "",
-      "item_name" : "",
+      "item_name" : "KAWIN",
+      "order_id" : "",
       "customer_id" : "",
       "customer_name" : "",
       "alamat" : "",
