@@ -1,0 +1,25 @@
+info:
+  name: getproduct
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{API_URL}}/uomid"
+  body:
+    type: json
+    data: |2
+      
+        {
+      //     "productid" : "31",
+          "uomid" : "Ampere",
+          "uomidkeyword" : "",
+          "kodesatuan" : ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
