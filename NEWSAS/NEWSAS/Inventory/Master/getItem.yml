@@ -11,8 +11,9 @@ http:
     data: |2
       
         {
-          "rekeningidkeyword" : "",
-          "rekeningnamekeyword" : "",
+          "itemid" : "18.999.026",
+          "itemidkeyword" : "",
+          "itemnamekeyword" : "",
           "grouprekidkeyword" : "",
           "groupnamekeyword" : ""
       }
