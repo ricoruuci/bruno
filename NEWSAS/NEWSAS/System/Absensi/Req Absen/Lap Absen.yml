@@ -11,8 +11,8 @@ http:
     data: |2+
        {
            "userid" : "rico",
-           "dari" : "20260417",
-           "sampai" : "20260417"
+           "dari" : "20260420",
+           "sampai" : "20260420"
        }
 
   auth: inherit
