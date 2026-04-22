@@ -1,0 +1,21 @@
+info:
+  name: delete rekening
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/rekening"
+  body:
+    type: json
+    data: |-
+      {
+          "rekeningid" : "110100.0001"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

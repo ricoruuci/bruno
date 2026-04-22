@@ -1,0 +1,26 @@
+info:
+  name: update rekening
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/rekening"
+  body:
+    type: json
+    data: |-
+      {
+        "rekeningid" : "110100.0001",
+        "rekeningname"  : "tes",
+        "grouprekid": "110100",
+        "tipe" : "1",
+        "note" : "tes note",
+        "fgactive" : "Y"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
