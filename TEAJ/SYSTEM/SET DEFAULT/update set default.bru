@@ -1,0 +1,31 @@
+meta {
+  name: update set default
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/set-default
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "default_ppn_beli" : 0,
+    "market_id" : "",
+    "customer_id" : "",
+    "condition_id" : "",
+    "warehouse_id" : "",
+    "rek_beli": "100.0001",
+    "rek_ppn": "100.0001",
+    "rek_discount_beli": "100.0001",
+    "rek_hutang": "100.0001",
+    "rek_piutang": "100.0001",
+    "rek_discount_jual": "100.0001",
+    "rek_jual": "100.0001",
+    "rek_buyback": "100.0001",
+    "rek_discount_buyback": "100.0001",
+    "rek_hutang_buyback": "100.0001"
+  }
+}

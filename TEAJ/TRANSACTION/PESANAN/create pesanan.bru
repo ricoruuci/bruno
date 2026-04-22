@@ -1,0 +1,38 @@
+meta {
+  name: create pesanan
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/pesanan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transdate" : "20260413",
+      "customer_id" : "CC0001",
+      "employee_id" : "E0001",
+      "item_name" : "CINCIN KAWIN",
+      "group_type_id" : "A010",
+      "group_item_id" : "A00",
+      "type_item_id" : "AA0",
+      "item_weight" : "2.2000",
+      "sell_price" : "2000000.0000",
+      "service_amount" : 1000000,
+      "detail_bayar" : [
+        {
+          "bank_id" : "BK001",
+          "transdate" : "20260413",
+          "amount" : 2400000
+        }
+      ],
+      "detail_foto" : [
+        {
+          "foto" : "AasasBBaaaasA"
+        }
+      ]
+  }
+}

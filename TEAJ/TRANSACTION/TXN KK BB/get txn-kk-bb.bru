@@ -1,0 +1,21 @@
+meta {
+  name: get txn-kk-bb
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/txn-kk-bb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "date_from" : "20260101",
+    "date_to" : "20261231",
+    "fg_form" : "KM",
+    "voucher_id": "",
+    "note" : ""
+  }
+}

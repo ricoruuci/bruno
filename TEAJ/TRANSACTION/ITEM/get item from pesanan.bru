@@ -1,0 +1,18 @@
+meta {
+  name: get item from pesanan
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/item-from-pesanan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_name" : "",
+    "order_id" : ""
+  }
+}

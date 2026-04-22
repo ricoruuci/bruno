@@ -1,21 +1,18 @@
 info:
-  name: item_2
+  name: delete rekening
   type: http
-  seq: 5
+  seq: 4
 
 http:
   method: DELETE
-  url: "{{API_URL}}/item"
+  url: "{{API_URL}}/rekening"
   body:
     type: json
     data: |-
       {
-           "itemid": "104.342.001"
-             
-       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+          "rekeningid" : "110100.0001"
+      }
+  auth: inherit
 
 settings:
   encodeUrl: true

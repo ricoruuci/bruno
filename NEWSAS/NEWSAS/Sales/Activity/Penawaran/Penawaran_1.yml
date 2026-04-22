@@ -22,7 +22,7 @@ http:
         "fgtax": "Y",
         "nilaitax": "11",
         "fob": "Jakarta",
-        "fgterm": "COD",
+        "fgterm": "XHR",
         "fgjaminan": "T",
         "term": "7",
         "detail": [

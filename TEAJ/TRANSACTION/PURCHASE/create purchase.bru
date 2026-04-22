@@ -1,0 +1,44 @@
+meta {
+  name: create purchase
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{API_URL}}/purchase
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "transdate" : "20260413",
+      "market_id" : "MP001",
+      "vendor_id" : "VN0001",
+      "employee_id" : "E0001",
+      "note" : "pembelian toko",
+      "tax_amount" : 11,
+      "discount_total" : 330000,
+      "detail" : [
+        {
+          "item_name" : "KALUNG",
+          "item_weight" : 1.5,
+          "buy_price" : 1000000,
+          "condition_id": "K001"
+        },
+        {
+          "item_name" : "CINCIN",
+          "item_weight" : 1.5,
+          "buy_price" : 1000000,
+          "condition_id": "K001"
+        }
+      ],
+      "detail_bayar" : [
+        {
+          "bank_id" : "BK001",
+          "transdate" : "20260413",
+          "amount" : 330000
+        }
+      ]
+  }
+}
