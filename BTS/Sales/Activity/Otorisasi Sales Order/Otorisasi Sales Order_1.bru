@@ -1,10 +1,10 @@
 meta {
-  name: Otorisasi Sales Order
+  name: Otorisasi Sales Order_1
   type: http
   seq: 13
 }
 
-get {
+patch {
   url: {{API_URL}}/otorisasi/salesorder
   body: json
   auth: bearer
@@ -16,7 +16,6 @@ auth:bearer {
 
 body:json {
   {
-      "soid" : "BTS-SO.25050049"
-      //"soidkeyword" : "BTS-SO.24110157"
+      "soid" : "BTS-SO.24110152"
   }
 }

@@ -1,5 +1,5 @@
 info:
-  name: getproduct
+  name: getuom
   type: http
   seq: 1
 

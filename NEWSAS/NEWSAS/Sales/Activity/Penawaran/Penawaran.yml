@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "penawaranid" : "SAS/QUOT/2602/0054",
+          "penawaranid" : "SAS/QUOT/2602/0055",
           "sortby" : "baru",
           "dari" :20240101,
           "sampai" :20241016,

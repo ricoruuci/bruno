@@ -1,0 +1,24 @@
+meta {
+  name: Get Close SO
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/close/salesorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "dari" : "20250101",
+      "sampai" : "20260423",
+  //     "soid" : "BTS-SO.25100001",
+      "soididkeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : "",
+      "salesidkeyword" : "",
+      "salenamekeyword" : ""
+  }
+}
