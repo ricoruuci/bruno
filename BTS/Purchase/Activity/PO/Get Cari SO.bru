@@ -1,0 +1,26 @@
+meta {
+  name: Get Cari SO
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/purchaseorder/cari-so
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "soidkeyword" : "",
+      "custidkeyword" : "",
+      "custnamekeyword" : ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}
