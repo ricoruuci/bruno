@@ -1,0 +1,27 @@
+meta {
+  name: Get Cari Detail PO
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/purchaseorder/cari-detail
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "poid" : "BTS-PO.24010001",
+      "soid": "BTS-SO.21060002",
+      "itemidkeyword" : "",
+      "itemnamekeyword" : ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

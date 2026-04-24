@@ -5,13 +5,9 @@ meta {
 }
 
 patch {
-  url: {{API_URL}}/otorisasi/salesorder
+  url: {{API_URL}}/close/salesorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
