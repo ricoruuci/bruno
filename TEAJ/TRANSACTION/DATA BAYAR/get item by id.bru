@@ -1,17 +1,17 @@
 meta {
-  name: get bank
+  name: get item by id
   type: http
   seq: 1
 }
 
 get {
-  url: {{API_URL}}/bank
+  url: {{API_URL}}/data-bayar
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    //"bank_id" : "BK001"
+    "voucher_id" : "ORD26040001"
   }
 }

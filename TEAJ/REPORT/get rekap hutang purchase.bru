@@ -1,0 +1,22 @@
+meta {
+  name: get rekap hutang purchase
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rekap-hutang-purchase
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "date_report" : "20261231",
+    "purchase_id" : "",
+    "market_id" : "",
+    "vendor_id" : "",
+    "vendor_name" : "",
+    "market_name" : ""
+  }
+}
