@@ -1,0 +1,17 @@
+meta {
+  name: get neraca report
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{API_URL}}/get-neraca-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "date_report" : "20260101",
+  } 
+}
