@@ -1,0 +1,24 @@
+meta {
+  name: get pesanan
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/pesanan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "date_from" : "20260101",
+      "date_to" : "20261231",
+      "item_name" : "KAWIN",
+      "order_id" : "",
+      "customer_id" : "",
+      "customer_name" : "",
+      "alamat" : "",
+      "phone" : ""
+  }
+}

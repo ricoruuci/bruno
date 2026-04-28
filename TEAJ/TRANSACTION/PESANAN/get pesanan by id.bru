@@ -1,0 +1,17 @@
+meta {
+  name: get pesanan by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/pesanan-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "order_id": "ORD26040001"
+  }
+}

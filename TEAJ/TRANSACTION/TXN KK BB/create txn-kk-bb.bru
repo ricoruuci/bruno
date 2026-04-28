@@ -1,0 +1,30 @@
+meta {
+  name: create txn-kk-bb
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/txn-kk-bb
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "transdate" : "20260413",
+    "fg_form" : "KM",
+    "bank_id" : "BK001",
+    "total" : 11,
+    "note" : "",
+    "detail" : [
+      {
+        "coa_id" : "100.0001",
+        "jenis" : "K",
+        "note" : "beli",
+        "amount" : 11,
+        "reff_id" : ""
+      }
+    ]
+  }
+}

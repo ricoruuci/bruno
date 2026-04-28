@@ -1,0 +1,20 @@
+meta {
+  name: get spm
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/tr-spm
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari": "20260401",
+    "sampai": "20260429",
+    "search_keyword": "",
+    "page": 1
+  }
+}

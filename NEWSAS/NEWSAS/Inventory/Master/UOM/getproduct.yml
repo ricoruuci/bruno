@@ -1,20 +1,20 @@
 info:
-  name: getItem
+  name: getproduct
   type: http
   seq: 1
 
 http:
   method: GET
-  url: "{{API_URL}}/item"
+  url: "{{API_URL}}/uomid"
   body:
     type: json
     data: |2
       
         {
-          "rekeningidkeyword" : "",
-          "rekeningnamekeyword" : "",
-          "grouprekidkeyword" : "",
-          "groupnamekeyword" : ""
+      //     "productid" : "31",
+          "uomid" : "Ampere",
+          "uomidkeyword" : "",
+          "kodesatuan" : ""
       }
   auth: inherit
 
