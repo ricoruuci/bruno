@@ -1,11 +1,11 @@
 meta {
-  name: get volunter salary
+  name: get spm
   type: http
   seq: 1
 }
 
 get {
-  url: {{API_URL}}/volunteer-salary
+  url: {{API_URL}}/tr-spm
   body: json
   auth: inherit
 }
@@ -13,7 +13,7 @@ get {
 body:json {
   {
     "dari": "20260401",
-    "sampai": "20260422",
+    "sampai": "20260429",
     "search_keyword": "",
     "page": 1
   }
