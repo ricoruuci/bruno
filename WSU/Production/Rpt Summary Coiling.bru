@@ -1,0 +1,18 @@
+meta {
+  name: Rpt Summary Coiling
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/rptsummarycoiling
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20260401",
+    "sampai" : "20260431"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: get spm by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/tr-spm-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "trspm_hd_code": "SPM1202604001"
+  }
+}
