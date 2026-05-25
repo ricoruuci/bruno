@@ -1,0 +1,17 @@
+meta {
+  name: get data dashboard
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/get-data-dashboard
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "date_report" : "20260426"
+  } 
+}

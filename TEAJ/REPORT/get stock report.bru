@@ -1,0 +1,21 @@
+meta {
+  name: get stock report
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/stock-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_name" : "",
+    "warehouse_id" : "",
+    "warehouse_name" : "",
+    "baki_id" : "",
+    "baki_name" : ""
+  } 
+}

@@ -1,0 +1,20 @@
+meta {
+  name: get buku besar report
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/get-buku-besar-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "date_from" : "20260101",
+    "date_to" : "20261231",
+    //"rekening_id" : "100.0001"
+    "rekening_id" : ""
+  } 
+}

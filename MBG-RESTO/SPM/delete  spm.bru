@@ -1,0 +1,17 @@
+meta {
+  name: delete  spm
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/tr-spm
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "trspm_hd_code": "SPMC001202604001"
+  }
+}

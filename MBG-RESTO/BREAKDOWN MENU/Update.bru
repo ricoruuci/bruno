@@ -1,0 +1,41 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{API_URL}}/trbreakdownmenu
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "trbreakdownhd_code": "BDM001",
+    "trbreakdownhd_date": "2026-04-27",
+    "trbreakdownhd_qty_beneficiaries": 10,
+    "trbreakdownhd_note": "Keterangan breakdown menu",
+    "trbreakdownhd_company_id": "1",
+    "trbreakdownhd_company_name": "SPPG BATU CEPER",
+    "detail": [
+      {
+        "trbreakdownmenudt_itemid": "ITEM01",
+        "trbreakdownmenudt_qty": 10,
+        "trbreakdownmenudt_uomid": "PCS",
+        "trbreakdownmenudt_note": "Detail 1"
+      },
+      {
+        "trbreakdownmenudt_itemid": "ITEM02",
+        "trbreakdownmenudt_qty": 10,
+        "trbreakdownmenudt_uomid": "PCS",
+        "trbreakdownmenudt_note": "Detail 2"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

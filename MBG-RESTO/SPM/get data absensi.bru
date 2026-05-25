@@ -1,0 +1,19 @@
+meta {
+  name: get data absensi
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{API_URL}}/tr-spm-absensi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari": "20260413",
+    "sampai":"20260428",
+    "company_id": 4
+  }
+}

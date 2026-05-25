@@ -1,0 +1,46 @@
+meta {
+  name: create spm
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/tr-spm
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "trspm_hd_date": "2026-04-28",
+    "trspm_hd_date_from": "2026-04-21",
+    "trspm_hd_date_to": "2026-04-28",
+    "trspm_hd_company_id": "C001",
+    "trspm_hd_company_name": "PT Mitra Sukses",
+    "trspm_hd_work_days": 20,
+    "trspm_hd_overtime_adjustment": 1,
+    "trspm_hd_note": "SPM Periode April Minggu Pertama",
+    "detail": [
+      {
+        "trspm_dt_user_code": "E001",
+        "trspm_dt_user_name": "Budi Santoso",
+        "trspm_dt_divisi": "IT",
+        "trspm_dt_work_day": 20,
+        "trspm_dt_price": 2500000,
+        "trspm_dt_bonuses": 250000,
+        "trspm_dt_overtime": 100000,
+        "trspm_dt_total": 2850000
+      },
+      {
+        "trspm_dt_user_code": "E002",
+        "trspm_dt_user_name": "Siti Nurhaliza",
+        "trspm_dt_divisi": "Finance",
+        "trspm_dt_work_day": 20,
+        "trspm_dt_price": 2000000,
+        "trspm_dt_bonuses": 200000,
+        "trspm_dt_overtime": 75000,
+        "trspm_dt_total": 2275000
+      }
+    ]
+  }
+}

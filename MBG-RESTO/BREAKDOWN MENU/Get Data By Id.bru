@@ -1,0 +1,22 @@
+meta {
+  name: Get Data By Id
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/trbreakdownmenu-by-id
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "trbreakdownhd_code": "BD001"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

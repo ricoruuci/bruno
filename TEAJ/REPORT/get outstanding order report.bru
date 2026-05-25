@@ -1,0 +1,22 @@
+meta {
+  name: get outstanding order report
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{API_URL}}/outstanding-order-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "date_report" : "20261231",
+    "order_id" : "",
+    "customer_id" : "",
+    "customer_name" : "",
+    "alamat" : "",
+    "phone" : ""
+  }
+}
