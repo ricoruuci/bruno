@@ -1,0 +1,26 @@
+meta {
+  name: Rpt Detail Hasil Coiling
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{API_URL}}/rptdethasilcoiling
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari": "20260401",
+    "sampai": "20260430",
+    "salesid": "",
+    "mesinid": "",
+    "operatorid": "",
+    "joid": "",
+    "transid": "",
+    "typeid": "",
+    "itemid": "",
+    "type_jo_stage_2": ""
+  }
+}

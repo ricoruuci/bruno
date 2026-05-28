@@ -1,17 +1,13 @@
 meta {
   name: SO Pending
   type: http
-  seq: 8
+  seq: 9
 }
 
 get {
   url: {{API_URL}}/sopending
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
