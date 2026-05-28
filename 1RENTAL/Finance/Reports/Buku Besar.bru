@@ -7,17 +7,14 @@ meta {
 get {
   url: {{API_URL}}/rptbukubesar
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       "dari" : "20250101",
-      "sampai" : "20250313",
-      "rekeningid" : "111100.0001"
+      "sampai" : "20261010",
+      "rekeningid" : "110100.0001",
+      "grouprekid" : ""
   }
 }

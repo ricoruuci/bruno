@@ -7,16 +7,14 @@ meta {
 post {
   url: {{API_URL}}/grouprek
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "grouprekname" : "cogs",
-      "kode" : "1"
+      "grouprekid" : "170014",
+      "grouprekname" : "tes mbg",
+      "kode" : "1",
+      "fginsert" : "Y"
   }
 }
