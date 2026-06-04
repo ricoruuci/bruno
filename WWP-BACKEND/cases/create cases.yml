@@ -1,0 +1,23 @@
+info:
+  name: create cases
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/cases"
+  body:
+    type: json
+    data: |-
+      {
+          "kode": "CS-2024-001",
+          "kategori": 1,
+          "keterangan": "Kasus sengketa tanah"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

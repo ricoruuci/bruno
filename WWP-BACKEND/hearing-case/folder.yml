@@ -1,0 +1,7 @@
+info:
+  name: hearing-case
+  type: folder
+  seq: 12
+
+request:
+  auth: inherit

@@ -1,0 +1,22 @@
+info:
+  name: create lawyer-case
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/lawyer-case"
+  body:
+    type: json
+    data: |-
+      {
+        "lawyer_id": 1, 
+        "case_id": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

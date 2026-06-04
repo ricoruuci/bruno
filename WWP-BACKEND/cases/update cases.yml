@@ -1,0 +1,24 @@
+info:
+  name: update cases
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/cases"
+  body:
+    type: json
+    data: |-
+      {
+          "id": 1,
+          "kode": "CS-2024-001",
+          "kategori": 2,
+          "keterangan": "Kasus sengketa tanah - updated"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

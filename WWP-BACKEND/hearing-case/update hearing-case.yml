@@ -1,0 +1,26 @@
+info:
+  name: update hearing-case
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/hearing-case"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 1, 
+        "hearing_id": 1, 
+        "case_id": 1, 
+        "hearing_date": "2024-06-20 10:00:00", 
+        "lokasi": "Ruang Sidang B", 
+        "keterangan": "-"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

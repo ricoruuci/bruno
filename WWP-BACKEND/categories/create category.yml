@@ -1,0 +1,23 @@
+info:
+  name: create category
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/category"
+  body:
+    type: json
+    data: |-
+      {
+          "kode": "CT-001",
+          "nama": "Pidana",
+          "keterangan": "Kasus pidana umum"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+info:
+  name: update item
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/item"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 1, 
+        "kode": "IT-001", 
+        "nama": "Biaya Administrasi", 
+        "keterangan": "Biaya admin perkara", 
+        "price": 300000.0000
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

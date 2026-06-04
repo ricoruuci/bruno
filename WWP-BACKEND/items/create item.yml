@@ -1,0 +1,24 @@
+info:
+  name: create item
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/item"
+  body:
+    type: json
+    data: |-
+      {
+        "kode": "IT-001", 
+        "nama": "Biaya Administrasi", 
+        "keterangan": "Biaya admin perkara", 
+        "price": 250000.0000
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

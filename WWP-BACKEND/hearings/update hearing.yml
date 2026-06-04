@@ -1,0 +1,24 @@
+info:
+  name: update hearing
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/hearing"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 1, 
+        "kode": "HR-001", 
+        "nama": "Sidang Kedua", 
+        "keterangan": "-"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

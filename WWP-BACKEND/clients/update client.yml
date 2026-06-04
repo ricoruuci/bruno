@@ -1,0 +1,29 @@
+info:
+  name: update client
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/client"
+  body:
+    type: json
+    data: |-
+      {
+          "id": 1,
+          "kode": "C001",
+          "nama": "PT Maju Jaya Updated",
+          "alamat": "Jl. Thamrin No. 20",
+          "phone": "08211234567",
+          "ktp": "3174010101900001",
+          "npwp": "99.888.777.6-000.000",
+          "jenis": "C",
+          "keterangan": "Client tetap bulanan - updated"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

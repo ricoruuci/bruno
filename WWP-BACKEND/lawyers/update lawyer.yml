@@ -1,0 +1,29 @@
+info:
+  name: update lawyer
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/lawyer"
+  body:
+    type: json
+    data: |-
+      {
+          "id": 1,
+          "kode": "L001",
+          "nama": "Dr. Ahmad Fauzi, S.H., M.H.",
+          "alamat": "Jl. Gatot Subroto No. 20",
+          "phone": "081298765432",
+          "ktp": "3174020202800002",
+          "npwp": "11.222.333.4-000.000",
+          "jenis": "I",
+          "keterangan": "Mitra tetap, spesialis pidana - updated"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

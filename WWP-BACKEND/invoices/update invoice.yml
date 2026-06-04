@@ -1,0 +1,28 @@
+info:
+  name: update invoice
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/invoice"
+  body:
+    type: json
+    data: |-
+      {
+          "id": 2,
+          "kode": "INV-001",
+          "client_id": 1,
+          "sub_total": 2000000.0000,
+          "grand_total": 2200000.0000,
+          "detail": [
+              { "item_id": 1, "qty": 3.0000, "price": 300000.0000 }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: create client
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/client"
+  body:
+    type: json
+    data: |-
+      {
+          "kode": "C001",
+          "nama": "PT Maju Jaya",
+          "alamat": "Jl. Sudirman No. 10",
+          "phone": "08123456789",
+          "ktp": "3174010101900001",
+          "npwp": "12.345.678.9-000.000",
+          "jenis": "C",
+          "keterangan": "Client tetap bulanan"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

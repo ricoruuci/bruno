@@ -1,0 +1,23 @@
+info:
+  name: create status
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/status"
+  body:
+    type: json
+    data: |-
+      {
+          "kode": "ST-001",
+          "nama": "Open",
+          "keterangan": "Case baru dibuka"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

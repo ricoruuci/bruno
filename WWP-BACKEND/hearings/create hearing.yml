@@ -1,0 +1,23 @@
+info:
+  name: create hearing
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/hearing"
+  body:
+    type: json
+    data: |-
+      {
+        "kode": "HR-001", 
+        "nama": "Sidang Pertama", 
+        "keterangan": "Agenda awal"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

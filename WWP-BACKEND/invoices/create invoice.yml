@@ -1,0 +1,32 @@
+info:
+  name: create invoice
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/invoice"
+  body:
+    type: json
+    data: |-
+      {
+          "kode": "INV-001",
+          "tax_code": "PPN-01",
+          "client_id": 1,
+          "keterangan": "Invoice perkara CS-001",
+          "sub_total": 1000000.0000,
+          "tax_amount": 110000.0000,
+          "tax_total": 100000.0000,
+          "grand_total": 1110000.0000,
+          "detail": [
+              { "item_id": 1, "qty": 1.0000, "price": 250000.0000 },
+              { "item_id": 2, "qty": 2.0000, "price": 375000.0000 }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

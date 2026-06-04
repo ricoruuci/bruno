@@ -1,0 +1,23 @@
+info:
+  name: update lawyer-case
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/lawyer-case"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 1, 
+        "lawyer_id": 1, 
+        "case_id": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
