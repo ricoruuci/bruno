@@ -1,10 +1,10 @@
 meta {
-  name: salesorder_1
+  name: salesorder_2 (1)
   type: http
-  seq: 2
+  seq: 26
 }
 
-post {
+patch {
   url: {{API_URL}}/salesorder
   body: json
   auth: inherit
@@ -12,11 +12,11 @@ post {
 
 body:json {
   {
-      "soid" : "SO/AAE/2505/0006",
+      "soid" : "SOC/AAE/2606/0002",
       "custid" : "AAE",
       "transdate" : "20260604",
       "pocust" : "0000000005",
-      "salesid" : "BD",
+      "salesid" : "TKP",
       "nodn" : "",
       "deptsales" : "",
       "deliveryid" : "",
@@ -59,7 +59,7 @@ body:json {
          {
               "itemid" : "FGD.WI1601",
               "totalqty" : 800,
-              "qty" : 6,
+              "qty" : 2000,
               "discitem" : 0,
               "note" : "aaa",
               "uomid" : "Roll",
