@@ -1,0 +1,32 @@
+meta {
+  name: get sale report
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/get-sale-report
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "group_by" : "transdate",
+      // transdate,market,customer,employee,group_type,group_item,type_item"
+      // default : transdate
+      "date_from" : "20260101",
+      "date_to" : "20261231",
+      "sale_id" : "",
+      "order_id" : "",
+      "customer_name" : "",
+      "employee_name" : "",
+      "alamat" : "",
+      "phone" : "",
+      "item_id" : "",
+      "item_name" : "",
+      "group_type_name" : "",
+      "group_item_name" : "",
+      "type_item_name" : ""
+  } 
+}
