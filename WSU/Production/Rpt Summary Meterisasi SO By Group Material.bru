@@ -1,0 +1,21 @@
+meta {
+  name: Rpt Summary Meterisasi SO By Group Material
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/rptsummarymeterisasiso?page=1
+  body: json
+  auth: inherit
+}
+
+params:query {
+  page: 1
+}
+
+body:json {
+  {
+    "tahun" : "2026"
+  }
+}
