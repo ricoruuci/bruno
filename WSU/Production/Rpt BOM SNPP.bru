@@ -1,11 +1,11 @@
 meta {
-  name: Ms BOM
+  name: Rpt BOM SNPP
   type: http
-  seq: 1
+  seq: 2
 }
 
 get {
-  url: {{API_URL}}/bom
+  url: {{API_URL}}/rptbomsnpp
   body: json
   auth: inherit
 }
@@ -14,6 +14,7 @@ body:json {
   {
     "bomidkeyword" : "",
     "itemidkeyword" : "",
-    "itemnamekeyword" : ""
+    "merkkeyword" : "",
+    "standardkeyword" : ""
   }
 }
