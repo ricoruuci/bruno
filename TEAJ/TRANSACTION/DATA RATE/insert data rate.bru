@@ -1,0 +1,17 @@
+meta {
+  name: insert data rate
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/rate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "rate_amount" : 18011
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: get data rate
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rate
+  body: json
+  auth: inherit
+}
