@@ -1,21 +1,18 @@
 meta {
-  name: user
+  name: delete rekening
   type: http
-  seq: 11
+  seq: 4
 }
 
-get {
-  url: {{API_URL}}/user
+delete {
+  url: {{API_URL}}/rekening
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      //"userid" : ""
-    "useridkeyword" : "Test",
-    "kdgroupkeyword" : ""
-    
+      "rekeningid" : "110100.0001"
   }
 }
 

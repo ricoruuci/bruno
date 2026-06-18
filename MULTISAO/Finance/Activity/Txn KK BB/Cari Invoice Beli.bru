@@ -1,21 +1,20 @@
 meta {
-  name: user
+  name: Cari Invoice Beli
   type: http
-  seq: 11
+  seq: 6
 }
 
 get {
-  url: {{API_URL}}/user
+  url: {{API_URL}}/txnkkbb/cariinvoicebeli
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      //"userid" : ""
-    "useridkeyword" : "Test",
-    "kdgroupkeyword" : ""
-    
+      "suppid": "TUNAI",
+      "transdate": "20260325",
+      "saleidkeyword" : ""
   }
 }
 

@@ -1,0 +1,29 @@
+meta {
+  name: rekening
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  
+    {
+      "rekeningidkeyword" : "",
+      "rekeningnamekeyword" : "",
+      "grouprekidkeyword" : "",
+      "groupnamekeyword" : ""
+    }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+}

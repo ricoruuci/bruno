@@ -1,21 +1,20 @@
 meta {
-  name: user
+  name: Buku Besar
   type: http
-  seq: 11
+  seq: 1
 }
 
 get {
-  url: {{API_URL}}/user
+  url: {{API_URL}}/rptbukubesar
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      //"userid" : ""
-    "useridkeyword" : "Test",
-    "kdgroupkeyword" : ""
-    
+      "rekeningid": "",
+      "dari" : 20250101,
+      "sampai" : 20250411
   }
 }
 

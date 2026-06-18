@@ -1,21 +1,19 @@
 meta {
-  name: user
+  name: grouprek_1
   type: http
-  seq: 11
+  seq: 2
 }
 
-get {
-  url: {{API_URL}}/user
+patch {
+  url: {{API_URL}}/grouprek
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      //"userid" : ""
-    "useridkeyword" : "Test",
-    "kdgroupkeyword" : ""
-    
+      "grouprekid": "1.001",
+      "grouprekname" : "cogs"
   }
 }
 

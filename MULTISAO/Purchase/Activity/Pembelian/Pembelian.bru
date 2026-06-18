@@ -7,25 +7,19 @@ meta {
 get {
   url: {{API_URL}}/pembelian
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-     "konsinyasiinvid": "AP-SAS/24/10/0005",
+     "purchaseid": "",
       "dari": "20240101",
-      "sampai": "20240929",
+      "sampai": "20260929",
       "konsinyasiidkeyword" : "",
       "suppid": "",
       "suppnamekeyword": "",
       "custidkeyword": "",
       "custnamekeyword": "",
-      "poidkeyword" : "SAS",
-      "sortby": "dateold"
-      
+      "poidkeyword" : "",
   }
 }
