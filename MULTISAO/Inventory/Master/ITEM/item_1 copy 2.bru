@@ -1,18 +1,18 @@
 meta {
-  name: item_2 copy 2
+  name: item_1 copy 2
   type: http
-  seq: 15
+  seq: 2
 }
 
-patch {
-  url: {{API_URL}}/item/SY001-001
+post {
+  url: {{API_URL}}/item
   body: json
   auth: inherit
 }
 
 body:json {
-  {   
-      "itemname": "123213sasas213",
+  {
+      "itemname": "123213213",
       "productid": "100",
       "groupid": "100",
       "uomid": "Gram",
