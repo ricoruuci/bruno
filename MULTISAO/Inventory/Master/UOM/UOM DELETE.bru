@@ -1,10 +1,10 @@
 meta {
-  name: UOM GET
+  name: UOM DELETE
   type: http
-  seq: 1
+  seq: 5
 }
 
-get {
+delete {
   url: {{API_URL}}/satuan
   body: json
   auth: inherit
@@ -12,9 +12,8 @@ get {
 
 body:json {
   {
-  
-  //   "uomid": "",
-    "uomidkeyword": ""
+   
+    "uomid": "pcs"
   
   }
 }
