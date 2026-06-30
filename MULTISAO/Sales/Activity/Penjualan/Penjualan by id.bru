@@ -1,17 +1,17 @@
 meta {
-  name: Get Meja Ada Order
+  name: Penjualan by id
   type: http
   seq: 5
 }
 
 get {
-  url: {{API_URL}}/data-meja
+  url: {{API_URL}}/penjualan
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "transdate" : "20260623"
+       "saleid" : "SSI.26.06.018"
   }
 }
