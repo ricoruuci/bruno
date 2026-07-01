@@ -5,20 +5,19 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/rptpiutang
+  url: {{API_URL}}/rptpaymentpiutang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
    {
-     "alldata" : 1,
-      "transdate" : "20241231"
-       
+       "dari" : "11111111",
+       "sampai" : "20260330",
+       "custidkeyword" : "",
+       "custnamekeyword" : "",
+       "saleidkeyword" : "",
+       "fglunas" : "Y"
    }
   
   

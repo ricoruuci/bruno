@@ -7,17 +7,13 @@ meta {
 get {
   url: {{API_URL}}/rptpenjualandetail
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
    {
-       "dari" : "20240101",
-       "sampai" : "20240102",
+       "dari" : "11111111",
+       "sampai" : "20261202",
        "saleidkeyword" : "",
        "custidkeyword" : "",
        "custnamekeyword" : "",

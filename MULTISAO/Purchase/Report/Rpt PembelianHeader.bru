@@ -7,17 +7,13 @@ meta {
 get {
   url: {{API_URL}}/rptbeli/summary
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
       "dari" : "20240101",
-      "sampai" : "20241030",
+      "sampai" : "20261030",
       "purchaseidkeyword" : "",
       "suppidkeyword" : "",
       "suppnamekeyword" : ""

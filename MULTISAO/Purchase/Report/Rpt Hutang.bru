@@ -5,19 +5,19 @@ meta {
 }
 
 get {
-  url: {{API_URL}}/rpthutang
+  url: {{API_URL}}/rptpaymenthutang
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
    {
-       "transdate" : "20230101",
-       "page" : "10"
+       "dari" : "11111111",
+       "sampai" : "20260330",
+       "suppidkeyword" : "",
+       "suppnamekeyword" : "",
+       "purchaseidkeyword" : "",
+       "fglunas" : "Y"
    }
   
   
