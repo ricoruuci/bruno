@@ -1,0 +1,18 @@
+meta {
+  name: get data stock per group
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/get-data-stock-per-group
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    // group_item_name, stock_desc, stock
+    "sort_by" : "stock_desc"
+  } 
+}
