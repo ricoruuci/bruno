@@ -1,0 +1,24 @@
+meta {
+  name: get history change item
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{API_URL}}/data-change-item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "date_from" : "20260101",
+    "date_to" : "20271231",
+    "voucher_no" : "",
+    // tx_code 1
+    "tx_code" : "",
+    // change_code : I U D
+    "change_code" : "",
+    "note" : ""
+  } 
+}

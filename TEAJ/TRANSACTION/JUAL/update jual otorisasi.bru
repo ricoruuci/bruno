@@ -1,0 +1,18 @@
+meta {
+  name: update jual otorisasi
+  type: http
+  seq: 9
+}
+
+patch {
+  url: {{API_URL}}/jual-otorisasi
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "sale_id" : "SALE26040001",
+      "fg_otorisasi" : "T"
+  }
+}
