@@ -1,0 +1,19 @@
+meta {
+  name: get data between item
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{API_URL}}/data-between-item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_id_from" : "I2026000001",
+    "item_id_to" : "I2026000005",
+    "fg_ada_stock" : "T" // Y or T
+  } 
+}

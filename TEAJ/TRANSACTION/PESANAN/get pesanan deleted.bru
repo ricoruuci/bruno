@@ -1,11 +1,11 @@
 meta {
-  name: get pesanan
+  name: get pesanan deleted
   type: http
-  seq: 1
+  seq: 7
 }
 
 get {
-  url: {{API_URL}}/pesanan
+  url: {{API_URL}}/pesanan-deleted
   body: json
   auth: inherit
 }
@@ -14,7 +14,7 @@ body:json {
   {
       "date_from" : "20260101",
       "date_to" : "20261231",
-      "item_name" : "",
+      "item_name" : "KAWIN",
       "order_id" : "",
       "customer_id" : "",
       "customer_name" : "",

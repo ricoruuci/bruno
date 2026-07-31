@@ -1,0 +1,19 @@
+meta {
+  name: change data item
+  type: http
+  seq: 12
+}
+
+patch {
+  url: {{API_URL}}/change-data-item
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_id" : "I2026000009",
+    "other_id" : "O004",
+    "other_weight" : 0.5
+  } 
+}
