@@ -1,0 +1,18 @@
+meta {
+  name: RptSummarySOByPlanning
+  type: http
+  seq: 28
+}
+
+get {
+  url: {{API_URL}}/rptsummarysobyplanning
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20260501",
+    "sampai" : "20260730"
+  }
+}
