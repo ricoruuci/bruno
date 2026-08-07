@@ -11,11 +11,11 @@ http:
     data: |2+
        {
            "dari" : "11111111",
-           "sampai" : "20260330",
+           "sampai" : "20261231",
            "suppidkeyword" : "",
            "suppnamekeyword" : "",
-           "purchaseidkeyword" : "",
-           "fglunas" : "Y"
+           "purchaseidkeyword" : "909090",
+           "fglunas" : "T"
        }
 
   auth: inherit

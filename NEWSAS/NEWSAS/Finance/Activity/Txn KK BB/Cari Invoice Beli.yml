@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-          "suppid": "TUNAI",
-          "transdate": "20260325",
-          "saleidkeyword" : ""
+          "suppid": "A001",
+          "transdate": "20270719",
+          "purchaseidkeyword" : ""
       }
   auth: inherit
 

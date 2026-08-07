@@ -10,13 +10,11 @@ http:
     type: json
     data: |-
       {
-          "soid" : "SO-MAP/2204/0003",
+          "soid" : "SO-1Tech/2006/0003",
           "itemidkeyword" : ""
           
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true
