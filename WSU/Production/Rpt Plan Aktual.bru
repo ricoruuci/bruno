@@ -1,0 +1,18 @@
+meta {
+  name: Rpt Plan Aktual
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{API_URL}}/rptplanaktual
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20260601",
+    "sampai" : "20260717"
+  }
+}
