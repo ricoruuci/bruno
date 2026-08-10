@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-         "purchaseid": "Test2",
+         "purchaseid": "",
           "purchaseidkeyword" : "",
           "dari": "20240101",
           "sampai": "20261231",

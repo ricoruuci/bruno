@@ -12,7 +12,7 @@ http:
       {
         "dari" : "20210101",
         "sampai" : "20260422",
-        "itemidkeyword" : "",
+        "itemidkeyword" : "10.123.290",
         "itemnamekeyword" : ""
       }
   auth: inherit

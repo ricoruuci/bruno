@@ -14,9 +14,7 @@ http:
           //"custnamekeyword" : "RAJA",
           //"salesnamekeyword" : "rico"
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

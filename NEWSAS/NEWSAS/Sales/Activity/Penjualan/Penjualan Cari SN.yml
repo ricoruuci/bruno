@@ -10,12 +10,10 @@ http:
     type: json
     data: |-
       {
-          "itemid" : "100.102.009"
-          //"suppidkeyword" : "s1"
+          "itemid" : "10.100.152"
+
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

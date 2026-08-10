@@ -10,11 +10,11 @@ http:
     type: json
     data: |2+
        {
-           "dari" : "11111111",
-           "sampai" : "20260325",
+           "dari" : "20260718",
+           "sampai" : "20260725",
            "suppidkeyword" : "",
            "suppnamekeyword" : "",
-           "purchaseidkeyword" : "AP-TEC/26/01/0009"
+           "purchaseidkeyword" : ""
        }
 
   auth: inherit
