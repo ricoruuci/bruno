@@ -1,0 +1,20 @@
+meta {
+  name: move all item by baki
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{API_URL}}/move-data-baki
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "old_warehouse_id": "WR002",
+    "old_baki_id": "B0001",
+    "new_warehouse_id": "WR002",
+    "new_baki_id": "B0002"
+  }
+}
