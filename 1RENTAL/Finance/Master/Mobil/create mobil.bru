@@ -1,0 +1,20 @@
+meta {
+  name: create mobil
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/mobil
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "mobil_id" : "B1213UJH",
+    "mobil_name" : "daihatsu",
+    "description" : "2008",
+    "fgactive" : "Y"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: get laporan cash flow
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/rptkas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "dari" : "20240101",
+      "sampai" : "20250101"
+  }
+}

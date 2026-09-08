@@ -1,17 +1,17 @@
 meta {
-  name: delete rekening
+  name: delete mobil
   type: http
   seq: 4
 }
 
 delete {
-  url: {{API_URL}}/rekening
+  url: {{API_URL}}/mobil
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "rekeningid" : "110100.0004"
+    "mobil_id": "B1213UJH"
   }
 }

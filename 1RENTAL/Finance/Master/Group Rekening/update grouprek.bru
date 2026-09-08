@@ -1,0 +1,18 @@
+meta {
+  name: update grouprek
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{API_URL}}/grouprek
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "grouprekid": "170014",
+      "grouprekname" : "cogs"
+  }
+}
