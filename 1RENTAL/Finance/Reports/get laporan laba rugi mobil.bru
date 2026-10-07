@@ -1,0 +1,19 @@
+meta {
+  name: get laporan laba rugi mobil
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{API_URL}}/rptlabarugimobil
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "mobil_id" : "",
+      "dari" : 20240101,
+      "sampai" : 20251201
+  }   
+}

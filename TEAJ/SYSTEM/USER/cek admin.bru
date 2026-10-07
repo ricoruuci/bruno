@@ -1,0 +1,18 @@
+meta {
+  name: cek admin
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{API_URL}}/cek-admin
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "userid" : "admin",
+    "password" : "admin"
+  }
+}

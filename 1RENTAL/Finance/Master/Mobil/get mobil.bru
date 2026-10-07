@@ -1,0 +1,19 @@
+meta {
+  name: get mobil
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_URL}}/mobil
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    //"mobil_id": "B1213UJH",
+    "search_keyword" : "",
+    "fgactive" : "Y"
+  }
+}

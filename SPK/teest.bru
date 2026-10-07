@@ -1,0 +1,22 @@
+meta {
+  name: teest
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{API_URL}}/test
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "last_item_id" : "00000085"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

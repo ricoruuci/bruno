@@ -1,0 +1,30 @@
+meta {
+  name: create rekening
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{API_URL}}/rekening
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "rekeningname"  : "tes",
+    "grouprekid": "110100",
+    /*
+      tipe : 
+        1 = HARTA
+        2 = KEWAJIBAN
+        3 = MODAL
+        4 = PENDAPATAN
+        5 = BEBAN
+    */
+    "tipe" : "1",
+    "note" : "tes note",
+    // fgactive : Y, T
+    "fgactive" : "Y"
+  }
+}

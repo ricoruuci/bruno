@@ -1,0 +1,24 @@
+meta {
+  name: update company
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{API_URL}}/company
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_name": "SATU MOBIL",
+    "company_address": "RUKAN MANGGA DUA SQUARE BLOK G NO 12 JL GUNUNG SAHARI RAYA NO 1 ,PADEMANGAN,JAKARTA UTARA",
+    "company_payment_detail": "Pembayaran Via Transfers\r\nNo. Rek : OCBC NISP - 020 80002 8886 \r\nA/n : PT. Citra Solusi Integrasi\r\nCab. Gunung Sahari Raya ",
+    "company_phone": "",
+    "company_email": "",
+    "company_logo": null
+  }
+  
+  
+}
