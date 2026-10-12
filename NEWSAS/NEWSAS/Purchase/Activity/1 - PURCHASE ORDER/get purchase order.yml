@@ -1,5 +1,5 @@
 info:
-  name: Purchase Order
+  name: get purchase order
   type: http
   seq: 3
 
@@ -10,7 +10,8 @@ http:
     type: json
     data: |-
       {
-          "poid" : "TC/PO/2602/0003",
+          "poid" : "SAS-PO/2024-010007",
+          //sortby = old, new
           "sortby" : "old",
           "dari" :20240101,
           "sampai" :20241016,
@@ -30,3 +31,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,5 +1,5 @@
 info:
-  name: Purchase Order_3
+  name: delete purchase order
   type: http
   seq: 6
 
@@ -10,15 +10,13 @@ http:
     type: json
     data: |-
       {
-          "poid": "MAP-PO/2024--00002"
-         
-          }
-  auth:
-    type: bearer
-    token: "{{token}}"
+        "poid" : "SAS/PO/2602/0087"
+      }
+  auth: inherit
 
 settings:
   encodeUrl: true
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

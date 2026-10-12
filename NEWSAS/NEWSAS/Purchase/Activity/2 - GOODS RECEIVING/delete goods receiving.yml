@@ -1,16 +1,16 @@
 info:
-  name: listpodt
+  name: delete goods receiving
   type: http
-  seq: 6
+  seq: 4
 
 http:
-  method: GET
-  url: "{{API_URL}}/listpodt"
+  method: DELETE
+  url: "{{API_URL}}/grn"
   body:
     type: json
     data: |-
       {
-        "poid": "1Tech-PO/2020-070065"
+          "grnid": "1Tech/GR/2408/0033"
       }
   auth: inherit
 
@@ -19,3 +19,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
