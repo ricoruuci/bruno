@@ -1,0 +1,27 @@
+info:
+  name: get data penerimaan blm invoice
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{API_URL}}/pembelian/cari-penerimaan"
+  body:
+    type: json
+    data: |-
+      {
+         "transdate" : "20260310",
+         "suppid" : "CSC010",
+         "suppnamekeyword" : "MAKRO INFORMASI",
+         "konsinyasiidkeyword" : "1Tech/GR/2409/0063",
+         //sortby = datenew, dateold, id 
+         "sortby" : "dateold"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

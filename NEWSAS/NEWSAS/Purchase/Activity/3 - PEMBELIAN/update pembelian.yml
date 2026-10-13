@@ -1,7 +1,7 @@
 info:
-  name: Pembelian_3
+  name: update pembelian
   type: http
-  seq: 6
+  seq: 3
 
 http:
   method: PATCH
@@ -43,3 +43,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
