@@ -14,7 +14,9 @@ http:
         "dgpj": "01GU",
 
         "rek_piutangdagang": "120000.0001",
+        "rek_piutangdagang2": "120000.0001",
         "rek_hutangdagang": "210000.0001",
+        "rek_hutangdagang2": "210000.0001",
 
         "rek_kas": "110000.0001",
         "rek_uangmuka": "240000.0001",
@@ -53,3 +55,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

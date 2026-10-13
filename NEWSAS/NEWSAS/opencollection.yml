@@ -17,13 +17,16 @@ config:
 request:
   auth:
     type: bearer
-    token: 70959|WIXahy5dr45aIvwP6cwv0Iwg9X8nEdJXZkPzSBXKc44b5eff
+    token: 140894|kUviZ3lgbdvbPKIv3TUPGNRYHPqFnd2Dp8OCUDQp3e993191
   variables:
     - name: API_URL
       value: http://sas-backend-v2:3026/api
       disabled: true
     - name: API_URL
       value: http://127.0.0.1:5000/api
+      disabled: true
+    - name: API_URL
+      value: http://127.0.0.1:8000/api
 bundled: false
 extensions:
   bruno:

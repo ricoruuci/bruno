@@ -1,0 +1,33 @@
+info:
+  name: update company
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/company"
+  body:
+    type: json
+    data: |-
+      {
+          "company1": "PT SAS",
+          "address1": "Jl. Jenderal Sudirman No. 10, Jakarta Selatan",
+          "payment1": "Jl. Jenderal Sudirman No. 10 (Bagian Keuangan)",
+          "phone": "0215551234",
+          "fax": "0215555678",
+          "email": "info@contohperusahaan.com",
+          "npwp": "01.234.567.8-901.000",
+          "kodenitku": "12345",
+          "company2": "CV Contoh Cabang",
+          "address2": "Jl. Ahmad Yani No. 45, Bandung",
+          "phone2": "0227778899",
+          "alamatpo": "PO BOX 123 JKP 10000"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
