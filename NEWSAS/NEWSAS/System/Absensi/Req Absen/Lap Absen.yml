@@ -10,9 +10,9 @@ http:
     type: json
     data: |2+
        {
-           "userid" : "rico",
+           "salesid" : "I005",
            "dari" : "20260420",
-           "sampai" : "20260420"
+           "sampai" : "20300101"
        }
 
   auth: inherit
@@ -22,3 +22,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

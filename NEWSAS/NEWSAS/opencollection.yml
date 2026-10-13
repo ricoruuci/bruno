@@ -23,7 +23,10 @@ request:
       value: http://sas-backend-v2:3026/api
       disabled: true
     - name: API_URL
-      value: http://localhost:8000/api
+      value: http://127.0.0.1:5000/api
+      disabled: true
+    - name: API_URL
+      value: http://127.0.0.1:8000/api
 bundled: false
 extensions:
   bruno:

@@ -12,8 +12,8 @@ http:
       {
       //     "transdate" : "20260223",
       //     "salesid" : "I005",
-          "dari" : "20240401",
-          "sampai" : "20260314",
+          "dari" : "20260910",
+          "sampai" : "20300101",
           "salesidkeyword" : "",
           "salesnamekeyword" : "ilham"
       }
@@ -24,3 +24,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
