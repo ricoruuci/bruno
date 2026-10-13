@@ -1,0 +1,51 @@
+info:
+  name: create purchase order
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{API_URL}}/purchaseorder"
+  body:
+    type: json
+    data: |-
+      {
+        "transdate": "20260203",
+        "currid": "IDR",
+        "suppid": "SP141",
+        "suppname": "PT ANEKA BERKAH SEJAHTERA",
+        "up": "Bpk Rudi",
+        "telp": "877-8827-0055",
+        "fax": "",
+        "email": "",
+        "note": "",
+        "purchasingid": "A001",
+        //fgterm = XHR, COD, CBD, TPH, NSH
+        "fgterm" : "XHR",
+        //fgjaminan = T, Y
+        "fgjaminan" : "T",
+        "term" : 14,
+        "soid": "SO-1Tech/2006/0003",
+        "fgtax": "T",
+        "nilaitax": "11.0000",
+        "discamount": ".0000",
+        "detail": [
+            {
+                "urut": "1",
+                "itemid": "99.999.001",
+                "itemname": "Service",
+                "note": "PN : ST16000VE002",
+                "qty": "1",
+                "price": "7009009.0090",
+                "partno": ""
+            }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

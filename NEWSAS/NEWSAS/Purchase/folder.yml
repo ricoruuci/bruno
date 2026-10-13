@@ -2,3 +2,6 @@ info:
   name: Purchase
   type: folder
   seq: 1
+
+request:
+  auth: inherit

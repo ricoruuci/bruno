@@ -1,23 +1,22 @@
 info:
-  name: grn_3
+  name: delete supplier
   type: http
   seq: 4
 
 http:
   method: DELETE
-  url: "{{API_URL}}/grn"
+  url: "{{API_URL}}/supplier"
   body:
     type: json
     data: |-
       {
-          "grnid": "1Tech/GR/2409/0081"
+         "suppid": "S0007"
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

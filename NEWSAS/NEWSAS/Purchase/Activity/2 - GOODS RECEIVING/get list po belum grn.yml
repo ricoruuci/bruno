@@ -1,5 +1,5 @@
 info:
-  name: listpoblmgrn
+  name: get list po belum grn
   type: http
   seq: 5
 
@@ -15,7 +15,6 @@ http:
           "suppnamekeyword": "",
           "sortby": "dateold",
           "pokeyword": ""
-          //"page" : 185
       }
   auth: inherit
 
@@ -24,3 +23,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

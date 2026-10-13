@@ -1,5 +1,5 @@
 info:
-  name: grn
+  name: get goods receiving
   type: http
   seq: 1
 
@@ -10,20 +10,18 @@ http:
     type: json
     data: |-
       {
-         "grnid": "1Tech/GR/2002/0002",
-         //"page" : 114,
+          "grnid": "SAS/GR/2409/0001",
           "dari": "20240101",
           "sampai": "20240929",
+          "grnkeyword": "",
           "pokeyword": "",
           "sokeyword": "",
           "suppkeyword": "",
           "suppnamekeyword": "",
           "custkeyword": "",
           "custnamekeyword": "",
-          "soid": "",
-          "sortby": "dateold",
-          "grnkeyword": ""
-          
+          //sortby : dateold, datenew, id
+          "sortby": "dateold"    
       }
   auth: inherit
 
@@ -32,3 +30,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
