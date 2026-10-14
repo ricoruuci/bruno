@@ -13,7 +13,8 @@ http:
            "userid" : "ilham",
            "keperluan" : "K",
            "keterangan" : "coba",
-           "foto" : ""
+           "foto" : "",
+           "gps" : ""
        }
 
   auth: inherit
