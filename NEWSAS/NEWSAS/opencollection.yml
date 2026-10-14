@@ -17,7 +17,7 @@ config:
 request:
   auth:
     type: bearer
-    token: 140894|kUviZ3lgbdvbPKIv3TUPGNRYHPqFnd2Dp8OCUDQp3e993191
+    token: 42170|LcH9XmKVjjy8DMEQJDgSz2wq3mmq3GWqtfXIO5SQ5008a422
   variables:
     - name: API_URL
       value: http://sas-backend-v2:3026/api

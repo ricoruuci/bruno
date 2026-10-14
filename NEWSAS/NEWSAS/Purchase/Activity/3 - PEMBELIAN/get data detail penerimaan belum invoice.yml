@@ -1,7 +1,7 @@
 info:
-  name: Pembelian Cari Detail Barang
+  name: get data detail penerimaan belum invoice
   type: http
-  seq: 2
+  seq: 6
 
 http:
   method: GET
@@ -11,7 +11,6 @@ http:
     data: |-
       {
          "konsinyasiid" : "1Tech/GR/2203/0016",
-      //    "suppid" : "SJ003",
          "itemnamekeyword" : "",
          "itemidkeyword" : ""
       }
@@ -22,3 +21,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,7 +1,7 @@
 info:
-  name: Pembelian_1
+  name: create pembelian
   type: http
-  seq: 4
+  seq: 2
 
 http:
   method: POST
@@ -21,22 +21,21 @@ http:
          "fgtax" : "Y",
          "jatuhtempo" : 30,
          "detail" : [
-          {
-              "itemid" : "101.999.007",
-              "qty" : 2,
-              "price" : 150000,
-              "disc" : 0,
-              "detailsn" : [
-                  {
-                      "snid" : "sn001"
-                  },
-                  {
-                      "snid" : "sn002"
-                  }
-              ]
-          }
-
-         ]
+            {
+                "itemid" : "101.999.007",
+                "qty" : 2,
+                "price" : 150000,
+                "disc" : 0,
+                "detailsn" : [
+                    {
+                        "snid" : "sn001"
+                    },
+                    {
+                        "snid" : "sn002"
+                    }
+                ]
+            }
+         ]  
           
       }
   auth: inherit
@@ -46,3 +45,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

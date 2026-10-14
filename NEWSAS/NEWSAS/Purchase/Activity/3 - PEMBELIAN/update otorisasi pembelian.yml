@@ -1,5 +1,5 @@
 info:
-  name: Otorisasi Pembelian_1
+  name: update otorisasi pembelian
   type: http
   seq: 8
 
@@ -10,15 +10,14 @@ http:
     type: json
     data: |-
       {
-          "purchaseid" : "ZJ24I01185",
+          "purchaseid" : "C20263114",
           "jenis" : "X"
       }
-  auth:
-    type: bearer
-    token: "{{token}}"
+  auth: inherit
 
 settings:
   encodeUrl: true
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
