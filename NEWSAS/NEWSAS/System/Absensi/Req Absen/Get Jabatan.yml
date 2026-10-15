@@ -1,0 +1,22 @@
+info:
+  name: Get Jabatan
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{API_URL}}/jabatan"
+  body:
+    type: json
+    data: |-
+      {
+        "jabatankeyword" : ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

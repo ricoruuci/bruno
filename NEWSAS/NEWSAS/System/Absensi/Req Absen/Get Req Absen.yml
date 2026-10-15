@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "transdate" : "20260910",
+          "transdate" : "20260915",
 
           "salesid" : "I005"
       //     "dari" : "20240401",

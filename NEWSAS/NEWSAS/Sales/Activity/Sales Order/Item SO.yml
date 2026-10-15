@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-      //     "soid" : "SO-MAP/2204/0003",
+          "soid" : "SO-1Tech/2006/0004",
           "itemidkeyword" : "",
           "itemnamekeyword" : ""
       }
@@ -21,3 +21,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
