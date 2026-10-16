@@ -1,0 +1,22 @@
+info:
+  name: delete goods receiving
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/grn"
+  body:
+    type: json
+    data: |-
+      {
+          "grnid": "1Tech/GR/2408/0033"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

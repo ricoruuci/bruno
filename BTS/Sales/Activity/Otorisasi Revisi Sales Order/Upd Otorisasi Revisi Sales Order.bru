@@ -1,0 +1,22 @@
+meta {
+  name: Upd Otorisasi Revisi Sales Order
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{API_URL}}/otorisasi/revisi-salesorder
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "soid" : "BTS-SO.26070118"
+    
+  }
+}

@@ -1,0 +1,22 @@
+info:
+  name: delete pembelian
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/pembelian"
+  body:
+    type: json
+    data: |-
+      {
+          "purchaseid" : "Test2"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

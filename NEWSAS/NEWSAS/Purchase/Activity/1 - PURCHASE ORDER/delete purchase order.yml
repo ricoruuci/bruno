@@ -1,0 +1,22 @@
+info:
+  name: delete purchase order
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{API_URL}}/purchaseorder"
+  body:
+    type: json
+    data: |-
+      {
+        "poid" : "SAS/PO/2602/0087"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

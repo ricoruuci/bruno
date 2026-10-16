@@ -1,0 +1,23 @@
+info:
+  name: update otorisasi pembelian
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/purchase/otorisasi"
+  body:
+    type: json
+    data: |-
+      {
+          "purchaseid" : "C20263114",
+          "jenis" : "X"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-          "transdate" : "20260420",
+          "transdate" : "20260915",
 
-          "salesid" : "R003"
+          "salesid" : "I005"
       //     "dari" : "20240401",
       //     "sampai" : "20260420",
       //     "salesidkeyword" : "",
@@ -26,3 +26,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

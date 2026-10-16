@@ -12,7 +12,7 @@ http:
       {
           "transdate": "20260227",
           "custnamekeyword" : "",
-          "soidkeyword" : "SO2026020051"
+          "soidkeyword" : ""
       }
   auth: inherit
 
@@ -21,3 +21,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

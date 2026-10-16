@@ -1,0 +1,23 @@
+meta {
+  name: Rpt Tunggakan Hutang
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_URL}}/rpttunggakanhutang
+  body: json
+  auth: inherit
+}
+
+body:json {
+   {
+     "transdate" : "20230101",
+     "suppidkeyword" : "",
+     "suppnamekeyword" : "",
+     "fglunas" : "Y",
+     "fgtelate" : ""
+   }
+  
+  
+}
