@@ -1,0 +1,23 @@
+info:
+  name: update otorisasi absensi
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/update-otorisasi-absensi"
+  body:
+    type: json
+    data: |-
+      { 
+          "id" : 12001,
+          "fgoto" : "Y"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

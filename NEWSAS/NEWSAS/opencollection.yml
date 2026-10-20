@@ -17,7 +17,7 @@ config:
 request:
   auth:
     type: bearer
-    token: 42170|LcH9XmKVjjy8DMEQJDgSz2wq3mmq3GWqtfXIO5SQ5008a422
+    token: 42190|4DWMauzDxHqv8lbzQ62XcafMvNRJ9fUn1EQ4TxfM066928c5
   variables:
     - name: API_URL
       value: http://sas-backend-v2:3026/api
@@ -27,6 +27,9 @@ request:
       disabled: true
     - name: API_URL
       value: http://127.0.0.1:8000/api
+    - name: API_URL
+      value: http://sas.sao-indonesia.com/api
+      disabled: true
 bundled: false
 extensions:
   bruno:

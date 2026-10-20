@@ -1,0 +1,28 @@
+info:
+  name: create bank
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{API_URL}}/bank"
+  body:
+    type: json
+    data: |-
+      {
+        "bankid" : "BCAA",
+        "bankname" : "BCA",
+        "note" : "",
+        "rekeningid" : "110001.0001",
+        //fgactive & fgupload = Y, T
+        "fgactive" : "Y",
+        "fgupload" : "Y"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
