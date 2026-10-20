@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-          "transdate" : "20261019",
-          "salesid" : "R003"
+          "transdate" : "20261020",
+          "salesid" : "R002"
       }
   auth: inherit
 

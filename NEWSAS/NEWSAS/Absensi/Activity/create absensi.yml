@@ -10,8 +10,9 @@ http:
     type: json
     data: |2+
        {
-           "salesid" : "R003",
-           "transdate" : "20261019",
+           "salesid" : "R002",
+           "transdate" : "20261020",
+           //fgabsen = K (Kantor), L (customer), D (onfield), X (others)
            "fgabsen" : "K",
            "keterangan" : "coba",
            "foto" : "",

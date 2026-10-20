@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       { 
-          "id" : 12001,
-          "fgoto" : "Y"
+          "id" : 12003,
+          "fgoto" : "X"
       }
   auth: inherit
 
