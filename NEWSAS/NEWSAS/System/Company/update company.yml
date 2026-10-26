@@ -20,6 +20,7 @@ http:
           "kodenitku": "12345",
           "company2": "CV Contoh Cabang",
           "address2": "Jl. Ahmad Yani No. 45, Bandung",
+          "payment2": "asas",
           "phone2": "0227778899",
           "alamatpo": "PO BOX 123 JKP 10000"
       }

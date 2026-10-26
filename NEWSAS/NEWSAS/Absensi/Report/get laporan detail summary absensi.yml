@@ -1,0 +1,31 @@
+info:
+  name: get laporan detail summary absensi
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{API_URL}}/get-laporan-detail-summary-absensi"
+  body:
+    type: json
+    data: "{
+
+      \    \"dari\" : \"20260301\",
+
+      \    \"sampai\" : \"20260331\",
+
+      \    \"salesid\" : \"A009\"
+
+      }
+
+
+
+      \     "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
