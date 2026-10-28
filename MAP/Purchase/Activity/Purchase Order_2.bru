@@ -7,25 +7,21 @@ meta {
 patch {
   url: {{API_URL}}/purchaseorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "poid": "MAP-PO/2024--00003",
-      "transdate": "2024-01-03 00:00:00.000",
+      "poid": "MAP-PO/2026-10004",
+      "transdate": "2026-10-28 00:00:00.000",
       "currid": "IDR",
       "suppid": "SP141",
       "suppname": "PT ANEKA BERKAH SEJAHTERA",
       "up": "Bpk Rudi",
       "telp": "877-8827-0055",
       "fax": "",
-      "email": null,
-      "note": null,
+      "email": "",
+      "note": "",
       "purchasingid": "H003",
       "purchasingname": "Hanny",
       "upddate": "2024-01-03 10:40:39.000",
@@ -33,12 +29,11 @@ body:json {
       "soid": "SO-MAP/2401/0001",
       "custid": "DP207",
       "custname": "PT. PERTAMINA HULU ENERGI OFFSHORE NORTH WEST JAVA",
-      "subtotal": "7009009.009009009009009009",
-      "ppnamount": "770990.990991",
+      "term" : "0",
+      "fgterm" : "COD",
       "fgtax": "Y",
       "nilaitax": "11.0000",
       "discamount": ".0000",
-      "total": "7780000.0000",
           "detail": [
           {
               "urut": "1",

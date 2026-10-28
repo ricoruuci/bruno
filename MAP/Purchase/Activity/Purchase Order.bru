@@ -7,16 +7,12 @@ meta {
 get {
   url: {{API_URL}}/purchaseorder
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{token}}
+  auth: inherit
 }
 
 body:json {
   {
-      "poid" : "MAP-PO/2024-010001",
+      "poid" : "MAP-PO/2026--10002",
       "sortby" : "old",
       "dari" :20240101,
       "sampai" :20241016,
