@@ -10,10 +10,13 @@ http:
     type: json
     data: |-
       {
-        "rekeningid" : "110100.0001",
+        "rekeningid" : "1",
         "rekeningname"  : "tes",
         "grouprekid": "110100",
+        //tipe : 1, 2, 3, 4, 5
         "tipe" : "1",
+        //fgtipe = A, P
+        "fgtipe" : "A",
         "note" : "tes note",
         "fgactive" : "Y"
       }
@@ -24,3 +27,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
