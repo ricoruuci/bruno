@@ -1,0 +1,18 @@
+meta {
+  name: Rpt Job Order Costing copy
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{API_URL}}/rptsummaryjobordercosting
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dari" : "20260901",
+    "sampai" : "20261031"
+  }
+}
